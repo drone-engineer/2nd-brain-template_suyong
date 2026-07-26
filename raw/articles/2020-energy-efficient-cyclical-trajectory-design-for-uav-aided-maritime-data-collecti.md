@@ -1,11 +1,13 @@
 ---
 source_url: https://arxiv.org/abs/2006.01371v2
 ingested: 2026-07-26
-sha256: 47f5cdae6cd97276eaf130ed9a08d559d86d3dfdc915d68d17326b40442ae658
+sha256: 890f9c6c2c2fad8d86039547b5fee4347d98d62afb8fca4633410b1364b46a5b
 title: Energy-Efficient Cyclical Trajectory Design for UAV-Aided Maritime Data Collection in Wind
 authors: Yifan Zhang, Jiangbin Lyu, Liqun Fu
 year: 2020
 arxiv_id: 2006.01371v2
+---
+
 # Energy-Efficient Cyclical Trajectory Design for UAV-Aided Maritime Data Collection in Wind
 
 **출처:** https://arxiv.org/abs/2006.01371v2

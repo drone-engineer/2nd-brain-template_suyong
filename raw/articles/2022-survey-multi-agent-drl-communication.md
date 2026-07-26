@@ -1,13 +1,13 @@
 ---
 source_url: http://arxiv.org/abs/2203.08975v2
 ingested: 2026-07-26
-sha256: 1180fa35ea3eaa5b4fc00a483fca94bc24a008a38dec1b2cc27b6c4e5010077d
+sha256: 61b64675de40242888d83fd4325ce64c1d433b0deae54a3ec60bd1fdf2de76b7
 title: A Survey of Multi-Agent Deep Reinforcement Learning with Communication
 authors: Changxi Zhu, Mehdi Dastani, Shihan Wang
 year: 2022
 arxiv_id: 2203.08975v2
----
 notebooklm_source_id: dee2830c-3a3e-497f-8519-cbab8a3d5191
+---
 
 # A Survey of Multi-Agent Deep Reinforcement Learning with Communication
 

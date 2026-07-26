@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2402.18749v1
 ingested: 2026-07-26
-sha256: 7cc2158ba52ea31295846da0db8a31537294e9ccf30fd8c9ffde6eb229ec7bc5
+sha256: e15724f3d1a0656d18159613bfcfc759796abb1fe7fc5e81d055cbd32a570739
 title: Weighted strategies to guide a multi-objective evolutionary algorithm for multi-UAV mission planning
 authors: Cristian Ramirez-Atencia, Javier Del Ser, David Camacho
 year: 2024

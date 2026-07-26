@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2105.14142v2
 ingested: 2026-07-26
-sha256: e975ecf9d19e0816289b326bbad5529e32a032b69f3512732e042ac3e8f03d60
+sha256: e1511cd35c29b299ed840faa62d4171791742c1f0a5f815e9ce8eb52d60ed01a
 title: Reconfigurable Intelligent Surface-assisted Multi-UAV Networks: Efficient Resource Allocation with Deep Reinforcement Learning
 authors: Khoi Khac Nguyen, Saeed Khosravirad, Daniel Benevides da Costa, Long D. Nguyen, Trung Q. Duong
 year: 2021

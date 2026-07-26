@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2302.01021v2
 ingested: 2026-07-26
-sha256: f20087d54598e071e3e2d082ff0a221af4a7ba87f97f1c202dc3b0d4e6094f90
+sha256: 469c772fa85f04d3ebed18f8cf14bf588ccb980a08efe5a7dc9ec135a0b62c1a
 title: Faster Consensus via a Sparser Controller
 authors: Luca Ballotta, Vijay Gupta
 year: 2023

@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2201.05271v1
 ingested: 2026-07-26
-sha256: 79de28a1ddf674c8a056e6b76c1cc5ddf9cd2dfdfbfc04404266c27a2b723c2e
+sha256: 7860b74d4a40db0688b434c8b4ba3c10fd7260a0a6a6c29ccbc59eebc33acf55
 title: Trajectory and Transmit Power Optimization for IRS-Assisted UAV Communication under Malicious Jamming
 authors: Zhi Ji, Wendong Yang, Xinrong Guan, Xiao Zhao, Guoxin Li, Qingqing Wu
 year: 2022

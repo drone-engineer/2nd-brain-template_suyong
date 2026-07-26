@@ -1,7 +1,7 @@
 ---
 source_url: https://ieeexplore.ieee.org/ielx7/7693/8994112/08807386.pdf
 ingested: 2026-07-26
-sha256: 851faacd40b3f1d7febb1fde1dcc8d3aa0f511ddc8d376f457ed35c4e6114a52
+sha256: a07dacb55468316d6024c3ccb062c46c76210f4c3056e371e0fc5a952bd57b3e
 title: Multi-Agent Reinforcement Learning-Based Resource Allocation for UAV Networks
 authors: Jingjing Cui, Yuanwei Liu, Arumugam Nallanathan
 year: 2019

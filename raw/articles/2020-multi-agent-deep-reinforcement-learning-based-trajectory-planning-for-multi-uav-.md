@@ -1,7 +1,7 @@
 ---
 source_url: https://eprints.soton.ac.uk/444183/1/Main_jrl.pdf
 ingested: 2026-07-26
-sha256: 8c5fafa082dd6aae956c9c90f07fe7b023ea432da7f20fd7294b4f95beac6f30
+sha256: 46e8dee0eded146e07dabc711433a2ee0a92fb4b2e803fc7030474840057a06f
 title: Multi-Agent Deep Reinforcement Learning-Based Trajectory Planning for Multi-UAV Assisted Mobile Edge Computing
 authors: Liang Wang, Kezhi Wang, Cunhua Pan, Wei Xu, Nauman Aslam, Lajos Hanzo
 year: 2020

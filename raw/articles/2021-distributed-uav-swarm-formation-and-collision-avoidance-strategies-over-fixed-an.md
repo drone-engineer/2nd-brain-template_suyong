@@ -1,7 +1,7 @@
 ---
 source_url: https://ore.exeter.ac.uk/repository/bitstream/10871/129787/1/Final%20version.pdf
 ingested: 2026-07-26
-sha256: c8c225f8b5ffbdd644fb919f92f786310ea6c38b8c5d41bddd115e8a1d5a35ae
+sha256: 3e37f667bb1e1ac8ca9d322d549bdfc6502d35d0207d80dfeb4df18525170902
 title: Distributed UAV Swarm Formation and Collision Avoidance Strategies Over Fixed and Switching Topologies
 authors: Jia Wu, Chunbo Luo, Yang Luo, Ke Li
 year: 2021

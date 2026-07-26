@@ -1,7 +1,7 @@
 ---
 source_url: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003008075
 ingested: 2026-07-26
-sha256: e6eaf8eef38e4bdebfa631cab644537d2b74174457066313288435dfa4b18c58
+sha256: 974963b662034dcaadf0ba8a13be045df26e84d2a9a009907a40102e168cab4a
 title_ko: 지능화 전장에서 인공지능 기반 공격용 군집드론 운용 방안
 title_en: The Development of Artificial Intelligence-Enabled Combat Swarm Drones in the Future Intelligent Battlefield
 authors: 채희(제1),이경석/Lee, Kyung Suk(교신),엄정호/EOM JUNG HO(교신)
@@ -12,8 +12,8 @@ volume: 2023, vol.23no.3,106호 pp. 65-71(7 pages)
 year: 2023
 kci_citations: 1
 fwci: 0.57
----
 notebooklm_source_id: f05fd31a-1717-4bdf-8d93-0dd955292553
+---
 
 # The Development of Artificial Intelligence-Enabled Combat Swarm Drones in the Future Intelligent Battlefield
 

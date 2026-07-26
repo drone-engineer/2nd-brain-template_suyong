@@ -1,6 +1,6 @@
 ---
-name: llm-wiki
-description: "Build and query a persistent interlinked Markdown knowledge base, ingest web pages, PDFs, pasted sources, and Zotero papers with complete bibliographic metadata, and lint provenance, links, metadata, and consistency. Use for wiki or research-note creation, source ingestion, Zotero imports or metadata backfills, wiki queries, and wiki health checks."
+name: llm-wiki-ains
+description: "Build and query a persistent interlinked Markdown knowledge base, ingest web pages, PDFs, pasted sources, and Zotero papers with complete bibliographic metadata, and lint provenance, links, metadata, and consistency. Use for wiki or research-note creation, source ingestion, Zotero imports or metadata backfills, wiki queries, and wiki health checks. Named llm-wiki-ains to avoid colliding with Hermes bundled llm-wiki."
 ---
 
 # Karpathy's LLM Wiki

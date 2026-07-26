@@ -1,7 +1,7 @@
 ---
 source_url: https://www.mdpi.com/2504-446X/8/7/320/pdf?version=1720781782
 ingested: 2026-07-26
-sha256: 6d851771399fc6822a5f2b7508cb7c7d9bd658bfde1b7828fb9921984d0cdb4d
+sha256: 9acd30a2363c31579dd994b0b5496326a75fabed7971ce2aa52596b268544ff7
 title: Advancement Challenges in UAV Swarm Formation Control: A Comprehensive Review
 authors: Yajun Bu, Ye Yan, Yueneng Yang
 year: 2024

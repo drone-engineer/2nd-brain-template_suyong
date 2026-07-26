@@ -1,13 +1,13 @@
 ---
 source_url: http://arxiv.org/abs/2404.13440v1
 ingested: 2026-07-26
-sha256: b1549a7b8cec7a4560cf43d004c75d199094f91e610f63b7c759e5cded3d16e0
+sha256: 2fbcb48b4b314f1266e0ac6fe0c2e9ea37374ff7a4edd45cfa1d72781d8662fa
 title: PACNav: Enhancing Collective Navigation for UAV Swarms in Communication-Challenged Environments
 authors: Afzal Ahmad, Daniel Bonilla Licea, Giuseppe Silano, Tomas Baca, Martin Saska
 year: 2024
 arxiv_id: 2404.13440v1
----
 notebooklm_source_id: 7cb630e6-6b02-45f0-9390-7aedda3d474e
+---
 
 # PACNav: Enhancing Collective Navigation for UAV Swarms in Communication-Challenged Environments
 

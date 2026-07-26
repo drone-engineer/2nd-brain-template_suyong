@@ -257,3 +257,23 @@
 - docs/architecture/second-brain-pkm-architecture.svg: ains-lab 원본 스타일(4계층 + 상단 Automation Control Plane + 다이아몬드 Human Review + 피드백 루프)로 우리 시스템 버전 재작성 (다크테마).
 - 기존 second-brain-workflow-mermaid.md는 보관용 유지.
 - 검증: 두 SVG 모두 xml 유효성 통과.
+
+## [2026-07-26] repair | raw 무결성 복구 + Gate B 검사 범위 확대
+
+- Trigger: Gate B가 `raw/papers/`만 검사해 `raw/articles/` 무결성 문제가 PASS로 가려져 있었음.
+- Findings (raw 54건): 정상 17 / 해시 불일치 30 / 해시 없음 7.
+- Repaired (frontmatter만 변경, 본문 바이트 보존 검증):
+  - 오염 4건 — NotebookLM 매핑이 `notebooklm_source_id:`를 본문 첫 줄에 삽입했던 것을 frontmatter로 이동:
+    `raw/articles/2021-advanced-drone-swarm-security-blockchain-governance.md`,
+    `raw/articles/2022-survey-multi-agent-drl-communication.md`,
+    `raw/articles/2023-combat-swarm-drone-ai-operations-kci-ART003008075.md`,
+    `raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md`
+    (복원한 본문이 수집 당시 해시와 일치함을 확인 후 SCHEMA 정의로 재계산)
+  - 구분자 누락 2건 — 닫는 `---`가 없어 frontmatter가 본문으로 흐르던 레코드 복원:
+    `raw/articles/2020-energy-efficient-cyclical-trajectory-design-...md`,
+    `raw/articles/2023-can-a-single-human-supervise-a-swarm-of-100-heterogeneous-robots.md`
+  - 해시 정의 불일치 26건 — 수집 스크립트가 선행 개행을 제외하고 계산하던 것을 SCHEMA 정의(닫는 `---` 이후 전체 바이트)로 재계산. 본문 before/after 바이트 동일 검증.
+- Root causes (`docs/workflow/auto-collect-papers.py`): (1) 해시를 선행 개행 제외 본문으로 계산, (2) 닫는 `---`를 DOI가 있을 때만 출력. 둘 다 수정하고 회귀 테스트 통과.
+- Gate B 확대 (`docs/workflow/check-gate-b.py`): `raw/` 전체를 검사 — frontmatter 누락/미종료, `notebooklm_source_id` 본문 유출, sha256 누락/불일치. 변조 음성 테스트로 FAIL 감지 확인.
+- Legacy gap 유지: `raw/web/` 2건 + `raw/youtube/` 3건은 해시 미기록 상태를 그대로 두고 검사기에서 예외로 명시(기존 문서화된 coverage gap).
+- 최종: raw 54건 중 49건 해시 검증 통과, 불일치 0, Gate B PASS (canonical 15페이지).

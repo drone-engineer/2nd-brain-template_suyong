@@ -1,7 +1,7 @@
 ---
 source_url: https://www.mdpi.com/1424-8220/20/12/3537/pdf?version=1593512222
 ingested: 2026-07-26
-sha256: b6efd11bd91bf77f6669b244ec89bac26335ba1b9957e7e350556baae496222d
+sha256: b5e42a8c823d9a7ced813e22991dc842e9795df0dda03ff7a0e58b9ede215ed1
 title: Defending Airports from UAS: A Survey on Cyber-Attacks and Counter-Drone Sensing Technologies
 authors: Georgia Lykou, Dimitrios Moustakas, Dimitris Gritzalis
 year: 2020

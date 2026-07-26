@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2605.22709v1
 ingested: 2026-07-26
-sha256: df25dfe9c6cbe8959186c0bdf41bade0b3d590fce787e02a2e40631fb6f6eb46
+sha256: ba6d2bba525b72d247703db4d720779263aa2986b8dedd6e0425957e58cb3fed
 title: TriSweep: A Four-Drone Swarm Framework for Electromagnetic Side-Channel Analysis
 authors: Eric Yocam, Varghese Vaidyan
 year: 2026

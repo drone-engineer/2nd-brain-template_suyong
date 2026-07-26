@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2004.08883v4
 ingested: 2026-07-26
-sha256: 0136646ddb4f3a353e3003bafd37256cca5ae671b6a9b7b11720cffab956ae2a
+sha256: 5fe1799c5525aaf356a98256058d163a03ee15ecca6c39ccb830e35ce912262e
 title: Variational Policy Propagation for Multi-agent Reinforcement Learning
 authors: Chao Qu, Hui Li, Chang Liu, Junwu Xiong, James Zhang, Wei Chu
 year: 2020

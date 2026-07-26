@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2106.03129v1
 ingested: 2026-07-26
-sha256: 0b8f431dfc62650e83f281b8326cfb306ff5546fb071d416f07c7defdcf11b31
+sha256: 5a1b37df3d701b0f5476d035e8dc60d4c5d3dd7a508fd3608e1a0f991a10a02a
 title: 3D UAV Trajectory and Data Collection Optimisation via Deep Reinforcement Learning
 authors: Khoi Khac Nguyen, Trung Q. Duong, Tan Do-Duy, Holger Claussen, and Lajos Hanzo
 year: 2021

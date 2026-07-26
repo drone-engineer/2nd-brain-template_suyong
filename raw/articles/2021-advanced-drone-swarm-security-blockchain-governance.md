@@ -1,13 +1,13 @@
 ---
 source_url: http://arxiv.org/abs/2112.15454v4
 ingested: 2026-07-26
-sha256: 719861bb6a607500bd557c039761731a5e12149cec65a9930afdddfaa4cf894f
+sha256: 78532206a54bf3efa3046d1b053357cba752df3d49935d1201645619cb21260f
 title: Advanced Drone Swarm Security by Using Blockchain Governance Game
 authors: Song-Kyoo Kim
 year: 2021
 arxiv_id: 2112.15454v4
----
 notebooklm_source_id: fdd0d24e-c38b-4612-883f-4816225aeb62
+---
 
 # Advanced Drone Swarm Security by Using Blockchain Governance Game
 

@@ -65,18 +65,22 @@ def save_record(title, authors, year, abstract, source_url, arxiv_id=None, doi=N
     if doi: body += f"**DOI:** {doi}\n"
     if pdf_url: body += f"**OA PDF:** {pdf_url}\n"
     body += f"\n## 초록 (Abstract)\n\n{abstract}\n"
-    sha = hashlib.sha256(body.encode()).hexdigest()
+    # SCHEMA: sha256 covers every byte after the LF closing the frontmatter,
+    # so the separating blank line is part of the hashed body.
+    hashed_body = "\n" + body
+    sha = hashlib.sha256(hashed_body.encode()).hexdigest()
     fm = (f"---\nsource_url: {source_url}\ningested: {TODAY}\nsha256: {sha}\n"
           f"title: {title}\n")
     if authors: fm += f"authors: {authors}\n"
     if year: fm += f"year: {year}\n"
     if arxiv_id: fm += f"arxiv_id: {arxiv_id}\n"
-    if doi: fm += f"doi: {doi}\n---\n\n"
+    if doi: fm += f"doi: {doi}\n"
+    fm += "---\n"
     fname = f"{year or '20xx'}-{slugify(title)}.md"
     out = ART / fname
     if out.exists():
         out = ART / f"{year or '20xx'}-{slugify(title)[:60]}-{hashlib.md5(source_url.encode()).hexdigest()[:6]}.md"
-    out.write_text(fm + body, encoding="utf-8")
+    out.write_text(fm + hashed_body, encoding="utf-8")
     if pdf_url and oa:
         try:
             data, _ = http_get(pdf_url)

@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2010.07068v1
 ingested: 2026-07-26
-sha256: 9d7d3f82c946744a92760d8e7504d512fb5cbbeffefc2c219faad9b9d6cf9fd9
+sha256: a9cf146bef35ac930c4395f17ef6b481ab10c6b6b8e389e2630bf84e310333ef
 title: UAV Trajectory and Communication Co-design: Flexible Path Discretization and Path Compression
 authors: Yijun Guo, Changsheng You, Changchuan Yin, Rui Zhang
 year: 2020

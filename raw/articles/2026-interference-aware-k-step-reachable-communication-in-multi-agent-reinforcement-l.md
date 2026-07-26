@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2603.15054v1
 ingested: 2026-07-26
-sha256: b39ccc30cfc6e0266721c4a794687770c614b47434316665b29e0440e4290b59
+sha256: 95f0e3ee3cc095f8e4b34f09ec13e7c5466117859fa09cd1d173c3de912d6149
 title: Interference-Aware K-Step Reachable Communication in Multi-Agent Reinforcement Learning
 authors: Ziyu Cheng, Jinsheng Ren, Zhouxian Jiang, Chenzhihang Li, Rongye Shi, Bin Liang
 year: 2026

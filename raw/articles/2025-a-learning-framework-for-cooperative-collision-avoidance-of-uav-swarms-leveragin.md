@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2507.10913v1
 ingested: 2026-07-26
-sha256: ea2cdc2bcf4707858f2413c4dc30c4407892b55d3c5b5c456f7cee13a44f91b1
+sha256: 8aac124b8a2f158962da9d80f1520cfa66e10b50424b89a2bc9ba641466945a9
 title: A Learning Framework For Cooperative Collision Avoidance of UAV Swarms Leveraging Domain Knowledge
 authors: Shuangyao Huang, Haibo Zhang, Zhiyi Huang
 year: 2025

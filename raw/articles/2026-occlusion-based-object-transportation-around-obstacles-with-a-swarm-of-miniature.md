@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2605.13006v1
 ingested: 2026-07-26
-sha256: 212070f837c9f8f5bde2866ea90e1e9852d7822e200ae6381c0b3304301b6e31
+sha256: 8aae863af25a44590fadab44b7aef60c847d966a04766b06a754edc4c48ac2de
 title: Occlusion-Based Object Transportation Around Obstacles With a Swarm of Miniature Robots
 authors: Breno Cunha Queiroz, Daniel MacRae
 year: 2026

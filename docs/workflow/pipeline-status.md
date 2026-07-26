@@ -6,10 +6,11 @@
 | 구성 요소 | 상태 | 비고 |
 | --- | --- | --- |
 | SCHEMA / index / log | OK | 계약 활성 |
-| llm-wiki 스킬 | OK | `.agents/skills/llm-wiki/` |
+| llm-wiki-ains 스킬 | OK | `.agents/skills/llm-wiki/` (`name: llm-wiki-ains`, Hermes 기본 `llm-wiki`와 분리) |
 | Zotero MCP (Cursor) | OK | hybrid 읽기+쓰기 |
 | Obsidian vault | OK | 저장소 root |
-| Gate B 스크립트 | OK | `docs/workflow/check-gate-b.py` → PASS |
+| Gate B 스크립트 | OK | `docs/workflow/check-gate-b.py` → PASS. canonical + **`raw/` 전체 무결성** 검사 (해시·frontmatter·본문 유출) |
+| raw 무결성 | OK | 54건 중 49건 해시 검증 통과, 불일치 0. `raw/web`·`raw/youtube` 5건은 문서화된 legacy gap |
 | Understand Anything (Cursor 플러그인) | 설치됨 | `~/.cursor/plugins/Understand-Anything` |
 | understand-knowledge 스킬 | 설치됨 | `.agents/skills/understand-knowledge` → 플러그인 심볼릭 |
 | NotebookLM CLI (`notebooklm-py`) | OK | Auth pass + UAV 노트북 1회 질의 완료 |
@@ -18,7 +19,7 @@
 | `.ua/` 지식그래프 | OK | 2026-07-25 refresh — 85 nodes / 77 edges (`kind=knowledge`) |
 | Hermes Agent | CLI OK | primary=`tencent/hy3:free` (Nous) |
 | Hermes fallback | OK | 1) `poolside/laguna-s-2.1:free` 2) local Ollama `qwen2.5:14b` |
-| Hermes ← llm-wiki / understand-knowledge | 링크됨 | `~/.hermes/skills/` 심볼릭 |
+| Hermes ← llm-wiki-ains / understand-knowledge | 링크됨 | `~/.hermes/skills/custom/llm-wiki-ains` → vault 스킬 |
 | Hermes Cron gateway | OK | launchd 실행 중 + Telegram 연결 |
 | Hermes Cron job | OK | `second-brain-collect-review` pinned to hy3 — 수동 run **성공** (2026-07-25) |
 | Obsidian Web Clipper | OK | vault=`2nd_Brain_Template`, 경로=`inbox` — 테스트 클립 확인 |

@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/1304.3362v1
 ingested: 2026-07-26
-sha256: 71e47e0c8d527883ab773a0e9223e06e92e98b09ec153bfdeb26f2152625e4bc
+sha256: 4294f8e42f5aaf26286710ed93fe1d0c1f6539a549e11f7c1cab5e568c7bb014
 title: Evolution of Swarm Robotics Systems with Novelty Search
 authors: Jorge Gomes, Paulo Urbano, Anders Lyhne Christensen
 year: 2013

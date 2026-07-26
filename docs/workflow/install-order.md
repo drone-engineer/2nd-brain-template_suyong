@@ -8,7 +8,7 @@
 | 1 | Zotero + Local API | 완료 | Zotero.app, localhost:23119 |
 | 2 | uv | 완료 | `uv --version` |
 | 3 | zotero-mcp + Cursor mcp.json | 완료 | MCP Connected |
-| 4 | llm-wiki 스킬 | 완료 | `.agents/skills/llm-wiki` |
+| 4 | llm-wiki-ains 스킬 | 완료 | `.agents/skills/llm-wiki` (`name: llm-wiki-ains`); Hermes `custom/llm-wiki-ains` 링크 |
 | 5 | Gate B 스크립트 | 완료 | `python3 docs/workflow/check-gate-b.py` |
 | 6 | Understand Anything (Cursor 플러그인) | 완료 | `~/.cursor/plugins/Understand-Anything` + 프로젝트 스킬 심볼릭 |
 | 7 | notebooklm-py CLI | 완료 | Auth pass (`notebooklm doctor`) |

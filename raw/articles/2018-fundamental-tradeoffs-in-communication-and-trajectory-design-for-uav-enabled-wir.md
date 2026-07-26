@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/1805.07038v1
 ingested: 2026-07-26
-sha256: 075ec9d202b209439986f0fdb873bb77c26632f00a65530ccc904224e6479f9a
+sha256: c17738d32c744b56e71a4eafaac6b34ec864b66f5ad87eac2c916f1631306818
 title: Fundamental Tradeoffs in Communication and Trajectory Design for UAV-Enabled Wireless Network
 authors: Qingqing Wu, Liang Liu, Rui Zhang
 year: 2018

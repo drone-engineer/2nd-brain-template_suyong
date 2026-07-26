@@ -11,6 +11,22 @@
 
 ---
 
+## [2026-07-26] repair | raw 무결성 복구 + Gate B 확대
+
+- **단계:** 감사 → repair → Gate B 확대 (canonical 내용 변경 없음)
+- **발견:** raw 54건 중 해시 정상 17건뿐. Gate B가 `raw/papers/`만 봐서 가려져 있었음
+  - 본문 오염 4건 (`notebooklm_source_id`가 frontmatter 밖에 삽입)
+  - 닫는 `---` 누락 2건
+  - 해시 계산 정의 불일치 26건
+- **조치:** frontmatter만 수정하고 본문 바이트 보존 검증 → 49/54 해시 통과 (나머지 5건은 기존 legacy gap)
+- **수집 스크립트:** 해시 계산·구분자 출력 버그 2건 수정 (재발 방지)
+- **판정:**
+  - 무결성 복구 + Gate B 확대 → **Accepted**
+  - legacy web/youtube 5건 해시 소급 부여 → **Deferred** (원본 바이트 보존 우선)
+- **사람 조치:**
+  - [ ] 변경분 커밋 여부 결정 (fork `mine` 푸시)
+  - [ ] Hermes Gateway 재가동 여부 결정 (현재 꺼져 있어 월요일 cron 미동작)
+
 ## [2026-07-26] collect | KCI 군집드론 운용 방안 (단일 수집)
 
 - **단계:** collect-evidence (사용자 지시 URL 1건) → Gate A → review-queue prepend

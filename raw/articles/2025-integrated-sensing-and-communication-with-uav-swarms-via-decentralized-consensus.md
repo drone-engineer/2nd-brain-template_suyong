@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2511.03283v1
 ingested: 2026-07-26
-sha256: 24f855ad068de17cb17ddd714ac09d5fd3c1ce0606c84f57acd6b0810b7ce21a
+sha256: 512149316a833c5929620deb22a9d6f3d5cb510517fd35fef290bcdb010490b2
 title: Integrated Sensing and Communication with UAV Swarms via Decentralized Consensus ADMM
 authors: Zhiyuan Zhai, Wei Ni, Xin Wang, Dusit Niyato, Ekram Hossain
 year: 2025

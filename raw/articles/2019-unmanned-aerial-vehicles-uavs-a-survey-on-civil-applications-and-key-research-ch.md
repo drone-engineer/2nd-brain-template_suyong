@@ -1,7 +1,7 @@
 ---
 source_url: https://ieeexplore.ieee.org/ielx7/6287639/8600701/08682048.pdf
 ingested: 2026-07-26
-sha256: 159b0efd53e02402bc90bb95ce1b401aec9bc8cf71717dc09b65fcf2e67ed8a9
+sha256: fe47d5323e169b8dded8da57721b2c77070734d27577aed2bdcd559860349a11
 title: Unmanned Aerial Vehicles (UAVs): A Survey on Civil Applications and Key Research Challenges
 authors: Hazim Shakhatreh, Ahmad Sawalmeh, Ala Al‐Fuqaha, Zuochao Dou, Eyad Almaita, Issa Khalil
 year: 2019

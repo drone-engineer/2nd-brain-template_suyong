@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2303.06510v2
 ingested: 2026-07-26
-sha256: cdee3a8c8710d78dddb725e700268d9ebdb43af9f380f1da2a802107e4a149ff
+sha256: 039eaedfef58a56708f75c8c0e0662854fae6dd944326b3c8a40e7c77262b3d5
 title: E2CoPre: Energy Efficient and Cooperative Collision Avoidance for UAV Swarms with Trajectory Prediction
 authors: Shuangyao Huang, Haibo Zhang, Zhiyi Huang
 year: 2023

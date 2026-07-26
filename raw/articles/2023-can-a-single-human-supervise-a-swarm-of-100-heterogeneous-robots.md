@@ -1,11 +1,13 @@
 ---
 source_url: https://arxiv.org/abs/2308.00102v1
 ingested: 2026-07-26
-sha256: 3f6ebf9703aef6c07ae66c25adfc76e7c05511804cda542f3005954125d1d571
+sha256: 8f77913f51525c50b08d6004b9481b3a0b1a9a5d89368d8ce96562cd38b911e9
 title: Can A Single Human Supervise A Swarm of 100 Heterogeneous Robots?
 authors: Julie A. Adams, Joshua Hamell, Phillip Walker
 year: 2023
 arxiv_id: 2308.00102v1
+---
+
 # Can A Single Human Supervise A Swarm of 100 Heterogeneous Robots?
 
 **출처:** https://arxiv.org/abs/2308.00102v1

@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2210.11745v1
 ingested: 2026-07-26
-sha256: 3707e11cfc050374376e875c91892ac700c096d9b6f4deb2c93d1653a7990b5a
+sha256: 8239831a4da56a256e7a754672102c2ab64ad69a102054e9cef4913185cd37e4
 title: BC-IoDT: Blockchain-based Framework for Authentication in Internet of Drone Things
 authors: Junaid Akram, Awais Akram, Rutvij H. Jhaveri, Mamoun Alazab, Haoran Chi
 year: 2022

@@ -78,7 +78,7 @@ hermes cron create \
   --name "second-brain-collect-review" \
   --deliver telegram \
   --workdir "$REPO" \
-  --skill llm-wiki \
+  --skill llm-wiki-ains \
   "0 9 * * 1" \
   "$(cat <<'EOF'
 Read SCHEMA.md, index.md, tail of log.md.

@@ -1,7 +1,7 @@
 ---
 source_url: https://arxiv.org/abs/2506.20039v1
 ingested: 2026-07-26
-sha256: 51d366b288e7b8622cb07cbbc291d14a38023391349a87f81f8e1bb668960254
+sha256: 37e85717331cfc14962340870855f80c13752714b8e4ef89a85ffbe92401d7fa
 title: Learning Bilateral Team Formation in Cooperative Multi-Agent Reinforcement Learning
 authors: Koorosh Moslemi, Chi-Guhn Lee
 year: 2025

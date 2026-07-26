@@ -1,7 +1,7 @@
 ---
 source_url: https://ieeexplore.ieee.org/ielx7/6287639/9668973/09680690.pdf
 ingested: 2026-07-26
-sha256: e1578cbff55a078958584c7811c11992c040ec56eaf794ff1a9992f180b95ed6
+sha256: 8bde381f022b290100b439632d0a1d7f565fe8a8c65bd5ed66c1be3a1f56598d
 title: Particle Swarm Optimization: A Comprehensive Survey
 authors: Tareq M. Shami, Ayman A. El‐Saleh, Mohammed Alswaitti, Qasem Al-Tashi, Mhd Amen Summakieh, Seyedali Mirjalili
 year: 2022
