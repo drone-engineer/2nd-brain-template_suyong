@@ -55,6 +55,14 @@ Zotero 첨부 `H89MMR98` 전문에서 Table 6이 정리한 한계·방향(요지
 
 군사 운용·자율화 관점은 [[combat-swarm-drone-operations]]에서 다룬다(채희 외 2023: 완전 자율화 5대 과제, 탈중앙 C2·임무 재할당·윤리기준). ^[raw/articles/2023-combat-swarm-drone-ai-operations-kci-ART003008075.md]
 
+## 소프트웨어 스택 (2026-07-26 신규)
+
+위 알고리즘 연구가 실제로 돌아가는 플랫폼 계층. 위키는 알고리즘(L4)은 두텁고 펌웨어/미들웨어/시뮬(L1–L3)은 얇어 보완함.
+
+- **펌웨어/비행 스택** → [[uav-autopilot-stacks]] (PX4 vs ArduPilot, Offboard/Companion 구조)
+- **통신/미들웨어** → [[uav-swarm-middleware]] (MAVLink/ROS 2/DDS; 합의·Comm-MADRL과 직결)
+- **시뮬레이션** → [[uav-swarm-simulation]] (Gazebo/AirSim/Webots; 재현성·sim-to-real)
+
 ## 진화·최적화 방법론 기초 (2026-07-26 신규)
 
 군집 지능의 알고리즘적 뿌리가 되는 두 방법론.

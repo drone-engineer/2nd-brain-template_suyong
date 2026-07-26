@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 15
+> Total pages: 18
 > Last updated: 2026-07-26
 
 ## Entities
@@ -22,6 +22,9 @@
 - [[uav-formation-control]] — 리더–팔로워부터 AI까지 UAV 편대·형성 제어.
 - [[uav-swarm-path-planning]] — 군집 클러스터링·궤적·경로계획 문제.
 - [[uav-swarm-robotics]] — 다수 UAV 협력 운용과 연구 지형 (Alqudsi PDF 과제표 반영).
+- [[uav-autopilot-stacks]] — PX4 vs ArduPilot 펌웨어 스택 (상위 알고리즘의 기반).
+- [[uav-swarm-middleware]] — MAVLink/ROS 2/DDS 미들웨어 (기체·로직 연결층).
+- [[uav-swarm-simulation]] — Gazebo/AirSim/Webots 시뮬레이션 (검증 인프라).
 
 ## Comparisons
 

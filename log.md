@@ -277,3 +277,17 @@
 - Gate B 확대 (`docs/workflow/check-gate-b.py`): `raw/` 전체를 검사 — frontmatter 누락/미종료, `notebooklm_source_id` 본문 유출, sha256 누락/불일치. 변조 음성 테스트로 FAIL 감지 확인.
 - Legacy gap 유지: `raw/web/` 2건 + `raw/youtube/` 3건은 해시 미기록 상태를 그대로 두고 검사기에서 예외로 명시(기존 문서화된 coverage gap).
 - 최종: raw 54건 중 49건 해시 검증 통과, 불일치 0, Gate B PASS (canonical 15페이지).
+
+## [2026-07-26] create | 군집드론 소프트웨어 스택 3페이지 신규 + 플랫폼 실증 논문 4편 수집
+
+- concepts/uav-autopilot-stacks.md (신규, confidence medium): PX4 vs ArduPilot 펌웨어 스택. sources 5 (우리논문 3 + 플랫폼실증 2)
+- concepts/uav-swarm-middleware.md (신규, confidence medium): MAVLink/ROS 2/DDS. sources 4 (Faster Consensus/Comm-MADRL/PACNav + ROS2swarm)
+- concepts/uav-swarm-simulation.md (신규, confidence medium): Gazebo/AirSim/Webots. sources 3 (PACNav/TriSweep + Closing the Gap 시뮬)
+- raw/articles 4편 추가:
+  - 2025-a-modular-and-scalable-system-architecture-for-heterogeneous-uav-swarm.md
+  - 2024-ros2swarm-a-ros-2-package-for-swarm-robot-behaviors.md
+  - 2018-closing-the-gap-in-swarm-robotics-simulations-an-extended-ardupilot-ga.md
+  - 2023-tinyslam-based-exploration-with-a-swarm-of-nano-uavs.md
+- index.md: 15→18 페이지 갱신, 3개 신규 항목 추가
+- uav-swarm-robotics.md: "소프트웨어 스택" 섹션 추가(신규 3페이지 역링크)
+- 기술검토 배경: 알고리즘(L4) 두텁고 펌웨어/미들웨어/시뮬(L1-L3) 얇음 보완
