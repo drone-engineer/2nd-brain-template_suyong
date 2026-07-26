@@ -1,0 +1,16 @@
+---
+description: 그림의 4단계 파이프라인(collect→compile→graph→review) 실행 계약
+alwaysApply: true
+---
+
+# 2nd-Brain 파이프라인 규칙
+
+사용자가 위키/ingest/파이프라인/lint를 요청하면 `docs/workflow/second-brain-pipeline.md` 순서를 따른다.
+
+1. **collect-evidence** → `raw/`/`inbox/`만. Gate A.
+2. **compile-wiki** → llm-wiki + `index.md`/`log.md`. Gate B (`python3 docs/workflow/check-gate-b.py`).
+3. **build-knowledge-graph** → UA 있으면 `.ua/`만. 없으면 SKIP을 `docs/workflow/pipeline-status.md` / review-queue에 기록. Gate C 또는 SKIP.
+4. **deliver-review** → `inbox/review-queue.md`에 요약. 사람에게 Accepted/Contested/Deferred/Rejected 요청.
+
+실패 격리: 이전 Gate 실패 시 다음 단계 쓰기 금지. 그래프 가설로 canonical을 덮어쓰지 않는다.
+Hermes 미설치여도 단계 이름은 유지하고 Cursor가 제어면 역할을 한다.

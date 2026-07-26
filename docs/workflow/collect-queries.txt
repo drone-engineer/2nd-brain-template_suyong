@@ -1,0 +1,8 @@
+UAV swarm formation control
+multi-agent reinforcement learning UAV
+drone swarm consensus
+UAV swarm collision avoidance
+swarm robotics communication
+counter-UAS swarm
+UAV swarm trajectory optimization
+decentralized UAV swarm navigation

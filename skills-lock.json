@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "llm-wiki": {
+      "source": "ains-lab/harness",
+      "sourceType": "github",
+      "skillPath": "skills/llm-wiki/SKILL.md",
+      "computedHash": "e8dae77d44f4d01a40c567f210f927f936949569f9c1e067c60365b2d4219289"
+    }
+  }
+}

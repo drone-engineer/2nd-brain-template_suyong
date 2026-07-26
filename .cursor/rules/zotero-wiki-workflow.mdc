@@ -1,0 +1,10 @@
+---
+description: 논문은 Zotero 수집 후, 필요할 때만 llm-wiki ingest
+alwaysApply: true
+---
+
+# Zotero ↔ Wiki 기본 워크플로
+
+1. **수집** — 논문은 먼저 Zotero에 DOI/URL로 추가한다.
+2. **위키** — 사용자가 ingest를 요청하거나 재사용 가치가 분명할 때만 vault에 ingest한다. Zotero에 넣은 항목을 전부 자동 ingest하지 않는다.
+3. **ingest 절차** — Zotero parent 메타데이터 → children → fulltext 순으로 가져와 `raw/papers/`에 보존하고, llm-wiki / `SCHEMA.md` 계약을 따른다.

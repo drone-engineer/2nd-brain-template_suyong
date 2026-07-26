@@ -28,6 +28,7 @@ contains no raw source record and no canonical page.
 | `inbox/` | Temporary intake awaiting classification and capture; not canonical evidence. |
 | `raw/articles/` | Immutable captured article or clipping Markdown. |
 | `raw/notebooklm/` | Immutable importer-preserved NotebookLM source records and source identifiers. |
+| `raw/papers/` | Immutable Zotero-captured paper Markdown records (metadata block plus extracted text). |
 | `raw/papers/files/` | Optional copied paper attachments; initially only the empty `.gitkeep` placeholder is allowed. |
 | `raw/transcripts/` | Immutable captured transcript Markdown. |
 | `raw/web/` | Immutable importer-preserved web captures whose existing provenance paths must remain stable. |
@@ -77,6 +78,10 @@ a valid source record or canonical page.
 - `provenance`: source traceability and claim lineage.
 - `research`: research collection, synthesis, and verification.
 - `workflow`: ordered operational processes and feedback loops.
+- `uav`: unmanned aerial vehicles and related platforms.
+- `swarm`: multi-agent swarm coordination and collective behavior.
+- `control`: control algorithms, formation, and closed-loop autonomy.
+- `survey`: review or survey articles synthesizing a research area.
 
 ## Raw source integrity
 

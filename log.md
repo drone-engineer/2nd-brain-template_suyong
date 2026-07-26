@@ -74,3 +74,170 @@
 - Correction: the immediately preceding lint entry reports 27 source references, but the measured canonical frontmatter total is 30.
 - Unchanged measurements: 17 claim-level markers, 33 canonical links, 8 canonical pages, and 0 lint errors or warnings.
 - Updated: `log.md` only; no raw or canonical page was changed.
+
+## [2026-07-24] ingest | UAV swarm Zotero batch (9 papers)
+
+- Selection: nine Zotero parent items previously added by DOI/URL (`N4XXEWP3`, `C52SVXS2`, `5J5X8ZX7`, `N2VUMJST`, `CSJSEHNK`, `UNHRIQ2D`, `Q4WQJDUV`, `8TCCA2JV`, `QZ35WT85`).
+- Created raw:
+  - `raw/papers/2018-08-a-survey-on-aerial-swarm-robotics.md`
+  - `raw/papers/2024-07-advancement-challenges-in-uav-swarm-formation-control-a-comprehensive-review.md`
+  - `raw/papers/2024-08-from-pid-to-swarms-a-decade-of-advancements-in-drone-control-and-path-planning-a.md`
+  - `raw/papers/2025-01-uav-swarms-research-challenges-and-future-directions.md`
+  - `raw/papers/2025-02-research-on-swarm-control-based-on-complementary-collaboration-of-unmanned-aeria.md`
+  - `raw/papers/2025-03-airswarm-enabling-cost-effective-multi-uav-research-with-cots-drones.md`
+  - `raw/papers/2025-07-a-survey-on-uav-control-with-multi-agent-reinforcement-learning.md`
+  - `raw/papers/2025-07-systematic-review-of-multi-objective-uav-swarm-mission-planning-systems-from-reg.md`
+  - `raw/papers/2025-12-uav-swarm-clustering-and-trajectory-planning-a-taxonomy-systematic-review-curren.md`
+- Created canonical:
+  - `entities/airswarm.md`
+  - `concepts/uav-swarm-robotics.md`
+  - `concepts/uav-formation-control.md`
+  - `concepts/multi-agent-rl-uav-control.md`
+  - `concepts/uav-swarm-path-planning.md`
+  - `queries/uav-swarm-survey-landscape.md`
+- Updated: `SCHEMA.md` (register `raw/papers/` and tags `uav`, `swarm`, `control`, `survey`), `index.md` (14 pages), `log.md`.
+- Integrity: all 9 recorded body hashes verified. Local Zotero had no synced PDF attachments for these items; AirSwarm Extracted Text came from arXiv HTML (`metadata_enriched_from: arxiv-html`); other records use abstract or metadata-only placeholders under Extracted Text with explicit notes.
+
+## [2026-07-24] create | Cursor-manual pipeline mirroring architecture diagram
+
+- Created:
+  - `docs/workflow/second-brain-pipeline.md`
+  - `docs/workflow/gate-checklist.md`
+  - `docs/workflow/pipeline-status.md`
+  - `docs/workflow/check-gate-b.py`
+  - `docs/workflow/hermes/README.md`
+  - `inbox/review-queue.md`
+  - `.cursor/rules/second-brain-pipeline.mdc`
+- Gate B self-check: `python3 docs/workflow/check-gate-b.py` → PASS (14 pages).
+- Note: Hermes Cron, NotebookLM, and Understand Anything remain uninstalled; control plane is Cursor-manual with identical stage names.
+
+## [2026-07-24] create | workflow tooling install (safe order)
+
+- Installed/linked:
+  - Understand Anything → `~/.cursor/plugins/Understand-Anything`
+  - project skill link `.agents/skills/understand-knowledge`
+  - `notebooklm-py` via uv tool (`notebooklm` CLI; login pending)
+  - Hermes Agent CLI (`hermes` 0.19, `--skip-browser`); skills linked under `~/.hermes/skills/`
+- Docs: `docs/workflow/install-order.md`, updated `docs/workflow/pipeline-status.md`, `inbox/review-queue.md`
+- Deferred interactive: Cursor restart, `notebooklm login`, `hermes model`/`setup`, gateway Cron, `/understand-knowledge` run
+
+## [2026-07-25] update | UAV survey landscape via NotebookLM + PDF status
+
+- Updated: `queries/uav-swarm-survey-landscape.md` (NotebookLM-sourced gaps + reading order; no chat transcript stored)
+- Created: `docs/workflow/zotero-pdf-status.md`
+- NotebookLM: notebook `UAV Swarm Survey Landscape` (`9c0c0bf7-2491-44df-a8c0-2ccdbadddae0`) with 9 raw/papers md + 4 web URLs; ask JSON in `inbox/notebooklm-uav-swarm-ask-2026-07-25.json`
+- Zotero PDF check: 2/9 have local PDF (5J5X8ZX7, QZ35WT85); MDPI OA blocked by 403 for automated download
+- Human gate decisions recorded in `inbox/review-queue.md`
+- Synced: `index.md` (updated date), `log.md`
+
+## [2026-07-25] repair | Zotero attachment keys + Alqudsi PDF compile + KG
+
+- Repaired (metadata only, Extracted Text unchanged):
+  - `raw/papers/2025-01-uav-swarms-research-challenges-and-future-directions.md` → attachment `H89MMR98`
+  - `raw/papers/2025-03-airswarm-enabling-cost-effective-multi-uav-research-with-cots-drones.md` → attachment `D89J3ZU4`
+- Updated: `concepts/uav-swarm-robotics.md` (Alqudsi Table 6 from Zotero PDF), `entities/airswarm.md`, `queries/uav-swarm-survey-landscape.md`, `index.md`
+- Docs: `docs/workflow/zotero-pdf-status.md`, `docs/workflow/pipeline-status.md`, `inbox/review-queue.md`
+- Graph: `/understand-knowledge` refresh → `.ua/knowledge-graph.json` (85 nodes, 77 edges, kind=knowledge)
+- Gate B: PASS (14 pages). Remaining 7 papers still lack local PDF (MDPI auto-DL 403).
+
+## [2026-07-26] ingest | KCI combat swarm drone AI operations
+
+- Selection: user-directed URL `https://www.kci.go.kr/...ART003008075` (single source).
+- Created raw:
+  - `raw/articles/2023-combat-swarm-drone-ai-operations-kci-ART003008075.md`
+- Integrity: post-frontmatter body sha256 `0a8229cf2161c82e62a119b7af1466df3a44dcf43ad66f1457aaffeabfbbc031` recorded; source URL resolves; body immutable.
+- Gap: KCI renders author/journal/volume/issue/pubdate via JavaScript variables (`hdnInsiNm`, `hdnJournalNm`), not in static HTML; metadata left unresolved with a note. Recover via KCI RIS/Citeasy export or API.
+- Canonical state: unchanged; no canonical page created (user directive: no canonical without approval).
+- Navigation: `inbox/review-queue.md` prepended with the collect block; index.md not modified.
+
+## [2026-07-26] create | KCI combat swarm drone operations → canonical
+
+- Evidence: single KCI source `raw/articles/2023-combat-swarm-drone-ai-operations-kci-ART003008075.md` is the central subject (AI-enabled combat swarm drone operations), meets the page-threshold single-source-central rule.
+- Created:
+  - `concepts/combat-swarm-drone-operations.md` (type: concept; tags uav/swarm/control/research; sources 1; confidence medium; 2+ outbound links to [[uav-swarm-robotics]] and [[multi-agent-rl-uav-control]])
+- Updated:
+  - `concepts/uav-swarm-robotics.md` (added reciprocal link + provenance marker; bumped updated)
+  - `index.md` (15 pages; added concept entry alphabetically)
+- Navigation: index count raised 14 → 15; no page removed.
+- Provenance: all source paths and claim markers resolve to the existing raw/articles record; no invented paths.
+
+## [2026-07-26] ingest | arXiv combat-swarm supporting sources (3)
+
+- Selection: arXiv API relevance search for "swarm drone autonomous/combat/military" and "multi-agent drone swarm".
+- Created raw:
+  - `raw/articles/2021-advanced-drone-swarm-security-blockchain-governance.md` (arXiv 2112.15454v4; blockchain governance game security)
+  - `raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md` (arXiv 2404.13440v1; decentralized navigation under comms loss)
+  - `raw/articles/2022-survey-multi-agent-drl-communication.md` (arXiv 2203.08975v2; MA-DRL + communication survey)
+- Integrity: all three post-frontmatter body sha256 recorded; source URLs resolve; bodies immutable.
+- Canonical state: page updated (not created) — see next entry.
+
+## [2026-07-26] update | combat-swarm-drone-operations → confidence high
+
+- Evidence: 1 KCI + 3 arXiv sources now support the five autonomy pillars; raises confidence medium → high per SCHEMA multiple-source rule.
+- Updated:
+  - `concepts/combat-swarm-drone-operations.md` (added 3 sources; mapped each pillar to a source; confidence high; bumped updated; kept ≥2 outbound links)
+- Navigation: index.md unchanged (same page count 15); no new page, no removal.
+- Provenance: all 4 source paths and 4 claim markers resolve to existing raw/articles records.
+
+## [2026-07-26] update | uav-swarm-survey-landscape 증분 (NotebookLM 재질의)
+
+- Evidence: notebook `UAV Swarm Survey Landscape` (9c0c0bf7-…)에 KCI 1 + arXiv 3 소스 추가(모두 ready), conv a9ac16fb-… turn 1 재질의.
+- Updated:
+  - `queries/uav-swarm-survey-landscape.md` (sources +4 raw/articles 경로; 지도 4행 추가; "신규 합성" 섹션 증분 — PACNav 통신무관 항법·BGG 보안 게임·Comm-MADRL 9차원 통신·3대 신규 공백; bumped updated)
+  - `raw/articles/2023-...ART003008075.md`, `2021-advanced-drone-swarm-security...md`, `2024-pacnav...md`, `2022-survey-multi-agent-drl...md` (frontmatter에 notebooklm_source_id 매핑 추가 — 출처 추적)
+- Navigation: index.md unchanged (same 15 pages); existing query page updated, no new page.
+- Provenance: 4 new source paths and claim markers resolve to existing raw/articles records; notebooklm_source_id matches the notebook source IDs.
+
+## [2026-07-26] map | .ua knowledge graph refresh
+
+- Trigger: manual refresh after KCI+arXiv ingest (4 raw) and `combat-swarm-drone-operations` canonical compile + survey-landscape increment.
+- Method: `understand-knowledge` parse (py3.12) → scan-manifest (62 articles, 26 sources, 4 topics, 103 wikilinks / 33 unresolved); merge → assembled-graph.json; promoted to `.ua/knowledge-graph.json` (old backed up to `.ua/knowledge-graph.json.bak-20260726`).
+- Graph: 85 → 92 nodes, 77 → 75 edges, 5 layers. New nodes: `article:concepts/combat-swarm-drone-operations`, 4 raw/articles, 4 source:articles. Implicit-analysis batches: 0 (Phase-3 subagent analysis not run; graph reflects deterministic wikilink scan only).
+- meta.json: regenerated_at 2026-07-26T17:25:37.
+- Note: `.ua/` is derived; regenerate anytime. Not canonical evidence.
+
+## [2026-07-26] ingest | arXiv swarm-drone bulk collection (18)
+
+- Selection: 8 relevance queries (consensus, formation, collision, task-alloc, MARL, comm, path, counter-UAS); 29 candidates → 18 unique after dedup (excluded 3 already ingested 2112.15454/2404.13440/2203.08975).
+- Created raw (raw/articles/): 18 arXiv records, all with sha256 + arxiv_id frontmatter.
+- Updated (sources bumped, updated:2026-07-26):
+  - concepts/uav-formation-control.md (+2: collision avoidance E2CoPre, learning framework)
+  - concepts/multi-agent-rl-uav-control.md (+4: faster consensus, variational policy propagation, bilateral team formation, interference-aware reachable comm)
+  - concepts/uav-swarm-path-planning.md (+5: comm-trajectory tradeoffs, IRS traj+power, co-design, 3D DRL collection, RIS multi-UAV)
+  - concepts/uav-swarm-robotics.md (+2: novelty search evolution, PSO fault detection)
+  - concepts/combat-swarm-drone-operations.md (+4: BC-IoDT auth, ISAC decentralized consensus, TriSweep EM side-channel, occlusion transport)
+- Navigation: index.md unchanged (15 pages); per-page source counts raised. No new canonical page.
+- Provenance: all 18 source paths resolve to existing raw/articles records.
+
+## [2026-07-26] update | 5 concept pages 신규 합성 (18편 기반)
+
+- Evidence: bulk arXiv ingest 18편 (위 ingest 항목).
+- Updated (synthesis sections added; all claim markers resolve to page sources):
+  - concepts/uav-formation-control.md (+ "충돌회피 하이브리드" — E2CoPre APF+PSO, domain-reward MARL)
+  - concepts/multi-agent-rl-uav-control.md (+ "합의·통신·팀형성 진전" — sparse consensus, VPP/MRF, bilateral team formation, IARCoM)
+  - concepts/uav-swarm-path-planning.md (+ "궤적-통신 공동설계" — tradeoff/IRS/RIS/DRL; confidence low→medium, 5 abstracts in hand)
+  - concepts/uav-swarm-robotics.md (+ "진화·최적화 기초" — novelty search, PSO fault detection)
+  - concepts/combat-swarm-drone-operations.md (+ "보안·인증·정찰 최신" — BC-IoDT, ISAC consensus, TriSweep EM-SCA, occlusion transport)
+- Navigation: index.md unchanged (15 pages). No new page.
+
+## [2026-07-26] map | .ua knowledge graph refresh (2nd)
+
+- Trigger: refresh after 18 arXiv ingest + 5 concept synthesis sections.
+- Method: understand-knowledge parse (py3.12) → 80 articles, 44 sources, 4 topics, 103 wikilinks (33 unresolved); merge → assembled-graph → promoted to .ua/knowledge-graph.json (prior backed up).
+- Graph: 92 → 128 nodes, 75 edges, 5 layers. Reflects deterministic wikilink scan of all current canonical + raw/articles (incl. 18 new). Phase-3 implicit analysis not run.
+- meta.json regenerated_at 2026-07-26T19:27:39.
+
+## [2026-07-26] ingest | KCI/DBpia 한국 논문 수집 — BLOCKED (환경 제약)
+
+- Attempted: KCI search endpoint (404), DBpia search (200 but JS-rendered, no static titles), RISS search (200 but JS-rendered). No web_search tool in this session (installed for future sessions via platform_toolsets.cli=web).
+- Conclusion: Korean academic search portals are JS-rendered; cannot enumerate result lists via curl. Cannot auto-collect without explicit article URLs or Zotero Connector capture.
+- Path forward (user action): (a) provide concrete KCI/DBpia article URLs -> agent fetches to raw/articles/ (proven: ART003008075 worked); (b) or use Zotero Connector capture -> raw/papers/ (MCP already wired).
+- No files written. No canonical change.
+
+## [2026-07-26] update | 논문 스크랩 자동화 파이프라인 구축 (A+B+C)
+
+- Built docs/workflow/auto-collect-papers.py (python3.12): arXiv + Semantic Scholar + OpenAlex 에서 OA(무료 전문)만 수집, dedup(arxiv_id/doi), sha256 + provenance 저장, OA PDF는 raw/papers/files/ 다운로드.
+- Queries: docs/workflow/collect-queries.txt (8 UAV-swarm 주제).
+- Cron second-brain-collect-review (job 31830320217b, 월 09:00 KST) 프롬프트 갱신: Step1 자동수집 실행 → Step3 review-queue 블록 prepend(판정 미기재) → 인간 게이트 유지. canonical 자동승격 금지.
+- Test: arXiv+OpenAlex 정상, S2는 비공식 API 429 rate-limit → skip 처리(별도 실행 권장). Raw count 23→32 during test.
+- Legal scope: OA only; Sci-Hub 등 저작권 위반 경로 배제.
