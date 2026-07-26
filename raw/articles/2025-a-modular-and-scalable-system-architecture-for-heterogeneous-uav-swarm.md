@@ -5,6 +5,7 @@ arxiv_id: 2510.27327v1
 published: 2025-10-31
 source_type: arxiv
 collected: 2026-07-26
+sha256: 0e2a4e47eeb92d7b6403ae75376f130724b83e8bf4701590b6da062212b7a742
 ---
 
 # A Modular and Scalable System Architecture for Heterogeneous UAV Swarms Using ROS 2 and PX4-Autopilot

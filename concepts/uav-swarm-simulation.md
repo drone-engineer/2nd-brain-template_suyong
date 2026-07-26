@@ -10,7 +10,6 @@ tags:
   - simulation
 sources:
   - raw/articles/2024-pacnav-enhancing-collective-navigation-for-uav-swarms-in-communication-denied-env.md
-  - raw/articles/2023-trisweep-a-four-drone-swarm-framework-for-electromagnetic-side-channel-a.md
   - raw/articles/2018-closing-the-gap-in-swarm-robotics-simulations-an-extended-ardupilot-ga.md
 confidence: medium
 contested: false
@@ -31,7 +30,7 @@ contradictions: []
 ## 위키 증거와의 연결
 
 - [PACNav, 2024]는 통신두절 집단 항법을 **시뮬레이션 프레임워크**로 검증. 대개 Gazebo + PX4 SITL 조합.
-- [TriSweep, 2023]는 아예 **4드론 EM 사이드채널 시뮬 프레임워크**를 제안 — 시뮬이 연구 대상 그 자체가 됨. 보안/EM 도메인에선 커스텀 시뮬 필요성 시사.
+- *(일반 지식)* EM 사이드채널 도메인에선 커스텀 시뮬(예: TriSweep 4드론 프레임워크) 필요성 논의 있음 — 본 위키 raw 증거는 아님, 추후 수집 예정.
 
 ## 왜 중요한가
 

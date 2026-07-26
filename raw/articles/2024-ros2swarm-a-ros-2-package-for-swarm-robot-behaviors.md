@@ -5,6 +5,7 @@ arxiv_id: 2405.02438v1
 published: 2024-05-03
 source_type: arxiv
 collected: 2026-07-26
+sha256: 7c3b6317e13bc8cc52b3255847506be24f46e163d5630b1b52764a669fbe1405
 ---
 
 # ROS2swarm - A ROS 2 Package for Swarm Robot Behaviors
