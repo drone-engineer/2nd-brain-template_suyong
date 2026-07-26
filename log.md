@@ -249,3 +249,11 @@
 - docs/workflow/second-brain-workflow.svg: ains-lab 기본형 → 우리 실제 파이프라인(수집소스→Gate A→compile→Gate B→graph→Human Gate→NotebookLM→cron 루프)으로 재작성.
 - docs/workflow/second-brain-workflow-mermaid.md: Mermaid 소스 보관용.
 - Note: README.md는 ains-lab 원본이 generic PARA를 설명했으나, 현재 SCHEMA 계약이 이를 덮어쓰므로 우리 구조 설명이 정확함.
+
+## [2026-07-26] update | README를 ains-lab 링크 형식과 동일하게 재작성 + 아키텍처 SVG 교체
+
+- README.md: ains-lab README.md 섹션 구조(Project Overview → Architecture/Workflow/TechStack 이미지 임베드 → Features 테이블 → Prerequisites → Directory Structure)와 동일하게 재작성. 내용은 UAV Swarm 운용판(크론, auto-collect, NotebookLM)으로 채움. 이미지 링크를 우리 SVG(.svg)로 교체.
+- README.ko.md: 영문과 동일 구조의 한국어 버전.
+- docs/architecture/second-brain-pkm-architecture.svg: ains-lab 원본 스타일(4계층 + 상단 Automation Control Plane + 다이아몬드 Human Review + 피드백 루프)로 우리 시스템 버전 재작성 (다크테마).
+- 기존 second-brain-workflow-mermaid.md는 보관용 유지.
+- 검증: 두 SVG 모두 xml 유효성 통과.

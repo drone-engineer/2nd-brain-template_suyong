@@ -1,144 +1,141 @@
-# 2nd Brain Template — UAV Swarm Research Edition
+# 2nd Brain Template
 
-[English](README.en.md) | **한국어**
+**English** | [한국어](README.ko.md)
 
-> 흩어진 논문·웹·노트를 한곳에 모으고, 출처 기반으로 연결해 실제 연구·운용 판단으로 이어 가기 위한 **Markdown 기반 증거 우선 지식관리 템플릿**입니다.
-> 이 포크는 **군집드론(UAV Swarm) 연구**에 맞춰 실제 운용 중이며, Hermes Agent 자동화 크론·NotebookLM 증분·무료 OA 논문 자동 수집 파이프라인이 포함돼 있습니다.
+> A Markdown-based knowledge management template for collecting scattered thoughts and information, connecting them, and turning them into action.
 
-## 프로젝트 소개
+## Project Overview
 
-메모를 보관하는 데 그치지 않고 **수집 → 정리 → 연결 → 검증 → 자동화**의 흐름으로 운영합니다. 모든 노트는 일반 Markdown이라 특정 앱에 종속되지 않으며, Obsidian·VS Code·GitHub 어디서나 엽니다.
+This project goes beyond simply storing notes. It is designed around a continuous **capture → organize → connect → act → review** workflow. Every note is stored as a plain Markdown file, so the system is not tied to a particular application and can be used with Obsidian, VS Code, GitHub, or any other Markdown-compatible tool.
 
-### 전체 워크플로우 (우리 시스템)
+This fork is tuned for **UAV Swarm (군집드론) research** and is actively running: it ships a Hermes Agent cron, a NotebookLM increment workflow, and an automated free-OA paper collector (`docs/workflow/auto-collect-papers.py`).
 
-```mermaid
-flowchart TD
-    subgraph SRC["수집 소스 (무료 OA)"]
-        A1[arXiv API]
-        A2[Semantic Scholar]
-        A3[OpenAlex]
-        A4[Zotero / KCI URL]
-    end
-    SRC --> COLL
-    subgraph COLL["collect-evidence"]
-        COLL1["auto-collect-papers.py<br/>(OA만, 중복제거)"]
-        COLL2["raw/articles/*.md<br/>sha256 + provenance"]
-        COLL1 --> COLL2
-    end
-    COLL --> GA{"Gate A"}
-    GA -->|PASS| COMP
-    subgraph COMP["compile-wiki (Canonical)"]
-        COMP1["llm-wiki 스킬"]
-        COMP2["concepts/ comparisons/ queries/"]
-        COMP1 --> COMP2
-    end
-    COMP --> GB{"Gate B<br/>check-gate-b.py"}
-    GB -->|PASS| DISC
-    subgraph DISC["build-knowledge-graph"]
-        DISC1["understand-knowledge"]
-        DISC2[".ua/knowledge-graph.json"]
-        DISC1 --> DISC2
-    end
-    DISC --> HUMAN
-    subgraph HUMAN["Human Decision Gate"]
-        H1["inbox/review-queue.md"]
-        H2{"판정"}
-        H1 --> H2
-    end
-    H2 -->|Accepted| CANONOK["canonical 확정"]
-    H2 -->|Rejected| DROP["되돌리기"]
-    H2 -->|Contested| CONT["contested:true"]
-    CANONOK --> NB
-    CONT --> NB
-    subgraph NB["NotebookLM 질의 증분"]
-        NB1["노트북 소스 추가"]
-        NB2["재질의 → queries/ 편입"]
-        NB1 --> NB2
-    end
-    NB --> CRON
-    subgraph CRON["자동화 (Hermes Cron)"]
-        CR1["매주 월 09:00 KST"]
-        CR1 -.주기적.-> COLL
-    end
+### Architecture
+
+The [complete architecture](docs/architecture/second-brain-pkm-architecture.md) consists of four layers: **Evidence → Canonical Memory → Discovery → Human Decision**. Original content and metadata are preserved as immutable evidence, while only reusable knowledge is compiled into canonical Markdown with traceable sources. Relationships discovered through NotebookLM and the knowledge graph remain hypotheses until human verification promotes them into durable memory.
+
+![Evidence-based personal knowledge management architecture for the 2nd Brain](docs/architecture/second-brain-pkm-architecture.svg)
+
+### Operating Workflow
+
+The [operating workflow](docs/architecture/second-brain-pkm-architecture.md#6-핵심-워크플로우) follows **Capture → Compile → Discovery → Human Decision**. Each stage must pass integrity, frontmatter, and structural validation gates before moving forward. Approved changes update the canonical documents, index, and log together, then feed back into the knowledge graph and reusable outputs.
+
+![2nd-Brain Evidence to Reusable Knowledge operating workflow](docs/workflow/second-brain-workflow.svg)
+
+### Technology Stack
+
+The core assets in the [technology stack](docs/architecture/second-brain-pkm-architecture.md#5-기술-스택) are not particular products, but **open-format source material, canonical Markdown, provenance metadata, and Git history**. Obsidian, Zotero, NotebookLM, and Understand Anything are replaceable tools for capture, editing, discovery, and analysis. Integrity checks and human approval gates connect the stack.
+
+![2nd-Brain Durable Knowledge technology stack](docs/tech-stack/second-brain-technology-stack.svg)
+
+## Key 2nd-Brain Features
+
+The system connects safe source preservation and verified knowledge reuse in one continuous cycle.
+
+| Feature | Description |
+| --- | --- |
+| **Source and provenance preservation** | Capture papers and web material with Zotero, arXiv/S2/OpenAlex APIs, then preserve the source, metadata, and SHA-256 digest under `raw/` so every claim can be traced back to evidence. |
+| **Free OA auto-collection** | `docs/workflow/auto-collect-papers.py` pulls only open-access papers from arXiv, Semantic Scholar, and OpenAlex, de-duplicates, and downloads PDFs to `raw/papers/files/`. |
+| **Verified knowledge compilation** | [LLM Wiki](concepts/llm-wiki.md) structures source material into concept, comparison, and query documents while accumulating provenance, confidence, contradictions, and relationships. |
+| **Connected exploration and editing** | Follow the [second-brain research workflow](concepts/second-brain-research-workflow.md) to read and edit durable knowledge in Obsidian using Markdown, wikilinks, and backlinks. |
+| **Source-grounded focused research** | Use the [NotebookLM query compounding workflow](queries/notebooklm-query-compounding.md) to question a constrained source set and file only results whose reuse value has been verified. |
+| **Knowledge graph analysis** | Use the [UA knowledge graph workflow](queries/ua-knowledge-graph-workflow.md) to find clusters, bridges, isolated documents, and possible knowledge gaps, then verify graph results against the source material. |
+| **Human verification and feedback** | The [research feedback loop](concepts/research-feedback-loop.md) classifies discoveries as accepted, contested, deferred, or rejected and feeds only approved knowledge back into the index and change history. |
+| **Weekly automation** | Hermes Cron `second-brain-collect-review` (every Mon 09:00 KST) auto-collects new OA papers and refreshes `inbox/review-queue.md`, then reports to Telegram. |
+
+## Prerequisites
+
+If you only need a general Markdown editor, installing Obsidian is enough to get started. To use the full workflow—from web and paper capture to AI-assisted knowledge organization and graph exploration—prepare the tools below in order.
+
+### Apps and Data Capture Tools
+
+| Category | Tool | Purpose and installation |
+| --- | --- | --- |
+| Required | [Obsidian](https://obsidian.md/download) | Open this repository as a local vault to browse and edit Markdown notes. |
+| Paper capture | [Zotero and Zotero Connector](https://www.zotero.org/download/) | Use the Zotero desktop application to manage papers, PDFs, and bibliographic data. Install the Chrome Connector from the same download page to save paper metadata from the web into Zotero. |
+| Web capture | [Obsidian Web Clipper](https://obsidian.md/clipper) | Convert web pages and their metadata into Markdown from Chrome and save them to the Obsidian vault. |
+
+### AI Automation Tools
+
+The following tools allow an agent to retrieve captured material, organize it into knowledge notes, and visualize relationships. They are MCP servers, CLIs, or agent skills rather than Obsidian plugins.
+
+> [!IMPORTANT] Install for your agent environment
+> MCP configuration files, project and local skill paths, plugin support, and restart procedures differ between agents. Read the official installation documentation linked below and choose the method supported by your current agent or MCP client. Do not copy commands or configuration intended for a different agent without adapting them.
+
+| Tool | Role | Installation guidance |
+| --- | --- | --- |
+| [Zotero MCP](https://github.com/54yyyu/zotero-mcp) | Gives an agent access to Zotero bibliographic metadata, attachments, notes, and full text. | Follow the official repository instructions to install and register the server with your MCP client. |
+| [`llm-wiki`](https://github.com/ains-lab/harness/tree/main/skills/llm-wiki) | Compiles captured source material into an interlinked Markdown knowledge base with traceable provenance and validates the result. | Read the linked skill documentation together with your agent's skill installation guide, then install it in a supported local or project skill location. |
+| [notebooklm-py](https://github.com/teng-lin/notebooklm-py) | Manages NotebookLM notebooks and sources through a CLI and automates grounded questions and artifact generation. | Follow the official installation and authentication documentation for your Python and browser environment. |
+| [Understand Anything](https://github.com/Egonex-AI/Understand-Anything) | Analyzes relationships in code and knowledge bases and creates an interactive knowledge graph. | Select the installation and integration method for your agent or development environment from the official repository. |
+| **Hermes Agent** (this fork) | Runs the weekly `second-brain-collect-review` cron and the `auto-collect-papers.py` collector. | Add `web` to `platform_toolsets.cli` in `~/.hermes/config.yaml`; link `llm-wiki` + `understand-knowledge` skills; register the cron with workdir set to this repo. |
+
+> [!NOTE]
+> `notebooklm-py` uses an unofficial Google API, so service changes may affect its behavior. Never commit authentication information such as Google login sessions or Zotero API keys to this repository.
+
+### Recommended Installation Order
+
+1. Install Obsidian and open this repository directory as a vault.
+2. Install the Zotero desktop application, Zotero Connector, and Obsidian Web Clipper.
+3. Review the supported environments and prerequisites at each official link above.
+4. Follow the Zotero MCP documentation to connect Zotero to your current MCP client.
+5. Install `llm-wiki` and Understand Anything according to both their official documentation and your agent's skill or plugin installation rules.
+6. If needed, install `notebooklm-py` and complete authentication using its official documentation.
+7. (This fork) Configure Hermes Agent `web` toolset and register the `second-brain-collect-review` cron.
+
+After installation, use your environment's MCP server list, skill or plugin list, or CLI verification procedure to confirm that each tool is recognized. Follow the official documentation for exact verification commands and restart requirements.
+
+## Recommended Directory Structure
+
+The repository root is both the wiki root and the Obsidian vault. All paths are resolved relative to this root without a separate database, and [SCHEMA.md](SCHEMA.md) defines the validity contract for directories and data.
+
+```text
+.
+├── inbox/                    # Temporary input awaiting classification and formal capture
+├── raw/                      # Immutable source evidence
+│   ├── articles/             # Article and web-clipping source text (arXiv/KCI records)
+│   ├── notebooklm/           # Source records imported from NotebookLM
+│   ├── papers/files/         # Paper attachments, created only when needed
+│   ├── transcripts/          # Audio, video, and meeting transcripts
+│   ├── web/                  # Web captures with importer-preserved paths
+│   ├── youtube/              # YouTube metadata and transcripts
+│   └── assets/               # Images and attachments referenced by source records
+├── entities/                 # Canonical knowledge about people, organizations, and tools
+├── concepts/                 # Canonical knowledge about concepts, principles, and methods
+├── comparisons/              # Canonical side-by-side analysis of tools and methods
+├── queries/                  # Source-grounded questions and synthesized answers
+├── docs/                     # Architecture, workflow, and technology-stack artifacts
+│   ├── architecture/
+│   ├── tech-stack/
+│   └── workflow/
+├── templates/                # Validated note templates, created only when needed
+├── _archive/                 # Fully superseded canonical knowledge, created only when needed
+├── .obsidian/                # Shareable Obsidian configuration
+├── SCHEMA.md                 # Authoritative directory, metadata, and integrity contract
+├── index.md                  # Complete catalog of active canonical knowledge
+└── log.md                    # Append-only wiki operation history
 ```
 
-상세 파이프라인: [docs/workflow/second-brain-pipeline.md](docs/workflow/second-brain-pipeline.md)
-다이어그램 소스: [docs/workflow/second-brain-workflow.svg](docs/workflow/second-brain-workflow.svg)
+`raw/papers/files/`, `templates/`, and `_archive/` are created only when their workflows require them. Knowledge graph caches such as `.ua/` and other generated outputs are reproducible derived data, so they are not treated as canonical knowledge or source evidence.
 
-### 기술 스택
+### What the Structure Means
 
-공개 형식의 **원본·canonical Markdown·출처 메타·Git 이력**이 핵심 자산이며, 아래 도구는 교체 가능한 레이어입니다.
+| Category | Location | Meaning and management |
+| --- | --- | --- |
+| Temporary intake | `inbox/` | Holds input whose source format and classification are not yet settled. These files are neither evidence nor canonical knowledge and should eventually be captured under `raw/` or removed. |
+| Layer 1: source evidence | `raw/` | Preserves captured bodies and provenance metadata. After initial capture, the body is generally immutable; corrections and interpretation belong in canonical knowledge. |
+| Canonical knowledge | `entities/ concepts/ comparisons/ queries/` | Durable, source-linked Markdown. Created only for a source's central subject or a subject repeated across at least two sources. |
+| Deliverables | `docs/` | Architecture, workflow, and tech-stack diagrams. Not raw or canonical evidence. |
+| Catalog and history | `index.md`, `log.md` | The index must equal the active canonical-file count; the log is append-only and never rewritten. |
 
-| 계층 | 도구 |
-| --- | --- |
-| 편집 | Obsidian, VS Code |
-| 논문 수집 | Zotero + Zotero Connector, arXiv/S2/OpenAlex API |
-| AI 정리 | Hermes Agent + `llm-wiki` 스킬 |
-| 질의 증분 | NotebookLM CLI (`notebooklm-py`) |
-| 그래프 | Understand Anything `understand-knowledge` |
-| 자동화 | Hermes Cron (`second-brain-collect-review`, 매주 월 09:00 KST) |
+## Current Status (this fork)
 
-## 주요 기능
-
-| 기능 | 설명 |
-| --- | --- |
-| **원본·출처 보존** | 논문·웹을 `raw/`에 수집, sha256 + provenance 기록으로 근거 보존 |
-| **무료 OA 자동 수집** | `docs/workflow/auto-collect-papers.py` — arXiv/S2/OpenAlex에서 OA 논문만 자동 수집·PDF 다운로드 |
-| **검증된 지식 컴파일** | `llm-wiki`가 원본을 concept/comparison/query로 구조화 (Gate B 검증) |
-| **지식그래프** | `understand-knowledge`로 `.ua/` 노드·엣지 생성 (128 nodes) |
-| **사람 검증 게이트** | `inbox/review-queue.md`에서 Accepted/Rejected 판정 — 자동 승격 없음 |
-| **NotebookLM 증분** | 노트북 소스 추가 → 재질의 → `queries/`에 검증된 합성만 편입 |
-| **주간 자동화** | 크론이 매주 새 OA 논문 수집 + 리뷰 큐 갱신 → Telegram 보고 |
-
-## 사전 설치
-
-편집만 원하면 Obsidian만 있으면 됩니다. 전체 파이프라인은 아래 순서로 설치하세요.
-
-### 앱
-
-| 도구 | 용도 |
-| --- | --- |
-| [Obsidian](https://obsidian.md/download) | vault로 열기 |
-| [Zotero](https://www.zotero.org/download/) | 논문·PDF 관리 + Connector |
-| [Obsidian Web Clipper](https://obsidian.md/clipper) | 웹 → Markdown |
-
-### AI 자동화 (Hermes Agent)
-
-- Hermes Agent 설치 후 `platform_toolsets.cli`에 `web` 추가 (자동 수집용)
-- `llm-wiki`, `understand-knowledge` 스킬 연동
-- `notebooklm-py` 설치 + Google 로그인
-- 크론 등록: `second-brain-collect-review` (매주 월 09:00 KST, workdir 지정)
-
-## 폴더 구조
-
-```
-./
-├── raw/articles/      # 수집된 논문 (sha256)
-├── raw/papers/        # Zotero PDF
-├── concepts/          # canonical: 개념
-├── comparisons/       # canonical: 비교
-├── queries/           # canonical: 질의 합성
-├── entities/          # canonical: 개체
-├── docs/workflow/     # 파이프라인·스크립트·다이어그램
-├── inbox/review-queue.md  # 사람 검증 게이트
-├── SCHEMA.md          # 운영 계약 (준수 필수)
-├── index.md           # canonical 카탈로그
-└── log.md             # append-only 운영 기록
-```
-
-## 규칙 (핵심)
-
-- `raw/` 본문은 **불변** — sha256로 무결성 보증
-- canonical 페이지는 `confidence`·`sources`·`wikilink≥2` 규칙 준수
-- 자동화는 **raw/까지만** 작성, canonical 승격은 항상 사람 판정 후
-
-## 현재 상태 (이 repo)
-
-- canonical 페이지: 15개 (concepts 5, queries 2, comparisons 1, entities 1, + 기타)
-- 수집 원본: KCI 1 + arXiv 21 (+ Zotero 9) ≈ 30+ 편
-- 군집드론 중심 주제: 형성제어, MARL, 경로계획, 탈중앙 C2, 보안, 완전 자율화 5대 과제
-- `combat-swarm-drone-operations` 는 `confidence: high`
+- **15 canonical pages** (concepts 5, queries 2, comparisons 1, entities 1, plus base pages)
+- **30+ captured sources** — KCI 1 + arXiv 21 + Zotero 9
+- **UAV swarm topics**: formation control, MARL, path planning, decentralized C2, swarm security, five autonomy pillars
+- `concepts/combat-swarm-drone-operations.md` at `confidence: high`
+- Automated collector wired to a weekly Hermes cron
 
 ---
 
-Forked from [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template). UAV Swarm 연구 운용 예시로 확장.
+Forked from [ains-lab/2nd-brain-template](https://github.com/ains-lab/2nd-brain-template). Extended as a UAV Swarm research example with live automation.
