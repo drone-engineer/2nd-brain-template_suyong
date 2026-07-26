@@ -241,3 +241,11 @@
 - Cron second-brain-collect-review (job 31830320217b, 월 09:00 KST) 프롬프트 갱신: Step1 자동수집 실행 → Step3 review-queue 블록 prepend(판정 미기재) → 인간 게이트 유지. canonical 자동승격 금지.
 - Test: arXiv+OpenAlex 정상, S2는 비공식 API 429 rate-limit → skip 처리(별도 실행 권장). Raw count 23→32 during test.
 - Legal scope: OA only; Sci-Hub 등 저작권 위반 경로 배제.
+
+## [2026-07-26] update | README + 워크플로우 다이어그램 우리 시스템 구조로 재작성
+
+- README.md: 빈 파일(27B) → ains-lab 스타일 메인 README로 개편. Mermaid 워크플로우 인라인 삽입(6단계: collect→compile→graph→human gate→notebooklm→cron), 기술스택/기능/설치/폴더구조/규칙/현재상태 포함. UAV Swarm Research Edition 명시.
+- README.en.md: 영문 버전 추가 (README.md과 상호 링크).
+- docs/workflow/second-brain-workflow.svg: ains-lab 기본형 → 우리 실제 파이프라인(수집소스→Gate A→compile→Gate B→graph→Human Gate→NotebookLM→cron 루프)으로 재작성.
+- docs/workflow/second-brain-workflow-mermaid.md: Mermaid 소스 보관용.
+- Note: README.md는 ains-lab 원본이 generic PARA를 설명했으나, 현재 SCHEMA 계약이 이를 덮어쓰므로 우리 구조 설명이 정확함.
