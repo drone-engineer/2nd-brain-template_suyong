@@ -5,7 +5,7 @@ arxiv_id: 2309.02834v1
 published: 2023-09-06
 source_type: arxiv
 collected: 2026-07-26
-sha256: 37b560cbc7c74ab1550a4211b66973fe5a702b791a0ddd186a3c709e87dc93b2
+sha256: cc25dfe32434f0d41890219086925b20ca2e3b61faa4b8f1ed2c3b0e3f3c4bce
 ---
 
 # tinySLAM-based exploration with a swarm of nano-UAVs

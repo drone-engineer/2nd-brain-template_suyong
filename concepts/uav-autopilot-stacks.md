@@ -9,9 +9,9 @@ tags:
   - software
   - firmware
 sources:
-  - raw/articles/2024-pacnav-enhancing-collective-navigation-for-uav-swarms-in-communication-denied-env.md
-  - raw/articles/2021-advanced-drone-swarm-security-by-using-blockchain-governance-game-bgg-0.md
-  - raw/articles/2022-a-learning-framework-for-cooperative-collision-avoidance-of-uav-swarms-u.md
+  - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
+  - raw/articles/2021-advanced-drone-swarm-security-blockchain-governance.md
+  - raw/articles/2025-a-learning-framework-for-cooperative-collision-avoidance-of-uav-swarms-leveragin.md
   - raw/articles/2025-a-modular-and-scalable-system-architecture-for-heterogeneous-uav-swarm.md
   - raw/articles/2023-tinyslam-based-exploration-with-a-swarm-of-nano-uavs.md
 confidence: medium

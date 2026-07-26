@@ -9,9 +9,9 @@ tags:
   - software
   - communication
 sources:
-  - raw/articles/2022-faster-consensus-via-a-sparser-controller-0.md
-  - raw/articles/2017-a-survey-of-multi-agent-deep-reinforcement-learning-with-communication-0.md
-  - raw/articles/2024-pacnav-enhancing-collective-navigation-for-uav-swarms-in-communication-denied-env.md
+  - raw/articles/2023-faster-consensus-via-a-sparser-controller.md
+  - raw/articles/2022-survey-multi-agent-drl-communication.md
+  - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
   - raw/articles/2024-ros2swarm-a-ros-2-package-for-swarm-robot-behaviors.md
 confidence: medium
 contested: false

@@ -9,7 +9,7 @@ tags:
   - software
   - simulation
 sources:
-  - raw/articles/2024-pacnav-enhancing-collective-navigation-for-uav-swarms-in-communication-denied-env.md
+  - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
   - raw/articles/2018-closing-the-gap-in-swarm-robotics-simulations-an-extended-ardupilot-ga.md
 confidence: medium
 contested: false

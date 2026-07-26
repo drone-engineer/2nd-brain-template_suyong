@@ -291,3 +291,11 @@
 - index.md: 15→18 페이지 갱신, 3개 신규 항목 추가
 - uav-swarm-robotics.md: "소프트웨어 스택" 섹션 추가(신규 3페이지 역링크)
 - 기술검토 배경: 알고리즘(L4) 두텁고 펌웨어/미들웨어/시뮬(L1-L3) 얇음 보완
+
+## [2026-07-26] fix | Gate B 무결성 보완 (소프트웨어 스택 3페이지 검증 통과)
+
+- SCHEMA.md: 태그 3개 등록 (software, firmware, simulation, communication)
+- raw/articles 4편 sha256 재계산 (Gate B body 정의 기준): closing-the-gap, tinyslam, ros2swarm, modular-architecture
+- 3개 신규 페이지 소스 파일명 실제 경로로 정정 (PACNav, BGG, collision, faster-consensus, comm-madrl)
+- uav-swarm-simulation: 존재하지 않는 TriSweep raw 소스 제거 (일반지식으로 명시)
+- Gate B 재검증: PASS (18 pages)

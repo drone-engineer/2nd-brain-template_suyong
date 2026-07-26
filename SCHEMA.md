@@ -82,6 +82,10 @@ a valid source record or canonical page.
 - `swarm`: multi-agent swarm coordination and collective behavior.
 - `control`: control algorithms, formation, and closed-loop autonomy.
 - `survey`: review or survey articles synthesizing a research area.
+- `software`: flight stacks, middleware, simulators, and other UAV swarm software layers.
+- `firmware`: autopilot and onboard flight-control firmware (e.g., PX4, ArduPilot).
+- `simulation`: simulation frameworks and sim-to-real validation infrastructure.
+- `communication`: inter-agent communication, networking, and middleware protocols.
 
 ## Raw source integrity
 

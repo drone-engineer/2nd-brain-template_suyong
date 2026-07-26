@@ -5,7 +5,7 @@ arxiv_id: 1811.06948v1
 published: 2018-11-16
 source_type: arxiv
 collected: 2026-07-26
-sha256: cd8854c94310d92de1b0bf1310539ded83ca4afcfb006c7b8b0f6c7552484ff2
+sha256: 3f0b06db9d79e6bcd30c069bd9c105698bd8e6dd5fcf95eea07a337bcbd8d143
 ---
 
 # Closing the Gap in Swarm Robotics Simulations: An Extended Ardupilot/Gazebo plugin
