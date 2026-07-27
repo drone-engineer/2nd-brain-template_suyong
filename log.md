@@ -332,3 +332,7 @@
 - queries/text-to-uav-mission.md (신규, confidence low): 유튜브 쇼츠 "2000배 속도로 설계해버리는 ai"(치직치직) 동기 — 핵심은 자동 미션 생성. Text-to-Mission 파이프라인(생성→편대배치→경로→인간승인)을 우리 위키 5페이지와 매핑. 영상 1개뿐이라 confidence low, 실증 툴 논문 추후 수집 필요 명시.
 - index 18→19 갱신
 - research-feedback-loop.md 역링크 추가 (인간승인 게이트 공유 원리)
+
+## [2026-07-27] update | text-to-uav-mission: 환각 방지(자동계획→인간승인) 구조 반영
+
+- queries/text-to-uav-mission.md: 파이프라인을 "자동계획(DSL)→검증기→인간승인→미션생성→편대→시뮬" 구조로 개편. "환각 방지 메커니즘" 섹션 추가(3단 방어: 정형DSL/검증기/인간승인). LLM이 직접 실행파일 안 내뱉고 계획만 생성 → 환각 피해를 human gate에서 차단. 접목시고려사항에도 동일 원칙 명시.
