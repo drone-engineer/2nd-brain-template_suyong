@@ -326,3 +326,9 @@
 - docs/workflow/raw-articles-index.md (신규): raw/articles 43편 filename↔title 매핑 (깃허브 파일 찾기 해결)
 - cron second-brain-collect-review 프롬프트 개선: Step1 auto-collect → Step2 INDEX rebuild → Step3 review-queue 블록(한글요약+URL+판정체크리스트) → Step4 Telegram 한글리포트 → Step5 Gate B. 인간 게이트 유지.
 - Gate B: PASS (18 pages)
+
+## [2026-07-27] create | queries/text-to-uav-mission (자연어→미션 자동 생성 접목)
+
+- queries/text-to-uav-mission.md (신규, confidence low): 유튜브 쇼츠 "2000배 속도로 설계해버리는 ai"(치직치직) 동기 — 핵심은 자동 미션 생성. Text-to-Mission 파이프라인(생성→편대배치→경로→인간승인)을 우리 위키 5페이지와 매핑. 영상 1개뿐이라 confidence low, 실증 툴 논문 추후 수집 필요 명시.
+- index 18→19 갱신
+- research-feedback-loop.md 역링크 추가 (인간승인 게이트 공유 원리)

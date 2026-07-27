@@ -41,4 +41,6 @@ contradictions: []
 
 장기 보관할 핵심 내용은 공개 형식의 Markdown과 출처 경로로 환원한다. NotebookLM 합성 결과의 증분 편입은 [[notebooklm-query-compounding]], 지식그래프 생성과 재분석은 [[ua-knowledge-graph-workflow]]를 따른다.
 
+이 루프의 인간 승인 단계는 [[text-to-uav-mission]]의 "AI 생성 미션 → 사람 Accepted → 실행" 게이트와 동일 원리다(자동 생성 ≠ 자동 실행).
+
 이 루프는 [[ai-knowledge-workflow]]의 일회성 단계에 “검증 결과를 다시 입력으로 사용하는” 반복성을 더한다. ^[raw/notebooklm/notebooklm-py-github.md]
