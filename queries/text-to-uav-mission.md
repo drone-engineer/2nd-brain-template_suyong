@@ -10,11 +10,11 @@ tags:
   - workflow
   - automation
 sources:
-  - concepts/uav-autopilot-stacks
-  - concepts/uav-swarm-middleware
-  - concepts/uav-formation-control
-  - concepts/uav-swarm-path-planning
-  - concepts/research-feedback-loop
+  - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
+  - raw/articles/2023-e2copre-energy-efficient-and-cooperative-collision-avoidance-for-uav-swarms-with.md
+  - raw/articles/2025-a-learning-framework-for-cooperative-collision-avoidance-of-uav-swarms-leveragin.md
+  - raw/articles/2022-survey-multi-agent-drl-communication.md
+  - raw/articles/2023-combat-swarm-drone-ai-operations-kci-ART003008075.md
 confidence: low
 contested: false
 contradictions: []
