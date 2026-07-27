@@ -299,3 +299,30 @@
 - 3개 신규 페이지 소스 파일명 실제 경로로 정정 (PACNav, BGG, collision, faster-consensus, comm-madrl)
 - uav-swarm-simulation: 존재하지 않는 TriSweep raw 소스 제거 (일반지식으로 명시)
 - Gate B 재검증: PASS (18 pages)
+
+## [2026-07-27] ingest | weekly auto-collect (5 papers)
+
+- Trigger: cron `second-brain-collect-review` (월 09:00 KST). Step 1 — `python3.12 docs/workflow/auto-collect-papers.py --max 4`.
+- Source status (환경 의존):
+  - arXiv export API: TIMEOUT (읽기 초과) — 수집 불가, 스킵. (기본 실행 시 쿼리당 ~280s 재시도 소모 → 다중 초과 방지 위해 arXiv 경로 우회)
+  - Semantic Scholar API: TIMEOUT — 수집 불가, 스킵.
+  - OpenAlex API: 정상 (0.75s) — 8 쿼리 × 최대 4건 조회, OA(무료 전문)만 저장.
+- Method: 수집 스크립트의 `collect_openalex` 로직을 그대로 재사용(동일 `save_record`/sha256/ provenance), arXiv·S2 타임아웃 경로는 우회하여 다중 시간초과 방지.
+- Created raw (raw/articles/, OpenAlex, 5건 — 모두 sha256 재계산 일치 확인):
+  - `raw/articles/2020-swarm-robotic-behaviors-and-current-applications.md` (doi:10.3389/frobt.2020.00036)
+  - `raw/articles/2021-swarm-based-counter-uav-defense-system.md` (doi:10.1007/s43926-021-00002-x)
+  - `raw/articles/2021-swarm-robotics-past-present-and-future-point-of-view.md` (doi:10.1109/jproc.2021.3072740)
+  - `raw/articles/2020-3d-optimal-surveillance-trajectory-planning-for-multiple-uavs-by-using-particle-.md` (doi:10.1109/access.2020.2992217)
+  - `raw/articles/2022-fault-tolerant-cooperative-navigation-of-networked-uav-swarms-for-forest-fire-mo.md` (doi:10.1016/j.ast.2022.107494)
+- OA PDF download: 이번 실행에서 보류 — arXiv PDF 호스트(export.arxiv.org)가 타임아웃되어 PDF fetch 시 장시간 블록 위험. 각 레코드 `source_url`(OA PDF URL)은 보관됨 → arXiv 복구 후 별도 fetch 권장.
+- Canonical state: unchanged (human gate — no auto-promotion). `inbox/review-queue.md`에 5개 collect 블록 prepend (판정 미기재).
+- Navigation: `index.md` 변경 없음 (canonical 페이지 18 유지).
+
+## [2026-07-27] update | 인간 판정 시뮬레이션 + 크론 리포트 개선
+
+- inbox/review-queue.md: 플랫폼 실증 4편 판정 블록 추가 + 인간 판정 Accepted 4/4 확정 (ROS2swarm, Closing-the-Gap 시뮬, tinySLAM, Modular Architecture)
+- concepts/uav-autopilot-stacks, uav-swarm-middleware, uav-swarm-simulation: 4편 소스 편입 완료 + confidence medium→high 격상
+- docs/workflow/report-helpers.py (신규): INDEX 재생성 + Telegram 리포트 포맷 헬퍼
+- docs/workflow/raw-articles-index.md (신규): raw/articles 43편 filename↔title 매핑 (깃허브 파일 찾기 해결)
+- cron second-brain-collect-review 프롬프트 개선: Step1 auto-collect → Step2 INDEX rebuild → Step3 review-queue 블록(한글요약+URL+판정체크리스트) → Step4 Telegram 한글리포트 → Step5 Gate B. 인간 게이트 유지.
+- Gate B: PASS (18 pages)

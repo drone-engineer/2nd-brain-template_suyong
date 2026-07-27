@@ -13,7 +13,9 @@ sources:
   - raw/articles/2022-survey-multi-agent-drl-communication.md
   - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
   - raw/articles/2024-ros2swarm-a-ros-2-package-for-swarm-robot-behaviors.md
-confidence: medium
+  - raw/articles/2023-tinyslam-based-exploration-with-a-swarm-of-nano-uavs.md
+  - raw/articles/2025-a-modular-and-scalable-system-architecture-for-heterogeneous-uav-swarm.md
+confidence: high
 contested: false
 contradictions: []
 ---

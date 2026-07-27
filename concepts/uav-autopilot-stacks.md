@@ -14,7 +14,7 @@ sources:
   - raw/articles/2025-a-learning-framework-for-cooperative-collision-avoidance-of-uav-swarms-leveragin.md
   - raw/articles/2025-a-modular-and-scalable-system-architecture-for-heterogeneous-uav-swarm.md
   - raw/articles/2023-tinyslam-based-exploration-with-a-swarm-of-nano-uavs.md
-confidence: medium
+confidence: high
 contested: false
 contradictions: []
 ---

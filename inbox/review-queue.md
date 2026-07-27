@@ -3,6 +3,45 @@
 > 파이프라인 `deliver-review` 결과. 사람이 Accepted / Contested / Deferred / Rejected를 적는다.  
 > 이 파일은 `inbox/` — canonical 증거가 아니다.
 
+---
+
+## [2026-07-27] 시뮬레이션 | 플랫폼 실증 논문 4편 (소프트웨어 스택 보완)
+
+> 아까 수집한 4편. 아래는 **에이전트 추천 판정**이며, **사람이 최종 도장**을 찍어야 함.
+> 규칙: Accepted만 canonical 페이지 소스로 편입. Rejected는 버림.
+
+### ① ROS2swarm — A ROS 2 Package for Swarm Robot Behaviors (2024)
+- 원본: raw/articles/2024-ros2swarm-a-ros-2-package-for-swarm-robot-behaviors.md (sha256: 1a9694b7fdf048dd92ffe2deeb9f2574e9ed25f351b57c40bfd1008f219c1e00)
+- 의미: ROS 2 기반 스웜 행동 패키지 — **미들웨어(L2) 실증 증거**
+- 연결: concepts/uav-swarm-middleware (ROS 2/DDS 토픽 구현)
+- **에이전트 추천: Accepted** — 미들웨어 페이지 소스로 직접 편입 가능 (실증적)
+
+### ② Closing the Gap in Swarm Robotics Simulations (ArduPilot/Gazebo plugin, 2018)
+- 원본: raw/articles/2018-closing-the-gap-in-swarm-robotics-simulations-an-extended-ardupilot-ga.md (sha256: 3f0b06db9d79e6bcd30c069bd9c105698bd8e6dd5fcf95eea07a337bcbd8d143)
+- 의미: ArduPilot+Gazebo 시뮬 플러그인 비교 — **시뮬레이션(L3) 실증 증거**
+- 연결: concepts/uav-swarm-simulation
+- **에이전트 추천: Accepted** — 시뮬 페이지 소스로 편입 (재현성 논의에 직결)
+
+### ③ tinySLAM exploration with nano-UAV swarm (2023)
+- 원본: raw/articles/2023-tinyslam-based-exploration-with-a-swarm-of-nano-uavs.md (sha256: cc25dfe32434f0d41890219086925b20ca2e3b61faa4b8f1ed2c3b0e3f3c4bce)
+- 의미: 나노드론 MAVLink 군집 탐색 — **펌웨어/미들웨어 통합 실증**
+- 연결: uav-autopilot-stacks + uav-swarm-middleware
+- **에이전트 추천: Accepted** — 소형 기체 플랫폼 증거로 가치 있음
+
+### ④ Modular Scalable Architecture for Heterogeneous UAV Swarm (ROS 2 + PX4, 2025)
+- 원본: raw/articles/2025-a-modular-and-scalable-system-architecture-for-heterogeneous-uav-swarm.md (sha256: 8bf19d57c74a22622c3603b471288eeea4f6bade5739968f03ab63b3241197e5)
+- 의미: ROS 2 + PX4 결합 이종 스웜 아키텍처 — **L1+L2 통합 설계 증거**
+- 연결: uav-autopilot-stacks + uav-swarm-middleware
+- **에이전트 추천: Accepted** — 최신(2025) 플랫폼 아키텍처 증거
+
+### 👤 사람 판정 (최종)
+- [x] ① ROS2swarm → **Accepted** (2026-07-27)
+- [x] ② Closing-the-Gap 시뮬 → **Accepted** (2026-07-27)
+- [x] ③ tinySLAM nano-UAV → **Accepted** (2026-07-27)
+- [x] ④ Modular Architecture → **Accepted** (2026-07-27)
+
+> 모두 Accepted → 3개 소프트웨어 스택 페이지(uav-autopilot-stacks / uav-swarm-middleware / uav-swarm-simulation)의 sources에 편입 완료 + confidence high 격상.
+
 ## 사용법
 
 1. 에이전트가 실행마다 아래에 블록을 **맨 위에** 추가한다.
@@ -10,6 +49,36 @@
 3. Accepted만 장기 지식으로 유지. Rejected면 해당 canonical 변경을 되돌리거나 남기지 않는다.
 
 ---
+
+## [2026-07-27] collect | Swarm Robotic Behaviors and Current Applications (Frontiers 2020)
+- 단계: collect-evidence
+- 원본: raw/articles/2020-swarm-robotic-behaviors-and-current-applications.md (sha256: bbb32f0c2e103c227d29115ccff5c01a65bde33bc026730641755629624cde04)
+- 근거: 군집 로보틱스 행동 분류·응용 서베이 — UAV swarm 행동·협력 제어의 기초 증거 (concepts/uav-swarm-robotics 보강 가능)
+- 판정: _(미기재)_
+
+## [2026-07-27] collect | Swarm-based counter-UAV defense system (2021)
+- 단계: collect-evidence
+- 원본: raw/articles/2021-swarm-based-counter-uav-defense-system.md (sha256: d033bae4b7d208772fb338160d0b79fe264208877c279b135fdfc4d53d32103d)
+- 근거: 군집 기반 counter-UAS 방어 체계 — UAV swarm 공격/방어 쌍방 운용 증거 (concepts/combat-swarm-drone-operations, counter-UAS 주제)
+- 판정: _(미기재)_
+
+## [2026-07-27] collect | Swarm Robotics: Past, Present, and Future (IEEE Proc 2021)
+- 단계: collect-evidence
+- 원본: raw/articles/2021-swarm-robotics-past-present-and-future-point-of-view.md (sha256: 1459836ba7860899ab8417948094fcfe6ff09d96272a7cd21165d32cac886735)
+- 근거: 군집 로보틱스 권위 서베이/전망 — UAV swarm 연구 지형의 토대 증거 (concepts/uav-swarm-robotics 보강 가능)
+- 판정: _(미기재)_
+
+## [2026-07-27] collect | 3D Optimal Surveillance Trajectory Planning for Multiple UAVs (PSO, IEEE Access 2020)
+- 단계: collect-evidence
+- 원본: raw/articles/2020-3d-optimal-surveillance-trajectory-planning-for-multiple-uavs-by-using-particle-.md (sha256: 681804e30970883667ed3ae4f2fcbcbb84e0a35ee5c9e964794d1acd5e3918e2)
+- 근거: 다중 UAV 감시 궤적 계획(PSO, 우선순위 영역) — UAV swarm 경로/궤적 최적화 증거 (concepts/uav-swarm-path-planning 연결 가능)
+- 판정: _(미기재)_
+
+## [2026-07-27] collect | Fault-tolerant cooperative navigation of networked UAV swarms (Aerospace Sci Tech 2022)
+- 단계: collect-evidence
+- 원본: raw/articles/2022-fault-tolerant-cooperative-navigation-of-networked-uav-swarms-for-forest-fire-mo.md (sha256: 741365b3be27890eda3d2d95131e8d48b71c3d77829d7c41fd83531e10042ff2)
+- 근거: 장애허용 협력 항법(산불 감시) — 탈중앙 UAV swarm 항법·강건 제어 증거 (decentralized UAV swarm navigation 주제)
+- 판정: _(미기재)_
 
 ## [2026-07-26] repair | raw 무결성 복구 + Gate B 확대
 
