@@ -373,3 +373,10 @@
 - entities/hunter-killer-drone-system.md, concepts/uav-swarm-defensive-countermeasures.md: abort 페이지 링크 연결(인간승인부재→승인+취소).
 - index 23→24 갱신.
 - Gate B: PASS (24 pages)
+
+## [2026-07-27] update | Kill-Switch 구현 가이드 (px4-ekf2-vio-prototype 확장)
+
+- docs/workflow/px4-ekf2-vio-prototype.md: 섹션 7~10 추가 — 7) MAVLink 긴급취소 시퀀스(offboard정지/페이로드무효화/RTL), 8) 시간예약중단(Time-boxed Abort, 통신두절 대비 로컬타이머), 9) 편대 abort 브로드캐스트(PACNav 연동), 10) 위키연결.
+- concepts/uav-mission-approval-abort.md: 프로토타입 가이드 링크 추가.
+- canonical 페이지 수 변동 없음 (docs/는 증거 아님).
+- Gate B: PASS (24 pages)

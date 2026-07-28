@@ -106,3 +106,95 @@ VIO는 **상대위치**(출발점 기준)만 줌 → 글로벌 위경도가 필�
 - VIO는 texture-less/단조로운 지형에서 실패 → TRN/LRF 보강 필수
 - 실내/터널 등 GNSS-Denied 극단 환경은 SLAM(2605.20484) 추가 필요
 - Banshee 계열 비전기만은 VIO 추적에도 영향 → 다중센서 교차검증 권장
+
+## 7. Kill-Switch: MAVLink 긴급 취소 명령 시퀀스
+
+인간이 지상국에서 내리는 즉시 중단. PX4는 아래 명령을 최우선 처리.
+
+```python
+# abort_command.py (지상국 → 드론, MAVSDK 기준, 개념)
+from mavsdk import System
+import asyncio
+
+async def emergency_abort():
+    drone = System(mavsdk_server_address="localhost", port=50051)
+    await drone.connect()
+    # 1) 외부/오프보드 제어 즉시 해제 (AI 미션 권한 박탈)
+    await drone.offboard.stop()
+    # 2) 타격/충돌 페이로드 무효화 (페이로드 채널 차단 — 기체별 구현)
+    await drone.action.set_actuator(1, 0.0)   # 예: 타격장치 아밍 해제
+    # 3) 비행 종료 또는 안전 복귀
+    #   (a) 즉시 착륙:
+    await drone.action.land()
+    #   (b) 또는 지정 복귀(RTB) 후 대기:
+    # await drone.action.return_to_launch()
+    print("ABORT issued: offboard stopped, payload disarmed, landing")
+
+asyncio.run(emergency_abort())
+```
+
+> PX4 네이티브: `MAV_CMD_DO_FLIGHTTERMINATION`(즉시 모터 정지/낙하) 또는 `NAV_GUIDED` 해제 + `RTL`. 자율타격 체계는 **모터 정지보다 '락온 해제+RTB'가 윤리적으로 우선**.
+
+## 8. 시간예약중단 (Time-boxed Abort) — 통신두절 대비
+
+지상국 무응답 시 기체가 **스스로** 중단. 미션 생성 시 타이머를 내장(`[[uav-mission-approval-abort]]` 3절).
+
+```python
+# timeboxed_abort.py (기체 온보드, 개념)
+# 지상국 heartbeat 수신 시마다 타이머 리셋. T초 무응답 → 자동 abort
+import rclpy, time
+from rclpy.node import Node
+from mavsdk import System
+
+class TimeboxedAbort(Node):
+    def __init__(self, timeout_s=30.0):
+        super().__init__('timeboxed_abort')
+        self.timeout = timeout_s
+        self.last_heartbeat = time.time()
+        self.create_subscription(HeartbeatMsg, '/ground/heartbeat', self.hb_cb, 10)
+        self.timer = self.create_timer(1.0, self.check)
+    def hb_cb(self, msg):
+        self.last_heartbeat = time.time()   # 지상국 응답 시 리셋
+    def check(self):
+        if time.time() - self.last_heartbeat > self.timeout:
+            self.get_logger().warn(f"No heartbeat >{self.timeout}s → AUTO ABORT")
+            # offboard 정지 + RTB
+            asyncio.run(self._abort())
+    async def _abort(self):
+        drone = System(); await drone.connect()
+        await drone.offboard.stop()
+        await drone.action.return_to_launch()
+```
+
+> 핵심: **중단 권한은 지상국 독점이 아님**. 기체 로컬 타이머가 최종 보험.
+
+## 9. 편대 abort 브로드캐스트 (PACNav 연동)
+
+편대 일부가 중단 명령을 받거나 스스로 abort하면, **생존 기기가 동료에게 전파** → 군집 전체 안전 정지. `[[uav-swarm-middleware]]`(PACNav) 지역관측 토폴로지 활용.
+
+```python
+# swarm_abort_broadcast.py (개념)
+# 임의 기체가 abort 발동 → ROS2 토픽 /swarm/abort 브로드캐스트
+# 수신한 기체는 각자 로컬 abort 수행 (지상국 의존 없음)
+from rclpy.node import Node
+class SwarmAbort(Node):
+    def __init__(self):
+        self.pub = self.create_publisher(AbortMsg, '/swarm/abort', 10)
+        self.sub = self.create_subscription(AbortMsg, '/swarm/abort', self.on_abort, 10)
+    def trigger(self, reason):
+        self.pub.publish(AbortMsg(reason=reason, src=self.id))   # 동료에게 전파
+    def on_abort(self, msg):
+        if msg.src != self.id:
+            self.local_abort()   # 수신 즉시 자기 기체 중단
+```
+
+- 통신 두절 환경에서도 PACNav 계열 애드혹 토폴로지로 홉 단위 전파
+- `[[uav-mission-approval-abort]]` 원칙 "중단은 항상 로컬 강제 가능" 구현
+
+## 10. 위키 연결
+
+- `[[uav-mission-approval-abort]]` — 승인/취소 설계 (이 가이드의 구현 대상)
+- `[[uav-swarm-defensive-countermeasures]]` — 취소는 방어의 일부
+- `[[gnss-denied-autonomous-navigation]]` — abort 후 GNSS-Denied 복귀
+- `[[hunter-killer-drone-system]]` — PRD 인간게이트 부재 보완
+

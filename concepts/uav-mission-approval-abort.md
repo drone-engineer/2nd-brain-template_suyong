@@ -61,4 +61,5 @@ Hunter-Killer PRD는 Wi-Fi Mesh 기반이라 **jamming 시 중단 명령 자체�
 - [[hunter-killer-drone-system]] — 대상 하드웨어(PRD)
 - [[gnss-denied-autonomous-navigation]] — 교란 속 복귀 항법
 - [[combat-swarm-drone-operations]] — 5대 과제(윤리)
+- [[px4-ekf2-vio-prototype]] — Kill-Switch/시간예약중단/편대브로드캐스트 구현 가이드
 
