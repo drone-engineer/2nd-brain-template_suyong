@@ -86,6 +86,7 @@ a valid source record or canonical page.
 - `firmware`: autopilot and onboard flight-control firmware (e.g., PX4, ArduPilot).
 - `simulation`: simulation frameworks and sim-to-real validation infrastructure.
 - `communication`: inter-agent communication, networking, and middleware protocols.
+- `security`: cyber-physical security, adversarial attacks, and authentication for UAV swarms.
 
 ## Raw source integrity
 

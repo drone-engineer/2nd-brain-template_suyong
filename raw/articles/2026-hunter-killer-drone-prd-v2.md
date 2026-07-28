@@ -2,7 +2,7 @@
 title: Hunter-Killer 드론 자율 정찰-타격 체계 PRD v2.0
 source_type: document
 collected: 2026-07-27
-sha256: 6a0a428737a8a0aed7f4a6c296bdd623f9779391cbb175c8cdb9a1d7cc43d207
+sha256: 2e96b900fe3eb54eb61d9f6a6b5bc64ca35e4db7b9352a0bbdc31950e93d061d
 original_file: /Users/drone_engineer/.hermes/cache/documents/doc_24fe00fc52db_Hunter_Killer_Drone_PRD_v2.pdf
 ---
 
