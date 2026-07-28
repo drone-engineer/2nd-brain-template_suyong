@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 25
+> Total pages: 24
 > Last updated: 2026-07-27
 
 ## Entities
@@ -39,6 +39,5 @@
 - [[notebooklm-query-compounding]] — NotebookLM 질의 중 재사용 가능한 지식만 증분 편입하는 절차.
 - [[text-to-uav-mission]] — 자연어→미션 자동 생성(Text-to-Mission) 접목 검토.
 - [[hunter-killer-kill-chain]] — Hunter-Killer PRD 킬체인 기술검토 (5대 과제 대조·보안·윤리).
-- [[stm32-feasibility]] — STM32 보드 활용 가능성 검토 (FC 역할·보조 MCU·단독 한계).
 - [[ua-knowledge-graph-workflow]] — LLM Wiki를 지식그래프로 생성·분석·갱신하는 전체 절차.
 - [[uav-swarm-survey-landscape]] — 군집 드론 9편 역할 지도 + NotebookLM 공백·PDF 한계.

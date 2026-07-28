@@ -394,3 +394,9 @@
 - raw/articles 5편 수집(DSVO, Delivery Drone, AlphaPilot, DF-VO, LEGO-SLAM) - 임베디드/경량 VIO·SLAM 참고.
 - index 24→25 갱신.
 - Gate B: PASS (25 pages)
+
+## [2026-07-27] delete | STM32 보드 활용 검토 철회 (사용자 지시: 기존 방식으로 진행)
+
+- queries/stm32-feasibility.md 삭제 + 관련 raw 5편(DSVO/Delivery Drone/AlphaPilot/DF-VO/LEGO-SLAM) 삭제.
+- index 25→24 되돌림. 기존 구조(24 pages)로 복귀.
+- Gate B: PASS (24 pages)
