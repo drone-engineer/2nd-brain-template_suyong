@@ -336,3 +336,12 @@
 ## [2026-07-27] update | text-to-uav-mission: 환각 방지(자동계획→인간승인) 구조 반영
 
 - queries/text-to-uav-mission.md: 파이프라인을 "자동계획(DSL)→검증기→인간승인→미션생성→편대→시뮬" 구조로 개편. "환각 방지 메커니즘" 섹션 추가(3단 방어: 정형DSL/검증기/인간승인). LLM이 직접 실행파일 안 내뱉고 계획만 생성 → 환각 피해를 human gate에서 차단. 접목시고려사항에도 동일 원칙 명시.
+
+## [2026-07-27] create|update | Hunter-Killer PRD 분석 (A+B+C)
+
+- raw/articles/2026-hunter-killer-drone-prd-v2.md (신규): PRD v2 텍스트 추출본 저장(sha256 포함). arXiv 4편(2607.09930 Banshee 등)은 429로 미수집 → 크론 보강 예정.
+- entities/hunter-killer-drone-system.md (신규): PRD 하드웨어 참조 (PX4+Jetson, RTK, YOLO+LRF, MicroXRCE-DDS). 보안/윤리 취약점 명시.
+- concepts/combat-swarm-drone-operations.md: "실증 킬체인 사례" 섹션 추가 + PRD raw 소스 등록 + Banshee 보안 위협 연결.
+- queries/hunter-killer-kill-chain.md (신규): 5대 과제 대조 기술검토. 미수집 arXiv 4편 references 명시.
+- index 19→21 갱신.
+- Gate B: PASS (21 pages)

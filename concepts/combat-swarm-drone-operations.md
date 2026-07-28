@@ -1,7 +1,7 @@
 ---
 title: Combat Swarm Drone Operations
 created: 2026-07-26
-updated: 2026-07-26
+updated: 2026-07-27
 type: concept
 tags:
   - uav
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2025-integrated-sensing-and-communication-with-uav-swarms-via-decentralized-consensus.md
   - raw/articles/2026-trisweep-a-four-drone-swarm-framework-for-electromagnetic-side-channel-analysis.md
   - raw/articles/2026-occlusion-based-object-transportation-around-obstacles-with-a-swarm-of-miniature.md
+  - raw/articles/2026-hunter-killer-drone-prd-v2.md
 confidence: high
 contested: false
 contradictions: []
@@ -62,3 +63,13 @@ contradictions: []
 - **Occlusion 물체 운반(2026):** 미니어처 군집이 장애물 우회 물체 운반 시, 가려짐(occlusion)을 하위 목표(sub-goal) 생성으로 해결. 단순 차단 전략의 한계(목표-물체 시선 필요)를 극복. ^[raw/articles/2026-occlusion-based-object-transportation-around-obstacles-with-a-swarm-of-miniature.md]
 
 시사점: 탈중앙 보안·인증은 블록체인(IoDT, BGG)으로, 전장 인식은 ISAC 합의로, 적 대역 탐지는 EM 사이드채널로 각각 진전. **군집드론은 무기화뿐 아니라 전자전·정찰 플랫폼**으로도 확장 중.
+
+## 실증 킬체인 사례: Hunter-Killer Drone System (PRD v2, 2026-07-27 신규)
+
+Hunter(정찰)→Killer(타격) 2계층 자율 킬체인의 하드웨어 참조 구현 [[hunter-killer-drone-system]]. PX4+Jetson 통합 보드, RTK GPS, YOLO+LRF 타격으로 우리 5대 과제와 정확히 맞닿는다.
+
+- **과제 1·3 (AI/임무할당):** Hunter가 `target_localizer`로 목표 위경도 산출 → Killer가 `terminal_homing`으로 YOLO 락온 후 직충돌. 이동형 표적 공격 알고리즘의 구체적 구현.
+- **과제 2·4 (탈중앙 C2/보안):** Wi-Fi Mesh + MicroXRCE-DDS로 기간통신 — 단 jamming·기만에 취약. **Banshee(arXiv 2607.09930)는 짐벌 안정화 비전추적을 적대적으로 속이는 기법**으로, YOLO 락온 우회 가능성 시사 → 과제 4(통신보안)의 실증적 위협 사례. ^[raw/articles/2026-hunter-killer-drone-prd-v2.md]
+- **과제 5 (윤리):** PRD는 인간 승인 게이트가 없이 자율타격을 상정. 우리 `text-to-uav-mission`의 "자동계획→인간승인" 원칙과 충돌 → 무인화 윤리기준 확정이 설계 단계에서 필수임을 시사.
+
+시사점: 이론(5대 과제)이 실제 하드웨어 PRD로 구현되는 지점을 보여주며, **보안(Banshee)과 윤리(인간게이트 부재)가 가장 취약한 고리**임을 드러냄.
