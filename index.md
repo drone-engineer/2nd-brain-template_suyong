@@ -3,7 +3,7 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 23
+> Total pages: 24
 > Last updated: 2026-07-27
 
 ## Entities
@@ -12,6 +12,7 @@
 - [[gnss-denied-autonomous-navigation]] — GPS 교란·통신두절 시 TRN/VIO/비전매칭으로 지정위치 복귀 항법.
 - [[hunter-killer-drone-system]] — Hunter(정찰)→Killer(타격) 자율 킬체인 하드웨어 참조 (PRD v2).
 - [[uav-swarm-defensive-countermeasures]] — Hunter-Killer 취약점(Banshee/교란) 대응 방어 체계.
+- [[uav-mission-approval-abort]] — 사전승인 + 긴급취소(Kill-Switch) 설계 (윤리/안전).
 
 ## Concepts
 

@@ -366,3 +366,10 @@
 - entities/hunter-killer-drone-system.md: 방어페이지 링크 추가.
 - index 22→23 갱신.
 - Gate B: PASS (23 pages)
+
+## [2026-07-27] create | UAV 미션 승인+긴급취소(Kill-Switch)
+
+- concepts/uav-mission-approval-abort.md (신규): 사전승인(review-queue) + 긴급취소(Time-boxed Abort/로컬강제) 설계. 통신교란 시 사전예약중단, GNSS-Denied 시 복귀후대기, 편대손실시 PACNav 브로드캐스트. Hunter-Killer PRD 인간게이트부재 보완.
+- entities/hunter-killer-drone-system.md, concepts/uav-swarm-defensive-countermeasures.md: abort 페이지 링크 연결(인간승인부재→승인+취소).
+- index 23→24 갱신.
+- Gate B: PASS (24 pages)

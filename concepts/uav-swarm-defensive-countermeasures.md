@@ -30,7 +30,7 @@ contradictions: []
 | 비전추적 기만 | Banshee(짐벌 안정화 추적 속임) | 다중센서 융합·추적 신뢰도 게이팅 | `[[combat-swarm-drone-operations]]` 보안 |
 | 무선 교란 (Jamming) | Wi-Fi Mesh 두절 | PACNav 탈중앙 항법·통신두절 복원력 | `[[uav-swarm-middleware]]` |
 | 위성항법 교란 (GNSS Spoofing/Jamming) | GPS 위치 조작 | TRN/VIO 비전항법으로 복귀 | `[[gnss-denied-autonomous-navigation]]` |
-| 인간 승인 부재 | 자율타격 오판 | 자동계획→인간승인 게이트 | `[[text-to-uav-mission]]` |
+| 인간 승인 부재 | 자율타격 오판 | 자동계획→인간승인 게이트 + 긴급취소(Kill-Switch) | `[[text-to-uav-mission]]` · `[[uav-mission-approval-abort]]` |
 
 ## 1. 비전추적 기만(Banshee) 대응
 
