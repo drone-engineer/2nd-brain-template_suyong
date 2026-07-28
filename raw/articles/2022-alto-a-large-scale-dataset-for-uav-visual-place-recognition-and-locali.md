@@ -5,7 +5,7 @@ arxiv_id: 2207.12317v1
 published: 2022-07-19
 source_type: arxiv
 collected: 2026-07-27
-sha256: 574aca078c12a7da4e0b7fc86b00f654ee02fcceb418823656b3cdef1bed79fa
+sha256: fef973958cb1d22de4bccb8f19b55bcd0655f4d562059fca04af55bdc5e1f2e8
 ---
 
 # ALTO: A Large-Scale Dataset for UAV Visual Place Recognition and Localization

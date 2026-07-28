@@ -5,7 +5,7 @@ arxiv_id: 1801.01228v1
 published: 2018-01-04
 source_type: arxiv
 collected: 2026-07-27
-sha256: 5c523890e2ab91136f68088242d5b4922ee81b9123f9ea15c91185ab3f1517a0
+sha256: 00b45861939544cd6e54b558caf88ce6956393ad4b03144277ca4cae223f4a26
 ---
 
 # A Decision-theoretic Approach to Detection-based Target Search with a UAV

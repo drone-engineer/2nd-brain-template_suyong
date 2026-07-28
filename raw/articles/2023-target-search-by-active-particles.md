@@ -5,7 +5,7 @@ arxiv_id: 2311.17854v1
 published: 2023-11-29
 source_type: arxiv
 collected: 2026-07-27
-sha256: 2cd6661032c2c4566f9a8b91318c8e7e70cef9323ced13ec568d675018faf025
+sha256: dd61a0eac48ecae62ca5f1dc0f22cb2240200f154c548b911c9bc0f11ccb9b84
 ---
 
 # Target search by active particles

@@ -5,7 +5,7 @@ arxiv_id: 2607.09930v1
 published: 2026-07-10
 source_type: arxiv
 collected: 2026-07-27
-sha256: 1faca3a3808e5f7a38ccc1155fcf3f2488e79897da1713ba6f4ca93d2cad8085
+sha256: 6ac274a3bdf779ecb78f785b59774d724bef719c03a8083f3fd2208d14ac4339
 ---
 
 # Banshee: Target Switch Attacks on Gimbal-Stabilized Visual Tracking Systems via Acoustic Injection

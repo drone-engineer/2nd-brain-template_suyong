@@ -12,10 +12,10 @@ tags:
 sources:
   - raw/articles/2026-hunter-killer-drone-prd-v2.md
   - raw/articles/2023-combat-swarm-drone-ai-operations-kci-ART003008075.md
-  - raw/articles/2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking.md
+  - raw/articles/2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking-sys.md
   - raw/articles/2023-target-search-by-active-particles.md
-  - raw/articles/2022-alto-a-large-scale-dataset-for-uav-visual-place-recognition.md
-  - raw/articles/2018-a-decision-theoretic-approach-to-detection-based-target-search.md
+  - raw/articles/2022-alto-a-large-scale-dataset-for-uav-visual-place-recognition-and-locali.md
+  - raw/articles/2018-a-decision-theoretic-approach-to-detection-based-target-search-with-a-.md
 confidence: medium
 contested: false
 contradictions: []
@@ -48,7 +48,7 @@ contradictions: []
 
 ## 관련 논문 (arXiv, 수집 완료 2026-07-27)
 
-- **2607.09930 Banshee: Target Switch Attacks on Gimbal-Stabilized Visual Tracking** — 짐벌 안정화 비전추적 기만 적대공격. PRD의 YOLO 락온 우회 위협. ^[raw/articles/2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking.md]
+- **2607.09930 Banshee: Target Switch Attacks on Gimbal-Stabilized Visual Tracking** — 짐벌 안정화 비전추적 기만 적대공격. PRD의 YOLO 락온 우회 위협. ^[raw/articles/2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking-sys.md]
 - 2311.17854 Target search by active particles — 능동 입자 기반 목표 탐색. ^[raw/articles/2023-target-search-by-active-particles.md]
 - 2207.12317 ALTO: UAV Visual Place Recognition Dataset — 비전 위치인식 데이터셋. ^[raw/articles/2022-alto-a-large-scale-dataset-for-uav-visual-place-recognition.md]
 - 1801.01228 Decision-theoretic Target Search — 탐색 의사결정 이론. ^[raw/articles/2018-a-decision-theoretic-approach-to-detection-based-target-search.md]
