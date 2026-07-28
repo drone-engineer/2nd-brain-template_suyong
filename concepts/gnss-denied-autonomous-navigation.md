@@ -1,0 +1,63 @@
+---
+title: GNSS-Denied 자율 항법 (UAV)
+created: 2026-07-27
+updated: 2026-07-27
+type: concept
+tags:
+  - uav
+  - swarm
+  - control
+  - firmware
+  - security
+sources:
+  - raw/articles/2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-learned-features.md
+  - raw/articles/2023-long-range-uav-thermal-geo-localization-with-satellite-imagery.md
+  - raw/articles/2021-an-equivariant-filter-for-visual-inertial-odometry.md
+  - raw/articles/2011-vision-based-navigation-ii-error-analysis-for-a-navigation-algorithm-based-on-scene-appearance.md
+  - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
+confidence: medium
+contested: false
+contradictions: []
+---
+
+# GNSS-Denied 자율 항법 (UAV)
+
+GPS 마비·무선 교란(Jamming/Spoofing)으로 위성항법이 불능인 위급 상황에서, 사전 입력 경로·지형정보만으로 지정 위치까지 복귀하는 기술. 핵심 질문: **"GPS 없이 내 위치를 어떻게 알고, 어떻게 길을 찾는가?"**
+
+## 핵심 기술 3가지
+
+### ① TRN (Terrain Referenced Navigation, 지형 참조 항법)
+하부 고도계(LiDAR/레이저)로 지형 높낮이 프로파일 측정 → 사전 DTED 지도와 대조(Matching)해 현재 좌표 역산. (토마호크 순항미사일 방식과 유사)
+
+### ② DSM/Orthophoto Visual Matching (정방형 위성사진 비전 매칭)
+하부 카메라 실시간 촬영 → 사전 저장 위성/항공사진과 AI 특징점(도로망·강·교차로·건물) 대조 → 수 미터 오차 내 글로벌 위경도 산출.
+
+### ③ Optical Flow & VIO (Visual Inertial Odometry)
+카메라 픽셀 흐름 + IMU(가속도/자이로) 결합 → TRN 결과 사이 짧은 이동 거리·방향 연속 계산으로 위치 오차 누적 방지.
+
+## 위급 상황 Fail-Safe 제어 루틴
+
+통신 두절·GPS 교란 감지 시 온보드 컴패니언 컴퓨터(Jetson)가 실행:
+1. GNSS 손실 탐지 → TRN/VIO로 전환
+2. 사전 입력 경로 + 지형정보로 지정 복귀점(RTB) 항법
+3. VIO로 구간 오도메트리 보정 (Dead-reckoning 누적 오차 억제)
+
+## 우리 위키와의 연결
+
+- **PACNav** (`[[uav-swarm-middleware]]` 원천): 통신두절 환경에서 지역관측으로 집단 항법 — GNSS-Denied와 동일 맥락의 복원력. ^[raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md]
+- **Hunter-Killer PRD** (`[[hunter-killer-drone-system]]`): Wi-Fi Mesh jamming 취약 → GNSS-Denied 항법이 생존성 필수.
+- **소프트웨어 스택** (`[[uav-autopilot-stacks]]`/`[[uav-swarm-middleware]]`): TRN/VIO는 PX4+Jetson 위에서 도는 상위 로직.
+
+## 관련 논문 (수집 2026-07-27)
+
+- 2605.20484 Enhancing Graph-Based SLAM in GNSS-Denied environments (학습 특징 활용 SLAM) ^[raw/articles/2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-learned-features.md]
+- 2306.02994 Long-range UAV Thermal Geo-localization with Satellite Imagery (위성사진 비전 매칭) ^[raw/articles/2023-long-range-uav-thermal-geo-localization-with-satellite-imagery.md]
+- 2104.03532 Equivariant Filter for Visual Inertial Odometry (VIO 필터) ^[raw/articles/2021-an-equivariant-filter-for-visual-inertial-odometry.md]
+- 1107.1470 Vision-Based Navigation II: Error Analysis (비전항법 오차 분석) ^[raw/articles/2011-vision-based-navigation-ii-error-analysis-for-a-navigation-algorithm-based-on-scene-appearance.md]
+
+## 관련 페이지
+
+- [[uav-autopilot-stacks]] — PX4/Jetson 플랫폼
+- [[uav-swarm-middleware]] — PACNav 통신두절 복원력
+- [[hunter-killer-drone-system]] — jamming 취약 → GNSS-Denied 생존성
+- [[combat-swarm-drone-operations]] — 5대 과제 중 통신보안/복원력

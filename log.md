@@ -351,3 +351,10 @@
 - raw/articles 4편 추가: 2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking, 2023-target-search-by-active-particles, 2022-alto-a-large-scale-dataset-for-uav-visual-place-recognition, 2018-a-decision-theoretic-approach-to-detection-based-target-search (429 우회 재시도로 수집)
 - queries/hunter-killer-kill-chain.md: sources를 실제 raw 6건으로 교체, confidence low→medium, "관련 논문" 섹션 수집완료로 갱신 + Banshee 근거 연결
 - Gate B: PASS (21 pages)
+
+## [2026-07-27] create | GNSS-Denied 자율항법 (TRN/VIO/비전매칭)
+
+- concepts/gnss-denied-autonomous-navigation.md (신규): 사용자 제공 기술(TRN/DTED, DSM 비전매칭, VIO, Fail-Safe) 정리. 관련 arXiv 4편 수집(raw/articles: 2605.20484 SLAM, 2306.02994 Thermal Geo-localization, 2104.03532 VIO Equivariant Filter, 1107.1470 Vision-Based Nav Error Analysis).
+- entities/hunter-killer-drone-system.md: GNSS 교란 취약점 + gnss-denied-autonomous-navigation 링크 추가.
+- index 21→22 갱신.
+- Gate B: PASS (22 pages)

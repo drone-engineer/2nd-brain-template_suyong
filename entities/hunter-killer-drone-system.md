@@ -48,6 +48,7 @@ contradictions: []
 
 - **적대적 추적 기만**: Banshee(arXiv 2607.09930)처럼 짐벌 안정화 비전추적을 속이는 공격이 YOLO 락온을 우회 가능 → `combat-swarm-drone-operations`의 "보안" 과제와 직결.
 - **Wi-Fi Mesh 교란**: 전파 jamming에 취약. 통신두절 시 `uav-swarm-middleware`/PACNav 계열 복원력 필요.
+- **GNSS 교란**: GPS spoofing/jamming 시 TRN/VIO 기반 `gnss-denied-autonomous-navigation` 항법 없이는 복귀 불가 → 생존성 필수.
 - **인간 게이트 부재**: 자율타격이나 우리 `text-to-uav-mission`의 "자동계획→인간승인" 원칙이 빠짐 — 운용 윤리 측면에서 검토 필요.
 
 ## 관련 페이지
@@ -56,3 +57,4 @@ contradictions: []
 - [[uav-autopilot-stacks]] — PX4/Jetson 통합 보드
 - [[uav-swarm-middleware]] — ROS2/DDS/MicroXRCE 통신
 - [[text-to-uav-mission]] — 자율타격에도 인간승인 게이트 필요
+- [[gnss-denied-autonomous-navigation]] — jamming/spoofing 시 TRN/VIO 복귀 항법
