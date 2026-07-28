@@ -400,3 +400,10 @@
 - queries/stm32-feasibility.md 삭제 + 관련 raw 5편(DSVO/Delivery Drone/AlphaPilot/DF-VO/LEGO-SLAM) 삭제.
 - index 25→24 되돌림. 기존 구조(24 pages)로 복귀.
 - Gate B: PASS (24 pages)
+
+## [2026-07-29] update | Hunter-Killer 계열 YouTube 보강 15건
+
+- source: 15 raw/youtube/2026-07-29-*.md (매일 YouTube 스카우트 자동 편입, 인간 판정 생략)
+- updated: entities/hunter-killer-drone-system.md (+3), concepts/uav-swarm-defensive-countermeasures.md (+3), concepts/gnss-denied-autonomous-navigation.md (+3), queries/hunter-killer-kill-chain.md (+6)
+- 각 페이지 frontmatter sources에 raw 경로 추가 + 본문 "관련 영상 (YouTube 보강 2026-07-29)" 섹션 신설(영상 제목·URL·한글 1줄 요약). confidence는 모두 medium 유지(low 없음).
+- canonical 페이지 수 변동 없음 (24 pages 유지); index.md 미변경.

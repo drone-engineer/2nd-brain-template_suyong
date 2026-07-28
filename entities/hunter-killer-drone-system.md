@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone System (PRD v2 참조)
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-07-29
 type: entity
 tags:
   - uav
@@ -10,6 +10,9 @@ tags:
   - firmware
 sources:
   - raw/articles/2026-hunter-killer-drone-prd-v2.md
+  - raw/youtube/2026-07-29-hp4ySL2xzV8.md
+  - raw/youtube/2026-07-29-sEiKDZ6pZo4.md
+  - raw/youtube/2026-07-29-w0z-362DkIU.md
 confidence: medium
 contested: false
 contradictions: []
@@ -60,3 +63,11 @@ contradictions: []
 - [[gnss-denied-autonomous-navigation]] — jamming/spoofing 시 TRN/VIO 복귀 항법
 - [[uav-mission-approval-abort]] — 사전승인 + 긴급취소(Kill-Switch) 설계
 - [[uav-swarm-defensive-countermeasures]] — 본 시스템 취약점(Banshee/교란) 대응 방어 체계
+
+## 관련 영상 (YouTube 보강 2026-07-29)
+
+실전 데모 보강: 러시아 게란(Geran) 드론의 수동 레이더 호밍 탐색두 장착, GPO Technologies의 엣지 AI 오토호밍 FPV 야외 시험 등으로 Killer 단말 유도(terminal_homing)의 실증 사례가 추가됨.
+
+- [러시아 게란 드론 수동 레이더 호밍 탐색두 장착 (DEEP WEAPONS)](https://youtu.be/hp4ySL2xzV8) — 게란(Geran) 드론에 수동 레이더 호밍 seeker 탑재, HK 표적 유도 생존성 강화 사례.
+- [GPO FPV 자율인간추적/오토호밍 -12°C 야외 시험](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, Killer terminal_homing 실증.
+- [GPO 엣지 AI 오토호밍 500m 표적 록온→타격 (No GPS)](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.

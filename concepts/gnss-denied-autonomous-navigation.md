@@ -1,7 +1,7 @@
 ---
 title: GNSS-Denied 자율 항법 (UAV)
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-07-29
 type: concept
 tags:
   - uav
@@ -15,6 +15,9 @@ sources:
   - raw/articles/2021-an-equivariant-filter-for-visual-inertial-odometry.md
   - raw/articles/2011-vision-based-navigation-ii-error-analysis-for-a-navigation-algorithm-b.md
   - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
+  - raw/youtube/2026-07-29-p8frNNYQNV4.md
+  - raw/youtube/2026-07-29-i1QRqu3Cocw.md
+  - raw/youtube/2026-07-29-V5ZMhFyWQa8.md
 confidence: medium
 contested: false
 contradictions: []
@@ -63,3 +66,11 @@ GPS 마비·무선 교란(Jamming/Spoofing)으로 위성항법이 불능인 위�
 - [[combat-swarm-drone-operations]] — 5대 과제 중 통신보안/복원력
 - [[uav-mission-approval-abort]] — abort 후 복귀/중단
 - 구현 가이드: `docs/workflow/px4-ekf2-vio-prototype.md` (EKF2+VIO+TRN+Kill-Switch)
+
+## 관련 영상 (YouTube 보강 2026-07-29)
+
+실전 항법 보강: Nicholas Rehm의 안티재밍 자율 DIY 드론, Ian Laffey(Theseus)의 군용 드론 GPS 없는 비행, Beyond Vision의 쉬운 설명 영상으로 GNSS-Denied 항법의 구현·설명 사례가 추가됨.
+
+- [Nicholas Rehm — GPS-Denied, Anti-Jam Autonomous DIY Drone](https://youtu.be/p8frNNYQNV4) — GPS 불능·재밍 대항 자율 DIY 드론 작동 원리, 안티재밍 항법 구현.
+- [First Principles — Military Drones Without GPS (Ian Laffey, Theseus)](https://youtu.be/i1QRqu3Cocw) — 군용 드론의 GPS 없는 비행 원리, GNSS-Denied 항법 설명.
+- [Beyond Vision — How Drones Navigate Without GPS](https://youtu.be/V5ZMhFyWQa8) — GPS 없이 드론이 항법하는 원리 쉬운 설명, 비전/관성 항법 개요.

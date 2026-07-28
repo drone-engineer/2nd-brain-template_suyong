@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone Kill-Chain 기술검토
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-07-29
 type: query
 tags:
   - uav
@@ -16,6 +16,12 @@ sources:
   - raw/articles/2023-target-search-by-active-particles.md
   - raw/articles/2022-alto-a-large-scale-dataset-for-uav-visual-place-recognition-and-locali.md
   - raw/articles/2018-a-decision-theoretic-approach-to-detection-based-target-search-with-a-.md
+  - raw/youtube/2026-07-29-MGggtBIzvtg.md
+  - raw/youtube/2026-07-29-DK6IGG5zRU8.md
+  - raw/youtube/2026-07-29-5knSEDXDa_0.md
+  - raw/youtube/2026-07-29-EKpxP2YieZw.md
+  - raw/youtube/2026-07-29-5k9F7QK66Ws.md
+  - raw/youtube/2026-07-29-hGakXrt1EFo.md
 confidence: medium
 contested: false
 contradictions: []
@@ -66,3 +72,14 @@ contradictions: []
 - [[uav-autopilot-stacks]] — PX4/Jetson
 - [[uav-swarm-middleware]] — ROS2/DDS 통신
 - [[text-to-uav-mission]] — 인간승인 게이트 원칙
+
+## 관련 영상 (YouTube 보강 2026-07-29)
+
+실전·개념 보강: 중국의 신형 '킬체인' 군집 체계와 Atlas 드론군 공개, DEW/전자전 킬체인 시뮬레이션, 자율 살상 드론 개요 등으로 킬체인 운용 개념의 최신 사례가 추가됨.
+
+- [Spectrum UV — Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 개요.
+- [Data Engineering Edge — Autonomous killer drones](https://youtu.be/DK6IGG5zRU8) — 자율 살상 드론 개요 (조회 45만+).
+- [Saint — Hunter-Killer drones (Terminator 1/2)](https://youtu.be/5knSEDXDa_0) — 영화 터미네이터 속 헌터-킬러 드론 묘사.
+- [NOOB-S@@B — Ultimate Drone War Simulation (DEW/EW Kill Chain)](https://youtu.be/EKpxP2YieZw) — DEW·미사일·전자전 킬체인 포함 무인전 시뮬레이션.
+- [The Sun — China's new 'kill chain' swarm system](https://youtu.be/5k9F7QK66Ws) — 중국 신형 '킬체인' 군집 체계가 바꿀 전장 변화.
+- [New York Post — China Atlas Drone Swarm System](https://youtu.be/hGakXrt1EFo) — 중국 Atlas 드론군 체계 공개, 1기당 정밀드론 96기 제어.

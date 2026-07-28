@@ -1,7 +1,7 @@
 ---
 title: UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-07-29
 type: concept
 tags:
   - uav
@@ -14,6 +14,9 @@ sources:
   - raw/articles/2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking-sys.md
   - raw/articles/2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-l.md
   - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
+  - raw/youtube/2026-07-29-M5YyDGfKhE8.md
+  - raw/youtube/2026-07-29-HMKXMaAzByU.md
+  - raw/youtube/2026-07-29-a5kumlJqkQQ.md
 confidence: medium
 contested: false
 contradictions: []
@@ -53,3 +56,11 @@ contradictions: []
 - [[combat-swarm-drone-operations]] — 5대 과제 중 보안/통신보안
 - [[uav-swarm-middleware]] — PACNav 탈중앙 복원력
 - [[text-to-uav-mission]] — 인간승인 게이트
+
+## 관련 영상 (YouTube 보강 2026-07-29)
+
+실전 방어 데모 보강: Lockheed Martin의 Sanctum™ 대드론군 교전, MyDefence의 군집 C-UAS 재머, Divyania의 스마트 탐지·위협관리 체계 시연으로 기존 '취약점→대응' 매핑에 실증 사례가 추가됨.
+
+- [Lockheed Martin — Sanctum™ vs. the Swarm: 차세대 C-UAS 실전](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증.
+- [MyDefence — Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머(Jammer) 시연, 통신/센서 교란 방어.
+- [Divyania Defence — Swarm Counter Drone System](https://youtu.be/a5kumlJqkQQ) — 스마트 탐지·위협관리 군집 방어 드론 체계, 탐지→대응 자동화.
