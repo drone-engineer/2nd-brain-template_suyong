@@ -198,3 +198,81 @@ class SwarmAbort(Node):
 - `[[gnss-denied-autonomous-navigation]]` — abort 후 GNSS-Denied 복귀
 - `[[hunter-killer-drone-system]]` — PRD 인간게이트 부재 보완
 
+## 11. VIO 패키지 설치 (Jetson Orin Nano, ROS2 Humble)
+
+VIO는 외부 SLAM 패키지를 쓴다. 권장: **VINS-Fusion**(비전+IMU 융합, ROS2 포트 존재) 또는 ORB-SLAM3.
+
+```bash
+# Jetson Orin Nano (Ubuntu 22.04, ROS2 Humble)
+# 1) 의존성
+sudo apt install -y ros-humble-cv-bridge ros-humble-image-transport \
+  ros-humble-vision-msgs ros-humble-rviz2
+sudo apt install -y libopencv-dev libeigen3-dev libceres-dev
+
+# 2) VINS-Fusion (ROS2 포크 예: yanijin2014/VINS-Fusion, Humble 브랜치 확인)
+mkdir -p ~/vio_ws/src && cd ~/vio_ws/src
+git clone https://github.com/your-ros2-fork/VINS-Fusion.git
+cd ~/vio_ws && colcon build --packages-select vins_fusion
+
+# 3) 카메라→VINS 토픽 매핑 (theolaye.calib)
+#   /camera/image_raw (mono 또는 stereo) + /imu/data → VINS 입력
+# 4) 출력: /vio/odometry (geometry_msgs/PoseWithCovarianceStamped)
+#   → 섹션 2 브리지(vio_to_px4_bridge.py)가 PX4로 전달
+```
+
+> Jetson Orin Nano는 컴퓨팅 한계 있음 → 해상도 다운(640×480), IMU 200Hz 제한, VINS-Fusion `freq` 낮춤 권장.
+
+## 12. TRN (Terrain Referenced Navigation) 구현
+
+VIO가 주는 **상대위치**를 **글로벌 좌표**로 보정. LiDAR/LRF 하부 고도 ↔ 사전 DTED 지도 대조.
+
+```python
+# trn_corrector.py (개념, 섹션 4 구현)
+# 입력: LRF 고도(h_meas), 현재 VIO 추정 위치(x_vio,y_vio), DTED 격자
+# 출력: 보정된 글로벌 좌표(x_glob,y_glob)
+import numpy as np
+
+class TRN:
+    def __init__(self, dted_grid, cell_m=30.0):
+        self.dem = dted_grid          # 2D_numpy (고도, m)
+        self.cell = cell_m
+    def correct(self, x_vio, y_vio, h_meas):
+        # VIO 추정 근방 탐색: 지도 고도와 측정고도 차이 최소화 지점이 실제 위치
+        r0, c0 = int(y_vio/self.cell), int(x_vio/self.cell)
+        best=None; best_err=1e9
+        for dr in range(-20,21):
+            for dc in range(-20,21):
+                r,c=r0+dr,c0+dc
+                if 0<=r<self.dem.shape[0] and 0<=c<self.dem.shape[1]:
+                    err=abs(self.dem[r,c]-h_meas)
+                    if err<best_err: best_err=err; best=(c*self.cell,r*self.cell)
+        return best  # (x_glob,y_glob) — VIO 드리프트 보정
+```
+
+- DTED는 사전 다운로드(예: NASADEM 30m) 후 `/maps/`에 저장, 비행 전 기체 메모리 로드
+- 보정 주기: 1~5Hz (LRF 갱신율). VIO 누적 오차를 루프클로징 없이 주기 보정
+
+## 13. 빌드 & 테스트 체크리스트
+
+| 단계 | 검증 | 목표 |
+| --- | --- | --- |
+| 1. VIO 빌드 | `colcon build` 성공, `/vio/odometry` 토픽 발행 | Jetson에서 10Hz+ |
+| 2. 브리지 | `/fmu/in/vehicle_visual_odometry` 수신 확인 | PX4 EKF2가 vision 수용 |
+| 3. GPS off 시뮬 | Gazebo에서 GPS disable → VIO만으로 hover 안정 | 위치 발산 없음 |
+| 4. TRN 보정 | DTED 대조로 글로벌 좌표 오차 < 5m | VIO 드리프트 억제 |
+| 5. Fail-Safe | GPS 끊기면 1초 내 비전모드+RTB | `[[gnss-denied-autonomous-navigation]]` |
+| 6. Kill-Switch | 지상국 abort → 즉시 offboard정지+락온해제 | `[[uav-mission-approval-abort]]` |
+| 7. 시간예약중단 | heartbeat 끊기 → T초 후 자동 abort | 로컬 보험 동작 |
+| 8. 편대 브로드캐스트 | 1기 abort → 동료 전파 정지 | PACNav 토폴로지 |
+
+> 실기체 테스트 전 **반드시 Gazebo/AirSim에서 1~7 통과**. 자율타격(Killer)은 6·7 없이 비행 금지.
+
+## 14. 위키 연결 (전체)
+
+- `[[uav-mission-approval-abort]]` — 승인/취소 설계
+- `[[gnss-denied-autonomous-navigation]]` — TRN/VIO 이론
+- `[[uav-swarm-defensive-countermeasures]]` — 방어 체계
+- `[[hunter-killer-drone-system]]` — 대상 하드웨어
+- `[[combat-swarm-drone-operations]]` — 5대 과제(윤리/보안)
+
+

@@ -61,3 +61,5 @@ GPS 마비·무선 교란(Jamming/Spoofing)으로 위성항법이 불능인 위�
 - [[uav-swarm-middleware]] — PACNav 통신두절 복원력
 - [[hunter-killer-drone-system]] — jamming 취약 → GNSS-Denied 생존성
 - [[combat-swarm-drone-operations]] — 5대 과제 중 통신보안/복원력
+- [[uav-mission-approval-abort]] — abort 후 복귀/중단
+- 구현 가이드: `docs/workflow/px4-ekf2-vio-prototype.md` (EKF2+VIO+TRN+Kill-Switch)

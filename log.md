@@ -380,3 +380,10 @@
 - concepts/uav-mission-approval-abort.md: 프로토타입 가이드 링크 추가.
 - canonical 페이지 수 변동 없음 (docs/는 증거 아님).
 - Gate B: PASS (24 pages)
+
+## [2026-07-27] update | VIO설치+TRN구현+테스트체크리스트 (px4-ekf2-vio-prototype 확장)
+
+- docs/workflow/px4-ekf2-vio-prototype.md: 섹션 11(VIO 패키지 설치 VINS-Fusion/Jetson ROS2), 12(TRN DTED 대조 구현 코드), 13(빌드&테스트 8단계 체크리스트), 14(위키연결 전체) 추가.
+- concepts/gnss-denied-autonomous-navigation.md: 구현 가이드 링크 추가.
+- canonical 페이지 수 변동 없음.
+- Gate B: PASS (24 pages)
