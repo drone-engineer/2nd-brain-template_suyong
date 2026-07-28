@@ -5,7 +5,7 @@ arxiv_id: 1107.1470v2
 published: 2011-07-07
 source_type: arxiv
 collected: 2026-07-27
-sha256: ad6b0017e94adbd6cf091f31d6e6e070369d75bb2cc4e4071e4e56a9f0bb672e
+sha256: bca6ff75f801b10858f73613f37256b45e6ab0e398ef8765ec65ab3d69a6e865
 ---
 
 # Vision-Based Navigation II: Error Analysis for a Navigation Algorithm based on Scene Appearance

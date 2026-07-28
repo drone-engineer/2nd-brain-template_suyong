@@ -5,7 +5,7 @@ arxiv_id: 2104.03532v1
 published: 2021-04-08
 source_type: arxiv
 collected: 2026-07-27
-sha256: e468a179fca452a12fa11e78ec16a28b8ed10b6a8af0e473bc1f5b615a456118
+sha256: 660c9894a175ea3564bb6144836e4c2c7ecb74faded1d0c936b3c491084a16c7
 ---
 
 # An Equivariant Filter for Visual Inertial Odometry

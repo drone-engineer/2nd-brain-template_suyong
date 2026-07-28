@@ -10,10 +10,10 @@ tags:
   - firmware
   - security
 sources:
-  - raw/articles/2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-learned-features.md
+  - raw/articles/2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-l.md
   - raw/articles/2023-long-range-uav-thermal-geo-localization-with-satellite-imagery.md
   - raw/articles/2021-an-equivariant-filter-for-visual-inertial-odometry.md
-  - raw/articles/2011-vision-based-navigation-ii-error-analysis-for-a-navigation-algorithm-based-on-scene-appearance.md
+  - raw/articles/2011-vision-based-navigation-ii-error-analysis-for-a-navigation-algorithm-b.md
   - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
 confidence: medium
 contested: false
@@ -50,10 +50,10 @@ GPS 마비·무선 교란(Jamming/Spoofing)으로 위성항법이 불능인 위�
 
 ## 관련 논문 (수집 2026-07-27)
 
-- 2605.20484 Enhancing Graph-Based SLAM in GNSS-Denied environments (학습 특징 활용 SLAM) ^[raw/articles/2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-learned-features.md]
+- 2605.20484 Enhancing Graph-Based SLAM in GNSS-Denied environments (학습 특징 활용 SLAM) ^[raw/articles/2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-l.md]
 - 2306.02994 Long-range UAV Thermal Geo-localization with Satellite Imagery (위성사진 비전 매칭) ^[raw/articles/2023-long-range-uav-thermal-geo-localization-with-satellite-imagery.md]
 - 2104.03532 Equivariant Filter for Visual Inertial Odometry (VIO 필터) ^[raw/articles/2021-an-equivariant-filter-for-visual-inertial-odometry.md]
-- 1107.1470 Vision-Based Navigation II: Error Analysis (비전항법 오차 분석) ^[raw/articles/2011-vision-based-navigation-ii-error-analysis-for-a-navigation-algorithm-based-on-scene-appearance.md]
+- 1107.1470 Vision-Based Navigation II: Error Analysis (비전항법 오차 분석) ^[raw/articles/2011-vision-based-navigation-ii-error-analysis-for-a-navigation-algorithm-b.md]
 
 ## 관련 페이지
 

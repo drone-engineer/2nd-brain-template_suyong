@@ -5,7 +5,7 @@ arxiv_id: 2306.02994v3
 published: 2023-06-05
 source_type: arxiv
 collected: 2026-07-27
-sha256: 171f6ba96808fd409498ff5468827f52b13bbebf3210e52c77e58ce7326659f9
+sha256: 0e3712aa6570dc185d9d290ecc1ba2d67b18d9b4933bb910e85af4551f6945c2
 ---
 
 # Long-range UAV Thermal Geo-localization with Satellite Imagery
