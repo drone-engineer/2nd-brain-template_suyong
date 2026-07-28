@@ -345,3 +345,9 @@
 - queries/hunter-killer-kill-chain.md (신규): 5대 과제 대조 기술검토. 미수집 arXiv 4편 references 명시.
 - index 19→21 갱신.
 - Gate B: PASS (21 pages)
+
+## [2026-07-27] update | Hunter-Killer 관련 arXiv 4편 강제 수집 완료
+
+- raw/articles 4편 추가: 2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking, 2023-target-search-by-active-particles, 2022-alto-a-large-scale-dataset-for-uav-visual-place-recognition, 2018-a-decision-theoretic-approach-to-detection-based-target-search (429 우회 재시도로 수집)
+- queries/hunter-killer-kill-chain.md: sources를 실제 raw 6건으로 교체, confidence low→medium, "관련 논문" 섹션 수집완료로 갱신 + Banshee 근거 연결
+- Gate B: PASS (21 pages)
