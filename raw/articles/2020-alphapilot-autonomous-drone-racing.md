@@ -5,7 +5,7 @@ arxiv_id: 2005.12813v2
 published: 2020-05-26
 source_type: arxiv
 collected: 2026-07-27
-sha256: 0822a635569abd01eec55fd5b535d30acc6fb1748c4e7f03ad68fcef86fa1b66
+sha256: fe52f7719ac9fe5261365b58a091819d2a2e4c67bc5634be20f3241d6b0fc43e
 ---
 
 # AlphaPilot Autonomous Drone Racing

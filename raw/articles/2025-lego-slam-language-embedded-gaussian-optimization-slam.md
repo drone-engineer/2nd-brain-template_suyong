@@ -5,7 +5,7 @@ arxiv_id: 2511.16144v2
 published: 2025-11-20
 source_type: arxiv
 collected: 2026-07-27
-sha256: 755f118fdf88fe37c521e6ea3121fcd2fc216b51ae571e72dbab665fbc8ae82b
+sha256: 76e1c225d7739d394d1a0f9d4694011dbc8fc010ffae9aa09b158249d09252af
 ---
 
 # LEGO-SLAM Language-Embedded Gaussian Optimization SLAM

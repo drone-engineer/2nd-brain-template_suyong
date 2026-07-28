@@ -5,7 +5,7 @@ arxiv_id: 2106.08878v1
 published: 2021-06-16
 source_type: arxiv
 collected: 2026-07-27
-sha256: 3b14cbb1b5b6980dbdfe719fc29093fcac31129be322366b2dd5a2a3a26eacb2
+sha256: d68b8fcbad667404cfea8dbc25c85097987eccbc7fd8fbbbe3ccfd11729021f0
 ---
 
 # Autonomous Navigation System for a Delivery Drone
