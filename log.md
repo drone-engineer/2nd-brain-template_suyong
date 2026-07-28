@@ -358,3 +358,11 @@
 - entities/hunter-killer-drone-system.md: GNSS 교란 취약점 + gnss-denied-autonomous-navigation 링크 추가.
 - index 21→22 갱신.
 - Gate B: PASS (22 pages)
+
+## [2026-07-27] create | Hunter-Killer 방어체계 + PX4 EKF2+VIO 프로토타입
+
+- concepts/uav-swarm-defensive-countermeasures.md (신규): Hunter-Killer 취약점 3종(Banshee 비전기만/GPS교란/WiFi Jamming/인간승인부재) → 대응(다중센서/TRN-VIO/PACNav/인간게이트) 매핑.
+- docs/workflow/px4-ekf2-vio-prototype.md (신규): PX4 EKF2 비전융합 파라미터 + VIO 브리지 ROS2노드 + GNSS-Denied Fail-Safe 스위처 + TRN연동 + 검증체크리스트 (개념 프로토타입).
+- entities/hunter-killer-drone-system.md: 방어페이지 링크 추가.
+- index 22→23 갱신.
+- Gate B: PASS (23 pages)

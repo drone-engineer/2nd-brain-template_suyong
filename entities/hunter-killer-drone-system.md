@@ -58,3 +58,4 @@ contradictions: []
 - [[uav-swarm-middleware]] — ROS2/DDS/MicroXRCE 통신
 - [[text-to-uav-mission]] — 자율타격에도 인간승인 게이트 필요
 - [[gnss-denied-autonomous-navigation]] — jamming/spoofing 시 TRN/VIO 복귀 항법
+- [[uav-swarm-defensive-countermeasures]] — 본 시스템 취약점(Banshee/교란) 대응 방어 체계
