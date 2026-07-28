@@ -387,3 +387,10 @@
 - concepts/gnss-denied-autonomous-navigation.md: 구현 가이드 링크 추가.
 - canonical 페이지 수 변동 없음.
 - Gate B: PASS (24 pages)
+
+## [2026-07-27] create | STM32 보드 활용 가능성 검토
+
+- queries/stm32-feasibility.md (신규): Pixhawk 6X=STM32H7 FC 구조 분석. 시나리오 A(단독/Jetson제거: YOLO/VIO/TRN 불가, 초경량 정찰/decoy만), B(보조MCU로 안전보험화: Kill-Switch 로컬강제/시간예약중단 권장), C(NPU조합 연구단계). 결론: STM32는 이미 FC 중심, "더 활용"=시나리오 B가 자율타격체계에 적합.
+- raw/articles 5편 수집(DSVO, Delivery Drone, AlphaPilot, DF-VO, LEGO-SLAM) - 임베디드/경량 VIO·SLAM 참고.
+- index 24→25 갱신.
+- Gate B: PASS (25 pages)
