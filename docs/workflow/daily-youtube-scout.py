@@ -113,11 +113,18 @@ source_type: youtube
 *raw evidence — immutable. YouTube 캡처.*
 """
     p = RAW_YT / fn
-    p.write_text(body, encoding="utf-8")
-    h = hashlib.sha256(body.encode()).hexdigest()
-    t = p.read_text()
-    t = t.replace(f"collected: {TODAY}", f"collected: {TODAY}\nsha256: {h}", 1)
-    p.write_text(t, encoding="utf-8")
+    # [동작] Gate B와 동일하게 closing --- 이후 본문만 sha256.
+    # [이유] 예전엔 파일 전체를 해시해 FM에 넣은 뒤 다시 FM을 고쳐 mismatch가 났음.
+    # [근거] docs/workflow/check-gate-b.py — body = after first \n---\n following opening FM.
+    data = body.encode("utf-8")
+    end = data.find(b"\n---\n", 4)
+    if end < 0:
+        raise ValueError(f"frontmatter closing --- missing for {fn}")
+    payload = data[end + 5 :]
+    digest = hashlib.sha256(payload).hexdigest()
+    # Insert sha256 into FM before writing once (avoid rewrite that invalidates a whole-file hash).
+    text = body.replace(f"collected: {TODAY}", f"collected: {TODAY}\nsha256: {digest}", 1)
+    p.write_text(text, encoding="utf-8")
     return str(p.relative_to(WIKI))
 
 

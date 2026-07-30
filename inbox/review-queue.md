@@ -54,31 +54,31 @@
 - 단계: collect-evidence
 - 원본: raw/articles/2020-swarm-robotic-behaviors-and-current-applications.md (sha256: bbb32f0c2e103c227d29115ccff5c01a65bde33bc026730641755629624cde04)
 - 근거: 군집 로보틱스 행동 분류·응용 서베이 — UAV swarm 행동·협력 제어의 기초 증거 (concepts/uav-swarm-robotics 보강 가능)
-- 판정: _(미기재)_
+- 판정: **Accepted** (2026-07-29) — via 2nd-brain-web
 
 ## [2026-07-27] collect | Swarm-based counter-UAV defense system (2021)
 - 단계: collect-evidence
 - 원본: raw/articles/2021-swarm-based-counter-uav-defense-system.md (sha256: d033bae4b7d208772fb338160d0b79fe264208877c279b135fdfc4d53d32103d)
 - 근거: 군집 기반 counter-UAS 방어 체계 — UAV swarm 공격/방어 쌍방 운용 증거 (concepts/combat-swarm-drone-operations, counter-UAS 주제)
-- 판정: _(미기재)_
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 
 ## [2026-07-27] collect | Swarm Robotics: Past, Present, and Future (IEEE Proc 2021)
 - 단계: collect-evidence
 - 원본: raw/articles/2021-swarm-robotics-past-present-and-future-point-of-view.md (sha256: 1459836ba7860899ab8417948094fcfe6ff09d96272a7cd21165d32cac886735)
 - 근거: 군집 로보틱스 권위 서베이/전망 — UAV swarm 연구 지형의 토대 증거 (concepts/uav-swarm-robotics 보강 가능)
-- 판정: _(미기재)_
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 
 ## [2026-07-27] collect | 3D Optimal Surveillance Trajectory Planning for Multiple UAVs (PSO, IEEE Access 2020)
 - 단계: collect-evidence
 - 원본: raw/articles/2020-3d-optimal-surveillance-trajectory-planning-for-multiple-uavs-by-using-particle-.md (sha256: 681804e30970883667ed3ae4f2fcbcbb84e0a35ee5c9e964794d1acd5e3918e2)
 - 근거: 다중 UAV 감시 궤적 계획(PSO, 우선순위 영역) — UAV swarm 경로/궤적 최적화 증거 (concepts/uav-swarm-path-planning 연결 가능)
-- 판정: _(미기재)_
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 
 ## [2026-07-27] collect | Fault-tolerant cooperative navigation of networked UAV swarms (Aerospace Sci Tech 2022)
 - 단계: collect-evidence
 - 원본: raw/articles/2022-fault-tolerant-cooperative-navigation-of-networked-uav-swarms-for-forest-fire-mo.md (sha256: 741365b3be27890eda3d2d95131e8d48b71c3d77829d7c41fd83531e10042ff2)
 - 근거: 장애허용 협력 항법(산불 감시) — 탈중앙 UAV swarm 항법·강건 제어 증거 (decentralized UAV swarm navigation 주제)
-- 판정: _(미기재)_
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 
 ## [2026-07-26] repair | raw 무결성 복구 + Gate B 확대
 
@@ -89,7 +89,7 @@
   - 해시 계산 정의 불일치 26건
 - **조치:** frontmatter만 수정하고 본문 바이트 보존 검증 → 49/54 해시 통과 (나머지 5건은 기존 legacy gap)
 - **수집 스크립트:** 해시 계산·구분자 출력 버그 2건 수정 (재발 방지)
-- **판정:**
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
   - 무결성 복구 + Gate B 확대 → **Accepted**
   - legacy web/youtube 5건 해시 소급 부여 → **Deferred** (원본 바이트 보존 우선)
 - **사람 조치:**
@@ -109,7 +109,7 @@
 - **사람 조치:**
   - [ ] 저자/저널 메타 보강 시 KCI RIS 내보내기로 `raw/articles/` 갱신 (Zotero 메타 repair 절차와 유사)
   - [ ] 이 원본을 canonical로 컴파일할지 결정 → 결정 시 `compile-wiki` 단계로 (UAV 군집 제어 주제이므로 기존 `concepts/uav-swarm-robotics.md` 등과 연결 가능)
-- **판정:** Accepted (2026-07-26) — canonical `concepts/combat-swarm-drone-operations.md` 생성·연결 완료
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 
 ## [2026-07-25] PDF meta repair + Alqudsi compile + KG refresh
 
@@ -118,7 +118,7 @@
 - **repair:** `raw/papers/2025-01-…`, `2025-03-airswarm-…` attachment keys만 (Extracted Text 불변)
 - **compile:** `concepts/uav-swarm-robotics.md` Alqudsi Table 6 요지; `entities/airswarm.md`; landscape 한계 문구
 - **Gate B:** PASS · **`.ua/`:** 85 nodes / 77 edges (UAV 초점 analysis 1배치)
-- **판정:**
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
   - Alqudsi PDF→canonical 과제표 → **Accepted** (이번 실행)
   - 나머지 7편 PDF → **Deferred** (사람 Find Full Text)
   - Tavily→Hermes 텔레그램 검색 배선 → **Deferred** (Cursor Tavily MCP는 동작 확인됨)
@@ -132,7 +132,7 @@
 - **PDF:** 9편 중 2편만 로컬 첨부 (Alqudsi, AirSwarm). 상세 `docs/workflow/zotero-pdf-status.md`
 - **NotebookLM:** 노트북 `UAV Swarm Survey Landscape` 생성, raw 9 + URL 4, 합성 질의 1회
 - **compile:** `queries/uav-swarm-survey-landscape.md` 공백·읽기순서 증분 (Gate B PASS)
-- **판정:**
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
   - UAV survey landscape 증분 → **Accepted**
   - ains-lab GitHub 테스트 클립 → **Deferred** (저가치, inbox 유지·raw 미승격)
   - 나머지 PDF 미확보 7편 재ingest → **Deferred** (사람 Find Available PDF 후)
@@ -156,7 +156,7 @@
 - **사람 조치:**
   - [ ] 새 원본 수집: Telegram "수집해줘: <URL/식별자>" 또는 Zotero/Web Clipper 드롭
   - [ ] ains-lab 테스트 클립 유지/삭제 결정
-- **판정:** _(미기재)_
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 
 ## [2026-07-25] weekly collect+review (자동 실행)
 
@@ -173,7 +173,7 @@
   - raw 본문 불변 유지, Zotero 메타 복구 외 raw 편집 없음
 - **사람 조치:**
   - [ ] 새 원본을 수집하려면 Telegram으로 "수집해줘: <URL/식별자>" 또는 Zotero/Web Clipper로 드롭
-- **판정:** _(미기재)_
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 
 ## [2026-07-25] Hermes Telegram + Cron online
 
@@ -195,7 +195,7 @@
   - [ ] Obsidian Web Clipper 설치 (Chrome)
   - [ ] BotFather로 봇 생성 → `hermes gateway setup`
   - [ ] `hermes gateway install` 후 Cron (telegram-setup.md C절)
-- **판정:** _(미기재)_
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 
 ## [2026-07-24] install-order tooling
 
@@ -206,7 +206,7 @@
   - [ ] `notebooklm login`
   - [ ] `hermes model` 또는 `hermes setup`
   - [ ] (선택) `hermes gateway install` 후 Cron
-- **판정:** _(미기재)_
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 
 ## [2026-07-24] pipeline bootstrap
 
@@ -219,5 +219,5 @@
   - [ ] Zotero에서 PDF `Find Full Text` / 첨부 후 본문 재ingest
   - [ ] UAV canonical 내용 검수 (Accepted 여부)
   - [ ] (선택) NotebookLM / UA / Hermes 도입 시기 결정
-- **판정:** _(미기재)_
+- 판정: **Accepted** (2026-07-30) — via 2nd-brain-web
 - **메모:**

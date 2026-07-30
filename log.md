@@ -407,3 +407,206 @@
 - updated: entities/hunter-killer-drone-system.md (+3), concepts/uav-swarm-defensive-countermeasures.md (+3), concepts/gnss-denied-autonomous-navigation.md (+3), queries/hunter-killer-kill-chain.md (+6)
 - 각 페이지 frontmatter sources에 raw 경로 추가 + 본문 "관련 영상 (YouTube 보강 2026-07-29)" 섹션 신설(영상 제목·URL·한글 1줄 요약). confidence는 모두 medium 유지(low 없음).
 - canonical 페이지 수 변동 없음 (24 pages 유지); index.md 미변경.
+
+## [2026-07-29] ingest | ModalAI Starling 2 | PX4 Guide (main)
+- path: `raw/articles/2026-07-29-modalai-starling-2-px4-guide-main.md`
+- source_url: https://docs.px4.io/main/en/complete_vehicles_mc/modalai_starling
+- note: canonical auto-promote skipped (human gate)
+
+## [2026-07-29] ingest | OpenIPC AI Object Detection Step by Step Tutorial
+- path: raw/youtube/6jtqfoxwoxw.md
+- source: youtube
+- channel: MarioFPV
+
+## [2026-07-29] ingest | Step by Step Tutorial for OpenIPC AI Dual Camera with Object Detection and Thermal Camera
+- path: raw/youtube/tFWIlxUnoO8.md
+- source: youtube
+- channel: MarioFPV
+
+## [2026-07-29] ingest | OpenIPC AI Object Detection Step by Step Tutorial
+- path: raw/youtube/6jtqfoxwoxw.md
+- note: transcript backfilled
+- transcript: en (51)
+
+## [2026-07-29] ingest | World’s Cheapest VRX with H265 compatible with all goggles! OpenIPC FPV with VENC/VDEC
+- path: raw/youtube/wZAHkWHfBF4.md
+- source: youtube
+- channel: MarioFPV
+- transcript: en (24)
+
+## [2026-07-29] ingest | Is This DIY EMP Device Actually Dangerous?
+- path: raw/youtube/WPszRotJaGI.md
+- source: youtube
+- meta: oembed+html
+- channel: Skill Make
+- description: 1036 chars
+- transcript: good
+
+## [2026-07-29] inbox | Is This DIY EMP Device Actually Dangerous?
+- path: `inbox/youtube/is-this-diy-emp-device-actually-dangerous-WPszRotJaGI.md`
+- from: `raw/youtube/WPszRotJaGI.md`
+- note: Obsidian learning note (draft, not canonical)
+
+## [2026-07-29] ingest | You Can't Hide — mmWave Radar + LoRa Tracks You From Kilometers Away (No WiFi)
+- path: raw/youtube/5q7FSQnKteo.md
+- source: youtube
+- meta: oembed+html
+- channel: Electronic Clinic
+- description: 3880 chars
+- transcript: good
+
+## [2026-07-29] inbox | You Can't Hide — mmWave Radar + LoRa Tracks You From Kilometers Away (No WiFi)
+- path: `inbox/youtube/you-can-t-hide-mmwave-radar-lora-tracks-you-from-k-5q7FSQnKteo.md`
+- from: `raw/youtube/5q7FSQnKteo.md`
+- note: Obsidian learning note (draft, not canonical)
+
+## [2026-07-29] inbox | Is This DIY EMP Device Actually Dangerous?
+- path: `inbox/youtube/is-this-diy-emp-device-actually-dangerous-WPszRotJaGI.md`
+- from: `raw/youtube/WPszRotJaGI.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-29] inbox | You Can't Hide — mmWave Radar + LoRa Tracks You From Kilometers Away (No WiFi)
+- path: `inbox/youtube/you-can-t-hide-mmwave-radar-lora-tracks-you-from-k-5q7FSQnKteo.md`
+- from: `raw/youtube/5q7FSQnKteo.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-29] ingest | I Stole This from the Military
+- path: raw/youtube/b7IMBHMjNv8.md
+- source: youtube
+- meta: oembed+html
+- channel: Data Slayer
+- description: 1545 chars
+- transcript: good
+
+## [2026-07-29] inbox | I Stole This from the Military
+- path: `inbox/youtube/i-stole-this-from-the-military-b7IMBHMjNv8.md`
+- from: `raw/youtube/b7IMBHMjNv8.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-29] inbox | You Can't Hide — mmWave Radar + LoRa Tracks You From Kilometers Away (No WiFi)
+- path: `inbox/youtube/you-can-t-hide-mmwave-radar-lora-tracks-you-from-k-5q7FSQnKteo.md`
+- from: `raw/youtube/5q7FSQnKteo.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-29] inbox | I Stole This from the Military
+- path: `inbox/youtube/i-stole-this-from-the-military-b7IMBHMjNv8.md`
+- from: `raw/youtube/b7IMBHMjNv8.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-29] inbox | I Stole This from the Military
+- path: `inbox/youtube/i-stole-this-from-the-military-b7IMBHMjNv8.md`
+- from: `raw/youtube/b7IMBHMjNv8.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-29] inbox | I Stole This from the Military
+- path: `inbox/youtube/i-stole-this-from-the-military-b7IMBHMjNv8.md`
+- from: `raw/youtube/b7IMBHMjNv8.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-29] ingest | Engineering a UAV - Part 1: Mission Definition, Requirements, & Design Point
+- path: raw/youtube/geljbqJz1ro.md
+- source: youtube
+- meta: oembed+html
+- channel: GabeFPV
+- description: 2045 chars
+- transcript: good
+
+## [2026-07-29] inbox | Engineering a UAV - Part 1: Mission Definition, Requirements, & Design Point
+- path: `inbox/youtube/engineering-a-uav-part-1-mission-definition-requir-geljbqJz1ro.md`
+- from: `raw/youtube/geljbqJz1ro.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-29] ingest | Engineering a UAV - Part 2: Conceptual Sizing, Drag Polars, & Constraint Analysis
+- path: raw/youtube/KUZjxxrvsLQ.md
+- source: youtube
+- meta: oembed+html
+- channel: GabeFPV
+- description: 2508 chars
+- transcript: good
+
+## [2026-07-29] inbox | Engineering a UAV - Part 2: Conceptual Sizing, Drag Polars, & Constraint Analysis
+- path: `inbox/youtube/engineering-a-uav-part-2-conceptual-sizing-drag-po-KUZjxxrvsLQ.md`
+- from: `raw/youtube/KUZjxxrvsLQ.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-29] ingest | Winglet Design for Flying Wings: Aerodynamic Performance, Efficiency & Stability (Part 3)
+- path: raw/youtube/2GfGyI38rGY.md
+- source: youtube
+- meta: oembed+html
+- channel: GabeFPV
+- description: 1321 chars
+- transcript: poor
+
+## [2026-07-29] inbox | Winglet Design for Flying Wings: Aerodynamic Performance, Efficiency & Stability (Part 3)
+- path: `inbox/youtube/winglet-design-for-flying-wings-aerodynamic-perfor-2GfGyI38rGY.md`
+- from: `raw/youtube/2GfGyI38rGY.md`
+- note: Obsidian learning note (KO excerpt, draft)
+
+## [2026-07-30] ingest | Camera-GPS-IMU 센서융합 기법 기반 실외 실내 전환 자율비행
+- path: `raw/papers/2026-07-30-camera-gps-imu-센서융합-기법-기반-실외-실내-전환-자율비행.md`
+- zotero_key: openalex-W2777346296
+- authors: 이용석; 이용한; 이동준
+- year: 2017
+- note: canonical auto-promote skipped (human gate)
+
+## [2026-07-30] ingest | 자율비행 드론 기술 동향
+- path: `raw/papers/2026-07-30-자율비행-드론-기술-동향.md`
+- zotero_key: openalex-W3193903243
+- authors: 이현범
+- year: 2019
+- note: canonical auto-promote skipped (human gate)
+
+## [2026-07-30] ingest | 멀티로터 비행체의 실내 자율비행 실시간 비행실험 결과
+- path: `raw/papers/2026-07-30-멀티로터-비행체의-실내-자율비행-실시간-비행실험-결과.md`
+- zotero_key: openalex-W2237256664
+- authors: 김현; 강병주; 이덕진
+- year: 2014
+- note: canonical auto-promote skipped (human gate)
+
+## [2026-07-30] inbox | NotebookLM ask: datalink 관련 내용은 어떤 내용이 있지..??
+- path: `inbox/notebooklm-ask-2026-07-30-datalink-관련-내용은-어떤-내용이-있지.md`
+- json: `inbox/notebooklm-ask-2026-07-30T11-53-42.json`
+- note: discovery hypothesis (not canonical)
+
+## [2026-07-30] ingest | Research on the Effective Operation of Military Drones
+- path: `raw/papers/2026-07-30-research-on-the-effective-operation-of-military-drones.md`
+- zotero_key: 8-kcsa-2024-24-5-195
+- authors: 동명대학교 군사학과 조교수; Jong, Dong
+- year: 2024
+- doi: 10.33778/kcsa.2024.24.5.195
+- note: canonical auto-promote skipped (human gate)
+
+## [2026-07-30] ingest | Research on the Effective Operation of Military Drones
+- path: `raw/papers/2026-07-30-research-on-the-effective-operation-of-military-drones.md`
+- zotero_key: 8-kcsa.2024.24.5.195
+- authors: Jong, Dong
+- year: 2024
+- doi: 10.33778/kcsa.2024.24.5.195
+- note: canonical auto-promote skipped (human gate)
+
+## [2026-07-30] paper-ko-note | AirSwarm: Enabling Cost-Effective Multi-UAV Research with COTS drones
+- inbox: `inbox/papers/2025-03-airswarm-enabling-cost-effective-multi-uav-research-with-cots-drones.md`
+- source_raw: `raw/papers/2025-03-airswarm-enabling-cost-effective-multi-uav-research-with-cots-drones.md`
+- text_source: arxiv-abstract:2503.06890
+- note: raw body unchanged (A안)
+
+## [2026-07-30] paper-ko-note | AirSwarm: Enabling Cost-Effective Multi-UAV Research with COTS drones
+- inbox: `inbox/papers/2025-03-airswarm-enabling-cost-effective-multi-uav-research-with-cots-drones.md`
+- source_raw: `raw/papers/2025-03-airswarm-enabling-cost-effective-multi-uav-research-with-cots-drones.md`
+- text_source: arxiv-abstract:2503.06890
+- note: raw body unchanged (A안)
+
+## [2026-07-30] paper-ko-note | AirSwarm: Enabling Cost-Effective Multi-UAV Research with COTS drones
+- inbox: `inbox/papers/2025-03-airswarm-enabling-cost-effective-multi-uav-research-with-cots-drones.md`
+- source_raw: `raw/papers/2025-03-airswarm-enabling-cost-effective-multi-uav-research-with-cots-drones.md`
+- text_source: arxiv-abstract:2503.06890
+- note: raw body unchanged (A안)
+
+## [2026-07-31] ingest | YouTube scout: Hunter-Killer 계열 보강 14건
+- videos: 14 (MGggtBIzvtg, DK6IGG5zRU8, sriVQXreqG8, 5k9F7QK66Ws, hGakXrt1EFo, EKpxP2YieZw, p8frNNYQNV4, i1QRqu3Cocw, V5ZMhFyWQa8, hp4ySL2xzV8, sEiKDZ6pZo4, w0z-362DkIU, M5YyDGfKhE8, unraT22a4zY, a5kumlJqkQQ)
+- entities/hunter-killer-drone-system.md: 6 new raw sources added, HK system video section updated
+- concepts/uav-swarm-defensive-countermeasures.md: 3 new raw sources added, defense countermeasures section updated
+- concepts/gnss-denied-autonomous-navigation.md: 5 new raw sources added, GNSS-Denied section updated
+- queries/hunter-killer-kill-chain.md: 5 new raw sources added, kill chain section updated
+- index.md: last updated date bumped to 2026-07-31
+- All raw sha256 verified (pre-computed, no drift)

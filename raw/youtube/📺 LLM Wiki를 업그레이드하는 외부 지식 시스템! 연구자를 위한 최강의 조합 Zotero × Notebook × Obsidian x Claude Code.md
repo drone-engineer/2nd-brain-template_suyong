@@ -11,6 +11,7 @@ ContentType: "Youtube"
 Cover: "https://i.ytimg.com/vi/ulhEyDIxj6Q/maxresdefault.jpg"
 Keyword: "동영상, 공유, 카메라폰, 동영상폰, 무료, 올리기"
 Processed: false
+sha256: 9e08adaa80d4f0ae396049979e52338961cf201ef455f892fa4010f34045173b
 ---
 ## 📝 자막 (Transcript)
 

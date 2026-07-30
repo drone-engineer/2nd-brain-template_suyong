@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone System (PRD v2 참조)
 created: 2026-07-27
-updated: 2026-07-29
+updated: 2026-07-31
 type: entity
 tags:
   - uav
@@ -13,6 +13,12 @@ sources:
   - raw/youtube/2026-07-29-hp4ySL2xzV8.md
   - raw/youtube/2026-07-29-sEiKDZ6pZo4.md
   - raw/youtube/2026-07-29-w0z-362DkIU.md
+  - raw/youtube/2026-07-31-MGggtBIzvtg.md
+  - raw/youtube/2026-07-31-DK6IGG5zRU8.md
+  - raw/youtube/2026-07-31-hp4ySL2xzV8.md
+  - raw/youtube/2026-07-31-sEiKDZ6pZo4.md
+  - raw/youtube/2026-07-31-w0z-362DkIU.md
+  - raw/youtube/2026-07-31-sriVQXreqG8.md
 confidence: medium
 contested: false
 contradictions: []
@@ -71,3 +77,14 @@ contradictions: []
 - [러시아 게란 드론 수동 레이더 호밍 탐색두 장착 (DEEP WEAPONS)](https://youtu.be/hp4ySL2xzV8) — 게란(Geran) 드론에 수동 레이더 호밍 seeker 탑재, HK 표적 유도 생존성 강화 사례.
 - [GPO FPV 자율인간추적/오토호밍 -12°C 야외 시험](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, Killer terminal_homing 실증.
 - [GPO 엣지 AI 오토호밍 500m 표적 록온→타격 (No GPS)](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.
+
+## 관련 영상 (YouTube 보강 2026-07-31)
+
+추가 HK 시스템 실증 사례 보강: Spectrum UV·Data Engineering Edge 자율 살상 드론 개요, DEEP WEAPONS 러시아 게란 수동 레이더 호밍, GPO Technologies FPV 오토호밍 -12°C 야외 시험, GPO 500m 표적 록온→타격, News Direct US Sea Hunter 해양 자율 드론 실증.
+
+- [Spectrum UV — Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 기본 개요, HK 시스템 정의.
+- [Data Engineering Edge — Autonomous killer drones](https://youtu.be/DK6IGG5zRU8) — 자율 살상 드론 대중적 설명 (조회 45만+).
+- [DEEP WEAPONS — Silent Hunters: Russian Geran with Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화.
+- [GPO Technologies — FPV Autohoming -12°C 야외 시험](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, 극한 환경 Killer 단말 실증.
+- [GPO Technologies — Edge AI Autohoming 500m Target Lock to Impact (No GPS)](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.
+- [News Direct — US Testing Autonomous Sea Hunter Ocean Drone](https://youtu.be/sriVQXreqG8) — 미국 Sea Hunter 자율 해양 정찰 드론 실증, HK Hunter 플랫폼 사례.

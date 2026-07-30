@@ -1,7 +1,7 @@
 ---
 title: UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
 created: 2026-07-27
-updated: 2026-07-29
+updated: 2026-07-31
 type: concept
 tags:
   - uav
@@ -17,6 +17,9 @@ sources:
   - raw/youtube/2026-07-29-M5YyDGfKhE8.md
   - raw/youtube/2026-07-29-HMKXMaAzByU.md
   - raw/youtube/2026-07-29-a5kumlJqkQQ.md
+  - raw/youtube/2026-07-31-M5YyDGfKhE8.md
+  - raw/youtube/2026-07-31-unraT22a4zY.md
+  - raw/youtube/2026-07-31-a5kumlJqkQQ.md
 confidence: medium
 contested: false
 contradictions: []
@@ -64,3 +67,11 @@ contradictions: []
 - [Lockheed Martin — Sanctum™ vs. the Swarm: 차세대 C-UAS 실전](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증.
 - [MyDefence — Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머(Jammer) 시연, 통신/센서 교란 방어.
 - [Divyania Defence — Swarm Counter Drone System](https://youtu.be/a5kumlJqkQQ) — 스마트 탐지·위협관리 군집 방어 드론 체계, 탐지→대응 자동화.
+
+## 관련 영상 (YouTube 보강 2026-07-31)
+
+실전 방어 보강: Lockheed Martin Sanctum C-UAS 재캡처, Sam Eckholm 드론 군집 억제 기술 심층 분석(220만 조회), Divyania 스마트 탐지 재캡처로 C-UAS·재머·탐지 기법 사례 추가.
+
+- [Lockheed Martin — Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증 (재캡처).
+- [Sam Eckholm — Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS·전자기기 동작 원리 설명 (220만 조회).
+- [Divyania Defence — Swarm Counter Drone System](https://youtu.be/a5kumlJqkQQ) — 스마트 탐지·위협관리 군집 방어 드론 체계, 탐지→대응 자동화 (재캡처).

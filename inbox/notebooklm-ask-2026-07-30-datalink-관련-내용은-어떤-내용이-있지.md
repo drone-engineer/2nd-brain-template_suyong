@@ -1,0 +1,58 @@
+---
+title: "NotebookLM: datalink 관련 내용은 어떤 내용이 있지..??"
+created: 2026-07-30
+updated: 2026-07-30
+type: inbox-note
+tags:
+  - notebooklm
+  - discovery
+  - inbox
+notebook_id: "ddd6ab02-55cf-497d-b870-81ca452cd042"
+notebook_title: "DataLink"
+status: draft
+---
+
+# NotebookLM Ask · 2026-07-30
+
+> Discovery 가설입니다. Human Gate 통과 전 concepts/queries 승격 금지.
+
+## 질문
+
+datalink 관련 내용은 어떤 내용이 있지..??
+
+## 답변
+
+현재 노트북에 **'DataLink'와 관련된 소스 자료가 하나도 등록되어 있지 않습니다.** 따라서 질문하신 내용에 대해 답변을 드릴 수 있는 정보가 현재로서는 없습니다.
+
+혹시 'DataLink'가 무엇에 관한 것인지(예: 군사용 데이터링크, 특정 소프트웨어, 통신 규격 등) 더 구체적으로 알려주시거나, 제가 **웹에서 관련 정보를 검색(discover_sources)**해 볼까요?
+
+검색을 원하신다면 다음과 같은 옵션 중 선택해 주실 수 있습니다:
+1. **빠른 검색(fast_research):** 웹에서 관련 자료를 빠르게 찾아 소스로 추가합니다.
+2. **심층 연구(deep_research):** 수 분의 시간이 소요되지만, 훨씬 더 포괄적이고 상세한 정보를 수집합니다.
+
+어떤 방향으로 도와드릴까요?
+
+## 참고
+
+```json
+[]
+```
+
+<details><summary>raw JSON</summary>
+
+```json
+{
+  "answer": "현재 노트북에 **'DataLink'와 관련된 소스 자료가 하나도 등록되어 있지 않습니다.** 따라서 질문하신 내용에 대해 답변을 드릴 수 있는 정보가 현재로서는 없습니다.\n\n혹시 'DataLink'가 무엇에 관한 것인지(예: 군사용 데이터링크, 특정 소프트웨어, 통신 규격 등) 더 구체적으로 알려주시거나, 제가 **웹에서 관련 정보를 검색(discover_sources)**해 볼까요?\n\n검색을 원하신다면 다음과 같은 옵션 중 선택해 주실 수 있습니다:\n1. **빠른 검색(fast_research):** 웹에서 관련 자료를 빠르게 찾아 소스로 추가합니다.\n2. **심층 연구(deep_research):** 수 분의 시간이 소요되지만, 훨씬 더 포괄적이고 상세한 정보를 수집합니다.\n\n어떤 방향으로 도와드릴까요?",
+  "conversation_id": "1d45d1e2-af6b-4b4d-958a-6c402d8e5864",
+  "turn_number": 1,
+  "is_follow_up": true,
+  "references": []
+}
+```
+
+</details>
+
+## Human Gate
+- [ ] 원본 Evidence와 교차검증
+- [ ] 재사용 가치 있으면 `queries/` 증분 ([[notebooklm-query-compounding]])
+- [ ] 승격 시 sources에 raw 경로 유지
