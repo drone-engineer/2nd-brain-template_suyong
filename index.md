@@ -27,6 +27,7 @@
 - [[uav-swarm-path-planning]] — 군집 클러스터링·궤적·경로계획 문제.
 - [[uav-swarm-robotics]] — 다수 UAV 협력 운용과 연구 지형 (Alqudsi PDF 과제표 반영).
 - [[uav-autopilot-stacks]] — PX4 vs ArduPilot 펌웨어 스택 (상위 알고리즘의 기반).
+- [[hunter-killer-uas]] — Hunter-Killer(사냥-살해) 자율 타격 체계: 킬체인, GNSS-Denied 항법, 안전/방어 메커니즘.
 - [[uav-swarm-middleware]] — MAVLink/ROS 2/DDS 미들웨어 (기체·로직 연결층).
 - [[uav-swarm-simulation]] — Gazebo/AirSim/Webots 시뮬레이션 (검증 인프라).
 

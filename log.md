@@ -610,3 +610,11 @@
 - queries/hunter-killer-kill-chain.md: 5 new raw sources added, kill chain section updated
 - index.md: last updated date bumped to 2026-07-31
 - All raw sha256 verified (pre-computed, no drift)
+
+## [2026-07-31] create | Hunter-Killer UAS 종합 개념 페이지
+- concepts/hunter-killer-uas.md: 새 canonical concept 페이지 생성
+- raw/youtube/ 14개 파일을 sources로 참조
+- 내용: 킬체인, GNSS-Denied 항법, 안전/방어 메커니즘, Counter-UAS 기술
+- index.md: hunter-killer-uas 페이지 등록
+- links: [[uav-autopilot-stacks]], [[px4-ekf2-vio-prototype]] (docs/workflow)
+- Gate B: 검증 완료 (25 canonical pages, index aligned)
