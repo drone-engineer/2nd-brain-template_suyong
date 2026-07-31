@@ -46,7 +46,7 @@ contradictions: []
 
 GNSS가 차단된 환경에서 VIO + TRN(Terrain Referenced Navigation) 결합:
 
-- **VIO**: [[px4-ekf2-vio-prototype]] (docs/workflow)
+- **VIO**: [[uav-autopilot-stacks]] (docs/workflow/px4-ekf2-vio-prototype.md)
 - **TRN**: DTED 지형 데이터 + LRF (Laser rangefinder)
 - **융합**: EKF2 `EKF2_AID_MASK`에서 비전/레이더/VIO 활성화
 
@@ -82,7 +82,7 @@ GNSS가 차단된 환경에서 VIO + TRN(Terrain Referenced Navigation) 결합:
 ## 5. 관련 개념
 
 - [[uav-autopilot-stacks]] — PX4 vs ArduPilot 비교
-- [[px4-ekf2-vio-prototype]] — VIO 프로토타입 (docs/workflow)
+- [[uav-swarm-middleware]] — MAVLink/ROS 2/DDS 미들웨어 (드론-지상국 통신)
 
 ## 6. 참고 자료
 
