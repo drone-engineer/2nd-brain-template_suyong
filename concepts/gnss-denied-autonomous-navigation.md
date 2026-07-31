@@ -1,7 +1,7 @@
 ---
 title: GNSS-Denied 자율 항법 (UAV)
 created: 2026-07-27
-updated: 2026-07-31
+updated: 2026-08-01
 type: concept
 tags:
   - uav
@@ -23,6 +23,11 @@ sources:
   - raw/youtube/2026-07-31-V5ZMhFyWQa8.md
   - raw/youtube/2026-07-31-sEiKDZ6pZo4.md
   - raw/youtube/2026-07-31-w0z-362DkIU.md
+- raw/youtube/2026-08-01-p8frNNYQNV4.md
+- raw/youtube/2026-08-01-i1QRqu3Cocw.md
+- raw/youtube/2026-08-01-V5ZMhFyWQa8.md
+- raw/youtube/2026-08-01-sEiKDZ6pZo4.md
+- raw/youtube/2026-08-01-w0z-362DkIU.md
 confidence: medium
 contested: false
 contradictions: []
@@ -89,3 +94,13 @@ GPS 마비·무선 교란(Jamming/Spoofing)으로 위성항법이 불능인 위�
 - [Beyond Vision — How Drones Navigate Without GPS](https://youtu.be/V5ZMhFyWQa8) — GPS 없이 드론이 항법하는 원리 쉬운 설명, 비전/관성 항법 개요 (재캡처).
 - [GPO Technologies — FPV Autohoming -12°C 야외 시험](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, GPS 없이 -12°C 극한 환경 운용.
 - [GPO Technologies — Edge AI Autohoming 500m Target Lock to Impact (No GPS)](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS-Denied 환경 킬러 유도.
+
+## 관련 영상 (YouTube 보강 2026-08-01)
+
+GNSS-Denied 자율 항법 재캡처 확인: Nicholas Rehm 안티재밍 DIY 드론, Ian Laffey 군용 드론 GPS 없는 비행, Beyond Vision 비전/관성 항법 개요, GPO FPV 오토호밍·500m 표적 록온(No GPS)으로 GNSS-Denied 환경 자율 운용 사례 재확인.
+
+- [Nicholas Rehm — GPS-Denied, Anti-Jam Autonomous DIY Drone](https://youtu.be/p8frNNYQNV4) — GPS 불능·재밍 대항 자율 DIY 드론 작동 원리, 안티재밍 항법 구현 (재캡처).
+- [First Principles — Military Drones Without GPS (Ian Laffey, Theseus)](https://youtu.be/i1QRqu3Cocw) — 군용 드론의 GPS 없는 비행 원리, GNSS-Denied 항법 설명 (재캡처).
+- [Beyond Vision — How Drones Navigate Without GPS](https://youtu.be/V5ZMhFyWQa8) — GPS 없이 드론이 항법하는 원리 쉬운 설명, 비전/관성 항법 개요 (재캡처).
+- [GPO Technologies — FPV Autohoming -12°C 야외 시험](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, GPS 없이 -12°C 극한 환경 운용 (재캡처).
+- [GPO Technologies — Edge AI Autohoming 500m Target Lock to Impact (No GPS)](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS-Denied 환경 킬러 유도 (재캡처).

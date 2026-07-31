@@ -4,7 +4,7 @@
 > a one-line summary, sorted alphabetically within its section.
 >
 > Total pages: 24
-> Last updated: 2026-07-31
+> Last updated: 2026-08-01
 
 ## Entities
 

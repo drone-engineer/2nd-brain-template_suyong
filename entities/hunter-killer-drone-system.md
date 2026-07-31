@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone System (PRD v2 참조)
 created: 2026-07-27
-updated: 2026-07-31
+updated: 2026-08-01
 type: entity
 tags:
   - uav
@@ -19,6 +19,10 @@ sources:
   - raw/youtube/2026-07-31-sEiKDZ6pZo4.md
   - raw/youtube/2026-07-31-w0z-362DkIU.md
   - raw/youtube/2026-07-31-sriVQXreqG8.md
+- raw/youtube/2026-08-01-MGggtBIzvtg.md
+- raw/youtube/2026-08-01-hp4ySL2xzV8.md
+- raw/youtube/2026-08-01-sEiKDZ6pZo4.md
+- raw/youtube/2026-08-01-w0z-362DkIU.md
 confidence: medium
 contested: false
 contradictions: []
@@ -88,3 +92,12 @@ contradictions: []
 - [GPO Technologies — FPV Autohoming -12°C 야외 시험](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, 극한 환경 Killer 단말 실증.
 - [GPO Technologies — Edge AI Autohoming 500m Target Lock to Impact (No GPS)](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.
 - [News Direct — US Testing Autonomous Sea Hunter Ocean Drone](https://youtu.be/sriVQXreqG8) — 미국 Sea Hunter 자율 해양 정찰 드론 실증, HK Hunter 플랫폼 사례.
+
+## 관련 영상 (YouTube 보강 2026-08-01)
+
+새로운 날짜의 재캡처로 HK 시스템 정의·실전 유도 사례 확인.
+
+- [Spectrum UV — Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 기본 개요, HK 시스템 정의.
+- [DEEP WEAPONS — Silent Hunters: Russian Geran with Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화.
+- [GPO Technologies — FPV Autohoming -12°C 야외 시험](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, 극한 환경 Killer 단말 실증.
+- [GPO Technologies — Edge AI Autohoming 500m Target Lock to Impact (No GPS)](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.

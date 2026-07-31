@@ -1,7 +1,7 @@
 ---
 title: UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
 created: 2026-07-27
-updated: 2026-07-31
+updated: 2026-08-01
 type: concept
 tags:
   - uav
@@ -20,6 +20,10 @@ sources:
   - raw/youtube/2026-07-31-M5YyDGfKhE8.md
   - raw/youtube/2026-07-31-unraT22a4zY.md
   - raw/youtube/2026-07-31-a5kumlJqkQQ.md
+- raw/youtube/2026-08-01-M5YyDGfKhE8.md
+- raw/youtube/2026-08-01-unraT22a4zY.md
+- raw/youtube/2026-08-01-QpWl1EmtWNs.md
+- raw/youtube/2026-08-01-al9ITeP4fUA.md
 confidence: medium
 contested: false
 contradictions: []
@@ -75,3 +79,12 @@ contradictions: []
 - [Lockheed Martin — Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증 (재캡처).
 - [Sam Eckholm — Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS·전자기기 동작 원리 설명 (220만 조회).
 - [Divyania Defence — Swarm Counter Drone System](https://youtu.be/a5kumlJqkQQ) — 스마트 탐지·위협관리 군집 방어 드론 체계, 탐지→대응 자동화 (재캡처).
+
+## 관련 영상 (YouTube 보강 2026-08-01)
+
+새로운 방어기법 보강: Lockheed Martin Sanctum C-UAS 재캡처, Sam Eckholm 군집 억제 기술, Raytheon Coyote Block 3NK 비자산적 군집 대응, Anduril Roadrunner/Roadrunner-M 반드론 CUAS 시스템 공개.
+
+- [Lockheed Martin — Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증 (재캡처).
+- [Sam Eckholm — Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS·전자기기 동작 원리 설명 (220만 조회, 재캡처).
+- [RTX — Raytheon's Coyote Block 3NK defeats drone swarms with non-kinetic effect](https://youtu.be/QpWl1EmtWNs) — Raytheon 코요트 Block 3NK 비자산적(레이저·전자기기) 드론 군집 대응, 새로운 방어 패러다임.
+- [Anduril Industries — Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 반드론 CUAS 시스템 공개, 실전 배치 사례.
