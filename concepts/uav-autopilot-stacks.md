@@ -66,6 +66,42 @@ contradictions: []
 
 > 💡 **세팅 팁**: QGroundControl(Master/Param) 또는 Mission Planner(Config/Tuning)에서 실시간 파라미터 편집 후 `.params` 파일로 export → Git에 버전 관리
 
+## 경고 메시지 기능별 비교 (53개 수집)
+
+> 📎 전체 53개 경고 메시지 수집: `docs/tech-stack/px4-ardupilot-warnings.csv` (엑셀 가능)
+
+| 기능 영역 | PX4 경고 | ArduPilot 경고 | 주치상 | 비고 |
+|-----------|----------|----------------|--------|------|
+| **통신 손실** | `COM_DL_LOSS_T` (GCS 연결 손실) | `FS_GCS_ENABLE` + `FS_THR_ENABLE` | 안테나/배선 점검, 타임아웃 늘리기 | PX4는 단일 파라미터, Ardu는 Enable/Timeout 분리 |
+| **GNSS 손실** | `COM_GNSSLOSS_ACT` (GNSS 손실 실패 안전) | `FS_GPS_ENABLE` + `GPS_AUTO_SWITCH` | EKF2_AID_MASK에서 비전/레이더 활성화 | 실내 비행 시 반드시 GNSS-Denied 모드 전환 필요 |
+| **EKF2 상태추정** | `angular_velocity_invalid`, `global_position_invalid` | `EK3_SRC1_POSZ` (EKF3 위치 추정 실패) | EKF2 파라미터 재설정, 센서 교체 | PX4는 failsafe_flags 비트마스크, Ardu는 소스 인덱스 |
+| **센서 캘리브레이션** | `EKF2_MAG_CAL` (자력계 캘리브레이션 필요) | `COMPASS_CHECK`, `BARO_CHECK`, `INS_CHECK` | 캘리브레이션 재수행, 금속/전자파 제거 | Ardu는 개별 센서별 검증, PX4는 EKF2 통합 검증 |
+| **배터리 실패** | `COM_LOW_BAT_ACT` (배터리 실패 안전 모드) | `BATT_LOW_MAH`, `BATT_LOW_VOLT` | 배터리 교체, 저전 임계치 재설정 | 두 스택 모두 임계치 기반 |
+| **안장 검증 실패** | `COM_ARM_WO_GPS`, `COM_ARM_IMU_ACC` | `ARMING_CHECK` (0~7 비트마스크) | 전체 캘리브레이션 재수행 | Ardu는 비트마스크로 세부 제어 가능 |
+| **지오펜스 위반** | `NAV_DLL_ACT` (자동 RTL 실패) | `FENCE_ENABLE` + `FENCE_ALT_MAX` | FENCE 비활성화 또는 반경 늘리기 | PX4는 RTL 고도 우선, Ardu는 반경 기반 |
+| **조종기 손실** | `COM_RC_LOSS_T` (조종기 연결 손실) | `RC_CHECK` | RC 캘리브레이션, 배터리 충전 | 두 스택 모두 조종기 신호 검증 |
+| **Kill-Switch** | `COM_KILL` (0~1) | `ARMING_KILLSWITCH` | 스위치 누르기 또는 파라미터 재설정 | 인간 승인 게이트의 핵심 |
+
+### 📌 사용 시나리오별 주치상
+
+- **GNSS-Denied 비행 (실내/도심)**:
+  - PX4: `EKF2_AID_MASK=2+8`(비전/레이더), `COM_GNSSLOSS_ACT=2`(Hold)
+  - Ardu: `FS_GPS_ENABLE=0`, `EK3_SRC1_POSZ=3`(BARO)
+
+- **진동이 심한 환경 (헬리컥터/중량 드론)**:
+  - PX4: `EKF2_ACC_NOISE` 경고 → IMU_FILTER 조정, 진동 패드 설치
+  - Ardu: `INS_CHECK` 실패 → IMU 캘리브레이션 재수행, 진동 완화
+
+- **통신 장애 (장거리 비행)**:
+  - PX4: `COM_DL_LOSS_T=30`(30초로 늘리기), GCS 안테나 고급화
+  - Ardu: `FS_GCS_ENABLE=2`(RTL), `FS_THR_ENABLE=1`(안전 스위치)
+
+- **배터리 부족**:
+  - PX4: `COM_LOW_BAT_ACT=3`(RTL), `COM_BAT_ACT_T=30`(30초 전 알림)
+  - Ardu: `BATT_LOW_MAH` 값 늘리기, 스팬톤 배터리 사용
+
+> 💡 **핵심 원칙**: 경고 메시지는 **사전 예방**을 위한 것 → 실제 비행 전에 반드시 점검!
+
 ## 관련 페이지
 
 - [[uav-swarm-middleware]] — MAVLink/ROS 2 토픽이 펌웨어와 상위 로직을 어떻게 잇는지

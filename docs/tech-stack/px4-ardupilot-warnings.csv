@@ -1,0 +1,54 @@
+system,warning_code,message,cause,remedy,scenario,source
+PX4,angular_velocity_invalid,failsafe_flags.angular_velocity_invalid = true,IMU 각속도 데이터 손상,,,HealthAndArmingChecks.cpp
+PX4,attitude_invalid,failsafe_flags.attitude_invalid = true,자세 데이터(roll/pitch/yaw) 오류,,,HealthAndArmingChecks.cpp
+PX4,local_altitude_invalid,failsafe_flags.local_altitude_invalid = true,로컬 고도 측정 오류,,,HealthAndArmingChecks.cpp
+PX4,local_position_invalid,failsafe_flags.local_position_invalid = true,로컬 위치 추정 실패,,,HealthAndArmingChecks.cpp
+PX4,local_position_invalid_relaxed,failsafe_flags.local_position_invalid_relaxed = true,local position invalid relaxed,,,HealthAndArmingChecks.cpp
+PX4,local_velocity_invalid,failsafe_flags.local_velocity_invalid = true,로컬 속도 추정 실패,,,HealthAndArmingChecks.cpp
+PX4,global_position_invalid,failsafe_flags.global_position_invalid = true,글로벌 위치(GPS) 추정 실패,,,HealthAndArmingChecks.cpp
+PX4,global_position_invalid_relaxed,failsafe_flags.global_position_invalid_relaxed = true,global position invalid relaxed,,,HealthAndArmingChecks.cpp
+PX4,auto_mission_missing,failsafe_flags.auto_mission_missing = true,자동 미션 없음,,,HealthAndArmingChecks.cpp
+PX4,offboard_control_signal_lost,failsafe_flags.offboard_control_signal_lost = true,오프보드 제어 신호 손실,,,HealthAndArmingChecks.cpp
+PX4,home_position_invalid,failsafe_flags.home_position_invalid = true,home position invalid,,,HealthAndArmingChecks.cpp
+PX4,COM_DL_LOSS_T,GCS 연결 손실,텔레메트리/Datamavlink 신호 끊김,"COM_DL_LOSS_T 값을 늘리거나, 안테나/배선 점검",GCS와 통신 장애 시,commander_params.yaml
+PX4,COM_GNSSLOSS_ACT,GNSS 손실 실패 안전 모드,GPS 신호 손실/위성 수 부족,실내 비행 시 EKF2_AID_MASK에서 비전/레이더 활성화,실내/도심 비행 시 GNSS 차단,commander_params.yaml
+PX4,EKF2_GPS_POS,EKF2 GPS 위치 추정 실패,GPS 신호 약화 또는 EKF2 innovation 초과,"EKF2_GPS_POS_DEV 파라미터 확인, GPS 안테나 교체",GNSS-Denied 환경에서 위치 추정 실패,ekf2_params.yaml
+PX4,EKF2_MAG_CAL,자력계 캘리브레이션 필요,자기장 왜곡 또는 캘리브레이션 안됨,MAG 캘리브레이션 재수행 (자기장 환경 확인),"자기장이 강하게 왜곡된 환경(금속, 전자파)",ekf2_params.yaml
+PX4,EKF2_ACC_NOISE,가속도계 노이즈 과다,진동/충격으로 인한 센서 데이터 오염,"진동 완화(패드/다이슈킨), IMU 필터(IMU_FILTER) 조정",진동이 심한 엔진/모터 장착 시,ekf2_params.yaml
+PX4,EKF2_VEL_IMBAL,속도 추정 불안정,IMU와 GPS 속도 불일치,"EKF2_GYRO_NOISE 및 EKF2_ACCEL_NOISE 증가, 센서 교체",고속 회전 또는 급가속 시,ekf2_params.yaml
+PX4,NAV_DLL_ACT,드론 자동 RTL(귀환) 실패,RTL 시 경로 계획 실패 또는 충돌 위험,"RTL_RETURN_ALT 늘리기, 장애물 회피 활성화",배터리 부족 또는 통신 손실 시 자동 귀환,navigator_params.yaml
+ArduPilot,System not initialised,System not initialised,,,,AP_Arming_Copter.cpp
+ArduPilot,Interlock/E-Stop Conflict,Interlock/E-Stop Conflict,,,,AP_Arming_Copter.cpp
+ArduPilot,Motor Interlock Enabled,Motor Interlock Enabled,,,,AP_Arming_Copter.cpp
+ArduPilot,Motors: %s,Motors: %s,,,,AP_Arming_Copter.cpp
+ArduPilot,AROT: %s,AROT: %s,,,,AP_Arming_Copter.cpp
+ArduPilot,%s,%s,,,,AP_Arming_Copter.cpp
+ArduPilot,%s,%s,,,,AP_Arming_Copter.cpp
+ArduPilot,AHRS: %s,AHRS: %s,,,,AP_Arming_Copter.cpp
+ArduPilot,Need Position Estimate,Need Position Estimate,,,,AP_Arming_Copter.cpp
+ArduPilot,"Fence enabled, need position estimate","Fence enabled, need position estimate",,,,AP_Arming_Copter.cpp
+ArduPilot,GPS glitching,GPS glitching,,,,AP_Arming_Copter.cpp
+ArduPilot,EKF %s variance,EKF %s variance,,,,AP_Arming_Copter.cpp
+ArduPilot,GCS failsafe on,GCS failsafe on,,,,AP_Arming_Copter.cpp
+ArduPilot,%s,%s,,,,AP_Arming_Copter.cpp
+ArduPilot,Need Alt Estimate,Need Alt Estimate,,,,AP_Arming_Copter.cpp
+ArduPilot,AHRS not healthy,AHRS not healthy,,,,AP_Arming_Copter.cpp
+ArduPilot,Compass %d not healthy,Compass %d not healthy,,,,AP_Arming_Copter.cpp
+ArduPilot,%s mode not armable,%s mode not armable,,,,AP_Arming_Copter.cpp
+ArduPilot,Safety Switch,Safety Switch,,,,AP_Arming_Copter.cpp
+ArduPilot,ARMING_CHECK,Arming 검증 실패,센서 캘리브레이션 누락 또는 하드웨어 오류,"Mission Planner에서 전체 캘리브레이션 수행(Accel, Compass, Radio)",시동 전 센서 검증 단계에서 실패,AP_Arming.cpp
+ArduPilot,FS_GCS_ENABLE,GCS 연결 손실 실패 안전 모드,지상국과의 통신 끊김,FS_GCS_ENABLE=2(RTL) 또는 FS_GCS_ENABLE=3(Land)로 설정,장거리 비행 시 통신 범위를 벗어날 때,AP_Arming.cpp
+ArduPilot,FS_THR_ENABLE,스로틀 신호 손실,조종기 신호 손실 또는 스로틀 입력 없음,"FS_THR_ENABLE=1 활성화, 안전 스위치 사용",조종기 배터리 방전 또는 신호 간섭 시,AP_Arming.cpp
+ArduPilot,FS_GPS_ENABLE,GPS 손실 실패 안전 모드,GPS 신호 손실 또는 위성 수 부족,"FS_GPS_ENABLE=1, RTL_ALT 늘리기",실내 또는 GPS 차단 환경에서 비행 시,AP_Arming.cpp
+ArduPilot,EK3_SRC1_POSZ,EKF3 위치 추정 실패,GPS/바로미터/레이더 데이터 불일치,EK3_SRC1_POSZ=1(Altitude) 또는 EK3_SRC1_POSZ=3(BARO)로 변경,고도 유지 실패 시 EKF3 재설정 필요,AP_Arming.cpp
+ArduPilot,COMPASS_CHECK,나침반 검증 실패,자기장 왜곡 또는 캘리브레이션 안됨,"나침반 캘리브레이션 재수행, 금속/전자파 근처 피하기",도시/금속 구조물 근처 비행 시,AP_Arming.cpp
+ArduPilot,BARO_CHECK,바로미터 검증 실패,기압 센서 오류 또는 기류 변화,"BARO_PROBING 파라미터 조정, 센서 교체",날씨 변화가 심한 날씨에 비행 시,AP_Arming.cpp
+ArduPilot,GPS_CHECK,GPS 검증 실패,GPS 위성 수 부족 또는 신호 약화,"GPS 안테나 위치 변경, 외부 장애물 제거",실내/도심/숲속 등 GPS 차단 환경,AP_Arming.cpp
+ArduPilot,INS_CHECK,IMU 검증 실패,가속도계/자이로 센서 불일치,"IMU 캘리브레이션 재수행, 진동 완화",진동이 심한 환경에서 시동 시,AP_Arming.cpp
+ArduPilot,RC_CHECK,조종기 검증 실패,조종기 신호 없음 또는 채널 오류,"RC 캘리브레이션, 배터리 충전, 안테나 점검",조종기 배터리 방전 시,AP_Arming.cpp
+ArduPilot,COMPASS_DEV_OPTION,자기장 왜곡 감지,주변 금속/전자파로 인한 자기장 변화,"COMPASS_DEV_OPTION=0으로 설정하거나, 자기장 캘리브레이션",금속 구조물/전선타워 근처 비행 시,AP_Arming.cpp
+ArduPilot,FENCE_ENABLE,지오펜스 위반,프리셋된 비행 영역을 벗어남,FENCE_ENABLE=0(비활성화) 또는 FENCE_ALT_MAX 늘리기,지정된 비행 반경/고도를 벗어날 때,AP_Arming.cpp
+ArduPilot,RTL_ALT,RTL 고도 설정 오류,귀환 고도가 지면보다 낮음 또는 설정 오류,RTL_ALT=10000(10m) 이상으로 설정,자동 귀환 시 고도 유지 실패 시,AP_Arming.cpp
+ArduPilot,BATT_LOW_MAH,배터리 잔량 부족,배터리 방전 또는 소비량 과다,BATT_LOW_MAH 값을 늘리거나 배터리 교체,장시간 비행 후 배터리 저하 시,AP_Arming.cpp
+ArduPilot,SERIAL1_PROTOCOL,직렬 통신 프로토콜 오류,MAVLink/UART 설정 불일치,SERIAL1_PROTOCOL=2(MAVLink2)로 설정,지상국/컴패니언 컴퓨터와 통신 설정 시,AP_Arming.cpp
+ArduPilot,BRD_SAFETY,안전 스위치 활성화됨,안전 스위치가 켜져 있어 시동 불가,BRD_SAFETY=0(비활성화) 또는 스위치 누르기,안전 스위치를 통한 인간 승인 게이트,AP_Arming.cpp
