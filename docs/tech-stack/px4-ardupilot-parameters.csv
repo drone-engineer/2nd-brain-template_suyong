@@ -1,0 +1,150 @@
+system,param_name,description,usage_scenario,setting_range,source
+PX4,COM_DL_LOSS_T,"GCS connection loss time threshold After this amount of seconds without datalink, the GCS connection lost",,"min=5, max=300",src/modules/commander/commander_params.yaml
+PX4,COM_HLDL_LOSS_T,High Latency Datalink loss time threshold After this amount of seconds without datalink the data link lost mode,,"min=60, max=3600",src/modules/commander/commander_params.yaml
+PX4,COM_RC_LOSS_T,Manual control loss timeout |-,,"min=0, max=35",src/modules/commander/commander_params.yaml
+PX4,COM_HOME_EN,Home position enabled |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_HOME_IN_AIR,Allows setting the home position after takeoff |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_RC_IN_MODE,Manual control input source configuration |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_DISARM_LAND,Time-out for auto disarm after landing |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_DISARM_PRFLT,Time-out for auto disarm if not taking off |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_WO_GPS,Arming without GNSS configuration |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_GNSSLOSS_ACT,GNSS loss failsafe mode |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_SWISBTN,Arm switch is a momentary button |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_LOW_BAT_ACT,Battery failsafe mode |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_FAIL_ACT_T,Delay between failsafe condition triggered and failsafe reaction |-,,"min=0.0, max=25.0",src/modules/commander/commander_params.yaml
+PX4,COM_OF_LOSS_T,Offboard connection loss timeout |-,,"min=0, max=60",src/modules/commander/commander_params.yaml
+PX4,COM_QC_ACT,Set action after a quadchute,,"min=0.1, max=1.0",src/modules/commander/commander_params.yaml
+PX4,COM_OBL_RC_ACT,Set offboard loss failsafe mode |-,,"min=0.1, max=1.0",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_IMU_ACC,Max accelerometer inconsistency for arming Maximum accelerometer inconsistency between IMU units that will allow,,"min=0.1, max=1.0",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_IMU_GYR,Max rate gyro inconsistency for arming Maximum rate gyro inconsistency between IMU units that will allow arming,,"min=0.02, max=0.3",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_MAG_ANG,Max magnetic field inconsistency for arming |-,,"min=3, max=180",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_MAG_STR,Enable mag strength preflight check |-,,"min=-1, max=400",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_MIS_REQ,Require valid mission to arm The default allows to arm the vehicle without a valid mission.,,"min=-1, max=400",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_AUTH_REQ,Require arm authorization to arm By default off. The default allows to arm the vehicle without a arm,,"min=-1, max=400",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_AUTH_ID,Arm authorizer system id Used if arm authorization is requested by COM_ARM_AUTH_REQ.,,"min=-1, max=400",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_AUTH_MET,Arm authorization method |-,,"min=-1, max=400",src/modules/commander/commander_params.yaml
+PX4,COM_FLTMODE_BOOT,Flight mode on boot |-,,"min=-1, max=400",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_ON_BOOT,Arm automatically on boot |-,,"min=-1, max=400",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_AUTH_TO,Arm authorization timeout |-,,"min=-1, max=400",src/modules/commander/commander_params.yaml
+PX4,COM_POS_FS_EPH,Horizontal position error threshold for hovering systems |-,,"min=-1, max=400",src/modules/commander/commander_params.yaml
+PX4,COM_POS_FS_ACT,Loss of position autonomous failsafe action |-,,"min=0, max=31",src/modules/commander/commander_params.yaml
+PX4,COM_VEL_FS_EVH,Horizontal velocity error threshold |-,,"min=0, max=31",src/modules/commander/commander_params.yaml
+PX4,COM_FLIGHT_UUID,Next flight UUID |-,,"min=0, max=31",src/modules/commander/commander_params.yaml
+PX4,NAV_DLL_ACT,Set GCS connection loss failsafe mode |-,,"min=0, max=31",src/modules/commander/commander_params.yaml
+PX4,NAV_RCL_ACT,Set manual control loss failsafe mode |-,,"min=0, max=31",src/modules/commander/commander_params.yaml
+PX4,COM_RCL_EXCEPT,Manual control loss exceptions |-,,"min=0, max=31",src/modules/commander/commander_params.yaml
+PX4,COM_DLL_EXCEPT,Datalink loss exceptions |-,,"min=0, max=31",src/modules/commander/commander_params.yaml
+PX4,COM_ACT_FAIL_ACT,Set the actuator failure failsafe mode |-,,"min=-1, max=100",src/modules/commander/commander_params.yaml
+PX4,COM_PARACHUTE,Parachute requirement and failsafe |-,,"min=-1, max=100",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_CHK_ESCS,Enable checks on ESCs that report telemetry |-,,"min=-1, max=100",src/modules/commander/commander_params.yaml
+PX4,COM_PREARM_MODE,Condition to enter prearmed mode |-,,"min=-1, max=100",src/modules/commander/commander_params.yaml
+PX4,COM_FORCE_SAFETY,Enable force safety Force safety when the vehicle disarms,,"min=-1, max=100",src/modules/commander/commander_params.yaml
+PX4,COM_CPU_MAX,Maximum allowed CPU load to still arm |-,,"min=-1, max=100",src/modules/commander/commander_params.yaml
+PX4,COM_RAM_MAX,Maximum allowed RAM usage to pass checks |-,,"min=-1, max=100",src/modules/commander/commander_params.yaml
+PX4,COM_POWER_COUNT,Required number of redundant power modules |-,,"min=0, max=4",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_HFLT_CHK,Enable FMU SD card hardfault / watchdog detection check |-,,"min=0, max=30",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_ODID,Open Drone ID system check and in-flight failsafe Actions other than warning also prevent arming.,,"min=0, max=30",src/modules/commander/commander_params.yaml
+PX4,COM_TRAFF_AVOID,Traffic avoidance system requirement and failsafe |-,,"min=0, max=30",src/modules/commander/commander_params.yaml
+PX4,COM_SPOOLUP_TIME,Enforced delay between arming and further navigation |-,,"min=0, max=30",src/modules/commander/commander_params.yaml
+PX4,COM_CC_TEMP_WARN,Companion computer high-temperature warning threshold |-,,"min=-1, max=127",src/modules/commander/commander_params.yaml
+PX4,COM_WIND_WARN,Wind speed warning threshold |-,,"min=-1, max=1000",src/modules/commander/commander_params.yaml
+PX4,COM_FLT_TIME_MAX,Maximum allowed flight time |-,,"min=-1, max=1000",src/modules/commander/commander_params.yaml
+PX4,COM_WIND_MAX,High wind speed failsafe threshold |-,,"min=-1, max=1000",src/modules/commander/commander_params.yaml
+PX4,COM_WIND_MAX_ACT,High wind failsafe mode |-,,"min=-1, max=1000",src/modules/commander/commander_params.yaml
+PX4,COM_POS_LOW_EPH,Low position accuracy failsafe threshold |-,,"min=-1, max=1000",src/modules/commander/commander_params.yaml
+PX4,COM_POS_LOW_ACT,Low position accuracy action |-,,"min=-1, max=0.9",src/modules/commander/commander_params.yaml
+PX4,COM_ARMABLE,Flag to allow arming Set 0 to prevent accidental use of the vehicle e.g. for safety or maintenance,,"min=-1, max=0.9",src/modules/commander/commander_params.yaml
+PX4,COM_ARM_BAT_MIN,Minimum battery level for arming |-,,"min=-1, max=0.9",src/modules/commander/commander_params.yaml
+PX4,COM_THROW_EN,Enable throw-start Allows to start the vehicle by throwing it into the air.,,"min=0, max=0.5",src/modules/commander/commander_params.yaml
+PX4,COM_THROW_SPEED,Minimum speed for the throw start |-,,"min=0, max=0.5",src/modules/commander/commander_params.yaml
+PX4,COM_FLTT_LOW_ACT,Remaining flight time low failsafe |-,,"min=-0.5, max=0.5",src/modules/commander/commander_params.yaml
+PX4,COM_MODE_ARM_CHK,Allow external mode registration while armed By default disabled for safety reasons,,"min=-0.5, max=0.5",src/modules/commander/commander_params.yaml
+PX4,TRIM_ROLL,Roll trim |-,,"min=-0.5, max=0.5",src/modules/commander/commander_params.yaml
+PX4,TRIM_PITCH,Pitch trim |-,,"min=-0.5, max=0.5",src/modules/commander/commander_params.yaml
+PX4,TRIM_YAW,Yaw trim |-,,"min=-0.5, max=0.5",src/modules/commander/commander_params.yaml
+PX4,MC_ROLL_P,"Roll P gain Roll proportional gain, i.e. desired angular speed in rad/s for error",,"min=0.0, max=12",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_PITCH_P,"Pitch P gain Pitch proportional gain, i.e. desired angular speed in rad/s for error",,"min=0.0, max=12",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_YAW_P,"Yaw P gain Yaw proportional gain, i.e. desired angular speed in rad/s for error",,"min=0.0, max=5",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_YAW_WEIGHT,Yaw weight |-,,"min=0.0, max=1.0",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_ROLLRATE_MAX,Max roll rate |-,,"min=0.0, max=1800.0",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_PITCHRATE_MAX,Max pitch rate |-,,"min=0.0, max=1800.0",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_YAWRATE_MAX,Max yaw rate,,"min=0.0, max=1800.0",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_REF_W_N,Attitude reference-model natural frequency |-,,"min=1.0, max=200.0",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_REF_FF,Attitude reference-model feed-forward gain |-,,"min=0.0, max=1.0",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_REF_FF_MAX,Feed-forward angular-rate cap; 0 = disabled |-,,"min=0.0, max=1800.0",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MC_MAN_TILT_TAU,Manual tilt input filter time constant Setting this parameter to 0 disables the filter,,"min=0.0, max=2.0",src/modules/mc_att_control/mc_att_control_params.yaml
+PX4,MPC_THR_HOVER,Vertical thrust required to hover |-,,"min=0.1, max=0.8",src/modules/mc_pos_control/multicopter_position_control_params.yaml
+PX4,MPC_THR_XY_MARG,Horizontal thrust margin |-,,"min=0, max=0.5",src/modules/mc_pos_control/multicopter_position_control_params.yaml
+PX4,MPC_VEL_LP,Velocity low pass cutoff frequency A value of 0 disables the filter.,,"min=0, max=50",src/modules/mc_pos_control/multicopter_position_control_params.yaml
+PX4,MPC_VEL_NF_FRQ,Velocity notch filter frequency |-,,"min=0, max=50",src/modules/mc_pos_control/multicopter_position_control_params.yaml
+PX4,MPC_VEL_NF_BW,Velocity notch filter bandwidth A value of 0 disables the filter.,,"min=0, max=50",src/modules/mc_pos_control/multicopter_position_control_params.yaml
+PX4,MPC_VELD_LP,Velocity derivative low pass cutoff frequency A value of 0 disables the filter.,,"min=0, max=50",src/modules/mc_pos_control/multicopter_position_control_params.yaml
+PX4,NAV_LOITER_RAD,Loiter radius (FW only) |-,,"min=-10000, max=10000",src/modules/navigator/navigator_params.yaml
+PX4,NAV_ACC_RAD,Acceptance Radius |-,,"min=0.05, max=200.0",src/modules/navigator/navigator_params.yaml
+PX4,NAV_FW_ALT_RAD,FW Altitude Acceptance Radius Acceptance radius for fixedwing altitude.,,"min=0.05, max=200.0",src/modules/navigator/navigator_params.yaml
+PX4,NAV_FW_ALTL_RAD,FW Altitude Acceptance Radius before a landing |-,,"min=0.05, max=200.0",src/modules/navigator/navigator_params.yaml
+PX4,NAV_MC_ALT_RAD,MC Altitude Acceptance Radius Acceptance radius for multicopter altitude.,,"min=0.05, max=200.0",src/modules/navigator/navigator_params.yaml
+PX4,NAV_TRAFF_AVOID,Set traffic avoidance action |-,,"min=0, max=5",src/modules/navigator/navigator_params.yaml
+PX4,NAV_TRAFF_A_HOR,Crosstrack conflict distance threshold Maximum absolute distance from the projected traffic track.,,"min=500, max=500",src/modules/navigator/navigator_params.yaml
+PX4,NAV_TRAFF_A_VER,Crosstrack vertical separation threshold,,"min=10, max=500",src/modules/navigator/navigator_params.yaml
+PX4,NAV_TRAFF_COLL_T,Crosstrack collision time threshold |-,,"min=1, max=900000000",src/modules/navigator/navigator_params.yaml
+PX4,NAV_FORCE_VT,Force VTOL mode takeoff and land,,,src/modules/navigator/navigator_params.yaml
+PX4,NAV_MIN_LTR_ALT,Minimum Loiter altitude |-,,,src/modules/navigator/navigator_params.yaml
+PX4,NAV_MIN_GND_DIST,Minimum height above ground during Mission and RTL |-,,,src/modules/navigator/navigator_params.yaml
+PX4,NAV_LTR_LAST_DL,Loiter at last GCS heartbeat position on data link loss |-,,,src/modules/navigator/navigator_params.yaml
+PX4,MIS_TAKEOFF_ALT,Default take-off altitude |-,,"min=0, max=100000",src/modules/navigator/mission_params.yaml
+PX4,MIS_TKO_LAND_REQ,Mission takeoff/landing required |-,,"min=-1, max=100000",src/modules/navigator/mission_params.yaml
+PX4,MIS_DIST_1WP,Maximal horizontal distance from Home to first waypoint |-,,"min=-1, max=100000",src/modules/navigator/mission_params.yaml
+PX4,MIS_MNT_YAW_CTL,Enable gimbal yaw control in missions |-,,"min=0, max=1",src/modules/navigator/mission_params.yaml
+PX4,MIS_YAW_TMT,Waypoint heading timeout |-,,"min=-1, max=20",src/modules/navigator/mission_params.yaml
+PX4,MIS_YAW_ERR,Max yaw error in degrees needed for waypoint heading acceptance,,"min=0, max=90",src/modules/navigator/mission_params.yaml
+PX4,MIS_LND_ABRT_ALT,Landing abort min altitude |-,,,src/modules/navigator/mission_params.yaml
+PX4,MIS_COMMAND_TOUT,Timeout to allow the payload to execute the mission command |-,,,src/modules/navigator/mission_params.yaml
+PX4,RTL_RETURN_ALT,Return mode return altitude |-,,"min=0, max=90",src/modules/navigator/rtl_params.yaml
+PX4,RTL_DESCEND_ALT,Return mode loiter altitude |-,,"min=0, max=90",src/modules/navigator/rtl_params.yaml
+PX4,RTL_LAND_DELAY,Return mode delay |-,,"min=-1, max=90",src/modules/navigator/rtl_params.yaml
+PX4,RTL_MIN_DIST,Min distance for RTL cone altitude calculation |-,,"min=0.5, max=90",src/modules/navigator/rtl_params.yaml
+PX4,RTL_TYPE,"Return type Return mode destination and flight path (home location, rally point,",,"min=0, max=90",src/modules/navigator/rtl_params.yaml
+PX4,RTL_CONE_ANG,Half-angle of the return mode altitude cone |-,,"min=0, max=90",src/modules/navigator/rtl_params.yaml
+PX4,RTL_PLD_MD,RTL precision land mode |-,,"min=25, max=2.0",src/modules/navigator/rtl_params.yaml
+PX4,RTL_LOITER_RAD,Loiter radius for rtl descend Set the radius for loitering to a safe altitude for VTOL transition.,,"min=25, max=2.0",src/modules/navigator/rtl_params.yaml
+PX4,RTL_TIME_FACTOR,RTL time estimate safety margin factor |-,,"min=1.0, max=2.0",src/modules/navigator/rtl_params.yaml
+PX4,RTL_TIME_MARGIN,RTL time estimate safety margin offset |-,,"min=0, max=3600",src/modules/navigator/rtl_params.yaml
+PX4,RTL_APPR_FORCE,RTL force approach landing |-,,,src/modules/navigator/rtl_params.yaml
+ArduPilot,ACRO_Y_RATE,120,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_ACC_Y_MAX,180,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_ANG_PIT_P,11.25,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_ANG_RLL_P,11.25,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_ANG_YAW_P,6,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_PIT_D,0.008325,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_PIT_I,0.126,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_PIT_IMAX,0.2222222,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_PIT_P,0.126,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_RLL_D,0.01125,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_RLL_I,0.18225,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_RLL_IMAX,0.2222222,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_RLL_P,0.18225,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_YAW_D,0.0036,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_YAW_I,0.036,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_YAW_IMAX,0.222,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,ATC_RAT_YAW_P,0.36,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,BATT_AMP_PERVLT,17,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,BATT_CAPACITY,5100,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,BATT_CURR_PIN,3,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,BATT_MONITOR,4,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,BATT_VOLT_MULT,12.02,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,BATT_VOLT_PIN,2,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,FRAME_CLASS,1,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,FRAME_TYPE,2,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,BATT_FS_LOW_ACT,2,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,MNT1_PITCH_MAX,0,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,MNT1_PITCH_MIN,-90,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,MNT1_RC_RATE,90,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,MNT1_TYPE,1,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,SERVO9_FUNCTION,7,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,SERVO9_MAX,1520,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,SERVO9_MIN,1000,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,SERIAL2_PROTOCOL,3,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,THR_DZ,50,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,PSC_NE_VEL_I,0.5,,,Tools/Frame_params/3DR_Iris+.param
+ArduPilot,PSC_NE_VEL_P,1,,,Tools/Frame_params/3DR_Iris+.param
