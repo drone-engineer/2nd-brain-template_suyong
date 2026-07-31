@@ -62,3 +62,23 @@ ArduPilot,BATT_UNHEALTHY,Battery 1 unhealthy warning,배터리 상태 이상 또
 ArduPilot,GPS_SIGNAL_WEAK,Unhealthy GPS Signal Error,GPS 신호 약화 또는 위성 수 부족,"GPS 안테나 위치 변경, 외부 장애물 제거",도심/실내 비행 시,ArduPilot Discuss #102574
 ArduPilot,ARM_PIXHawk6C_NOGPS,Cannot arm without GPS,GPS 없이 시동 불가 설정됨,"ARMING_CHECK에서 GPS 검증 건너뛰기, FENCE_ENABLE=0",GPS 없이 실내 비행 시,ArduPilot Discuss #112738
 ArduPilot,LUA_SCRIPT_ERROR,LUA script Pre arm error,사용자 정의 스크립트 검증 실패,"스크립트 문법/논리 검증, 로그 확인",LUA 스크립트 사용 시,ArduPilot Discuss #86834
+PX4,PREFLIGHT_CHECK_FAIL,Preflight check: %s,프리플라이트 검증 실패 (센서/하드웨어 오류),"전체 캘리브레이션 재수행, 센서 연결 확인",시동 전 자동 검증 단계에서 실패,Commander.cpp
+PX4,PREARM_SAFETY_FAIL,prearm safety: %s,사전 시동 안전 검증 실패,"안전 스위치 확인, ARMING_CHECK 재검토",수동 시동 전 안전 검증 단계,Commander.cpp
+PX4,FAILSAFE_TRIGGERED,in failsafe: %s,실패 안전 모드 진입,"통신/센서 복구, RTL 모드 전환",통신 손실/센서 오류 시 자동 발동,Commander.cpp
+PX4,CMD_LOST,vehicle_command lost,MAVLink 명령 손실,"통신 링크 확인, GCS 재연결",오프보드/자동 비행 시,Commander.cpp
+PX4,ACTUATOR_TEST_WARN,actuator_group_test: value,액추에이터 테스트 값 오류,모터 테스트 파라미터 재설정,모터 테스트/점검 시,Commander.cpp
+PX4,POWER_NOTIFY_FAIL,Failed to register power notification callback,전원 알림 콜백 등록 실패,"전원 버튼 하드웨어 확인, 펌웨어 업데이트",전원 관리 시스템 오류,Commander.cpp
+ArduPilot,PREARM_RC_NEUTRAL,PreArm: Roll (RC1) is not neutral,조종기 스틱 중립 위치 오류,조종기 스틱 중립 위치 재조정,시동 전 조종기 점검 시,ArduPilot Discuss #78459
+ArduPilot,PREARM_RC_THROTTLE,PreArm: Throttle (RC3) is not neutral,스로틀 스틱 중립 위치 오류,스로틀 스틱을 중립 위치로 이동,모터 테스트 전 조종기 점검,ArduPilot Discuss #78459
+ArduPilot,PREARM_LOGGING_FAIL,PreArm: Logging not started,데이터 로깅 실패,"마이크로SD 카드 확인, 포맷",시동 전 로깅 시스템 검증,ArduPilot Discuss #43753
+ArduPilot,PREARM_LOGGING_FAILED,PreArm: Logging Failed,로깅 파일 시스템 문제,"SD 카드 교체, 파일 시스템 검사",플라이트 데이터 기록 실패,ArduPilot Discuss #43753
+ArduPilot,ERROR_SUBSYSTEM_EKF_PRIMARY,ERROR_SUBSYSTEM_EKF_PRIMARY,EKF 주축 전환 실패,"EKF2 파라미터 재설정, 센서 교체",EKF2 상태 추정 실패 시,ArduPilot Discuss #12426
+ArduPilot,PREARM_POSITION_EST,Prearm: Need Position Estimate,위치 추정 실패 (GPS/자이로),"GPS 신호 확보, EKF2 캘리브레이션",GPS 기반 비행 전 위치 확보,ArduPilot Discuss #94662
+ArduPilot,BAD_GPS_POS,Bad GPS Pos,GPS 위치 데이터 오류,"GPS 안테나 위치 변경, 장애물 제거",GPS 신호 약화 시,ArduPilot Discuss #4210
+ArduPilot,CHECK_FS_THR_VALUE,Pre Arm: Check_FS_THR_VALUE,스로틀 failsafe 값 검증 실패,FS_THR_ENABLE/FS_THR_VALUE 재설정,스로틀 failsafe 설정 검증,ArduPilot Discuss #1926
+ArduPilot,RC_FAILSAFE_LOST,Crash due to signal disconnected between Transmitter and Receiver & Failsafe Err,조종기 신호 손실,"RC 안테나 고급화, FS_THR_ENABLE 설정",장거리 비행 시 신호 손실,ArduPilot Discuss #102748
+ArduPilot,GPS_CALIBRATION_ERR,GPS Calibration Error,GPS 캘리브레이션 실패,"GPS 캘리브레이션 재수행, 위성 신호 확인",초기 설정 단계,ArduPilot Discuss #25859
+ArduPilot,ARMING_CHECK_MODIFY,Can't modify ARMING_CHECK parameter,ARMING_CHECK 파라미터 수정 불가,"Mission Planner 권한 확인, 파라미터 잠금 해제",파라미터 설정 시,ArduPilot Discuss #72467
+ArduPilot,CRASHDUMP_DETECT,PreArm:CrashDump data detected,크래시 덤프 데이터 발견,"로그 분석, 펌웨어 재플래시",이전 비행 중 크래시 발생 후,ArduPilot Discuss #140353
+ArduPilot,EKF_PRIMARY_SWITCH,Warning: EKF primary changed,EKF 주축 전환 경고,"EKF2 파라미터 확인, IMU/센서 교체",EKF2 상태 추정 불안정 시,ArduPilot Discuss #80259
+ArduPilot,ALTITUDE_JUMP,Altitude reading jumped during vibration compensation,고도 측정값 급변,"진동 완화, 바로미터 캘리브레이션",진동이 심한 환경에서 발생,ArduPilot Discuss #141137

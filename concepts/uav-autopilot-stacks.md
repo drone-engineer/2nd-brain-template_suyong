@@ -68,7 +68,7 @@ contradictions: []
 
 ## 경고 메시지 기능별 비교 (53개 수집)
 
-> 📎 전체 63개 경고 메시지 수집: `docs/tech-stack/px4-ardupilot-warnings.csv` (엑셀 가능)
+> 📎 전체 83개 경고 메시지 수집: `docs/tech-stack/px4-ardupilot-warnings.csv` (엑셀 가능)
 
 | 기능 영역 | PX4 경고 | ArduPilot 경고 | 주치상 | 비고 |
 |-----------|----------|----------------|--------|------|
@@ -89,6 +89,15 @@ contradictions: []
 | **배터리 건강** | - | `BATT_UNHEALTHY` (Battery 1 unhealthy warning) | 배터리 교체, 저전 임계치 재설정 | 배터리 모니터링 경고 |
 | **GPS 없이 시동** | - | `ARM_PIXHawk6C_NOGPS` (Cannot arm without GPS) | ARMING_CHECK에서 GPS 검증 건너뛰기 | 실내 비행 시 |
 | **LUA 스크립트** | - | `LUA_SCRIPT_ERROR` (LUA script Pre arm error) | 스크립트 문법/논리 검증 | 사용자 정의 스크립트 사용 시 |
+| **프리플라이트 검증** | `PREFLIGHT_CHECK_FAIL` | `PREARM_POSITION_EST` (Prearm: Need Position Estimate) | 전체 캘리브레이션 재수행 | 시동 전 자동 검증 단계에서 실패 |
+| **사전 시동 안전** | `PREARM_SAFETY_FAIL` | `CHECK_FS_THR_VALUE` (Pre Arm: Check_FS_THR_VALUE) | 스로틀 failsafe 값 재설정 | 수동 시동 전 안전 검증 단계 |
+| **실패 안전 모드** | `FAILSAFE_TRIGGERED` | `RC_FAILSAFE_LOST` | 통신 링크 확인, RTL 모드 전환 | 통신 손실/센서 오류 시 자동 발동 |
+| **MAVLink 명령 손실** | `CMD_LOST` (vehicle_command lost) | `ERROR_SUBSYSTEM_EKF_PRIMARY` | GCS 재연결, EKF2 파라미터 재설정 | 오프보드/자동 비행 시 |
+| **로깅 실패** | - | `PREARM_LOGGING_FAIL` (PreArm: Logging not started) | SD 카드 확인/포맷 | 데이터 기록 실패 시 |
+| **조종기 스틱** | - | `PREARM_RC_NEUTRAL` (PreArm: Roll is not neutral) | 스틱 중립 위치 재조정 | 시동 전 조종기 점검 시 |
+| **GPS 위치 오류** | - | `BAD_GPS_POS` (Bad GPS Pos) | GPS 안테나 위치 변경 | GPS 신호 약화 시 |
+| **EKF 주축 전환** | - | `EKF_PRIMARY_SWITCH` (EKF primary changed) | IMU/센서 교체 | EKF2 상태 추정 불안정 시 |
+| **크래시 덤프** | - | `CRASHDUMP_DETECT` (CrashDump data detected) | 펌웨어 재플래시 | 이전 비행 중 크래시 발생 후 |
 
 ### 📌 사용 시나리오별 주치상
 
