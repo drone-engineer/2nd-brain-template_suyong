@@ -611,6 +611,10 @@
 - index.md: last updated date bumped to 2026-07-31
 - All raw sha256 verified (pre-computed, no drift)
 
+## [2026-07-31] create | PX4/ArduPilot 최신 펌웨어 보고서 + 상용 드론 판매 보고서
+- docs/reports/2026-07-31-px4-ardupilot-firmware-report.md: PX4 v1.17.0 + ArduPilot Plane 4.7.0 기술 보고서
+- docs/reports/2026-07-31-commercial-drones-report.md: 2026년 7월 상용 드론 판매 보고서 (ModalAI Starling, Cube Orange 등)
+
 ## [2026-07-31] create | Hunter-Killer UAS 종합 개념 페이지
 - concepts/hunter-killer-uas.md: 새 canonical concept 페이지 생성
 - raw/youtube/ 14개 파일을 sources로 참조
