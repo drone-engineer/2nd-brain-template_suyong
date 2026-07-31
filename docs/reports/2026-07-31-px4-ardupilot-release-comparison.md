@@ -14,6 +14,9 @@ contradictions: []
 
 # PX4 v1.17 + ArduPilot 4.7.0 종합 릴리즈 비교 보고서
 
+> 📎 **출처**: `raw/articles/2026-07-31-px4-v1.17-release-notes.md`, `raw/articles/2026-07-31-ardupilot-4.7-release-notes.md`
+> 📎 **Git 커밋**: `c9bf47b`
+
 ## 1. 개요
 
 | 항목 | PX4 v1.17.0 | ArduPilot 4.7.0 |

@@ -13,6 +13,9 @@ contradictions: []
 
 # 2026년 7월 최신 상용 드론 판매 보고서
 
+> 📎 **출처**: `raw/articles/2026-07-31-commercial-drones.md`
+> 📎 **Git 커밋**: `3fe4e9e`
+
 ## 1. 개요
 
 2026년 7월 기준, **PX4/ArduPilot 기반 상용 드론** 시장은 **산업용/국방용**으로 급성장 중입니다.

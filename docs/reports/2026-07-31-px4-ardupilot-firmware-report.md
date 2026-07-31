@@ -14,6 +14,9 @@ contradictions: []
 
 # PX4/ArduPilot 최신 펌웨어 기술 보고서 (2026년 7월)
 
+> 📎 **출처**: `raw/articles/2026-07-31-px4-v1.17-release-notes.md`, `raw/articles/2026-07-31-ardupilot-plane-4.7-release-notes.md`
+> 📎 **Git 커밋**: `3fe4e9e`
+
 ## 1. 개요
 
 | 항목 | PX4 | ArduPilot |

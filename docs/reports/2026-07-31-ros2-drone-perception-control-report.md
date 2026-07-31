@@ -14,6 +14,8 @@ contradictions: []
 
 # ROS2 기반 드론 디텍션/객체인식/제어 종합 보고서
 
+> 📎 **출처**: `raw/articles/2026-07-31-ros2-drone-packages.md`, `raw/articles/2026-07-31-px4-ardupilot-release-comparison.md`
+
 ## 1. 개요
 
 ROS2 기반 드론 시스템은 **인지 + 제어** 통합 스택으로 발전하고 있습니다.
