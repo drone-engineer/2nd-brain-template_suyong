@@ -618,6 +618,9 @@
 ## [2026-07-31] create | PX4 v1.17 + ArduPilot 4.7.0 종합 릴리즈 비교 보고서
 - docs/reports/2026-07-31-px4-ardupilot-release-comparison.md: PX4 v1.17.0 + ArduPilot 4.7.0 기능/파라미터 비교
 
+## [2026-07-31] create | ROS2 기반 드론 디텍션/객체인식/제어 종합 보고서
+- docs/reports/2026-07-31-ros2-drone-perception-control-report.md: YOLOv8, DeepSORT, PX4 ROS2 Bridge, Zenoh 미들웨어
+
 ## [2026-07-31] create | Hunter-Killer UAS 종합 개념 페이지
 - concepts/hunter-killer-uas.md: 새 canonical concept 페이지 생성
 - raw/youtube/ 14개 파일을 sources로 참조
