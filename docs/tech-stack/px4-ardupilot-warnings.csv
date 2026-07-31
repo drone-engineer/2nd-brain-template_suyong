@@ -92,3 +92,13 @@ ArduPilot,MOT_BAT_VOLT_RANGE,Mot_bat_volt_max & mot_bat_volt_min,배터리 볼�
 ArduPilot,ALT_HOLD_FAIL,AltHold – motors suddenly drop to idle while hovering,고도 유지 모드에서 모터 급정거,"DShot ESC 설정 확인, AltHold 튜닝",AltHold 모드 비행 시,discuss.ardupilot.org #AltHold motors drop
 ArduPilot,RC_FAILSAFE,Failsafe error x1,조종기 신호 손실 실패 안전 모드,"RC 안테나/수신기 점검, FS_THR_ENABLE 설정",장거리 비행 시 신호 손실,discuss.ardupilot.org #Flight mode change failed
 ArduPilot,EKF_VARIANCE,EKF variance,EKF 상태 추정 불안정,"EKF2 파라미터 재설정, 센서 교체",고속 회전/급가속 시,discuss.ardupilot.org #EKF variance search
+PX4,PREFLIGHT_NOT_ESTIMATOR,Preflight: not estimator,EKF2 상태 추정기 검증 실패,"EKF2 캘리브레이션, 센서 재부팅",프리플라이트 검증 단계,discuss.px4.io #Preflight not estimator
+PX4,NO_LOCAL_POSITION,No Local Position error on takeoff,로컬 위치 추정 실패 (GPS/자이로 불일치),"EKF2_AID_MASK에서 비전/레이더 활성화, 센서 캘리브레이션",이착륙 시 로컬 위치 필요,discuss.px4.io #No Local Position
+PX4,FAILSAFE_NO_LOCAL_POS,Failsafe enabled no local position,실패 안전 모드 활성화 + 로컬 위치 없음,"EKF2 캘리브레이션, GNSS-Denied 시 비전 활성화",GNSS-Denied 환경에서 실패 안전 모드 진입,discuss.px4.io #Failsafe no local position
+PX4,HEALTH_ARMING_EKF2_FAIL,WARN [health_and_arming_checks] Preflight Fail: ekf2,EKF2 건강 검증 실패,"EKF2 파라미터 재설정, IMU/센서 교체",프리플라이트 자동 검증 단계,github.com/PX4/PX4-Autopilot #health_and_arming_checks
+PX4,EKF_USES_GPS_NOT_FLOW,EKF uses GPS instead of flow camera,EKF2가 GPS를 우선하여 Optical Flow 무시,"EKF2_AID_MASK에서 비전 활성화, OPTICAL_FLOW 튜닝",GPS 신호가 약한 실내 비행 시,github.com/PX4/PX4-Autopilot #iris_opt_flow
+PX4,MULTI_UAV_NOT_ARMING,Multi UAV Simulation with Gazebo not arming,다중 UAV 시뮬레이션에서 시동 실패,"MAVLink ID 설정, 시뮬레이션 파라미터 확인",다중 드론 시뮬레이션,discuss.px4.io #Multi UAV Simulation
+PX4,BATTERY_STATUS_WARN,Issue with Battery Status in PX4,배터리 상태 보고 오류,"배터리 캘리브레이션, BATT_LOW_VOLT 재설정",실시간 배터리 모니터링,discuss.px4.io #Battery Status
+PX4,COM_PARACHUTE_WARN,COM_PARACHUTE warning-only mode,패러세일(충격완화) 실패 안전 모드,"COM_PARACHUTE 파라미터 설정, 낙하산 테스트",긴급 착지 시,github.com/PX4/PX4-Autopilot #COM_PARACHUTE
+PX4,TRIFFIC_AVOID_FAILSAFE,failsafe for traffic avoidance system,교통 회피 시스템 실패 안전 모드,"UAVCAN 설정, ADS-B 수신 확인",공중 교통 회피 시,github.com/PX4/PX4-Autopilot #traffic avoidance
+PX4,Z_VALIDITY_BROKEN,1.13 z validity and z vel validity broken,Z축 위치/속도 검증 실패,"EKF2_GPS_POS_DEV 조정, 바로미터 캘리브레이션",고도 유지 실패 시,github.com/PX4/PX4-Autopilot #z validity
