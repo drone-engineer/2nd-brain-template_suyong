@@ -209,9 +209,11 @@ sudo apt install -y ros-humble-cv-bridge ros-humble-image-transport \
   ros-humble-vision-msgs ros-humble-rviz2
 sudo apt install -y libopencv-dev libeigen3-dev libceres-dev
 
-# 2) VINS-Fusion (ROS2 포크 예: yanijin2014/VINS-Fusion, Humble 브랜치 확인)
+# 2) VINS-Fusion ROS2 (Humble 브랜치)
+#   공식 저장소: https://github.com/HKUST-Aerial-Robotics/VINS-Fusion (ROS1 전용)
+#   ROS2 Humble 포크: https://github.com/JunJie1213855/VINS_ROS2 (branch: main)
 mkdir -p ~/vio_ws/src && cd ~/vio_ws/src
-git clone https://github.com/your-ros2-fork/VINS-Fusion.git
+git clone https://github.com/JunJie1213855/VINS_ROS2.git
 cd ~/vio_ws && colcon build --packages-select vins_fusion
 
 # 3) 카메라→VINS 토픽 매핑 (theolaye.calib)
@@ -250,6 +252,13 @@ class TRN:
 ```
 
 - DTED는 사전 다운로드(예: NASADEM 30m) 후 `/maps/`에 저장, 비행 전 기체 메모리 로드
+- **다운로드 스크립트**: `docs/workflow/download-dted.py` — BBOX 기반 USGS 3DEP S3 타일 자동 다운로드
+  ```bash
+  # 한국 전역 DTED 다운로드 (약 640MB)
+  python3 docs/workflow/download-dted.py --bbox 124,33,131,39 --output ./maps/
+  # 테스트용 작은 영역
+  python3 docs/workflow/download-dted.py --bbox 126.9,37.5,127.0,37.6 --output ./maps/test/
+  ```
 - 보정 주기: 1~5Hz (LRF 갱신율). VIO 누적 오차를 루프클로징 없이 주기 보정
 
 ## 13. 빌드 & 테스트 체크리스트
