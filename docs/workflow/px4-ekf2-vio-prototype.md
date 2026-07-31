@@ -267,7 +267,38 @@ class TRN:
 
 > 실기체 테스트 전 **반드시 Gazebo/AirSim에서 1~7 통과**. 자율타격(Killer)은 6·7 없이 비행 금지.
 
-## 14. 위키 연결 (전체)
+## 15. GNSS-Denied 비행 시 경고 메시지 + 주치상
+
+GNSS-Denied 환경에서 자주 발생하는 경고 메시지와 대응 주치상 (`docs/tech-stack/px4-ardupilot-warnings.csv` 83개 중 관련 항목):
+
+| 경고 메시지 | 원인 | 주치상 (조치) |
+|-------------|------|---------------|
+| `COM_GNSSLOSS_ACT` | GPS 신호 손실 | `EKF2_AID_MASK=24`(비전+LRF), `EKF2_HGT_MODE=2`(고도 비전 우선) |
+| `angular_velocity_invalid` | IMU 각속도 데이터 손상 | `EKF2_GYRO_NOISE` 경로 확인, IMU 캘리브레이션 재수행 |
+| `global_position_invalid` | 글로벌 위치 추정 실패 | VIO 브리지 토픑 확인, `vehicle_visual_odometry` 발행 여부 |
+| `local_position_invalid` | 로컬 위치 추정 실패 | `EKF2_AID_MASK`에서 비전 비트(2) 활성화, 거리센서 연결 |
+| `EKF2_MAG_CAL` | 자력계 캘리브레이션 필요 | 금속/전자파 제거 후 나침반 캘리브레이션 |
+| `COM_LOW_BAT_ACT` | 배터리 실패 | `BATT_LOW_MAH` 재설정, 스팬톤 배터리 교체 |
+| `NAV_DLL_ACT` | 지오펜스 위반 | `FENCE_ENABLE=0`, 반경 늘리기 |
+| `COM_RC_LOSS_T` | 조종기 연결 손실 | RC 안테나 고급화, `FS_GCS_ENABLE=2`(RTL) |
+| `PREARM_TERRAIN` | 지형 데이터 없음 | `TERRAIN_FOLLOW` 비활성화, `RTL_ALT_TYPE=0`(고도 우선) |
+| `ERROR_SUBSYSTEM_EKF_PRIMARY` | EKF 주축 전환 실패 | IMU/센서 교체, `EK3_SRC1_POSZ=3`(BARO 우선) |
+
+> 📌 **실전 팁**: GNSS-Denied 비행 전 `param show EKF2_AID_MASK`로 현재 상태 확인 → 비전 비트(2)가 켜져 있는지 반드시 검증
+
+## 16. YouTube 실전 경고 메시지 (추가 수집 예정)
+
+실제 비행 중 경고 메시지 화면 녹화 영상을 수집하여 실시간 대응 가이드 작성:
+
+| 비행 상황 | 발생 경고 | 대응 | 출처 |
+|-----------|----------|------|------|
+| 배터리 실패 | `BATT_LOW_MAH` / `BATT_LOW_VOLT` | 배터리 교체, 저전 임계치 재설정 | [Setup Battery Failsafe - Arducopter](https://www.youtube.com/watch?v=CCIEdyJcV-s) |
+| 나침반 문제 | `PreArm Check: Compass not health` | 나침반 캘리브레이션, 금속 제거 | [PreArm Check: Compass not health](https://www.youtube.com/watch?v=mk1lMPLuXy8) |
+| RC 신호 손실 | `FS_THR_ENABLE` / `RC_LOST` | RC 안테나 고급화, failsafe 재설정 | [ArduPilot Discuss #102748](https://discuss.ardupilot.org/t/102748) |
+| GPS 신호 약화 | `BAD_GPS_POS` / `GPS_SIGNAL_WEAK` | GPS 안테나 위치 변경, 장애물 제거 | [ArduPilot Discuss #102574](https://discuss.ardupilot.org/t/102574) |
+| EKF 주축 전환 | `ERROR_SUBSYSTEM_EKF_PRIMARY` | IMU/센서 교체, EKF2 파라미터 재설정 | [ArduPilot Discuss #12426](https://discuss.ardupilot.org/t/12426) |
+
+> 📎 `daily-youtube-scout` 크론으로 `raw/youtube/`에 자동 수집된 영상에서 추가 경고 메시지 클립 추출 예정
 
 - `[[uav-mission-approval-abort]]` — 승인/취소 설계
 - `[[gnss-denied-autonomous-navigation]]` — TRN/VIO 이론
