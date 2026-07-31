@@ -614,12 +614,15 @@
 ## [2026-07-31] create | PX4/ArduPilot 최신 펌웨어 보고서 + 상용 드론 판매 보고서
 - docs/reports/2026-07-31-px4-ardupilot-firmware-report.md: PX4 v1.17.0 + ArduPilot Plane 4.7.0 기술 보고서
 - docs/reports/2026-07-31-commercial-drones-report.md: 2026년 7월 상용 드론 판매 보고서 (ModalAI Starling, Cube Orange 등)
+- Git 커밋: 3fe4e9e
 
 ## [2026-07-31] create | PX4 v1.17 + ArduPilot 4.7.0 종합 릴리즈 비교 보고서
 - docs/reports/2026-07-31-px4-ardupilot-release-comparison.md: PX4 v1.17.0 + ArduPilot 4.7.0 기능/파라미터 비교
+- Git 커밋: c9bf47b
 
 ## [2026-07-31] create | ROS2 기반 드론 디텍션/객체인식/제어 종합 보고서
 - docs/reports/2026-07-31-ros2-drone-perception-control-report.md: YOLOv8, DeepSORT, PX4 ROS2 Bridge, Zenoh 미들웨어
+- Git 커밋: cd1af29
 
 ## [2026-07-31] create | Hunter-Killer UAS 종합 개념 페이지
 - concepts/hunter-killer-uas.md: 새 canonical concept 페이지 생성
