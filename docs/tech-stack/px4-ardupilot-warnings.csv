@@ -52,3 +52,13 @@ ArduPilot,RTL_ALT,RTL 고도 설정 오류,귀환 고도가 지면보다 낮음 
 ArduPilot,BATT_LOW_MAH,배터리 잔량 부족,배터리 방전 또는 소비량 과다,BATT_LOW_MAH 값을 늘리거나 배터리 교체,장시간 비행 후 배터리 저하 시,AP_Arming.cpp
 ArduPilot,SERIAL1_PROTOCOL,직렬 통신 프로토콜 오류,MAVLink/UART 설정 불일치,SERIAL1_PROTOCOL=2(MAVLink2)로 설정,지상국/컴패니언 컴퓨터와 통신 설정 시,AP_Arming.cpp
 ArduPilot,BRD_SAFETY,안전 스위치 활성화됨,안전 스위치가 켜져 있어 시동 불가,BRD_SAFETY=0(비활성화) 또는 스위치 누르기,안전 스위치를 통한 인간 승인 게이트,AP_Arming.cpp
+PX4,PREFLIGHT_FAIL,Preflight check failed,센서 캘리브레이션 누락 또는 하드웨어 오류,"전체 캘리브레이션 재수행, 센서 연결 확인",시동 전 자동 검증 단계에서 실패,Commander.cpp
+PX4,POWER_BUTTON_ERR,unhandled power button state,전원 버튼 하드웨어 오류 또는 펌웨어 버그,전원 버튼 교체 또는 펌웨어 업데이트,수동 전원 제어 시 버튼 오작동,Commander.cpp
+PX4,INVALID_HEADING,Invalid heading value,나침반 또는 GPS 헤딩 데이터 오류,"나침반 캘리브레이션, 금속 제거",자기장 왜곡 환경에서 발생,Commander.cpp
+ArduPilot,PREARM_TERRAIN,PreArm: Waiting for Terrain Data,지형 데이터 다운로드 실패 또는 TERRAIN_FOLLOW 파라미터 문제,"TERRAIN_FOLLOW 대신 RTL_ALT_TYPE 사용, 지형 데이터 예측 사전 다운로드",RTL 모드 또는 지형 추적 비행 시,ArduPilot Discuss #95415
+ArduPilot,RANGEFINDER_NO_DATA,Rangefinder 1: No Data,라이다/초음파 거리 센서 연결 문제 또는 데이터 없음,"RNGFND1_TYPE 설정 확인, 케이블/전원 점검",초음파/라이다 장착 시,ArduPilot Discuss #133936
+ArduPilot,BAD_LIDAR,Pre Arm Bad LIDAR,LIDAR 센서 데이터 오류 또는 캘리브레이션 필요,"LIDAR 캘리브레이션, 센서 교체",거리 측정 센서 장착 시,ArduPilot Discuss #133936
+ArduPilot,BATT_UNHEALTHY,Battery 1 unhealthy warning,배터리 상태 이상 또는 배터리 게이트 비활성화 필요,"BATT_LOW_MAH/BATT_LOW_VOLT 재설정, 배터리 교체",배터리 모니터링 시스템에서 경고,ArduPilot Discuss #97614
+ArduPilot,GPS_SIGNAL_WEAK,Unhealthy GPS Signal Error,GPS 신호 약화 또는 위성 수 부족,"GPS 안테나 위치 변경, 외부 장애물 제거",도심/실내 비행 시,ArduPilot Discuss #102574
+ArduPilot,ARM_PIXHawk6C_NOGPS,Cannot arm without GPS,GPS 없이 시동 불가 설정됨,"ARMING_CHECK에서 GPS 검증 건너뛰기, FENCE_ENABLE=0",GPS 없이 실내 비행 시,ArduPilot Discuss #112738
+ArduPilot,LUA_SCRIPT_ERROR,LUA script Pre arm error,사용자 정의 스크립트 검증 실패,"스크립트 문법/논리 검증, 로그 확인",LUA 스크립트 사용 시,ArduPilot Discuss #86834

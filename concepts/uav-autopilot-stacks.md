@@ -68,7 +68,7 @@ contradictions: []
 
 ## 경고 메시지 기능별 비교 (53개 수집)
 
-> 📎 전체 53개 경고 메시지 수집: `docs/tech-stack/px4-ardupilot-warnings.csv` (엑셀 가능)
+> 📎 전체 63개 경고 메시지 수집: `docs/tech-stack/px4-ardupilot-warnings.csv` (엑셀 가능)
 
 | 기능 영역 | PX4 경고 | ArduPilot 경고 | 주치상 | 비고 |
 |-----------|----------|----------------|--------|------|
@@ -81,6 +81,14 @@ contradictions: []
 | **지오펜스 위반** | `NAV_DLL_ACT` (자동 RTL 실패) | `FENCE_ENABLE` + `FENCE_ALT_MAX` | FENCE 비활성화 또는 반경 늘리기 | PX4는 RTL 고도 우선, Ardu는 반경 기반 |
 | **조종기 손실** | `COM_RC_LOSS_T` (조종기 연결 손실) | `RC_CHECK` | RC 캘리브레이션, 배터리 충전 | 두 스택 모두 조종기 신호 검증 |
 | **Kill-Switch** | `COM_KILL` (0~1) | `ARMING_KILLSWITCH` | 스위치 누르기 또는 파라미터 재설정 | 인간 승인 게이트의 핵심 |
+| **지형 데이터** | `PREFLIGHT_FAIL` | `PREARM_TERRAIN` (PreArm: Waiting for Terrain Data) | TERRAIN_FOLLOW 대신 RTL_ALT_TYPE 사용 | 실내 비행 시 지형 추적 비활성화 |
+| **거리 센서** | `SENS_RNG_RESERVE` | `RANGEFINDER_NO_DATA` (Rangefinder 1: No Data) | RNGFND1_TYPE 설정, 케이블 점검 | 라이다/초음파 장착 시 |
+| **LIDAR** | `SENS_EN_SAL` | `BAD_LIDAR` (Pre Arm Bad LIDAR) | LIDAR 캘리브레이션, 센서 교체 | 고도 유지 보조용 |
+| **전원 버튼** | `POWER_BUTTON_ERR` | - | 전원 버튼 교체 또는 펌웨어 업데이트 | 하드웨어 오류 |
+| **GPS 신호** | - | `GPS_SIGNAL_WEAK` (Unhealthy GPS Signal Error) | GPS 안테나 위치 변경, 장애물 제거 | 도심/실내 비행 시 |
+| **배터리 건강** | - | `BATT_UNHEALTHY` (Battery 1 unhealthy warning) | 배터리 교체, 저전 임계치 재설정 | 배터리 모니터링 경고 |
+| **GPS 없이 시동** | - | `ARM_PIXHawk6C_NOGPS` (Cannot arm without GPS) | ARMING_CHECK에서 GPS 검증 건너뛰기 | 실내 비행 시 |
+| **LUA 스크립트** | - | `LUA_SCRIPT_ERROR` (LUA script Pre arm error) | 스크립트 문법/논리 검증 | 사용자 정의 스크립트 사용 시 |
 
 ### 📌 사용 시나리오별 주치상
 
