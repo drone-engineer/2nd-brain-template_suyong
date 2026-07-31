@@ -3,7 +3,7 @@ title: Hunter-Killer 무인헬기 자율 타격 체계
 created: 2026-07-31
 updated: 2026-07-31
 type: concept
-tags: [autonomous-weapons, hunter-killer, killchain, counter-uas]
+tags: [security, uav, control, swarm]
 sources:
   - raw/youtube/2026-07-31-unraT22a4zY.md
   - raw/youtube/2026-07-31-M5YyDGfKhE8.md
