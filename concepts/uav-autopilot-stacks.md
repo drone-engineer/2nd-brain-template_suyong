@@ -68,7 +68,7 @@ contradictions: []
 
 ## 경고 메시지 기능별 비교 (53개 수집)
 
-> 📎 전체 83개 경고 메시지 수집: `docs/tech-stack/px4-ardupilot-warnings.csv` (엑셀 가능)
+> 📎 전체 103개 경고 메시지 수집: `docs/tech-stack/px4-ardupilot-warnings.csv` (엑셀 가능)
 
 | 기능 영역 | PX4 경고 | ArduPilot 경고 | 주치상 | 비고 |
 |-----------|----------|----------------|--------|------|
@@ -77,6 +77,9 @@ contradictions: []
 | **EKF2 상태추정** | `angular_velocity_invalid`, `global_position_invalid` | `EK3_SRC1_POSZ` (EKF3 위치 추정 실패) | EKF2 파라미터 재설정, 센서 교체 | PX4는 failsafe_flags 비트마스크, Ardu는 소스 인덱스 |
 | **센서 캘리브레이션** | `EKF2_MAG_CAL` (자력계 캘리브레이션 필요) | `COMPASS_CHECK`, `BARO_CHECK`, `INS_CHECK` | 캘리브레이션 재수행, 금속/전자파 제거 | Ardu는 개별 센서별 검증, PX4는 EKF2 통합 검증 |
 | **배터리 실패** | `COM_LOW_BAT_ACT` (배터리 실패 안전 모드) | `BATT_LOW_MAH`, `BATT_LOW_VOLT` | 배터리 교체, 저전 임계치 재설정 | 두 스택 모두 임계치 기반 |
+| **GNSS-Denied** | `NO_LOCAL_POSITION`, `EKF_USES_GPS_NOT_FLOW` | `PREARM_POSITION_EST` | EKF2_AID_MASK에서 비전 활성화, OPTICAL_FLOW 튜닝 | 실내/도심 비행 시 필수 |
+| **트래픽 회피** | `TRIFFIC_AVOID_FAILSAFE` | - | UAVCAN 설정, ADS-B 수신 확인 | 공중 교통 회피 시 |
+| **다중 UAV** | `MULTI_UAV_NOT_ARMING` | - | MAVLink ID 설정, 시뮬레이션 파라미터 확인 | 다중 드론 시뮬레이션 |
 | **안장 검증 실패** | `COM_ARM_WO_GPS`, `COM_ARM_IMU_ACC` | `ARMING_CHECK` (0~7 비트마스크) | 전체 캘리브레이션 재수행 | Ardu는 비트마스크로 세부 제어 가능 |
 | **지오펜스 위반** | `NAV_DLL_ACT` (자동 RTL 실패) | `FENCE_ENABLE` + `FENCE_ALT_MAX` | FENCE 비활성화 또는 반경 늘리기 | PX4는 RTL 고도 우선, Ardu는 반경 기반 |
 | **조종기 손실** | `COM_RC_LOSS_T` (조종기 연결 손실) | `RC_CHECK` | RC 캘리브레이션, 배터리 충전 | 두 스택 모두 조종기 신호 검증 |
