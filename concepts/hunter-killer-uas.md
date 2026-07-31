@@ -50,6 +50,15 @@ GNSS가 차단된 환경에서 VIO + TRN(Terrain Referenced Navigation) 결합:
 - **TRN**: DTED 지형 데이터 + LRF (Laser rangefinder)
 - **융합**: EKF2 `EKF2_AID_MASK`에서 비전/레이더/VIO 활성화
 
+### GNSS-Denied 비행 시 추가 경고 메시지
+
+| 경고 메시지 | 원인 | 대응 |
+|-------------|------|------|
+| `NO_LOCAL_POSITION` | 로컬 위치 추정 실패 (GPS/자이로 불일치) | EKF2_AID_MASK에서 비전/레이더 활성화, 센서 캘리브레이션 |
+| `FAILSAFE_NO_LOCAL_POS` | 실패 안전 모드 활성화 + 로컬 위치 없음 | EKF2 캘리브레이션, GNSS-Denied 시 비전 활성화 |
+| `EKF_USES_GPS_NOT_FLOW` | EKF가 GPS를 우선하여 Optical Flow 무시 | EKF2_AID_MASK에서 비전 활성화, OPTICAL_FLOW 튜닝 |
+| `Z_VALIDITY_BROKEN` | Z축 위치/속도 검증 실패 | EKF2_GPS_POS_DEV 조정, 바로미터 캘리브레이션 |
+
 > 📎 TRN용 DTED 다운로드 스크립트: `docs/workflow/download-dted.py`
 
 ## 3. 안전/방어 메커니즘
@@ -66,7 +75,7 @@ GNSS가 차단된 환경에서 VIO + TRN(Terrain Referenced Navigation) 결합:
 | 배터리 부족 | `BAT_CRIT_THR` | `BATT_LOW_MAH` |
 | GNSS 손실 | `COM_GNSSLOSS_ACT` | `FS_GPS_ENABLE` |
 
-> 📎 전체 경고 메시지: `docs/tech-stack/px4-ardupilot-warnings.csv` (83개)
+> 📎 전체 경고 메시지: `docs/tech-stack/px4-ardupilot-warnings.csv` (103개)
 
 ## 4. Counter-UAS (대항-드론) 기술
 
