@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone System (PRD v2 참조)
 created: 2026-07-27
-updated: 2026-08-01
+updated: 2026-08-02
 type: entity
 tags:
   - uav
@@ -23,6 +23,15 @@ sources:
 - raw/youtube/2026-08-01-hp4ySL2xzV8.md
 - raw/youtube/2026-08-01-sEiKDZ6pZo4.md
 - raw/youtube/2026-08-01-w0z-362DkIU.md
+- raw/youtube/2026-08-02-5k9F7QK66Ws.md
+- raw/youtube/2026-08-02-5knSEDXDa_0.md
+- raw/youtube/2026-08-02-EKpxP2YieZw.md
+- raw/youtube/2026-08-02-MGggtBIzvtg.md
+- raw/youtube/2026-08-02-hp4ySL2xzV8.md
+- raw/youtube/2026-08-02-l2ARv6y70bw.md
+- raw/youtube/2026-08-02-sEiKDZ6pZo4.md
+- raw/youtube/2026-08-02-sriVQXreqG8.md
+- raw/youtube/2026-08-02-w0z-362DkIU.md
 confidence: medium
 contested: false
 contradictions: []
@@ -101,3 +110,17 @@ contradictions: []
 - [DEEP WEAPONS — Silent Hunters: Russian Geran with Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화.
 - [GPO Technologies — FPV Autohoming -12°C 야외 시험](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, 극한 환경 Killer 단말 실증.
 - [GPO Technologies — Edge AI Autohoming 500m Target Lock to Impact (No GPS)](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.
+
+## 관련 영상 (YouTube 보강 2026-08-02)
+
+ESPIRIDI C-UAS Kill Chain 영상은 탐지->추적->식별->타격의 전체 교전 과정을 보여주어, HK 시스템의 terminal_homing 단계가 실전 교전 체계에서 어떤 위치를 차지하는지 맥락을 제공한다.
+
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 기본 개요, HK 시스템 정의.
+- [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — 미국 Sea Hunter 자율 해양 정찰 드론 실증, HK Hunter 플랫폼 사례.
+- [Hunter-Killer drones - Terminator 1/2](https://youtu.be/5knSEDXDa_0) — 영화 터미네이터 속 헌터-킬러 드론 개념, HK 체계 상상.
+- [The Ultimate Drone War Simulation | DEWs, Missiles & EW Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락.
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각.
+- [How China's new 'kill chain' swarm system changes everything](https://youtu.be/5k9F7QK66Ws) — 중국 신형 킬체인 군집 체계가 바꿀 전장 변화, HK 시스템 운용 맥락.
+- [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화.
+- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경 Killer 단말 실증.
+- [Edge AI Autohoming for FPV Drones - 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS/클라우드/신호 없이 500m 표적 록온->타격, GNSS 불능 환경 킬러 유도.

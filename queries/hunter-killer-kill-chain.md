@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone Kill-Chain 기술검토
 created: 2026-07-27
-updated: 2026-08-01
+updated: 2026-08-02
 type: query
 tags:
   - uav
@@ -34,6 +34,18 @@ sources:
 - raw/youtube/2026-08-01-EKpxP2YieZw.md
 - raw/youtube/2026-08-01-al9ITeP4fUA.md
 - raw/youtube/2026-08-01-QpWl1EmtWNs.md
+- raw/youtube/2026-08-02-5k9F7QK66Ws.md
+- raw/youtube/2026-08-02-5knSEDXDa_0.md
+- raw/youtube/2026-08-02-EKpxP2YieZw.md
+- raw/youtube/2026-08-02-HMKXMaAzByU.md
+- raw/youtube/2026-08-02-M5YyDGfKhE8.md
+- raw/youtube/2026-08-02-MGggtBIzvtg.md
+- raw/youtube/2026-08-02-hp4ySL2xzV8.md
+- raw/youtube/2026-08-02-l2ARv6y70bw.md
+- raw/youtube/2026-08-02-sEiKDZ6pZo4.md
+- raw/youtube/2026-08-02-sriVQXreqG8.md
+- raw/youtube/2026-08-02-unraT22a4zY.md
+- raw/youtube/2026-08-02-w0z-362DkIU.md
 confidence: medium
 contested: false
 contradictions: []
@@ -116,3 +128,20 @@ contradictions: []
 - [NOOB-S@@B — Ultimate Drone War Simulation (DEW/EW Kill Chain)](https://youtu.be/EKpxP2YieZw) — DEW·미사일·전자전 킬체인 포함 무인전 시뮬레이션 (재캡처).
 - [Anduril Industries — Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 반드론 CUAS 시스템 공개, 킬체인 방어 차원.
 - [RTX — Raytheon's Coyote Block 3NK defeats drone swarms with non-kinetic effect](https://youtu.be/QpWl1EmtWNs) — Raytheon 코요트 Block 3NK 비자산적 드론 군집 대응, 킬체인 방어 기법 보강.
+
+## 관련 영상 (YouTube 보강 2026-08-02)
+
+ESPIRIDI C-UAS Kill Chain 영상은 탐지·추적·식별·타격 교전 단계를 실전적으로 분석하여, PRD의 이론적 킬체인에 운영 차원의 검증을 추가한다.
+
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 기본 개요, HK 시스템 정의.
+- [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — 미국 Sea Hunter 자율 해양 정찰 드론 실증, HK Hunter 플랫폼 사례.
+- [Hunter-Killer drones - Terminator 1/2](https://youtu.be/5knSEDXDa_0) — 영화 터미네이터 속 헌터-킬러 드론 개념, HK 체계 상상.
+- [The Ultimate Drone War Simulation | DEWs, Missiles & EW Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락.
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각.
+- [How China's new 'kill chain' swarm system changes everything](https://youtu.be/5k9F7QK66Ws) — 중국 신형 킬체인 군집 체계가 바꿀 전장 변화, HK 시스템 운용 맥락.
+- [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화.
+- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경 Killer 단말 실증.
+- [Edge AI Autohoming for FPV Drones - 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS/클라우드/신호 없이 500m 표적 록온->타격, GNSS 불능 환경 킬러 유도.
+- [Sanctum vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증.
+- [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS/전자기기 동작 원리 설명.
+- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어.

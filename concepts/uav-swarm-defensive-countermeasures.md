@@ -1,7 +1,7 @@
 ---
 title: UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
 created: 2026-07-27
-updated: 2026-08-01
+updated: 2026-08-02
 type: concept
 tags:
   - uav
@@ -24,6 +24,10 @@ sources:
 - raw/youtube/2026-08-01-unraT22a4zY.md
 - raw/youtube/2026-08-01-QpWl1EmtWNs.md
 - raw/youtube/2026-08-01-al9ITeP4fUA.md
+- raw/youtube/2026-08-02-HMKXMaAzByU.md
+- raw/youtube/2026-08-02-M5YyDGfKhE8.md
+- raw/youtube/2026-08-02-l2ARv6y70bw.md
+- raw/youtube/2026-08-02-unraT22a4zY.md
 confidence: medium
 contested: false
 contradictions: []
@@ -88,3 +92,12 @@ contradictions: []
 - [Sam Eckholm — Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS·전자기기 동작 원리 설명 (220만 조회, 재캡처).
 - [RTX — Raytheon's Coyote Block 3NK defeats drone swarms with non-kinetic effect](https://youtu.be/QpWl1EmtWNs) — Raytheon 코요트 Block 3NK 비자산적(레이저·전자기기) 드론 군집 대응, 새로운 방어 패러다임.
 - [Anduril Industries — Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 반드론 CUAS 시스템 공개, 실전 배치 사례.
+
+## 관련 영상 (YouTube 보강 2026-08-02)
+
+ESPIRIDI C-UAS Kill Chain 영상은 방어 측면에서 교전 전체 과정을 보여주어, 취약점->대응 매핑에 실전 교전 맥락을 보강한다.
+
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각.
+- [Sanctum vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증.
+- [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS/전자기기 동작 원리 설명.
+- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어.
