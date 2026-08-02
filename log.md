@@ -624,6 +624,18 @@
 - docs/reports/2026-07-31-ros2-drone-perception-control-report.md: YOLOv8, DeepSORT, PX4 ROS2 Bridge, Zenoh 미들웨어
 - Git 커밋: cd1af29
 
+## [2026-08-01] create | ROS2 드론 최신 기술 보고서 (크론 자동 생성)
+- docs/reports/2026-08-01-ros2-drone-tech-report.md: GitHub Search API + PX4/ArduPilot 릴리즈 수집
+- 출처: raw/articles/2026-08-01-ros2-drone-github-data.md, raw/articles/2026-08-01-px4_release_117.md, raw/articles/2026-08-01-px4_ros2_bridge.md, raw/articles/2026-08-01-ros2_nav2.md, raw/articles/2026-08-01-ros2_tutorials.md, raw/articles/2026-08-01-px4_ros2_bridge.md
+- Cronjob: daily-ros2-drone-scout (job_id: 7d1e8d00d5c9)
+
+## [2026-08-02] create | ROS2 드론 최신 기술 보고서 (크론 자동 생성)
+- docs/reports/2026-08-02-ros2-drone-tech-report.md: 2026-08-02 기준 최신 ROS2 드론 기술 수집
+- 출처: raw/articles/2026-08-02-ros2-drone-github-data.md, raw/articles/2026-08-02-px4-release-notes.md, raw/articles/2026-08-02-ardupilot-release-notes.md, raw/articles/2026-08-02-px4-docs-main.md, raw/articles/2026-08-02-ros2-docs-rolling.md
+- 신규 기능: PX4 v1.18.0-beta1, zenoh-plugin-ros2dds, agnocast, nano-ros, vlink
+- 신규 프로젝트: JacopoPan/aerial-autonomy-stack (549⭐), yasincavusoglu/ros2-counter-uav-turret (1⭐)
+- Cronjob: daily-ros2-drone-scout (job_id: 7d1e8d00d5c9)
+
 ## [2026-07-31] create | Hunter-Killer UAS 종합 개념 페이지
 - concepts/hunter-killer-uas.md: 새 canonical concept 페이지 생성
 - raw/youtube/ 14개 파일을 sources로 참조
