@@ -636,6 +636,11 @@
 - 신규 프로젝트: JacopoPan/aerial-autonomy-stack (549⭐), yasincavusoglu/ros2-counter-uav-turret (1⭐)
 - Cronjob: daily-ros2-drone-scout (job_id: 7d1e8d00d5c9)
 
+## [2026-08-02] update | 크론 작업 프롬프트 영어→한국어 수정
+- cronjob(daily-ros2-drone-scout): 프롬프트를 한국어로 수정
+- 자동 생성 보고서(08-01, 08-02)는 이미 한국어로 작성됨 확인
+- Telegram 요약 언어 문제 해결
+
 ## [2026-07-31] create | Hunter-Killer UAS 종합 개념 페이지
 - concepts/hunter-killer-uas.md: 새 canonical concept 페이지 생성
 - raw/youtube/ 14개 파일을 sources로 참조
