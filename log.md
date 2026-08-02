@@ -631,3 +631,12 @@
 - index.md: hunter-killer-uas 페이지 등록
 - links: [[uav-autopilot-stacks]], [[px4-ekf2-vio-prototype]] (docs/workflow)
 - Gate B: 검증 완료 (25 canonical pages, index aligned)
+
+## [2026-08-02] create | ROS2 드론 최신 기술 보고서
+- docs/reports/2026-08-02-ros2-drone-tech-report.md: PX4 v1.18.0-beta1 신규 릴리즈 반영, GitHub Search API 9개 쿼리 수집 결과, Zenoh/agnocast/vlink/nano-ros 신규 미들웨어 동향, counter-UAS 프로젝트 추가
+- raw/articles/2026-08-02-ros2-drone-github-data.md: GitHub Search API 결과 (9개 쿼리)
+- raw/articles/2026-08-02-px4-release-notes.md: PX4 v1.18.0-beta1/alpha1/v1.17.0 릴리즈 노트
+- raw/articles/2026-08-02-ardupilot-release-notes.md: ArduPilot Tracker/Sub/Rover 4.7.0 릴리즈 노트
+- raw/articles/2026-08-02-px4-docs-main.md: PX4 공식 문서 main 페이지
+- raw/articles/2026-08-02-ros2-docs-rolling.md: ROS2 rolling docs 페이지
+- Gate B: 기존 4건 sha256 mismatch (2026-08-01 raw 파일, 사전 존재) — 신규 raw 파일은 모두 sha256 OK

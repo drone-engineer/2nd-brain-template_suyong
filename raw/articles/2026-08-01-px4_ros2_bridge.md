@@ -1,6 +1,6 @@
 ---
 source_url: https://docs.px4.io/main/en/ros2/
-sha256: 8016d8bd260408be5b4e517ac31b1cb596a19b18351214c47f15e6cf862ac029
+sha256: ae5bf89fad0b619ff8422b7cdbd1556ba6ff87b4cac673e6a0bbf840062c3ad8
 fetched: 2026-07-31T23:34:14Z
 ---
 
