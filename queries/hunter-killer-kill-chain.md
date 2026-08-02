@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone Kill-Chain 기술검토
 created: 2026-07-27
-updated: 2026-08-02
+updated: 2026-08-03
 type: query
 tags:
   - uav
@@ -49,6 +49,7 @@ sources:
 confidence: medium
 contested: false
 contradictions: []
+
 ---
 
 # Hunter-Killer Drone Kill-Chain 기술검토
@@ -145,3 +146,9 @@ ESPIRIDI C-UAS Kill Chain 영상은 탐지·추적·식별·타격 교전 단계
 - [Sanctum vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증.
 - [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS/전자기기 동작 원리 설명.
 - [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어.
+
+## 관련 영상 (YouTube 보강 2026-08-03)
+
+- [The Ultimate Drone War Simulation | DEWs, Missiles & EW Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락.
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점.
+- [Ultrakill/ 3X Kill chain with drone swarm on Shipment MW3](https://youtu.be/dprSJdtsNO8) — 게임 MW3 기반 드론 군집 킬체인 시뮬레이션, 킬체인 개념 참고.

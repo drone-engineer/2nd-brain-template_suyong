@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone System (PRD v2 참조)
 created: 2026-07-27
-updated: 2026-08-02
+updated: 2026-08-03
 type: entity
 tags:
   - uav
@@ -35,6 +35,7 @@ sources:
 confidence: medium
 contested: false
 contradictions: []
+
 ---
 
 # Hunter-Killer Drone System (PRD v2 참조)
@@ -124,3 +125,13 @@ ESPIRIDI C-UAS Kill Chain 영상은 탐지->추적->식별->타격의 전체 교
 - [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화.
 - [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경 Killer 단말 실증.
 - [Edge AI Autohoming for FPV Drones - 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS/클라우드/신호 없이 500m 표적 록온->타격, GNSS 불능 환경 킬러 유도.
+
+## 관련 영상 (YouTube 보강 2026-08-03)
+
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 기본 개요, HK 시스템 정의.
+- [Awesome Hunter Killer Drone Multi-Kill](https://youtu.be/RVFbk787cl8) — 헌터-킬러 드론 다중 살상 시연, HK 시스템 개념.
+- [Hunter-Killer drones - Terminator 1/2](https://youtu.be/5knSEDXDa_0) — 영화 터미네이터 속 헌터-킬러 드론 개념, HK 체계 상상.
+- [The Ultimate Drone War Simulation | DEWs, Missiles & EW Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락.
+- [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화.
+- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경 Killer 단말 실증.
+- [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS/클라우드/신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.

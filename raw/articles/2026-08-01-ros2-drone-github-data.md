@@ -1,6 +1,6 @@
 ---
 source_url: GitHub Search API (https://api.github.com) + GitHub Release API
-sha256: d83ee6d5d043b48bfd3a71b4558954a3bae54f913aae45a52bb5cb84aa2dcea1
+sha256: c17ff74e8b50c25886e6bffda5196b5504ea963ef0c5db39fbdb1fdd6bf2b136
 fetched: 2026-08-01T08:30:00Z
 ---
 
