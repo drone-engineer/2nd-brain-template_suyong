@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone System (PRD v2 참조)
 created: 2026-07-27
-updated: 2026-08-03
+updated: 2026-08-04
 type: entity
 tags:
   - uav
@@ -32,6 +32,11 @@ sources:
 - raw/youtube/2026-08-02-sEiKDZ6pZo4.md
 - raw/youtube/2026-08-02-sriVQXreqG8.md
 - raw/youtube/2026-08-02-w0z-362DkIU.md
+- raw/youtube/2026-08-04-MGggtBIzvtg.md
+- raw/youtube/2026-08-04-DK6IGG5zRU8.md
+- raw/youtube/2026-08-04-hp4ySL2xzV8.md
+- raw/youtube/2026-08-04-sEiKDZ6pZo4.md
+- raw/youtube/2026-08-04-w0z-362DkIU.md
 confidence: medium
 contested: false
 contradictions: []
@@ -135,3 +140,11 @@ ESPIRIDI C-UAS Kill Chain 영상은 탐지->추적->식별->타격의 전체 교
 - [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화.
 - [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경 Killer 단말 실증.
 - [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS/클라우드/신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.
+
+## 관련 영상 (YouTube 보강 2026-08-04)
+
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론의 기본 개요, HK 시스템 정의 확인.
+- [Autonomous killer drones](https://youtu.be/DK6IGG5zRU8) — 자율 살상 드론 대중적 설명, HK 시스템 운용 개념 재확인.
+- [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 러시아 게란 드론에 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화 사례.
+- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, 극한 환경(-12°C)에서 Killer 단말 실증.
+- [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.

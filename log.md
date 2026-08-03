@@ -657,3 +657,25 @@
 - raw/articles/2026-08-02-px4-docs-main.md: PX4 공식 문서 main 페이지
 - raw/articles/2026-08-02-ros2-docs-rolling.md: ROS2 rolling docs 페이지
 - Gate B: 기존 4건 sha256 mismatch (2026-08-01 raw 파일, 사전 존재) — 신규 raw 파일은 모두 sha256 OK
+
+## [2026-08-03] ingest | Weekly auto-collect (OA papers)
+- Sources: Semantic Scholar 429 (전부 스킵), OpenAlex 429 (3/8 쿼리 스킵), arXiv 정상 수집
+- 수집 쿼리: UAV swarm formation control / multi-agent reinforcement learning UAV / drone swarm consensus / UAV swarm collision avoidance / swarm robotics communication / counter-UAS swarm / UAV swarm trajectory optimization / decentralized UAV swarm navigation
+- 신규 raw: 1건
+  - raw/articles/2012-accelerated-particle-swarm-optimization-and-support-vector-machine-for-business-.md (arXiv 1203.6577v1, sha256: 5599f71e4bb521cf963cf6e61e6bfcf1419d746d662fecd07ea43b8a28299767)
+- Updated: docs/workflow/raw-articles-index.md (72 entries, 재생성)
+- Staged: inbox/review-queue.md (신규 1건 슬롯 추가, human gate 대기)
+- Canonical changes: none (pending human Accepted in review-queue)
+- Gate B: PASS (25 canonical pages, index aligned)
+
+## [2026-08-04] ingest | YouTube 보강 — Hunter-Killer 계열
+
+- Scout script: `docs/workflow/daily-youtube-scout.py` — 5개 쿼리, 15개 영상 발견 (재캡처 포함)
+- 신규 raw 파일: 15건 (raw/youtube/2026-08-04-*.md)
+- 편입 대상 페이지 4건에 frontmatter sources 추가 및 `updated` 2026-08-04로 갱신
+  - entities/hunter-killer-drone-system.md — 5건 (MGggtBIzvtg, DK6IGG5zRU8, hp4ySL2xzV8, sEiKDZ6pZo4, w0z-362DkIU)
+  - concepts/uav-swarm-defensive-countermeasures.md — 4건 (M5YyDGfKhE8, HMKXMaAzByU, unraT22a4zY, l2ARv6y70bw)
+  - concepts/gnss-denied-autonomous-navigation.md — 3건 (p8frNNYQNV4, i1QRqu3Cocw, V5ZMhFyWQa8)
+  - queries/hunter-killer-kill-chain.md — 3건 (EKpxP2YieZw, 5knSEDXDa_0, dprSJdtsNO8)
+- index.md: Last updated 2026-08-04로 갱신
+- Gate B: PASS (25 canonical pages, index aligned)
