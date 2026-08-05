@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/search/repositories?q=swarm%20robotics%20ros2&sort=stars&order=desc&per_page=5
 fetched: 2026-08-05T08:30:00Z
+sha256: 91bfaeb4cdbd8923f9ce95551559c7fcaade6c79d6d4dd9e0559a2e87fa3a6ab
+
 ---
 {
   "total_count": 67,

@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/search/repositories?q=topic%3Aros2%20language%3Apython%20drone%20swarm&sort=stars&order=desc&per_page=5
 fetched: 2026-08-05T08:30:00Z
+sha256: d90324a4e8fd2ccf7cd1f2aebd1f3ce2dc17a24a60ff10cd068668949381792b
+
 ---
 {
   "total_count": 6,

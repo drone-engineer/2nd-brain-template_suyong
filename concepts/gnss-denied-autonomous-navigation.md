@@ -1,7 +1,7 @@
 ---
 title: GNSS-Denied 자율 항법 (UAV)
 created: 2026-07-27
-updated: 2026-08-05
+updated: 2026-08-06
 type: concept
 tags:
   - uav
@@ -41,6 +41,11 @@ confidence: medium
 contested: false
 contradictions: []
 
+raw/youtube/2026-08-06-p8frNNYQNV4.md
+raw/youtube/2026-08-06-i1QRqu3Cocw.md
+raw/youtube/2026-08-06-V5ZMhFyWQa8.md
+raw/youtube/2026-08-06-sEiKDZ6pZo4.md
+raw/youtube/2026-08-06-w0z-362DkIU.md
 ---
 
 # GNSS-Denied 자율 항법 (UAV)
@@ -133,3 +138,13 @@ GNSS-Denied 자율 항법 재캡처 확인: Nicholas Rehm 안티재밍 DIY 드�
 - [GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works](https://youtu.be/p8frNNYQNV4) — GPS 불능·재밍 대항 자율 DIY 드론 작동 원리, 안티재밍 항법 구현 재확인.
 - [How Do Military Drones Fly Without GPS? | Ian Laffey, Theseus](https://youtu.be/i1QRqu3Cocw) — 군용 드론의 GPS 없는 비행 원리, GNSS-Denied 항법 설명 재확인.
 - [How Drones Navigate Without GPS: Explained Simply](https://youtu.be/V5ZMhFyWQa8) — GPS 없이 드론이 항법하는 원리 쉬운 설명, 비전/관성 항법 개요 재확인.
+
+## 관련 영상 (YouTube 보강 2026-08-06)
+
+2026-08-06 영상 보강을 통해 Nicholas Rehm의 DIY 안티재밍 드론, Ian Laffey의 군용 드론 GPS 없는 비행 원리 설명, Beyond Vision의 비전/관성 항법 개요가 추가되어, GNSS-Denied 항법의 구현·설명 사례가 보강되었다.
+
+- [GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works](https://youtu.be/p8frNNYQNV4) — GPS-Denied Anti-Jam Autonomous DIY Drone How It Works — GPS 불능/재밍 대항 자율 DIY 드론 작동 원리, 안티재밍 항법 구현
+- [How Do Military Drones Fly Without GPS? | Ian Laffey, Theseus](https://youtu.be/i1QRqu3Cocw) — How Do Military Drones Fly Without GPS Ian Laffey Theseus — 군용 드론의 GPS 없는 비행 원리, GNSS-Denied 항법 설명
+- [How Drones Navigate Without GPS: Explained Simply](https://youtu.be/V5ZMhFyWQa8) — How Drones Navigate Without GPS Explained Simply — GPS 없이 드론이 항법하는 원리 쉬운 설명, 비전/관성 항법 개요
+- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — FPV Drone Autonomous Human Tracking Test Edge AI Autohoming -12C — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경(-12C)에서 GNSS 불능 운용 실증
+- [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — Edge AI Autohoming for FPV Drones 500m Target Lock to Impact No GPS — GPS/클라우드/신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도

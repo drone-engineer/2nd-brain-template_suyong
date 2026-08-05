@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/search/repositories?q=multi-robot%20ros2&sort=stars&order=desc&per_page=5
 fetched: 2026-08-05T08:30:00Z
+sha256: 196799c12fb7611a5ef009a3a16d902cbe31d34a707804e0b36a0daf79525c37
+
 ---
 {
   "total_count": 203,

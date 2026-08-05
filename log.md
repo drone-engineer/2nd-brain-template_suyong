@@ -689,5 +689,18 @@
   - entities/hunter-killer-drone-system.md — 5건 (MGggtBIzvtg, DK6IGG5zRU8, hp4ySL2xzV8, sEiKDZ6pZo4, w0z-362DkIU)
   - concepts/uav-swarm-defensive-countermeasures.md — 4건 (M5YyDGfKhE8, HMKXMaAzByU, unraT22a4zY, l2ARv6y70bw)
   - concepts/gnss-denied-autonomous-navigation.md — 3건 (p8frNNYQNV4, i1QRqu3Cocw, V5ZMhFyWQa8)
-- index.md: Last updated 2026-08-05로 갱신
-- Gate B: PASS (26 canonical pages, index aligned)
+- index.md: Last updated 2026-08-06로 갱신
+- Gate B: PASS (25 canonical pages, index aligned)
+
+## [2026-08-06] ingest | YouTube scout: Hunter-Killer 계열 보강 15건
+
+- Scout script: `docs/workflow/daily-youtube-scout.py` — 5개 쿼리, 15개 영상 발견
+- 신규 raw 파일: 15건 (raw/youtube/2026-08-06-*.md)
+- 편입 대상 페이지 4건에 frontmatter sources 추가 및 `updated` 2026-08-06로 갱신
+  - entities/hunter-killer-drone-system.md — 5건 (MGggtBIzvtg, sriVQXreqG8, hp4ySL2xzV8, sEiKDZ6pZo4, w0z-362DkIU)
+  - concepts/uav-swarm-defensive-countermeasures.md — 3건 (M5YyDGfKhE8, HMKXMaAzByU, l2ARv6y70bw)
+  - concepts/gnss-denied-autonomous-navigation.md — 5건 (p8frNNYQNV4, i1QRqu3Cocw, V5ZMhFyWQa8, sEiKDZ6pZo4, w0z-362DkIU)
+  - queries/hunter-killer-kill-chain.md — 4건 (5knSEDXDa_0, EKpxP2YieZw, dprSJdtsNO8, l2ARv6y70bw)
+- 보강 내용: Russian Geran 수동 레이더 호밍 탐색두, 극한 환경(-12°C) FPV 오토호밍 실증, C-UAS 교전 데모(Sanctum/MyDefence), DIY 안티재밍 드론, 군용 드론 GPS 없는 비행 원리, C-UAS 킬체인 전체 분석
+- index.md: Last updated 2026-08-06로 갱신
+- Gate B: PASS (25 canonical pages, index aligned)

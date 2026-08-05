@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/search/repositories?q=uav%20swarm%20ros2&sort=stars&order=desc&per_page=5
 fetched: 2026-08-05T08:30:00Z
+sha256: a123ed12ca2b57e2124420789eb1d9fa2e3a34479447bc6ddffb01b262ca0fa2
+
 ---
 {
   "total_count": 22,

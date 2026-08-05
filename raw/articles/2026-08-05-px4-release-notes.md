@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/repos/PX4/PX4-Autopilot/releases
 fetched: 2026-08-05T08:30:00Z
+sha256: 6842fb1bd2dca85841cce796ea3b6e9086b3eb546d4743af5723614d0b53f62b
+
 ---
 [
   {

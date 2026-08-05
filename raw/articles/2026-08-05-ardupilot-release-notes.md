@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/repos/ArduPilot/ardupilot/releases
 fetched: 2026-08-05T08:30:00Z
+sha256: 7995c09254db0ce5236cc8629201956edc204be5aa4ff886c819e2c033fd06c6
+
 ---
 [
   {

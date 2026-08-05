@@ -1,7 +1,7 @@
 ---
 title: UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
 created: 2026-07-27
-updated: 2026-08-05
+updated: 2026-08-06
 type: concept
 tags:
   - uav
@@ -39,6 +39,9 @@ confidence: medium
 contested: false
 contradictions: []
 
+raw/youtube/2026-08-06-M5YyDGfKhE8.md
+raw/youtube/2026-08-06-HMKXMaAzByU.md
+raw/youtube/2026-08-06-l2ARv6y70bw.md
 ---
 
 # UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
@@ -122,3 +125,11 @@ ESPIRIDI C-UAS Kill Chain 영상은 방어 측면에서 교전 전체 과정을 
 - [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증 재확인.
 - [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — MyDefence 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어 재확인.
 - [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각.
+
+## 관련 영상 (YouTube 보강 2026-08-06)
+
+2026-08-06 영상 보강을 통해 Lockheed Martin Sanctum C-UAS 교전 데모, MyDefence 군집 재머 시연, ESPIRIDI C-UAS 킬체인 전체 분석이 추가되어, 기존 취약점→대응 매핑에 실전 C-UAS 방어 사례가 보강되었다.
+
+- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum vs the Swarm Next-Gen Counter-UAS in Action — Sanctum 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증
+- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — MyDefence Drone Swarm Counter UAS Jammer — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — Breaking the Drone Threat Inside the C-UAS Kill Chain — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각

@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/search/repositories?q=mavros%20ros2&sort=stars&order=desc&per_page=5
 fetched: 2026-08-05T08:30:00Z
+sha256: 23cc81bda3a57f029491d7c41fa6f63dd797e0c2af1748f952c86d49faa1c21d
+
 ---
 {
   "total_count": 90,

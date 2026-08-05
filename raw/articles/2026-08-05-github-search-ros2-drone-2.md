@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/search/repositories?q=topic%3Adrone-swarm%20language%3Apython%20ros2&sort=stars&order=desc&per_page=5
 fetched: 2026-08-05T08:30:00Z
+sha256: 9fc5db06ec2b10ef242cc822aedc9d3b51122370df0989c379f0c3ceee4f30e2
+
 ---
 {
   "total_count": 3,

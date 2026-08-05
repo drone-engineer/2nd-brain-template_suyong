@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/search/repositories?q=ardupilot%20ros2&sort=stars&order=desc&per_page=5
 fetched: 2026-08-05T08:30:00Z
+sha256: b03da251f68b1662db2993d48ea65e733c9ac6d0761614aa435bd910980adcc8
+
 ---
 {
   "total_count": 120,

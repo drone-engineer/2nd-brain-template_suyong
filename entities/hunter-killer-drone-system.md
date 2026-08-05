@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone System (PRD v2 참조)
 created: 2026-07-27
-updated: 2026-08-05
+updated: 2026-08-06
 type: entity
 tags:
   - uav
@@ -46,6 +46,11 @@ confidence: medium
 contested: false
 contradictions: []
 
+raw/youtube/2026-08-06-MGggtBIzvtg.md
+raw/youtube/2026-08-06-sriVQXreqG8.md
+raw/youtube/2026-08-06-hp4ySL2xzV8.md
+raw/youtube/2026-08-06-sEiKDZ6pZo4.md
+raw/youtube/2026-08-06-w0z-362DkIU.md
 ---
 
 # Hunter-Killer Drone System (PRD v2 참조)
@@ -161,3 +166,13 @@ ESPIRIDI C-UAS Kill Chain 영상은 탐지->추적->식별->타격의 전체 교
 - [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 러시아 게란 드론에 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화 사례.
 - [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, 극한 환경(-12°C)에서 Killer 단말 실증 재확인.
 - [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도 재확인.
+
+## 관련 영상 (YouTube 보강 2026-08-06)
+
+2026-08-06 영상 보강을 통해 러시아 게란 드론의 수동 레이더 호밍 탐색두 장착, GPO Technologies의 극한 환경(-12°C) 오토호밍 실증, 그리고 GPS·클라우드·신호 없이 500m 표적 록온→타격하는 엣지 AI 시스템이 확인되어, HK 시스템의 terminal_homing 유도 기술이 실전 환경에서도 작동 가능함을 재확인했다.
+
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — Autonomous killer drones — 자율 살상 드론 기본 개요, HK 시스템 정의 확인
+- [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — U.S. testing autonomous Sea Hunter ocean drone — 미국 Sea Hunter 자율 해양 정찰 드론 실증, HK Hunter 플랫폼 사례
+- [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — Silent Hunters: Russian Geran with Passive Radar Homing — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화
+- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming -12C — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경에서 Killer 단말 실증
+- [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — Edge AI Autohoming for FPV Drones 500m Target Lock to Impact No GPS — GPS/클라우드/신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도

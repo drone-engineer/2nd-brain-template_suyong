@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/search/repositories?q=px4%20ros2%20drone&sort=stars&order=desc&per_page=5
 fetched: 2026-08-05T08:30:00Z
+sha256: a4e430d80d874dcc8b5a281815a96ad316d35c65b1f7442dca3bafac3bd01206
+
 ---
 {
   "total_count": 233,

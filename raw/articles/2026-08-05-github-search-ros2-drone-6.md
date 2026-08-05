@@ -10,6 +10,8 @@ tags:
 sources:
   - https://api.github.com/search/repositories?q=ros2%20drone%20simulation&sort=stars&order=desc&per_page=5
 fetched: 2026-08-05T08:30:00Z
+sha256: 980189e6825ddd74113b066fb42f19e9eb2567cc0b3d48f083609fa82ce86514
+
 ---
 {
   "total_count": 141,

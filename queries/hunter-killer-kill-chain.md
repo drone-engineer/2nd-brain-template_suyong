@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone Kill-Chain 기술검토
 created: 2026-07-27
-updated: 2026-08-05
+updated: 2026-08-06
 type: query
 tags:
   - uav
@@ -57,6 +57,10 @@ confidence: medium
 contested: false
 contradictions: []
 
+raw/youtube/2026-08-06-5knSEDXDa_0.md
+raw/youtube/2026-08-06-EKpxP2YieZw.md
+raw/youtube/2026-08-06-dprSJdtsNO8.md
+raw/youtube/2026-08-06-l2ARv6y70bw.md
 ---
 
 # Hunter-Killer Drone Kill-Chain 기술검토
@@ -172,3 +176,12 @@ ESPIRIDI C-UAS Kill Chain 영상은 탐지·추적·식별·타격 교전 단계
 - [Hunter-Killer drones - Terminator 1/2](https://youtu.be/5knSEDXDa_0) — 영화 터미네이터 속 헌터-킬러 드론 개념, HK 체계 상상 재확인.
 - [Ultrakill/ 3X Kill chain with drone swarm on Shipment MW3](https://youtu.be/dprSJdtsNO8) — 게임 MW3 기반 드론 군집 킬체인 시뮬레이션, 킬체인 개념 참고 재확인.
 - [US tests micro-drone swarms deployed from jets](https://youtu.be/wFLzO_5UFwE) — 미국 전투기에서 투하되는 마이크로 드론 군집 실증, HK 스웜 운용 맥락 보강.
+
+## 관련 영상 (YouTube 보강 2026-08-06)
+
+2026-08-06 영상 보강을 통해 터미네이터 헌터-킬러 개념, DEW/전자전 킬체인 시뮬레이션, 게임 기반 3X 킬체인, C-UAS 킬체인 전체 분석이 추가되어, 킬체인 운용 개념의 실전·시뮬레이션 양쪽 맥락이 보강되었다.
+
+- [Hunter-Killer drones - Terminator 1/2](https://youtu.be/5knSEDXDa_0) — Hunter-Killer drones Terminator 1/2 — 영화 터미네이터 속 헌터-킬러 드론 개념, HK 체계 상상
+- [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) — The Ultimate Drone War Simulation DEWs Missiles EW Kill Chain — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락
+- [Ultrakill/ 3X Kill chain with drone swarm on Shipment MW3](https://youtu.be/dprSJdtsNO8) — Ultrakill 3X Kill chain with drone swarm on Shipment MW3 — 게임 MW3 기반 드론 군집 킬체인 시뮬레이션, 킬체인 개념 참고
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — Breaking the Drone Threat Inside the C-UAS Kill Chain — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각
