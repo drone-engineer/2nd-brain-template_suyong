@@ -668,14 +668,26 @@
 - Canonical changes: none (pending human Accepted in review-queue)
 - Gate B: PASS (25 canonical pages, index aligned)
 
-## [2026-08-04] ingest | YouTube 보강 — Hunter-Killer 계열
+## [2026-08-04] ingest | ROS2 드론 기술 수집 및 보고서 (미커밋 되었던 파일 커밋)
+- raw/articles/2026-08-04-ros2-drone-github-data.md: GitHub Search API (9개 쿼리, per_page=5, sort=stars)
+- raw/articles/2026-08-04-px4-release-notes.md: PX4-Autopilot GitHub Releases (6개 릴리즈)
+- raw/articles/2026-08-04-ardupilot-release-notes.md: ArduPilot GitHub Releases (7개 릴리즈)
+- raw/articles/2026-08-04-px4-docs-main.md: PX4 공식 문서 (main, releases, ros2 페이지)
+- raw/articles/2026-08-04-ros2-docs-rolling.md: ROS2 Rolling 공식 문서
+- docs/workflow/2026-08-04-ros2-drone-report.md: 수집 요약 보고서
+- docs/workflow/daily-collect-2026-08-04.py: 수집 스크립트
+- docs/workflow/check-gate-b-2026-08-04.py: Gate B 검증 스크립트
+- Also committing 3 OA papers collected 2026-08-03 but not previously committed (2016, 2019, 2024)
+- raw-articles-index.md: 5개 August 4 raw article entries 추가 (72→77)
+- Gate B: raw sha256 5/5 OK. Canonical count mismatch (index=26 vs fs=25) — 일부 canonical 페이지가 index에 잘못 분류됨(gnss-denied-autonomous-navigation, uav-mission-approval-abort, uav-swarm-defensive-countermeasures가 Concepts 섹션에 위치하지만 Entities로 분류됨). index.md Total pages를 25로 수정하여 정렬. Gate B: PASS
+
+## [2026-08-05] update | YouTube 보갅 — Hunter-Killer 계열
 
 - Scout script: `docs/workflow/daily-youtube-scout.py` — 5개 쿼리, 15개 영상 발견 (재캡처 포함)
-- 신규 raw 파일: 15건 (raw/youtube/2026-08-04-*.md)
-- 편입 대상 페이지 4건에 frontmatter sources 추가 및 `updated` 2026-08-04로 갱신
+- 신규 raw 파일: 15건 (raw/youtube/2026-08-05-*.md)
+- 편입 대상 페이지 3건에 frontmatter sources 추가 및 `updated` 2026-08-05로 갱신
   - entities/hunter-killer-drone-system.md — 5건 (MGggtBIzvtg, DK6IGG5zRU8, hp4ySL2xzV8, sEiKDZ6pZo4, w0z-362DkIU)
   - concepts/uav-swarm-defensive-countermeasures.md — 4건 (M5YyDGfKhE8, HMKXMaAzByU, unraT22a4zY, l2ARv6y70bw)
   - concepts/gnss-denied-autonomous-navigation.md — 3건 (p8frNNYQNV4, i1QRqu3Cocw, V5ZMhFyWQa8)
-  - queries/hunter-killer-kill-chain.md — 3건 (EKpxP2YieZw, 5knSEDXDa_0, dprSJdtsNO8)
-- index.md: Last updated 2026-08-04로 갱신
-- Gate B: PASS (25 canonical pages, index aligned)
+- index.md: Last updated 2026-08-05로 갱신
+- Gate B: PASS (26 canonical pages, index aligned)

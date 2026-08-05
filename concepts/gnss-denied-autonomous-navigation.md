@@ -1,7 +1,7 @@
 ---
 title: GNSS-Denied 자율 항법 (UAV)
 created: 2026-07-27
-updated: 2026-08-04
+updated: 2026-08-05
 type: concept
 tags:
   - uav
@@ -34,6 +34,9 @@ sources:
 - raw/youtube/2026-08-04-p8frNNYQNV4.md
 - raw/youtube/2026-08-04-i1QRqu3Cocw.md
 - raw/youtube/2026-08-04-V5ZMhFyWQa8.md
+- raw/youtube/2026-08-05-p8frNNYQNV4.md
+- raw/youtube/2026-08-05-i1QRqu3Cocw.md
+- raw/youtube/2026-08-05-V5ZMhFyWQa8.md
 confidence: medium
 contested: false
 contradictions: []
@@ -125,8 +128,8 @@ GNSS-Denied 자율 항법 재캡처 확인: Nicholas Rehm 안티재밍 DIY 드�
 - [How Drones Navigate Without GPS: Explained Simply](https://youtu.be/V5ZMhFyWQa8) — GPS 없이 드론이 항법하는 원리 쉬운 설명, 비전/관성 항법 개요.
 - [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS/클라우드/신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도.
 
-## 관련 영상 (YouTube 보강 2026-08-04)
+## 관련 영상 (YouTube 보강 2026-08-05)
 
-- [GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works](https://youtu.be/p8frNNYQNV4) — GPS 불능·재밍 대항 자율 DIY 드론 작동 원리, 안티재밍 항법 구현.
-- [How Do Military Drones Fly Without GPS? | Ian Laffey, Theseus](https://youtu.be/i1QRqu3Cocw) — 군용 드론의 GPS 없는 비행 원리, GNSS-Denied 항법 설명.
-- [How Drones Navigate Without GPS: Explained Simply](https://youtu.be/V5ZMhFyWQa8) — GPS 없이 드론이 항법하는 원리 쉬운 설명, 비전/관성 항법 개요.
+- [GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works](https://youtu.be/p8frNNYQNV4) — GPS 불능·재밍 대항 자율 DIY 드론 작동 원리, 안티재밍 항법 구현 재확인.
+- [How Do Military Drones Fly Without GPS? | Ian Laffey, Theseus](https://youtu.be/i1QRqu3Cocw) — 군용 드론의 GPS 없는 비행 원리, GNSS-Denied 항법 설명 재확인.
+- [How Drones Navigate Without GPS: Explained Simply](https://youtu.be/V5ZMhFyWQa8) — GPS 없이 드론이 항법하는 원리 쉬운 설명, 비전/관성 항법 개요 재확인.

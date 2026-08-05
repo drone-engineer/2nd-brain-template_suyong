@@ -1,7 +1,7 @@
 ---
 title: UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
 created: 2026-07-27
-updated: 2026-08-04
+updated: 2026-08-05
 type: concept
 tags:
   - uav
@@ -32,6 +32,9 @@ sources:
 - raw/youtube/2026-08-04-HMKXMaAzByU.md
 - raw/youtube/2026-08-04-unraT22a4zY.md
 - raw/youtube/2026-08-04-l2ARv6y70bw.md
+- raw/youtube/2026-08-05-M5YyDGfKhE8.md
+- raw/youtube/2026-08-05-HMKXMaAzByU.md
+- raw/youtube/2026-08-05-l2ARv6y70bw.md
 confidence: medium
 contested: false
 contradictions: []
@@ -114,9 +117,8 @@ ESPIRIDI C-UAS Kill Chain 영상은 방어 측면에서 교전 전체 과정을 
 - [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어.
 - [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS/전자기기 동작 원리 설명.
 
-## 관련 영상 (YouTube 보강 2026-08-04)
+## 관련 영상 (YouTube 보강 2026-08-05)
 
-- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Lockheed Martin Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증.
-- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — MyDefence 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어.
-- [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS·전자기기 동작 원리 설명 (220만 조회).
+- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증 재확인.
+- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — MyDefence 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어 재확인.
 - [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각.

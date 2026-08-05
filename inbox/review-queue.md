@@ -5,6 +5,19 @@
 
 ---
 
+## [2026-08-03] collect | Accelerated PSO + SVM for Business Optimization (arXiv 1203.6577)
+- 단계: collect-evidence (weekly auto-collect cron run)
+- 원본: raw/articles/2012-accelerated-particle-swarm-optimization-and-support-vector-machine-for-business-.md (sha256: 5599f71e4bb521cf963cf6e61e6bfcf1419d746d662fecd07ea43b8a28299767)
+- 한글 요약: 가속 PSO와 비선형 SVM을 결합한 APSO-SVM 프레임워크로 생산 최적화·소득 예측·프로젝트 일정 최적화 시도 (입자군집 최적화 기법이지만 비즈니스 영역, UAV 적용 아님)
+- 원문: https://arxiv.org/abs/1203.6577v1
+- 에이전트 추천: **Rejected** — UAV swarm 소프트웨어/제어/보안 주제와 비관련. 2012년 비즈니스 최적화 논문으로, PSO 기법 자체는 드론 경로/충돌 최적화에 쓰일 수 있으나 본 논문은 그 적용을 다루지 않음
+- 👤 사람 판정 (최종)
+  - [ ] Accepted
+  - [ ] Rejected (추천)
+  - [ ] Contested
+  - [ ] Deferred
+| 수집: Semantic Scholar 429 (전부 스킵), OpenAlex 429 (3/8 쿼리 스킵), arXiv 정상 수집 1건 (UAV swarm trajectory optimization 쿼리에서 획득, false-positive 가능성 있음)
+
 ## [2026-07-27] 시뮬레이션 | 플랫폼 실증 논문 4편 (소프트웨어 스택 보완)
 
 > 아까 수집한 4편. 아래는 **에이전트 추천 판정**이며, **사람이 최종 도장**을 찍어야 함.
