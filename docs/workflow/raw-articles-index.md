@@ -95,7 +95,7 @@
 - `2025-integrated-sensing-and-communication-with-uav-swarms-via-decentralized-consensus.md` — Integrated Sensing and Communication with UAV Swarms via Decentralized Consensus ADMM
 - `2025-learning-bilateral-team-formation-in-cooperative-multi-agent-reinforcement-learn.md` — Learning Bilateral Team Formation in Cooperative Multi-Agent Reinforcement Learning
 
-## 2026 (22편)
+## 2026 (23편)
 
 - `2026-07-29-modalai-starling-2-px4-guide-main.md` — "ModalAI Starling 2 | PX4 Guide (main)"
 - `2026-08-01-px4_release_117.md` — (no title)
@@ -118,6 +118,7 @@
 - `2026-08-04-px4-release-notes.md` — PX4-Autopilot 최신 릴리즈
 - `2026-08-04-ros2-docs-rolling.md` — ROS 2 공식 문서 (Rolling)
 - `2026-08-04-ros2-drone-github-data.md` — ROS2 드론 기술 수집 — GitHub Search API 결과
+- `2026-08-05-ros2-drone-report.md` — 2026-08-05 ROS2 드론 기술 수집 보고서
 - `2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking-sys.md` — Banshee: Target Switch Attacks on Gimbal-Stabilized Visual Tracking Systems via Acoustic Injection
 - `2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-l.md` — Enhancing Graph-Based SLAM in GNSS-Denied environments by leveraging learned features
 - `2026-hunter-killer-drone-prd-v2.md` — Hunter-Killer 드론 자율 정찰-타격 체계 PRD v2.0
