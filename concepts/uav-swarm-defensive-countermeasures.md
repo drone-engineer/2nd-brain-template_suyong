@@ -133,3 +133,11 @@ ESPIRIDI C-UAS Kill Chain 영상은 방어 측면에서 교전 전체 과정을 
 - [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum vs the Swarm Next-Gen Counter-UAS in Action — Sanctum 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증
 - [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — MyDefence Drone Swarm Counter UAS Jammer — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어
 - [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — Breaking the Drone Threat Inside the C-UAS Kill Chain — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각
+
+## 관련 영상 (YouTube 보강 2026-08-07)
+
+새로 수집된 자료를 통해 HK 시스템과 방어 체계가 모두 갱신됨. 방어 차원에서 드론 군집에 대한 대응 기술이 추가됨.
+
+- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — 차세대 C-UAS 실증, Sanctum 방어 시스템 교전 데모
+- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정 상세 분석, 실전 방어 관점의 새로운 시각 (다시 추가)

@@ -185,3 +185,12 @@ ESPIRIDI C-UAS Kill Chain 영상은 탐지·추적·식별·타격 교전 단계
 - [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) — The Ultimate Drone War Simulation DEWs Missiles EW Kill Chain — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락
 - [Ultrakill/ 3X Kill chain with drone swarm on Shipment MW3](https://youtu.be/dprSJdtsNO8) — Ultrakill 3X Kill chain with drone swarm on Shipment MW3 — 게임 MW3 기반 드론 군집 킬체인 시뮬레이션, 킬체인 개념 참고
 - [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — Breaking the Drone Threat Inside the C-UAS Kill Chain — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각
+
+## 관련 영상 (YouTube 보강 2026-08-07)
+
+새로 수집된 자료를 통해 HK 시스템과 방어 체계가 모두 갱신됨. 킬체인 운용 개념을 기반으로한 실제 시연 및 방어 사례가 추가됨.
+
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 기본 개요, HK 시스템 정의
+- [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — 미국 Sea Hunter 자율 해양 정찰 드론 실증, HK Hunter 플랫폼 사례
+- [Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 대응 시스템 공개, 킬체인 방어 차원
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정 상세 분석, 실전 방어 관점의 새로운 시각 (다시 추가)

@@ -32,7 +32,7 @@ def rebuild_index() -> int:
     for y, f, ti in rows:
         d[y].append((f, ti))
     out = ["# Raw Articles Index", "",
-           f"> 자동 생성(수집 시 갱신). 파일명 ↔ 제목 매핑. 총 {len(rows)}편\n", ""]
+           f"> 자동 생성(수집 시 갱신). 파일명 ↔ 제목 매핑. 총 {len(rows)}편\n\n"]
     for y in sorted(d.keys()):
         out.append(f"## {y} ({len(d[y])}편)\n")
         for f, ti in d[y]:
@@ -43,14 +43,15 @@ def rebuild_index() -> int:
 
 
 def format_report_collected(items: list[dict]) -> str:
-    """items: [{file, title, year, korean_summary, url}] -> Telegram 리포트 블록."""
-    lines = ["📥 **신규 수집 (판정 대기)**", ""]
-    for i, it in enumerate(items, 1):
-        lines.append(f"{i}. **{it.get('title','?')}** ({it.get('year','?')})")
-        if it.get("korean_summary"):
-            lines.append(f"   └ 한글요약: {it['korean_summary']}")
-        if it.get("url"):
-            lines.append(f"   └ 원문: {it['url']}")
+    """Telegram 보고서용 텍스트 생성."""
+    lines = []
+    for it in items:
+        lines.append(f"## [{it['name']}]({it.get('url', '?')})")
+        lines.append(f"   설명: {it.get('desc', '?')}")
+        lines.append(f"   언어: {it.get('lang', '?')}")
+        lines.append(f"   푸시: {it.get('pushed_at', '?')}")
+        lines.append(f"   이슈: {it.get('issues', '?')}")
+        lines.append(f"   생성: {it.get('created_at', '?')}")
         lines.append(f"   └ 파일: `raw/articles/{it.get('file','?')}`")
         lines.append("")
     lines.append("👉 판정: review-queue.md에서 Accepted/Rejected 선택")

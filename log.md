@@ -704,3 +704,42 @@
 - 보강 내용: Russian Geran 수동 레이더 호밍 탐색두, 극한 환경(-12°C) FPV 오토호밍 실증, C-UAS 교전 데모(Sanctum/MyDefence), DIY 안티재밍 드론, 군용 드론 GPS 없는 비행 원리, C-UAS 킬체인 전체 분석
 - index.md: Last updated 2026-08-06로 갱신
 - Gate B: PASS (25 canonical pages, index aligned)
+
+## [2026-08-06] inbox | NotebookLM ask: 최신 릴리즈된 내용은 머지..??
+- path: `inbox/notebooklm-ask-2026-08-06-최신-릴리즈된-내용은-머지.md`
+- json: `inbox/notebooklm-ask-2026-08-06T10-58-25.json`
+- note: discovery hypothesis (not canonical)
+
+## [2026-08-07] ingest | ROS2 drone tech
+- path: `raw/articles/2026-08-07-github-search-ros2-drone-1.md`
+- path: `raw/articles/2026-08-07-github-search-ros2-drone-2.md`
+- path: `raw/articles/2026-08-07-github-search-ros2-drone-3.md`
+- path: `raw/articles/2026-08-07-github-search-ros2-drone-4.md`
+- path: `raw/articles/2026-08-07-github-search-ros2-drone-5.md`
+- path: `raw/articles/2026-08-07-github-search-ros2-drone-6.md`
+- path: `raw/articles/2026-08-07-github-search-ros2-drone-7.md`
+- path: `raw/articles/2026-08-07-github-search-ros2-drone-8.md`
+- path: `raw/articles/2026-08-07-github-search-ros2-drone-9.md`
+- path: `raw/articles/2026-08-07-px4-release-notes.md`
+- path: `raw/articles/2026-08-07-ardupilot-release-notes.md`
+- path: `raw/articles/2026-08-07-px4-docs-main.md`
+- path: `raw/articles/2026-08-07-ros2-docs-rolling.md`
+- note: 2026-08-07 daily ROS2 drone tech collection (with SHA256) 
+- Gate B: PASS
+
+## [2026-08-08] ingest | ROS2 drone tech
+- path: `raw/articles/2026-08-08-github-search-ros2-drone-1.md`
+- path: `raw/articles/2026-08-08-github-search-ros2-drone-2.md`
+- path: `raw/articles/2026-08-08-github-search-ros2-drone-3.md`
+- path: `raw/articles/2026-08-08-github-search-ros2-drone-4.md`
+- path: `raw/articles/2026-08-08-github-search-ros2-drone-5.md`
+- path: `raw/articles/2026-08-08-github-search-ros2-drone-6.md`
+- path: `raw/articles/2026-08-08-github-search-ros2-drone-7.md`
+- path: `raw/articles/2026-08-08-github-search-ros2-drone-8.md`
+- path: `raw/articles/2026-08-08-github-search-ros2-drone-9.md`
+- path: `raw/articles/2026-08-08-px4-release-notes.md`
+- path: `raw/articles/2026-08-08-ardupilot-release-notes.md`
+- path: `raw/articles/2026-08-08-px4-docs-main.md`
+- path: `raw/articles/2026-08-08-ros2-docs-rolling.md`
+- note: 2026-08-08 daily ROS2 drone tech collection (with SHA256)
+- Gate B: PASS
