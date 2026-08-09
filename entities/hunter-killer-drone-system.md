@@ -1,7 +1,7 @@
 ---
 title: Hunter-Killer Drone System (PRD v2 참조)
 created: 2026-07-27
-updated: 2026-08-06
+updated: 2026-08-09
 type: entity
 tags:
   - uav
@@ -28,6 +28,11 @@ sources:
 - raw/youtube/2026-08-02-EKpxP2YieZw.md
 - raw/youtube/2026-08-02-MGggtBIzvtg.md
 - raw/youtube/2026-08-02-hp4ySL2xzV8.md
+- raw/youtube/2026-08-09-MGggtBIzvtg.md
+- raw/youtube/2026-08-09-sriVQXreqG8.md
+- raw/youtube/2026-08-09-hp4ySL2xzV8.md
+- raw/youtube/2026-08-09-sEiKDZ6pZo4.md
+- raw/youtube/2026-08-09-w0z-362DkIU.md
 - raw/youtube/2026-08-02-l2ARv6y70bw.md
 - raw/youtube/2026-08-02-sEiKDZ6pZo4.md
 - raw/youtube/2026-08-02-sriVQXreqG8.md

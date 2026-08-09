@@ -1,19 +1,19 @@
 ---
 title: (no title)
-created: 2026-08-08
-updated: 2026-08-08
+created: 2026-08-10
+updated: 2026-08-10
 type: article
 tags:
   - drone
   - swarm
   - ros2
 sources:
-  - https://api.github.com/search/repositories?q=ros2%20drone%20control&sort=stars&order=desc&per_page=5
-fetched: 2026-08-08T08:30:00Z
-sha256: d7d42d2fe8f09e6dc1cbb83cdf5ebe1768af224fae947f8efe6906b891b33554
+  - https://api.github.com/search/repositories?q=ros2%20drone%20navigation&sort=stars&order=desc&per_page=5
+fetched: 2026-08-10T08:30:00Z
+sha256: af0c16335652ef3fbf5740ee533edec9e55128673f211044de8bd96fbc01d4f5
 ---
 {
-  "total_count": 40,
+  "total_count": 73,
   "incomplete_results": false,
   "items": [
     {

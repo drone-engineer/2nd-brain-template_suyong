@@ -1,19 +1,19 @@
 ---
 title: (no title)
-created: 2026-08-08
-updated: 2026-08-08
+created: 2026-08-10
+updated: 2026-08-10
 type: article
 tags:
   - drone
   - swarm
   - ros2
 sources:
-  - https://api.github.com/search/repositories?q=ros2%20drone%20swarm&sort=stars&order=desc&per_page=5
-fetched: 2026-08-08T08:30:00Z
-sha256: 0fbfab96dad7d01818844c72f46bf0b384862daf5078bf957fdde0525610110d
+  - https://api.github.com/search/repositories?q=MediaPipe%20ros2&sort=stars&order=desc&per_page=5
+fetched: 2026-08-10T08:30:00Z
+sha256: e09547d1519edbf089463a503e5b969470f6d765ff5153798fc33d268f24a187
 ---
 {
-  "total_count": 25,
+  "total_count": 102,
   "incomplete_results": false,
   "items": [
     {

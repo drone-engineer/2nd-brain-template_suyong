@@ -1,7 +1,7 @@
 ---
 title: (no title)
-created: 2026-08-08
-updated: 2026-08-08
+created: 2026-08-10
+updated: 2026-08-10
 type: article
 tags:
   - drone
@@ -9,8 +9,8 @@ tags:
   - ros2
 sources:
   - https://api.github.com/search/repositories?q=PX4%20ros2%20bridge&sort=stars&order=desc&per_page=5
-fetched: 2026-08-08T08:30:00Z
-sha256: 3a0c9e6ddcb72b87bc127c14106753dd643fa4930e252b527696d9ad71859fb0
+fetched: 2026-08-10T08:30:00Z
+sha256: 6fe95c46556866da9fd51cc35d318bafc021951f68b4e26af8ead633dc0d635a
 ---
 {
   "total_count": 21,
@@ -309,14 +309,14 @@ sha256: 3a0c9e6ddcb72b87bc127c14106753dd643fa4930e252b527696d9ad71859fb0
       "releases_url": "https://api.github.com/repos/URML-MARS/URML/releases{/id}",
       "deployments_url": "https://api.github.com/repos/URML-MARS/URML/deployments",
       "created_at": "2026-05-11T13:34:11Z",
-      "updated_at": "2026-08-07T05:48:51Z",
-      "pushed_at": "2026-08-07T06:44:48Z",
+      "updated_at": "2026-08-09T03:48:56Z",
+      "pushed_at": "2026-08-09T18:11:45Z",
       "git_url": "git://github.com/URML-MARS/URML.git",
       "ssh_url": "git@github.com:URML-MARS/URML.git",
       "clone_url": "https://github.com/URML-MARS/URML.git",
       "svn_url": "https://github.com/URML-MARS/URML",
       "homepage": "https://www.urml.dev",
-      "size": 7039,
+      "size": 7201,
       "stargazers_count": 21,
       "watchers_count": 21,
       "language": "Python",

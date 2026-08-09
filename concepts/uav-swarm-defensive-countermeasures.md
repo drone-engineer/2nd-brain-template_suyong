@@ -1,7 +1,7 @@
 ---
 title: UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
 created: 2026-07-27
-updated: 2026-08-06
+updated: 2026-08-09
 type: concept
 tags:
   - uav
@@ -28,6 +28,10 @@ sources:
 - raw/youtube/2026-08-02-M5YyDGfKhE8.md
 - raw/youtube/2026-08-02-l2ARv6y70bw.md
 - raw/youtube/2026-08-02-unraT22a4zY.md
+- raw/youtube/2026-08-09-M5YyDGfKhE8.md
+- raw/youtube/2026-08-09-HMKXMaAzByU.md
+- raw/youtube/2026-08-09-unraT22a4zY.md
+- raw/youtube/2026-08-09-l2ARv6y70bw.md
 - raw/youtube/2026-08-04-M5YyDGfKhE8.md
 - raw/youtube/2026-08-04-HMKXMaAzByU.md
 - raw/youtube/2026-08-04-unraT22a4zY.md

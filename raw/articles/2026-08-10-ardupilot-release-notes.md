@@ -1,7 +1,7 @@
 ---
 title: (no title)
-created: 2026-08-08
-updated: 2026-08-08
+created: 2026-08-10
+updated: 2026-08-10
 type: article
 tags:
   - drone
@@ -9,8 +9,8 @@ tags:
   - ros2
 sources:
   - https://api.github.com/repos/ArduPilot/ardupilot/releases
-fetched: 2026-08-08T08:30:00Z
-sha256: 7995c09254db0ce5236cc8629201956edc204be5aa4ff886c819e2c033fd06c6
+fetched: 2026-08-10T08:30:00Z
+sha256: 5f2c04d99369c065d86b417328149776d69a243b29b22cec611be6bc572664a4
 ---
 [
   {

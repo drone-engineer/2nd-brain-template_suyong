@@ -1,7 +1,7 @@
 ---
 title: (no title)
-created: 2026-08-08
-updated: 2026-08-08
+created: 2026-08-10
+updated: 2026-08-10
 type: article
 tags:
   - drone
@@ -9,8 +9,8 @@ tags:
   - ros2
 sources:
   - https://api.github.com/search/repositories?q=ros2%20drone%20autonomous&sort=stars&order=desc&per_page=5
-fetched: 2026-08-08T08:30:00Z
-sha256: e8ca6207ec09c6d04014c2a561d189bac6b478628b684746c76ee077386a6e75
+fetched: 2026-08-10T08:30:00Z
+sha256: 196ec7c868680c5a49d6208df06459284f6f520a8c7f18708557833b021fc5a6
 ---
 {
   "total_count": 170,
@@ -84,16 +84,16 @@ sha256: e8ca6207ec09c6d04014c2a561d189bac6b478628b684746c76ee077386a6e75
       "releases_url": "https://api.github.com/repos/PX4/PX4-Autopilot/releases{/id}",
       "deployments_url": "https://api.github.com/repos/PX4/PX4-Autopilot/deployments",
       "created_at": "2012-08-04T21:19:36Z",
-      "updated_at": "2026-08-07T23:10:45Z",
-      "pushed_at": "2026-08-07T17:50:04Z",
+      "updated_at": "2026-08-09T23:09:58Z",
+      "pushed_at": "2026-08-09T12:39:31Z",
       "git_url": "git://github.com/PX4/PX4-Autopilot.git",
       "ssh_url": "git@github.com:PX4/PX4-Autopilot.git",
       "clone_url": "https://github.com/PX4/PX4-Autopilot.git",
       "svn_url": "https://github.com/PX4/PX4-Autopilot",
       "homepage": "https://px4.io",
-      "size": 569895,
-      "stargazers_count": 12360,
-      "watchers_count": 12360,
+      "size": 570020,
+      "stargazers_count": 12371,
+      "watchers_count": 12371,
       "language": "C++",
       "has_issues": true,
       "has_projects": true,
@@ -101,11 +101,11 @@ sha256: e8ca6207ec09c6d04014c2a561d189bac6b478628b684746c76ee077386a6e75
       "has_wiki": false,
       "has_pages": false,
       "has_discussions": false,
-      "forks_count": 15831,
+      "forks_count": 15837,
       "mirror_url": null,
       "archived": false,
       "disabled": false,
-      "open_issues_count": 1405,
+      "open_issues_count": 1399,
       "license": {
         "key": "bsd-3-clause",
         "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -140,9 +140,9 @@ sha256: e8ca6207ec09c6d04014c2a561d189bac6b478628b684746c76ee077386a6e75
         "ugv"
       ],
       "visibility": "public",
-      "forks": 15831,
-      "open_issues": 1405,
-      "watchers": 12360,
+      "forks": 15837,
+      "open_issues": 1399,
+      "watchers": 12371,
       "default_branch": "main",
       "score": 1.0
     },
@@ -214,7 +214,7 @@ sha256: e8ca6207ec09c6d04014c2a561d189bac6b478628b684746c76ee077386a6e75
       "releases_url": "https://api.github.com/repos/swarm-subnet/Langostino/releases{/id}",
       "deployments_url": "https://api.github.com/repos/swarm-subnet/Langostino/deployments",
       "created_at": "2025-09-09T07:07:39Z",
-      "updated_at": "2026-08-06T20:59:43Z",
+      "updated_at": "2026-08-08T11:51:35Z",
       "pushed_at": "2026-02-24T10:25:49Z",
       "git_url": "git://github.com/swarm-subnet/Langostino.git",
       "ssh_url": "git@github.com:swarm-subnet/Langostino.git",
@@ -222,8 +222,8 @@ sha256: e8ca6207ec09c6d04014c2a561d189bac6b478628b684746c76ee077386a6e75
       "svn_url": "https://github.com/swarm-subnet/Langostino",
       "homepage": "https://swarm124.com/",
       "size": 17624,
-      "stargazers_count": 174,
-      "watchers_count": 174,
+      "stargazers_count": 175,
+      "watchers_count": 175,
       "language": "Python",
       "has_issues": true,
       "has_projects": true,
@@ -264,7 +264,7 @@ sha256: e8ca6207ec09c6d04014c2a561d189bac6b478628b684746c76ee077386a6e75
       "visibility": "public",
       "forks": 30,
       "open_issues": 0,
-      "watchers": 174,
+      "watchers": 175,
       "default_branch": "main",
       "score": 1.0
     },

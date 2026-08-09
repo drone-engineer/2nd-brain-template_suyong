@@ -8,11 +8,12 @@ tags:
   - swarm
   - ros2
 sources:
-  - https://api.github.com/search/repositories?q=YOLO%20ros2%20drone&sort=stars&order=desc&per_page=5
+  - https://api.github.com/search/repositories?q=ros2%20drone%20navigation&sort=stars&order=desc&per_page=5
 fetched: 2026-08-08T08:30:00Z
+sha256: 18887cb3985f0bd973567b3c4645871647e62fab53fee6db6f7423080a21a7e3
 ---
 {
-  "total_count": 21,
+  "total_count": 32,
   "incomplete_results": false,
   "items": [
     {

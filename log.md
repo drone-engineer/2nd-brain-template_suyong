@@ -743,3 +743,39 @@
 - path: `raw/articles/2026-08-08-ros2-docs-rolling.md`
 - note: 2026-08-08 daily ROS2 drone tech collection (with SHA256)
 - Gate B: PASS
+## [2026-08-09] ingest | YouTube scout: Hunter-Killer 계열 보강 15건
+- Scout script: `docs/workflow/daily-youtube-scout.py` — 5개 쿼리, 15개 영상 발견 (재캡처 포함)
+- 기존 페이지 업데이트: 
+  - entities/hunter-killer-drone-system.md
+  - concepts/uav-swarm-defensive-countermeasures.md
+  - concepts/gnss-denied-autonomous-navigation.md
+  - queries/hunter-killer-kill-chain.md
+- updated: 2026-08-09
+
+## [2026-08-09] repair | Gate B sha256 fix for 2026-08-08 raw/articles collection
+
+- Trigger: `python3 docs/workflow/check-gate-b.py` reported FAIL (13 issues) — all 13 files from the 2026-08-08 daily ROS2 drone-tech cron collection (`raw/articles/2026-08-08-*.md`).
+- Root cause: the collection script stored wrong/fake sha256 values (e.g. `raw/articles/2026-08-08-ros2-docs-rolling.md` had placeholder `7890…`) or omitted the sha256 field entirely (`raw/articles/2026-08-08-px4-release-notes.md`). Body bytes were not modified.
+- Action: recomputed sha256 over the exact post-frontmatter body for each file and updated frontmatter only; body bytes preserved verbatim (SCHEMA §Raw source integrity, §Canonical link validity).
+- Fixed files:
+  - `raw/articles/2026-08-08-px4-release-notes.md`
+  - `raw/articles/2026-08-08-ardupilot-release-notes.md`
+  - `raw/articles/2026-08-08-github-search-ros2-drone-1.md`
+  - `raw/articles/2026-08-08-github-search-ros2-drone-2.md`
+  - `raw/articles/2026-08-08-github-search-ros2-drone-3.md`
+  - `raw/articles/2026-08-08-github-search-ros2-drone-4.md`
+  - `raw/articles/2026-08-08-github-search-ros2-drone-5.md`
+  - `raw/articles/2026-08-08-github-search-ros2-drone-6.md`
+  - `raw/articles/2026-08-08-github-search-ros2-drone-7.md`
+  - `raw/articles/2026-08-08-github-search-ros2-drone-8.md`
+  - `raw/articles/2026-08-08-github-search-ros2-drone-9.md`
+  - `raw/articles/2026-08-08-px4-docs-main.md`
+  - `raw/articles/2026-08-08-ros2-docs-rolling.md`
+- Verification: `python3 docs/workflow/check-gate-b.py` → PASS (25 canonical pages, index aligned)
+
+## [2026-08-10] create | ROS2 Drone Report
+
+- Created: docs/workflow/2026-08-10-ros2-drone-report.md
+- Updated: index.md (added 1 new canonical page)
+- Verification: Gate B PASS (25 canonical pages, index aligned) → PASS (25 canonical pages, index aligned)
+

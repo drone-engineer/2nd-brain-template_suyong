@@ -1,19 +1,19 @@
 ---
 title: (no title)
-created: 2026-08-08
-updated: 2026-08-08
+created: 2026-08-10
+updated: 2026-08-10
 type: article
 tags:
   - drone
   - swarm
   - ros2
 sources:
-  - https://api.github.com/search/repositories?q=ros2%20drone%20perception&sort=stars&order=desc&per_page=5
-fetched: 2026-08-08T08:30:00Z
-sha256: cf439f095269c7231c80c7183c370e37c7ba3dc0c8656f906b7b1030fba612c0
+  - https://api.github.com/search/repositories?q=ArUco%20ros2%20detection&sort=stars&order=desc&per_page=5
+fetched: 2026-08-10T08:30:00Z
+sha256: ace24dffba8223073c7d5b85ff4b8fe94d0dcce31ce41e074bd662e233e5b980
 ---
 {
-  "total_count": 15,
+  "total_count": 45,
   "incomplete_results": false,
   "items": [
     {

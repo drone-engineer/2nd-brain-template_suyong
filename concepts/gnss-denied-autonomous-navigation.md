@@ -1,7 +1,7 @@
 ---
 title: GNSS-Denied 자율 항법 (UAV)
 created: 2026-07-27
-updated: 2026-08-06
+updated: 2026-08-09
 type: concept
 tags:
   - uav
@@ -28,6 +28,9 @@ sources:
 - raw/youtube/2026-08-01-V5ZMhFyWQa8.md
 - raw/youtube/2026-08-01-sEiKDZ6pZo4.md
 - raw/youtube/2026-08-01-w0z-362DkIU.md
+- raw/youtube/2026-08-09-p8frNNYQNV4.md
+- raw/youtube/2026-08-09-i1QRqu3Cocw.md
+- raw/youtube/2026-08-09-V5ZMhFyWQa8.md
 - raw/youtube/2026-08-02-V5ZMhFyWQa8.md
 - raw/youtube/2026-08-02-i1QRqu3Cocw.md
 - raw/youtube/2026-08-02-p8frNNYQNV4.md

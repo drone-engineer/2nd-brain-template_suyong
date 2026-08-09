@@ -1,7 +1,7 @@
 ---
 title: (no title)
-created: 2026-08-08
-updated: 2026-08-08
+created: 2026-08-10
+updated: 2026-08-10
 type: article
 tags:
   - drone
@@ -9,8 +9,8 @@ tags:
   - ros2
 sources:
   - https://api.github.com/search/repositories?q=ros2%20drone%20detection&sort=stars&order=desc&per_page=5
-fetched: 2026-08-08T08:30:00Z
-sha256: d7ac31b5a372dba6cf85765b7990d5c0014c33b6689c34d5d8bc745a012032bc
+fetched: 2026-08-10T08:30:00Z
+sha256: 856c0bd8864688ff676a4d04437c0ae94a57af97e6a17cc7799a013ed69e07dc
 ---
 {
   "total_count": 31,

@@ -1,19 +1,19 @@
 ---
 title: (no title)
-created: 2026-08-08
-updated: 2026-08-08
+created: 2026-08-10
+updated: 2026-08-10
 type: article
 tags:
   - drone
   - swarm
   - ros2
 sources:
-  - https://api.github.com/search/repositories?q=ros2%20drone%20planning&sort=stars&order=desc&per_page=5
-fetched: 2026-08-08T08:30:00Z
-sha256: e1a06137219cff4751669d24dec28f8cf43854bcb7bada4d7b8ef923b8100c7c
+  - https://api.github.com/search/repositories?q=zenoh%20ros2%20middleware&sort=stars&order=desc&per_page=5
+fetched: 2026-08-10T08:30:00Z
+sha256: fe0b431ec5aa77658f7182bdaa8de638c5166cd4cf93a4c417b0b1b6fc3cbc4c
 ---
 {
-  "total_count": 18,
+  "total_count": 8,
   "incomplete_results": false,
   "items": [
     {
@@ -84,14 +84,14 @@ sha256: e1a06137219cff4751669d24dec28f8cf43854bcb7bada4d7b8ef923b8100c7c
       "releases_url": "https://api.github.com/repos/eclipse-zenoh/zenoh-plugin-ros2dds/releases{/id}",
       "deployments_url": "https://api.github.com/repos/eclipse-zenoh/zenoh-plugin-ros2dds/deployments",
       "created_at": "2023-09-29T12:59:40Z",
-      "updated_at": "2026-08-07T02:09:45Z",
-      "pushed_at": "2026-08-07T02:09:40Z",
+      "updated_at": "2026-08-09T01:16:23Z",
+      "pushed_at": "2026-08-09T01:16:19Z",
       "git_url": "git://github.com/eclipse-zenoh/zenoh-plugin-ros2dds.git",
       "ssh_url": "git@github.com:eclipse-zenoh/zenoh-plugin-ros2dds.git",
       "clone_url": "https://github.com/eclipse-zenoh/zenoh-plugin-ros2dds.git",
       "svn_url": "https://github.com/eclipse-zenoh/zenoh-plugin-ros2dds",
       "homepage": "https://zenoh.io",
-      "size": 1831,
+      "size": 1866,
       "stargazers_count": 296,
       "watchers_count": 296,
       "language": "Rust",
@@ -201,14 +201,14 @@ sha256: e1a06137219cff4751669d24dec28f8cf43854bcb7bada4d7b8ef923b8100c7c
       "releases_url": "https://api.github.com/repos/autowarefoundation/agnocast/releases{/id}",
       "deployments_url": "https://api.github.com/repos/autowarefoundation/agnocast/deployments",
       "created_at": "2024-07-03T02:34:55Z",
-      "updated_at": "2026-08-07T14:18:13Z",
-      "pushed_at": "2026-08-07T14:16:44Z",
+      "updated_at": "2026-08-09T19:28:13Z",
+      "pushed_at": "2026-08-09T20:54:56Z",
       "git_url": "git://github.com/autowarefoundation/agnocast.git",
       "ssh_url": "git@github.com:autowarefoundation/agnocast.git",
       "clone_url": "https://github.com/autowarefoundation/agnocast.git",
       "svn_url": "https://github.com/autowarefoundation/agnocast",
       "homepage": "https://autowarefoundation.github.io/agnocast_doc/",
-      "size": 5237,
+      "size": 5402,
       "stargazers_count": 196,
       "watchers_count": 196,
       "language": "C++",
@@ -218,11 +218,11 @@ sha256: e1a06137219cff4751669d24dec28f8cf43854bcb7bada4d7b8ef923b8100c7c
       "has_wiki": true,
       "has_pages": false,
       "has_discussions": true,
-      "forks_count": 30,
+      "forks_count": 31,
       "mirror_url": null,
       "archived": false,
       "disabled": false,
-      "open_issues_count": 104,
+      "open_issues_count": 106,
       "license": {
         "key": "apache-2.0",
         "name": "Apache License 2.0",
@@ -257,8 +257,8 @@ sha256: e1a06137219cff4751669d24dec28f8cf43854bcb7bada4d7b8ef923b8100c7c
         "zero-copy-ipc"
       ],
       "visibility": "public",
-      "forks": 30,
-      "open_issues": 104,
+      "forks": 31,
+      "open_issues": 106,
       "watchers": 196,
       "default_branch": "main",
       "score": 1.0

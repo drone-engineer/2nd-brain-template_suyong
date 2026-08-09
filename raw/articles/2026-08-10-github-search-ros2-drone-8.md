@@ -1,19 +1,19 @@
 ---
 title: (no title)
-created: 2026-08-08
-updated: 2026-08-08
+created: 2026-08-10
+updated: 2026-08-10
 type: article
 tags:
   - drone
   - swarm
   - ros2
 sources:
-  - https://api.github.com/search/repositories?q=ros2%20drone%20formation&sort=stars&order=desc&per_page=5
-fetched: 2026-08-08T08:30:00Z
-sha256: 88002fe9e7325eb3c4c7556189d618888d319055844c68dd27a0273235b3ec31
+  - https://api.github.com/search/repositories?q=SLAM%20ros2%20drone&sort=stars&order=desc&per_page=5
+fetched: 2026-08-10T08:30:00Z
+sha256: e83ef0901c7f8a8e88e38aac26f9609a9fb2e689ff3c26c9f65f5b3afcfb1585
 ---
 {
-  "total_count": 10,
+  "total_count": 36,
   "incomplete_results": false,
   "items": [
     {
