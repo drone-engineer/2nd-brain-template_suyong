@@ -779,3 +779,4 @@
 - Updated: index.md (added 1 new canonical page)
 - Verification: Gate B PASS (25 canonical pages, index aligned) → PASS (25 canonical pages, index aligned)
 
+## [2026-08-10] ingest | 2023-blockchain-empowered-security-and-energy-efficiency-of-drone-swarm-consensus-for.md, 2025-swarmraft-leveraging-consensus-for-robust-drone-swarm-coordination-in-gnss-degra.md, 2025-privacy-preserving-federated-learning-framework-for-decentralized-drone-swarm-ex.md, 2024-combat-drone-swarm-system-cdss-based-on-solana-blockchain-technology.md, 2021-when-less-is-more-robot-swarms-adapt-better-to-changes-with-constrained-communic.md
