@@ -780,3 +780,47 @@
 - Verification: Gate B PASS (25 canonical pages, index aligned) → PASS (25 canonical pages, index aligned)
 
 ## [2026-08-10] ingest | 2023-blockchain-empowered-security-and-energy-efficiency-of-drone-swarm-consensus-for.md, 2025-swarmraft-leveraging-consensus-for-robust-drone-swarm-coordination-in-gnss-degra.md, 2025-privacy-preserving-federated-learning-framework-for-decentralized-drone-swarm-ex.md, 2024-combat-drone-swarm-system-cdss-based-on-solana-blockchain-technology.md, 2021-when-less-is-more-robot-swarms-adapt-better-to-changes-with-constrained-communic.md
+
+## [2026-08-11] ingest | ROS2 drone tech daily collection (retroactive log)
+- Created:
+  - `raw/articles/2026-08-11-ros2-drone-github-data.md`
+  - `raw/articles/2026-08-11-github-search-ros2-drone-1.md`
+  - `raw/articles/2026-08-11-github-search-ros2-drone-2.md`
+  - `raw/articles/2026-08-11-github-search-ros2-drone-3.md`
+  - `raw/articles/2026-08-11-github-search-ros2-drone-4.md`
+  - `raw/articles/2026-08-11-github-search-ros2-drone-5.md`
+  - `raw/articles/2026-08-11-github-search-ros2-drone-6.md`
+  - `raw/articles/2026-08-11-github-search-ros2-drone-7.md`
+  - `raw/articles/2026-08-11-github-search-ros2-drone-8.md`
+  - `raw/articles/2026-08-11-github-search-ros2-drone-9.md`
+  - `raw/articles/2026-08-11-px4-docs-main.md`
+  - `raw/articles/2026-08-11-px4-release-notes.md`
+  - `raw/articles/2026-08-11-ros2-docs-rolling.md`
+  - `raw/articles/2026-08-11-ardupilot-release-notes.md`
+- Created: docs/workflow/2026-08-11-ros2-drone-report.md
+- Verification: Gate B PASS (25 canonical pages, index aligned)
+
+## [2026-08-12] ingest | ROS2 drone tech daily collection
+- Created:
+  - `raw/articles/2026-08-12-ros2-drone-github-data.md`
+  - `raw/articles/2026-08-12-px4-docs.md`
+  - `raw/articles/2026-08-12-ros2-docs.md`
+- Created: docs/reports/2026-08-12-ros2-drone-report.md
+- Note: ROS2 docs (docs.ros.org) 수집시 Anubis anti-bot으로 인해 "Access Denied" 페이지 수집됨
+- Verification: Gate B PASS (25 canonical pages, index aligned)
+
+## [2026-08-13] ingest | ROS2 drone tech daily collection
+- Created:
+  - `raw/articles/2026-08-13-ros2-drone-github-data.md`
+  - `raw/articles/2026-08-13-px4-release-notes.md`
+  - `raw/articles/2026-08-13-ardupilot-release-notes.md`
+  - `raw/articles/2026-08-13-px4-docs.md`
+  - `raw/articles/2026-08-13-ros2-docs.md`
+- Created: docs/reports/2026-08-13-ros2-drone-report.md
+- Created: docs/workflow/daily-collect-2026-08-13.py
+- Updated: docs/workflow/raw-articles-index.md (added 22 entries: 08-11/08-12/08-13)
+- Note: ROS2 docs (docs.ros.org) 수집시 Anubis anti-bot으로 인해 "Access Denied" 페이지 수집됨. SHA256는 정상 기록됨. 브라우저 자동화 재수집 필요.
+- GitHub Search: 9 queries, 77 unique repos (per_page=10, sort=stars desc)
+- PX4 Releases: 6 releases (v1.18.0-beta2, v1.18.0-beta1, v1.18.0-alpha1, v1.17.0, v1.16.2, v1.17.0-rc2)
+- ArduPilot Releases: 7 releases (Copter/Plane/Rover/Sub/Tracker/AP_Periph 4.7.0, Copter-4.6.3)
+- Verification: Gate B PASS (25 canonical pages, index aligned)

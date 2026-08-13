@@ -1,6 +1,6 @@
 # Raw Articles Index
 
-> 자동 생성(수집 시 갱신). 파일명 ↔ 제목 매핑. 총 108편
+> 자동 생성(수집 시 갱신). 파일명 ↔ 제목 매핑. 총 149편
 
 
 ## 2003 (1편)
@@ -50,7 +50,7 @@
 - `2020-uav-trajectory-and-communication-co-design-flexible-path-discretization-and-path.md` — UAV Trajectory and Communication Co-design: Flexible Path Discretization and Path Compression
 - `2020-variational-policy-propagation-for-multi-agent-reinforcement-learning.md` — Variational Policy Propagation for Multi-agent Reinforcement Learning
 
-## 2021 (7편)
+## 2021 (8편)
 
 - `2021-3d-uav-trajectory-and-data-collection-optimisation-via-deep-reinforcement-learni.md` — 3D UAV Trajectory and Data Collection Optimisation via Deep Reinforcement Learning
 - `2021-advanced-drone-swarm-security-blockchain-governance.md` — Advanced Drone Swarm Security by Using Blockchain Governance Game
@@ -59,6 +59,7 @@
 - `2021-reconfigurable-intelligent-surface-assisted-multi-uav-networks-efficient-resourc.md` — Reconfigurable Intelligent Surface-assisted Multi-UAV Networks: Efficient Resource Allocation with Deep Reinforcement Learning
 - `2021-swarm-based-counter-uav-defense-system.md` — Swarm-based counter UAV defense system
 - `2021-swarm-robotics-past-present-and-future-point-of-view.md` — Swarm Robotics: Past, Present, and Future [Point of View]
+- `2021-when-less-is-more-robot-swarms-adapt-better-to-changes-with-constrained-communic.md` — When less is more: Robot swarms adapt better to changes with constrained communication
 
 ## 2022 (7편)
 
@@ -70,8 +71,9 @@
 - `2022-survey-multi-agent-drl-communication.md` — A Survey of Multi-Agent Deep Reinforcement Learning with Communication
 - `2022-trajectory-and-transmit-power-optimization-for-irs-assisted-uav-communication-un.md` — Trajectory and Transmit Power Optimization for IRS-Assisted UAV Communication under Malicious Jamming
 
-## 2023 (7편)
+## 2023 (8편)
 
+- `2023-blockchain-empowered-security-and-energy-efficiency-of-drone-swarm-consensus-for.md` — Blockchain-Empowered Security and Energy Efficiency of Drone Swarm Consensus for Environment Exploration
 - `2023-can-a-single-human-supervise-a-swarm-of-100-heterogeneous-robots.md` — Can A Single Human Supervise A Swarm of 100 Heterogeneous Robots?
 - `2023-combat-swarm-drone-ai-operations-kci-ART003008075.md` — (no title)
 - `2023-e2copre-energy-efficient-and-cooperative-collision-avoidance-for-uav-swarms-with.md` — E2CoPre: Energy Efficient and Cooperative Collision Avoidance for UAV Swarms with Trajectory Prediction
@@ -80,22 +82,25 @@
 - `2023-target-search-by-active-particles.md` — Target search by active particles
 - `2023-tinyslam-based-exploration-with-a-swarm-of-nano-uavs.md` — tinySLAM-based exploration with a swarm of nano-UAVs
 
-## 2024 (5편)
+## 2024 (6편)
 
 - `2024-advancement-challenges-in-uav-swarm-formation-control-a-comprehensive-review.md` — Advancement Challenges in UAV Swarm Formation Control: A Comprehensive Review
+- `2024-combat-drone-swarm-system-cdss-based-on-solana-blockchain-technology.md` — Combat Drone Swarm System (CDSS) Based on Solana Blockchain Technology
 - `2024-leveraging-swarm-capabilities-to-assist-other-systems.md` — Leveraging swarm capabilities to assist other systems
 - `2024-pacnav-decentralized-uav-swarm-navigation.md` — PACNav: Enhancing Collective Navigation for UAV Swarms in Communication-Challenged Environments
 - `2024-ros2swarm-a-ros-2-package-for-swarm-robot-behaviors.md` — ROS2swarm - A ROS 2 Package for Swarm Robot Behaviors
 - `2024-weighted-strategies-to-guide-a-multi-objective-evolutionary-algorithm-for-multi-.md` — Weighted strategies to guide a multi-objective evolutionary algorithm for multi-UAV mission planning
 
-## 2025 (4편)
+## 2025 (6편)
 
 - `2025-a-learning-framework-for-cooperative-collision-avoidance-of-uav-swarms-leveragin.md` — A Learning Framework For Cooperative Collision Avoidance of UAV Swarms Leveraging Domain Knowledge
 - `2025-a-modular-and-scalable-system-architecture-for-heterogeneous-uav-swarm.md` — A Modular and Scalable System Architecture for Heterogeneous UAV Swarms Using ROS 2 and PX4-Autopilot
 - `2025-integrated-sensing-and-communication-with-uav-swarms-via-decentralized-consensus.md` — Integrated Sensing and Communication with UAV Swarms via Decentralized Consensus ADMM
 - `2025-learning-bilateral-team-formation-in-cooperative-multi-agent-reinforcement-learn.md` — Learning Bilateral Team Formation in Cooperative Multi-Agent Reinforcement Learning
+- `2025-privacy-preserving-federated-learning-framework-for-decentralized-drone-swarm-ex.md` — Privacy-Preserving Federated Learning Framework for Decentralized Drone Swarm Exploration
+- `2025-swarmraft-leveraging-consensus-for-robust-drone-swarm-coordination-in-gnss-degra.md` — SwarmRaft: Leveraging Consensus for Robust Drone Swarm Coordination in GNSS-Degraded Environments
 
-## 2026 (58편)
+## 2026 (72편)
 
 - `2026-07-29-modalai-starling-2-px4-guide-main.md` — "ModalAI Starling 2 | PX4 Guide (main)"
 - `2026-08-01-px4_release_117.md` — (no title)
@@ -149,6 +154,42 @@
 - `2026-08-08-px4-docs-main.md` — (no title)
 - `2026-08-08-px4-release-notes.md` — (no title)
 - `2026-08-08-ros2-docs-rolling.md` — (no title)
+- `2026-08-10-ardupilot-release-notes.md` — (no title)
+- `2026-08-10-github-search-ros2-drone-1.md` — (no title)
+- `2026-08-10-github-search-ros2-drone-2.md` — (no title)
+- `2026-08-10-github-search-ros2-drone-3.md` — (no title)
+- `2026-08-10-github-search-ros2-drone-4.md` — (no title)
+- `2026-08-10-github-search-ros2-drone-5.md` — (no title)
+- `2026-08-10-github-search-ros2-drone-6.md` — (no title)
+- `2026-08-10-github-search-ros2-drone-7.md` — (no title)
+- `2026-08-10-github-search-ros2-drone-8.md` — (no title)
+- `2026-08-10-github-search-ros2-drone-9.md` — (no title)
+- `2026-08-10-px4-docs-main.md` — (no title)
+- `2026-08-10-px4-release-notes.md` — (no title)
+- `2026-08-10-ros2-docs-rolling.md` — (no title)
+- `2026-08-10-ros2-drone-github-data.md` — (no title)
+- `2026-08-11-ardupilot-release-notes.md` — (no title)
+- `2026-08-11-github-search-ros2-drone-1.md` — (no title)
+- `2026-08-11-github-search-ros2-drone-2.md` — (no title)
+- `2026-08-11-github-search-ros2-drone-3.md` — (no title)
+- `2026-08-11-github-search-ros2-drone-4.md` — (no title)
+- `2026-08-11-github-search-ros2-drone-5.md` — (no title)
+- `2026-08-11-github-search-ros2-drone-6.md` — (no title)
+- `2026-08-11-github-search-ros2-drone-7.md` — (no title)
+- `2026-08-11-github-search-ros2-drone-8.md` — (no title)
+- `2026-08-11-github-search-ros2-drone-9.md` — (no title)
+- `2026-08-11-px4-docs-main.md` — (no title)
+- `2026-08-11-px4-release-notes.md` — (no title)
+- `2026-08-11-ros2-docs-rolling.md` — (no title)
+- `2026-08-11-ros2-drone-github-data.md` — (no title)
+- `2026-08-12-px4-docs.md` — PX4 공식 문서 수집 (2026-08-12)
+- `2026-08-12-ros2-docs.md` — ROS2 공식 문서 수집 (2026-08-12)
+- `2026-08-12-ros2-drone-github-data.md` — ROS2 드론 GitHub 검색 데이터 (2026-08-12)
+- `2026-08-13-ardupilot-release-notes.md` — ArduPilot 릴리즈 노트 (2026-08-13)
+- `2026-08-13-px4-docs.md` — PX4 공식 문서 수집 (2026-08-13)
+- `2026-08-13-px4-release-notes.md` — PX4 릴리즈 노트 (2026-08-13)
+- `2026-08-13-ros2-docs.md` — ROS2 공식 문서 수집 (2026-08-13)
+- `2026-08-13-ros2-drone-github-data.md` — ROS2 드론 GitHub 검색 데이터 (2026-08-13)
 - `2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking-sys.md` — Banshee: Target Switch Attacks on Gimbal-Stabilized Visual Tracking Systems via Acoustic Injection
 - `2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-l.md` — Enhancing Graph-Based SLAM in GNSS-Denied environments by leveraging learned features
 - `2026-hunter-killer-drone-prd-v2.md` — Hunter-Killer 드론 자율 정찰-타격 체계 PRD v2.0
