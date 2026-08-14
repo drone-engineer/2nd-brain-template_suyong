@@ -1,13 +1,13 @@
 ---
 source_url: "https://api.github.com/repos/PX4/PX4-Autopilot/releases"
-ingested: 2026-08-13
-sha256: "86e60e2fc9934883d3a430a280f716396ceef71bf514f6c8fc7ae20cc5169893"
-title: "PX4 릴리즈 노트 (2026-08-13)"
+ingested: 2026-08-14
+sha256: 3f1a079e4902471697877e18bffc1ff400fcb1ec1449f57e4b16f9189c881c02
+title: "PX4 릴리즈 노트 (2026-08-14)"
 captured_via: 2nd-brain-cron
 ---
-# PX4-Autopilot 릴리즈 노트 (2026-08-13)
+# PX4-Autopilot 릴리즈 노트 (2026-08-14)
 
-수집 일시: 2026-08-13T08:30:00Z
+수집 일시: 2026-08-14T08:30:00Z
 출처: https://api.github.com/repos/PX4/PX4-Autopilot/releases
 
 ## v1.18.0-beta2

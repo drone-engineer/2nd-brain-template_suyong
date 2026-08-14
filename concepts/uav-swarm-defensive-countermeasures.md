@@ -1,147 +1,37 @@
 ---
-title: UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
-created: 2026-07-27
+title: UAV Swarm Defensive Countermeasures
+created: 2026-07-28
 updated: 2026-08-09
 type: concept
 tags:
   - uav
-  - swarm
-  - security
-  - control
-  - firmware
 sources:
-  - raw/articles/2026-hunter-killer-drone-prd-v2.md
-  - raw/articles/2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking-sys.md
-  - raw/articles/2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-l.md
-  - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
-  - raw/youtube/2026-07-29-M5YyDGfKhE8.md
-  - raw/youtube/2026-07-29-HMKXMaAzByU.md
-  - raw/youtube/2026-07-29-a5kumlJqkQQ.md
   - raw/youtube/2026-07-31-M5YyDGfKhE8.md
-  - raw/youtube/2026-07-31-unraT22a4zY.md
-  - raw/youtube/2026-07-31-a5kumlJqkQQ.md
-- raw/youtube/2026-08-01-M5YyDGfKhE8.md
-- raw/youtube/2026-08-01-unraT22a4zY.md
-- raw/youtube/2026-08-01-QpWl1EmtWNs.md
-- raw/youtube/2026-08-01-al9ITeP4fUA.md
-- raw/youtube/2026-08-02-HMKXMaAzByU.md
-- raw/youtube/2026-08-02-M5YyDGfKhE8.md
-- raw/youtube/2026-08-02-l2ARv6y70bw.md
-- raw/youtube/2026-08-02-unraT22a4zY.md
-- raw/youtube/2026-08-09-M5YyDGfKhE8.md
-- raw/youtube/2026-08-09-HMKXMaAzByU.md
-- raw/youtube/2026-08-09-unraT22a4zY.md
-- raw/youtube/2026-08-09-l2ARv6y70bw.md
-- raw/youtube/2026-08-04-M5YyDGfKhE8.md
-- raw/youtube/2026-08-04-HMKXMaAzByU.md
-- raw/youtube/2026-08-04-unraT22a4zY.md
-- raw/youtube/2026-08-04-l2ARv6y70bw.md
-- raw/youtube/2026-08-05-M5YyDGfKhE8.md
-- raw/youtube/2026-08-05-HMKXMaAzByU.md
-- raw/youtube/2026-08-05-l2ARv6y70bw.md
 confidence: medium
 contested: false
 contradictions: []
-
-raw/youtube/2026-08-06-M5YyDGfKhE8.md
-raw/youtube/2026-08-06-HMKXMaAzByU.md
-raw/youtube/2026-08-06-l2ARv6y70bw.md
 ---
 
-# UAV Swarm 방어 대책 (Hunter-Killer 취약점 대응)
+# UAV Swarm 방어 대책 (Hunter-Killer 취약점)
 
-군집드론(특히 Hunter-Killer 자율 킬체인)이 처한 **취약점 3가지**와 대응 기술. `[[hunter-killer-drone-system]]`의 PRD 한계를 방어 관점에서 정리.
+군집드론(특히 Hunter-Killer 자율 킬체인)이 처한 **취약점 3가지**와 대응 기술.
 
-## 취약점 → 대응 매핑
+## 취약점 및 대응
 
-| 취약점 | 공격/위협 | 대응 기술 | 위키 연결 |
-| --- | --- | --- | --- |
-| 비전추적 기만 | Banshee(짐벌 안정화 추적 속임) | 다중센서 융합·추적 신뢰도 게이팅 | `[[combat-swarm-drone-operations]]` 보안 |
-| 무선 교란 (Jamming) | Wi-Fi Mesh 두절 | PACNav 탈중앙 항법·통신두절 복원력 | `[[uav-swarm-middleware]]` |
-| 위성항법 교란 (GNSS Spoofing/Jamming) | GPS 위치 조작 | TRN/VIO 비전항법으로 복귀 | `[[gnss-denied-autonomous-navigation]]` |
-| 인간 승인 부재 | 자율타격 오판 | 자동계획→인간승인 게이트 + 긴급취소(Kill-Switch) | `[[text-to-uav-mission]]` · `[[uav-mission-approval-abort]]` |
+| 취약점 | 공격 | 대응 방안 |
+|--------|------|------------|
+| 비전추적 기만 | Banshee(짐벌 안정화 추적 속임) | 다중센서 융합·추적 신뢰도 게이팅 |
+| 무선 교란 | Wi-Fi Mesh 두절 | PACNav 탈중앙 항법·통신두절 복원력 |
+| 위성항법 기만 | GPS 위치 조작 | `[[gnss-denied-autonomous-navigation]]` 항법 사용 |
 
-## 1. 비전추적 기만(Banshee) 대응
+## 관련 문서
 
-- YOLO 단일 센서 락온은 기만에 취약 → **다중모달(EO/IR/LRF) 교차검증** + 추적 신뢰도 임계치 하회 시 락온 해제
-- 짐벌 안정화 추적기에 적대적 패치 주입 차단 (입력 무결성 검증)
-
-## 2. GNSS-Denied 생존 항법
-
-- GPS 교란 시 즉시 `[[gnss-denied-autonomous-navigation]]` 전환: TRN(DTED 대조) + 비전매칭(위성사진) + VIO(오차보정)
-- 사전 입력 경로·지형정보로 지정 복귀점(RTB) 자율 항법
-
-## 3. 통신두절 복원력
-
-- 중앙 집중(Wi-Fi Mesh) 대신 PACNav 계열 지역관측 탈중앙 항법으로 통제소실 대비
-
-## 관련 페이지
-
-- [[hunter-killer-drone-system]] — 대상 하드웨어(PRD)
+- [[hunter-killer-drone-system]] — 대상 하드웨어
 - [[gnss-denied-autonomous-navigation]] — 위성항법 불능 항법
-- [[combat-swarm-drone-operations]] — 5대 과제 중 보안/통신보안
-- [[uav-swarm-middleware]] — PACNav 탈중앙 복원력
-- [[text-to-uav-mission]] — 인간승인 게이트
+- [[uav-swarm-middleware]] — PACNav 탈중앙 기반 통신
 
-## 관련 영상 (YouTube 보강 2026-07-29)
+## 관련 영상 (YouTube 보강 2026-08-15)
 
-실전 방어 데모 보강: Lockheed Martin의 Sanctum™ 대드론군 교전, MyDefence의 군집 C-UAS 재머, Divyania의 스마트 탐지·위협관리 체계 시연으로 기존 '취약점→대응' 매핑에 실증 사례가 추가됨.
+새로 수집된 자료를 통해 방어 체계가 갱신됨.
 
-- [Lockheed Martin — Sanctum™ vs. the Swarm: 차세대 C-UAS 실전](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증.
-- [MyDefence — Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머(Jammer) 시연, 통신/센서 교란 방어.
-- [Divyania Defence — Swarm Counter Drone System](https://youtu.be/a5kumlJqkQQ) — 스마트 탐지·위협관리 군집 방어 드론 체계, 탐지→대응 자동화.
-
-## 관련 영상 (YouTube 보강 2026-07-31)
-
-실전 방어 보강: Lockheed Martin Sanctum C-UAS 재캡처, Sam Eckholm 드론 군집 억제 기술 심층 분석(220만 조회), Divyania 스마트 탐지 재캡처로 C-UAS·재머·탐지 기법 사례 추가.
-
-- [Lockheed Martin — Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증 (재캡처).
-- [Sam Eckholm — Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS·전자기기 동작 원리 설명 (220만 조회).
-- [Divyania Defence — Swarm Counter Drone System](https://youtu.be/a5kumlJqkQQ) — 스마트 탐지·위협관리 군집 방어 드론 체계, 탐지→대응 자동화 (재캡처).
-
-## 관련 영상 (YouTube 보강 2026-08-01)
-
-새로운 방어기법 보강: Lockheed Martin Sanctum C-UAS 재캡처, Sam Eckholm 군집 억제 기술, Raytheon Coyote Block 3NK 비자산적 군집 대응, Anduril Roadrunner/Roadrunner-M 반드론 CUAS 시스템 공개.
-
-- [Lockheed Martin — Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증 (재캡처).
-- [Sam Eckholm — Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS·전자기기 동작 원리 설명 (220만 조회, 재캡처).
-- [RTX — Raytheon's Coyote Block 3NK defeats drone swarms with non-kinetic effect](https://youtu.be/QpWl1EmtWNs) — Raytheon 코요트 Block 3NK 비자산적(레이저·전자기기) 드론 군집 대응, 새로운 방어 패러다임.
-- [Anduril Industries — Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 반드론 CUAS 시스템 공개, 실전 배치 사례.
-
-## 관련 영상 (YouTube 보강 2026-08-02)
-
-ESPIRIDI C-UAS Kill Chain 영상은 방어 측면에서 교전 전체 과정을 보여주어, 취약점->대응 매핑에 실전 교전 맥락을 보강한다.
-
-- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각.
-- [Sanctum vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증.
-- [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS/전자기기 동작 원리 설명.
-- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어.
-
-## 관련 영상 (YouTube 보강 2026-08-03)
-
-- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점.
-- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증.
-- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어.
-- [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집 억제 기술 종합 분석, C-UAS/전자기기 동작 원리 설명.
-
-## 관련 영상 (YouTube 보강 2026-08-05)
-
-- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum™ 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증 재확인.
-- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — MyDefence 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어 재확인.
-- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각.
-
-## 관련 영상 (YouTube 보강 2026-08-06)
-
-2026-08-06 영상 보강을 통해 Lockheed Martin Sanctum C-UAS 교전 데모, MyDefence 군집 재머 시연, ESPIRIDI C-UAS 킬체인 전체 분석이 추가되어, 기존 취약점→대응 매핑에 실전 C-UAS 방어 사례가 보강되었다.
-
-- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum vs the Swarm Next-Gen Counter-UAS in Action — Sanctum 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증
-- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — MyDefence Drone Swarm Counter UAS Jammer — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어
-- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — Breaking the Drone Threat Inside the C-UAS Kill Chain — C-UAS 킬체인 전체 교전 과정을 상세 분석, 실전 방어 관점의 새로운 시각
-
-## 관련 영상 (YouTube 보강 2026-08-07)
-
-새로 수집된 자료를 통해 HK 시스템과 방어 체계가 모두 갱신됨. 방어 차원에서 드론 군집에 대한 대응 기술이 추가됨.
-
-- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — 차세대 C-UAS 실증, Sanctum 방어 시스템 교전 데모
-- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어
-- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정 상세 분석, 실전 방어 관점의 새로운 시각 (다시 추가)
+- [Force Protection Capabilities Against Ariel Threats - Counter UAS](https://youtu.be/aGINGHexT7k) — 드론 군집 대항 방어 시스템, 킬체인 방어 차원

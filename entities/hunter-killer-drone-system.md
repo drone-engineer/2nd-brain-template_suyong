@@ -10,43 +10,41 @@ tags:
   - firmware
 sources:
   - raw/articles/2026-hunter-killer-drone-prd-v2.md
-  - raw/youtube/2026-07-29-hp4ySL2xzV8.md
-  - raw/youtube/2026-07-29-sEiKDZ6pZo4.md
-  - raw/youtube/2026-07-29-w0z-362DkIU.md
-  - raw/youtube/2026-07-31-MGggtBIzvtg.md
-  - raw/youtube/2026-07-31-DK6IGG5zRU8.md
-  - raw/youtube/2026-07-31-hp4ySL2xzV8.md
-  - raw/youtube/2026-07-31-sEiKDZ6pZo4.md
-  - raw/youtube/2026-07-31-w0z-362DkIU.md
-  - raw/youtube/2026-07-31-sriVQXreqG8.md
-- raw/youtube/2026-08-01-MGggtBIzvtg.md
-- raw/youtube/2026-08-01-hp4ySL2xzV8.md
-- raw/youtube/2026-08-01-sEiKDZ6pZo4.md
-- raw/youtube/2026-08-01-w0z-362DkIU.md
-- raw/youtube/2026-08-02-5k9F7QK66Ws.md
-- raw/youtube/2026-08-02-5knSEDXDa_0.md
-- raw/youtube/2026-08-02-EKpxP2YieZw.md
-- raw/youtube/2026-08-02-MGggtBIzvtg.md
-- raw/youtube/2026-08-02-hp4ySL2xzV8.md
-- raw/youtube/2026-08-09-MGggtBIzvtg.md
-- raw/youtube/2026-08-09-sriVQXreqG8.md
-- raw/youtube/2026-08-09-hp4ySL2xzV8.md
-- raw/youtube/2026-08-09-sEiKDZ6pZo4.md
-- raw/youtube/2026-08-09-w0z-362DkIU.md
-- raw/youtube/2026-08-02-l2ARv6y70bw.md
-- raw/youtube/2026-08-02-sEiKDZ6pZo4.md
-- raw/youtube/2026-08-02-sriVQXreqG8.md
-- raw/youtube/2026-08-02-w0z-362DkIU.md
-- raw/youtube/2026-08-04-MGggtBIzvtg.md
-- raw/youtube/2026-08-04-DK6IGG5zRU8.md
-- raw/youtube/2026-08-04-hp4ySL2xzV8.md
-- raw/youtube/2026-08-04-sEiKDZ6pZo4.md
-- raw/youtube/2026-08-04-w0z-362DkIU.md
-- raw/youtube/2026-08-05-MGggtBIzvtg.md
-- raw/youtube/2026-08-05-sriVQXreqG8.md
-- raw/youtube/2026-08-05-hp4ySL2xzV8.md
-- raw/youtube/2026-08-05-sEiKDZ6pZo4.md
-- raw/youtube/2026-08-05-w0z-362DkIU.md
+  - raw/articles/2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking-sys.md
+  - raw/articles/2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-l.md
+  - raw/articles/2024-pacnav-decentralized-uav-swarm-navigation.md
+  - raw/youtube/2026-07-29-M5YyDGfKhE8.md
+  - raw/youtube/2026-07-29-HMKXMaAzByU.md
+  - raw/youtube/2026-07-29-a5kumlJqkQQ.md
+  - raw/youtube/2026-07-31-M5YyDGfKhE8.md
+  - raw/youtube/2026-07-31-unraT22a4zY.md
+  - raw/youtube/2026-07-31-a5kumlJqkQQ.md
+  - raw/youtube/2026-08-01-M5YyDGfKhE8.md
+  - raw/youtube/2026-08-01-unraT22a4zY.md
+  - raw/youtube/2026-08-01-QpWl1EmtWNs.md
+  - raw/youtube/2026-08-01-al9ITeP4fUA.md
+  - raw/youtube/2026-08-02-HMKXMaAzByU.md
+  - raw/youtube/2026-08-02-M5YyDGfKhE8.md
+  - raw/youtube/2026-08-02-l2ARv6y70bw.md
+  - raw/youtube/2026-08-02-unraT22a4zY.md
+  - raw/youtube/2026-08-09-M5YyDGfKhE8.md
+  - raw/youtube/2026-08-09-HMKXMaAzByU.md
+  - raw/youtube/2026-08-09-unraT22a4zY.md
+  - raw/youtube/2026-08-09-l2ARv6y70bw.md
+  - raw/youtube/2026-08-04-M5YyDGfKhE8.md
+  - raw/youtube/2026-08-04-HMKXMaAzByU.md
+  - raw/youtube/2026-08-04-unraT22a4zY.md
+  - raw/youtube/2026-08-04-l2ARv6y70bw.md
+  - raw/youtube/2026-08-05-M5YyDGfKhE8.md
+  - raw/youtube/2026-08-05-HMKXMaAzByU.md
+  - raw/youtube/2026-08-05-l2ARv6y70bw.md
+  - raw/youtube/2026-08-06-M5YyDGfKhE8.md
+  - raw/youtube/2026-08-06-HMKXMaAzByU.md
+  - raw/youtube/2026-08-06-l2ARv6y70bw.md
+  - raw/youtube/2026-08-11-MGggtBIzvtg.md
+  - raw/youtube/2026-08-11-b3lrvZ8MA5E.md
+  - raw/youtube/2026-08-11-al9ITeP4fUA.md
+  - raw/youtube/2026-08-11-EKpxP2YieZw.md
 confidence: medium
 contested: false
 contradictions: []
@@ -190,3 +188,9 @@ ESPIRIDI C-UAS Kill Chain 영상은 탐지->추적->식별->타격의 전체 교
 - [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — 미국 Sea Hunter 자율 해양 정찰 드론 실증, HK Hunter 플랫폼 사례
 - [Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 대응 시스템 공개, 킬체인 방어 차원
 - [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정 상세 분석, 실전 방어 관점의 새로운 시각
+
+## 관련 영상 (YouTube 보강 2026-08-15)
+
+새로 수집된 자료를 통해 타겟 잠금 및 항법 기술이 갱신됨.
+
+- [Real-Time Object Tracking on FPV UAV Drone | DIY AI Target Lock System Test](https://youtu.be/w5KkbRVhqzE) — FPV 드론 실시간 목표추적, 자율 락온 시스템 실험

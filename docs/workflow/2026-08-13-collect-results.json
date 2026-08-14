@@ -1,0 +1,22 @@
+{
+  "2026-08-13-ros2-drone-github-data.md": {
+    "sha256": "831426352f34212799d2fde3f4a2f3dc3170ab1148716b9a324db320b6209efa",
+    "url": "GitHub Search API (9 queries)"
+  },
+  "2026-08-13-px4-release-notes.md": {
+    "sha256": "b2555eb5ad748ceef60869340b1cfbc29c94218f412f7ce0658ee0dfcf2d942d",
+    "url": "https://api.github.com/repos/PX4/PX4-Autopilot/releases"
+  },
+  "2026-08-13-ardupilot-release-notes.md": {
+    "sha256": "63e09150f42ce200e7724853475f19862625c3ac4241c64e71b2596124085482",
+    "url": "https://api.github.com/repos/ArduPilot/ardupilot/releases"
+  },
+  "2026-08-13-px4-docs.md": {
+    "sha256": "551c4d6a54396961ec20965385cd10621f32b3e47a6d26d25ca4375e6f6cd46d",
+    "url": "https://docs.px4.io/main/en/"
+  },
+  "2026-08-13-ros2-docs.md": {
+    "sha256": "62ac81877465b77b00d44e21cf94d18d3dfa7bfeeb4192aefa2291de4b21a917",
+    "url": "https://docs.ros.org/en/rolling/"
+  }
+}

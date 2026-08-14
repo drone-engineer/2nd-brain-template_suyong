@@ -1,13 +1,13 @@
 ---
 source_url: "https://api.github.com/repos/PX4/PX4-Autopilot/releases"
-ingested: 2026-08-13
-sha256: "86e60e2fc9934883d3a430a280f716396ceef71bf514f6c8fc7ae20cc5169893"
-title: "PX4 릴리즈 노트 (2026-08-13)"
+ingested: 2026-08-15
+title: PX4 릴리즈 노트 (2026-08-15)
 captured_via: 2nd-brain-cron
+sha256: eacd366d36b9ceadaf197b7520201d27716c153e5f119475b482f85adfd4c2a9
 ---
-# PX4-Autopilot 릴리즈 노트 (2026-08-13)
+# PX4-Autopilot 릴리즈 노트 (2026-08-15)
 
-수집 일시: 2026-08-13T08:30:00Z
+수집 일시: 2026-08-15T08:30:00Z
 출처: https://api.github.com/repos/PX4/PX4-Autopilot/releases
 
 ## v1.18.0-beta2
@@ -37,7 +37,6 @@ Fixes since beta1:
 - Boards: CUAV X25-mega uses the renamed heater sensor ID parameter (#27846)
 
 **Full Changelog**: https://github.com/PX4/PX4-Autopilot/compare/v1.18.0-beta1...v1.18.0-beta2
-
 ```
 
 ## v1.18.0-beta1
@@ -121,7 +120,6 @@ PX4 v1.17 builds on [PX4 v1.16](https://docs.px4.io/main/en/releases/1.16), with
 * @ttechnick - first contribution: #25897
 * @MDEAGEWT - first contribution: #25776
 * @AkaiEurus - first contribution: #26199
-
 ```
 
 ## v1.16.2
@@ -163,6 +161,110 @@ PX4 v1.17 builds on [PX4 v1.16](https://docs.px4.io/main/en/releases/1.16), with
 
 
 **Full Changelog**: https://github.com/PX4/PX4-Autopilot/compare/v1.17.0-rc1...v1.17.0-rc2
-
 ```
 
+## v1.17.0-rc1
+
+- 이름: v1.17.0-rc1
+- 날짜: 2026-03-11
+- 프리릴리즈: True
+- 드래프트: False
+
+```
+## What's Changed
+* [BACKPORT 1.17] Include PWM Center PR by @ttechnick in https://github.com/PX4/PX4-Autopilot/pull/26317
+* [Backport 1.17] Fix VTOL stuck after back-transition in Mission Fast RTL by @AkaiEurus in https://github.com/PX4/PX4-Autopilot/pull/26319
+* [BACKPORT] failsafe: Prevent Offboard to Position without RC by @ttechnick in https://github.com/PX4/PX4-Autopilot/pull/26391
+* [1.17] CI: replace all usage of addnab/docker-run-action by @mrpollo in https://github.com/PX4/PX4-Autopilot/pull/26480
+* [1.17] ci: fix S3 upload so tags don't overwrite stable firmware by @mrpollo in https://github.com/PX4/PX4-Autopilot/pull/26479
+
+
+**Full Changelog**: https://github.com/PX4/PX4-Autopilot/compare/v1.17.0-beta1...v1.17.0-rc1
+```
+
+## v1.17.0-beta1
+
+- 이름: v1.17.0-beta1
+- 날짜: 2026-01-21
+- 프리릴리즈: True
+- 드래프트: False
+
+```
+## What's Changed
+* [BACKPORT 1.17] Zenoh docs and zenoh oom fixes by @PetervdPerk-NXP in https://github.com/PX4/PX4-Autopilot/pull/26053
+* [BACKPORT 1.17] imxrt related fixes and mr-tropic support by @PetervdPerk-NXP in https://github.com/PX4/PX4-Autopilot/pull/26052
+* [1.17] Bugfix: Let user take over from a degraded failsafe by @MaEtUgR in https://github.com/PX4/PX4-Autopilot/pull/26269
+* FW Takeoff: fix loiter altitude not set in some cases by @sfuhrer in https://github.com/PX4/PX4-Autopilot/pull/26293
+
+
+**Full Changelog**: https://github.com/PX4/PX4-Autopilot/compare/v1.17.0-alpha1...v1.17.0-beta1
+```
+
+## v1.16.1
+
+- 이름: v1.16.1 - Stable Release
+- 날짜: 2026-01-21
+- 프리릴리즈: False
+- 드래프트: False
+
+```
+## What's Changed
+* [Backport 1.16] of fix: let UXRCE DDS agent IP to be set via parameter in SITL (#25231) by @sansha in https://github.com/PX4/PX4-Autopilot/pull/25299
+* VOXL2 patch back port for release 1.16 by @katzfey in https://github.com/PX4/PX4-Autopilot/pull/25377
+* [v1.16] Add relnote etc by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25384
+* [BACKPORT] commander: accel cal rotate offsets and scales from body frame back into sensor frame before saving (#25626) by @dagar in https://github.com/PX4/PX4-Autopilot/pull/25639
+* [Docs] PX4 v1.16 Add warning for RTL mode issues in return.md by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25623
+* Docs deploy AWS to v1.16 branch by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25641
+* Fix formatting to trigger v1.16 release build for testing by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25643
+* [BACKPORT 1.16] boards: ark_fpv add vtol att control by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25655
+* [backport] macos ci fixes for v1.16 by @mrpollo in https://github.com/PX4/PX4-Autopilot/pull/25672
+* AWS docs deploy workflow - modify release branch to same form by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25678
+* Fix up v1.16 docs version by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25679
+* Trigger v1.16 docs build by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25681
+* Trigger v1.16 docs build 3 by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25682
+* ci: docs deploy branchname for build step by @mrpollo in https://github.com/PX4/PX4-Autopilot/pull/25684
+* docs: fix deploy variables by @mrpollo in https://github.com/PX4/PX4-Autopilot/pull/25685
+* Change runner to ubuntu-latest for deployment by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25686
+* Update GitHub Actions output setting syntax to use envfile by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25687
+* AWS docs deployment - revert runs-on from ubuntu for test by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25689
+* AWS docs deployment - add back paths revert runner by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25690
+* [BACKPORT 1.16] uavcan: esc: init msg to avoid publishing random values by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25656
+* [BACKPORT 1.16] mavlink: add message spacing for AVAILABLE_MODES, for low bandwidth by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25662
+* [BACKPORT 1.16] cuav_7-nano：use new sensors (#25098) by @cuav-liu1 in https://github.com/PX4/PX4-Autopilot/pull/25546
+* [v1.16 backport] Enable clean URLs in VitePress config by @hamishwillee in https://github.com/PX4/PX4-Autopilot/pull/25759
+* [BACKPORT 1.16] V6X-RT Add sensor set V6XRT001 and V6XRT002 by @PetervdPerk-NXP in https://github.com/PX4/PX4-Autopilot/pull/25732
+* [BACKPORT 1.16] ci: fix failsafe sim by @MaEtUgR in https://github.com/PX4/PX4-Autopilot/pull/25768
+* [BACKPORT 1.16] flight task auto: fix offtrack mission landing bug by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25726
+* [BACKPORT 1.16] Loiter at the last mission waypoint on mission end by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25727
+* [BACKPORT 1.16] Correction of routing issue of mavlink parameter messages to CAN nodes by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25658
+* [BACKPORT 1.16] serial: nuttx: revert tcdrain back to fsync by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25657
+* [BACKPORT 1.16] mission: delay until: mark next setpoint invalid by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25729
+* [Backport 1.16] modules/navigator: Fix position setpoint update logic in Mission RTL by @msberk in https://github.com/PX4/PX4-Autopilot/pull/25861
+* [Docs] [Backport 1.16] flight_modes_fw/return.md: remove warning about now-fixed RTL bug by @msberk in https://github.com/PX4/PX4-Autopilot/pull/25869
+* [BACKPORT 1.16] drivers/gps: RTCM injection fixes by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25862
+
+
+## Release Notes
+* [Click here to view the full Release Notes](https://docs.px4.io/main/en/releases/1.16.html).
+* **Full Changelog**: https://github.com/PX4/PX4-Autopilot/compare/v1.16.0...v1.16.1
+```
+
+## v1.16.1-rc2
+
+- 이름: v1.16.1-rc2
+- 날짜: 2025-11-17
+- 프리릴리즈: True
+- 드래프트: False
+
+```
+## What's Changed
+* [BACKPORT 1.16] Correction of routing issue of mavlink parameter messages to CAN nodes by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25658
+* [BACKPORT 1.16] serial: nuttx: revert tcdrain back to fsync by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25657
+* [BACKPORT 1.16] mission: delay until: mark next setpoint invalid by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25729
+* [Backport 1.16] modules/navigator: Fix position setpoint update logic in Mission RTL by @msberk in https://github.com/PX4/PX4-Autopilot/pull/25861
+* [Docs] [Backport 1.16] flight_modes_fw/return.md: remove warning about now-fixed RTL bug by @msberk in https://github.com/PX4/PX4-Autopilot/pull/25869
+* [BACKPORT 1.16] drivers/gps: RTCM injection fixes by @dakejahl in https://github.com/PX4/PX4-Autopilot/pull/25862
+
+
+**Full Changelog**: https://github.com/PX4/PX4-Autopilot/compare/v1.16.1-rc1...v1.16.1-rc2
+```

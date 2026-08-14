@@ -1,13 +1,13 @@
 ---
 source_url: "https://api.github.com/repos/ArduPilot/ardupilot/releases"
-ingested: 2026-08-13
-sha256: "09deb47d40c88028dea0a0940b8724db6b923827ed5ab994fa9fd3c4433a0856"
-title: "ArduPilot 릴리즈 노트 (2026-08-13)"
+ingested: 2026-08-14
+sha256: 7d0ccaaca0602a175d20407a170299012c6e594e72a32ecb9c41814be68f49cf
+title: "ArduPilot 릴리즈 노트 (2026-08-14)"
 captured_via: 2nd-brain-cron
 ---
-# ArduPilot 릴리즈 노트 (2026-08-13)
+# ArduPilot 릴리즈 노트 (2026-08-14)
 
-수집 일시: 2026-08-13T08:30:00Z
+수집 일시: 2026-08-14T08:30:00Z
 출처: https://api.github.com/repos/ArduPilot/ardupilot/releases
 
 ## Tracker-4.7.0

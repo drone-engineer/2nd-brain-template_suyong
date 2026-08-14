@@ -820,7 +820,20 @@
 - Created: docs/workflow/daily-collect-2026-08-13.py
 - Updated: docs/workflow/raw-articles-index.md (added 22 entries: 08-11/08-12/08-13)
 - Note: ROS2 docs (docs.ros.org) 수집시 Anubis anti-bot으로 인해 "Access Denied" 페이지 수집됨. SHA256는 정상 기록됨. 브라우저 자동화 재수집 필요.
-- GitHub Search: 9 queries, 77 unique repos (per_page=10, sort=stars desc)
-- PX4 Releases: 6 releases (v1.18.0-beta2, v1.18.0-beta1, v1.18.0-alpha1, v1.17.0, v1.16.2, v1.17.0-rc2)
-- ArduPilot Releases: 7 releases (Copter/Plane/Rover/Sub/Tracker/AP_Periph 4.7.0, Copter-4.6.3)
+| GitHub Search: 9 queries, 77 unique repos (per_page=10, sort=stars desc)
+| PX4 Releases: 6 releases (v1.18.0-beta2, v1.18.0-beta1, v1.18.0-alpha1, v1.17.0, v1.16.2, v1.17.0-rc2)
+| ArduPilot Releases: 7 releases (Copter/Plane/Rover/Sub/Tracker/AP_Periph 4.7.0, Copter-4.6.3)
+| Verification: Gate B PASS (25 canonical pages, index aligned)
+
+## [2026-08-14] ingest | ROS2 드론 기술 일일 수집 (크론 자동 생성)
+- Created raw/articles:
+  - `raw/articles/2026-08-14-ros2-drone-github-data.md` (GitHub Search API, 9 queries, 77 unique repos, sha256: f753bc8a1e90d94b…)
+  - `raw/articles/2026-08-14-px4-release-notes.md` (PX4-Autopilot GitHub Releases, sha256: 3f1a079e49024716…)
+  - `raw/articles/2026-08-14-ardupilot-release-notes.md` (ArduPilot GitHub Releases, sha256: 7d0ccaaca0602a17…)
+  - `raw/articles/2026-08-14-px4-docs.md` (docs.px4.io/main/en/, sha256: 0b3c7ad32568a21d…)
+  - `raw/articles/2026-08-14-ros2-docs.md` (docs.ros.org/en/rolling/, sha256: 67ae26bd9e7477fe…)
+- Created: docs/reports/2026-08-14-ros2-drone-tech-report.md
+- Created: docs/workflow/daily-collect-2026-08-14.py
+- Updated: docs/workflow/raw-articles-index.md (5 entries 추가, 2026 count 72→77)
+- Note: PX4/PX4-Autopilot ⭐ 12403→12413 (+10), JacopoPan/aerial-autonomy-stack ⭐ 562→564 (+2). ROS2 docs는 Anubis anti-bot으로 "Access Denied" 수집 (SHA256 정상 기록됨). ArduPilot 4.7.0 릴리즈 변경 없음.
 - Verification: Gate B PASS (25 canonical pages, index aligned)

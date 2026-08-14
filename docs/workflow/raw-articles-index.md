@@ -100,7 +100,7 @@
 - `2025-privacy-preserving-federated-learning-framework-for-decentralized-drone-swarm-ex.md` — Privacy-Preserving Federated Learning Framework for Decentralized Drone Swarm Exploration
 - `2025-swarmraft-leveraging-consensus-for-robust-drone-swarm-coordination-in-gnss-degra.md` — SwarmRaft: Leveraging Consensus for Robust Drone Swarm Coordination in GNSS-Degraded Environments
 
-## 2026 (72편)
+## 2026 (77편)
 
 - `2026-07-29-modalai-starling-2-px4-guide-main.md` — "ModalAI Starling 2 | PX4 Guide (main)"
 - `2026-08-01-px4_release_117.md` — (no title)
@@ -190,6 +190,11 @@
 - `2026-08-13-px4-release-notes.md` — PX4 릴리즈 노트 (2026-08-13)
 - `2026-08-13-ros2-docs.md` — ROS2 공식 문서 수집 (2026-08-13)
 - `2026-08-13-ros2-drone-github-data.md` — ROS2 드론 GitHub 검색 데이터 (2026-08-13)
+- `2026-08-14-px4-docs.md` — PX4 공식 문서 수집 (2026-08-14)
+- `2026-08-14-ros2-docs.md` — ROS2 공식 문서 수집 (2026-08-14)
+- `2026-08-14-ros2-drone-github-data.md` — ROS2 드론 GitHub 검색 데이터 (2026-08-14)
+- `2026-08-14-px4-release-notes.md` — PX4 릴리즈 노트 (2026-08-14)
+- `2026-08-14-ardupilot-release-notes.md` — ArduPilot 릴리즈 노트 (2026-08-14)
 - `2026-banshee-target-switch-attacks-on-gimbal-stabilized-visual-tracking-sys.md` — Banshee: Target Switch Attacks on Gimbal-Stabilized Visual Tracking Systems via Acoustic Injection
 - `2026-enhancing-graph-based-slam-in-gnss-denied-environments-by-leveraging-l.md` — Enhancing Graph-Based SLAM in GNSS-Denied environments by leveraging learned features
 - `2026-hunter-killer-drone-prd-v2.md` — Hunter-Killer 드론 자율 정찰-타격 체계 PRD v2.0

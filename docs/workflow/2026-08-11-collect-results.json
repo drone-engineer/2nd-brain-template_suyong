@@ -1,0 +1,58 @@
+{
+  "2026-08-11-github-search-ros2-drone-1.md": {
+    "sha256": "315456d28be60877089025d50682273b674d1502e3828fe1caf3f41375786774",
+    "url": "https://api.github.com/search/repositories?q=ros2%20drone%20detection&sort=stars&order=desc&per_page=5"
+  },
+  "2026-08-11-github-search-ros2-drone-2.md": {
+    "sha256": "f24e7f644941e35f9bfdebcaae537c9771ce5bfec7e55b1c5e3c53b4e3b860d1",
+    "url": "https://api.github.com/search/repositories?q=ros2%20drone%20autonomous&sort=stars&order=desc&per_page=5"
+  },
+  "2026-08-11-github-search-ros2-drone-3.md": {
+    "sha256": "492b665e64b83b310ad86b5ecaa33bdb3b1ff39baa2d6814cd6ab2902df0672d",
+    "url": "https://api.github.com/search/repositories?q=ros2%20drone%20navigation&sort=stars&order=desc&per_page=5"
+  },
+  "2026-08-11-github-search-ros2-drone-4.md": {
+    "sha256": "4c63c0b35d0195bfd59e2cf9eb2322974a847002894903586b00db2c92b7b780",
+    "url": "https://api.github.com/search/repositories?q=PX4%20ros2%20bridge&sort=stars&order=desc&per_page=5"
+  },
+  "2026-08-11-github-search-ros2-drone-5.md": {
+    "sha256": "22cda230edfcbf942e3a380488447c445a1144aabc2897aecb73cac637792f6c",
+    "url": "https://api.github.com/search/repositories?q=YOLO%20ros2%20drone&sort=stars&order=desc&per_page=5"
+  },
+  "2026-08-11-github-search-ros2-drone-6.md": {
+    "sha256": "f6a8bb6b46a623e26c8986fd1c14ac2efce16998597abcdd63cd3cdc1388666c",
+    "url": "https://api.github.com/search/repositories?q=zenoh%20ros2%20middleware&sort=stars&order=desc&per_page=5"
+  },
+  "2026-08-11-github-search-ros2-drone-7.md": {
+    "sha256": "5d0284b5eae6e24c87a5a446f747b008b025e340a603af817fc95afb67744e9a",
+    "url": "https://api.github.com/search/repositories?q=MediaPipe%20ros2&sort=stars&order=desc&per_page=5"
+  },
+  "2026-08-11-github-search-ros2-drone-8.md": {
+    "sha256": "05a61c47715a279a48594b5131c757f021807fbce348d9710df77968ab8e4125",
+    "url": "https://api.github.com/search/repositories?q=SLAM%20ros2%20drone&sort=stars&order=desc&per_page=5"
+  },
+  "2026-08-11-github-search-ros2-drone-9.md": {
+    "sha256": "9fa3fca2f3d984a970f41c94367a470f5fa05fe36fd8bdbe3b40217492e5dcc2",
+    "url": "https://api.github.com/search/repositories?q=ArUco%20ros2%20detection&sort=stars&order=desc&per_page=5"
+  },
+  "2026-08-11-ros2-drone-github-data.md": {
+    "sha256": "87a793050f889e599888089925e113146b159bd13a6b65dd0b0f59a29114ed7c",
+    "url": null
+  },
+  "2026-08-11-px4-release-notes.md": {
+    "sha256": "3e7f66aca04ebb91e5b479766417bed2521f9832d7f1d68c4c3382b89d5a0e12",
+    "url": null
+  },
+  "2026-08-11-ardupilot-release-notes.md": {
+    "sha256": "5f2c04d99369c065d86b417328149776d69a243b29b22cec611be6bc572664a4",
+    "url": null
+  },
+  "2026-08-11-px4-docs-main.md": {
+    "sha256": "f9d7336490c43eeef0b6da3e6bcfb0eb7458053b11ea36c87183fddb446f40a3",
+    "url": "https://docs.px4.io/main/en/"
+  },
+  "2026-08-11-ros2-docs-rolling.md": {
+    "sha256": "a480d005ed476deb440b88ecb133ee74b8690a61c73e174f1b2e8280d2e02148",
+    "url": "https://docs.ros.org/en/rolling/"
+  }
+}
