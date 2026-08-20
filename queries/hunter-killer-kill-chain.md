@@ -120,15 +120,13 @@ raw/youtube/2026-08-06-l2ARv6y70bw.md
 - [The Sun — China's new 'kill chain' swarm system](https://youtu.be/5k9F7QK66Ws) — 중국 신형 '킬체인' 군집 체계가 바꿀 전장 변화.
 - [New York Post — China Atlas Drone Swarm System](https://youtu.be/hGakXrt1EFo) — 중국 Atlas 드론군 체계 공개, 1기당 정밀드론 96기 제어.
 
-## 관련 영상 (YouTube 보강 2026-07-31)
+## 관련 영상 (YouTube 보강 2026-08-18)
 
-킬체인 운용 개념 보강: The Sun 중국 킬체인 군집 체계, New York Post Atlas 드론군 공개, DEW/전자전 킬체인 시뮬레이션 재캡처, Spectrum UV·Data Engineering Edge 자율 살상 드론 대중적 개요, Saint 터미네이터 헌터-킬러 묘사 추가.
+킬체인 운용 개념 보강: 킬체인 시뮬레이션, 자율 타격 드론, 해양 드론, 방어 시스템 추가.
 
-- [The Sun — China's new 'kill chain' swarm system](https://youtu.be/5k9F7QK66Ws) — 중국 신형 '킬체인' 군집 체계가 바꿀 전장 변화 (재캡처).
-- [New York Post — China Atlas Drone Swarm System](https://youtu.be/hGakXrt1EFo) — 중국 Atlas 드론군 체계 공개, 1기당 정밀드론 96기 제어 (재캡처).
-- [NOOB-S@@B — Ultimate Drone War Simulation (DEW/EW Kill Chain)](https://youtu.be/EKpxP2YieZw) — DEW·미사일·전자전 킬체인 포함 무인전 시뮬레이션 (재캡처).
-- [Spectrum UV — Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 개요 (재캡처).
-- [Data Engineering Edge — Autonomous killer drones](https://youtu.be/DK6IGG5zRU8) — 자율 살상 드론 대중적 설명 (재캡처, 조회 45만+).
+- [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 개요
+- [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — 미국 Sea Hunter 자율 해양 정찰 드론 실증
 
 ## 관련 영상 (YouTube 보강 2026-08-01)
 

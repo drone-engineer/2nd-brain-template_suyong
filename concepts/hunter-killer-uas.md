@@ -19,6 +19,14 @@ sources:
   - raw/youtube/2026-07-31-sriVQXreqG8.md
   - raw/youtube/2026-07-31-DK6IGG5zRU8.md
   - raw/youtube/2026-07-31-MGggtBIzvtg.md
+  - raw/youtube/2026-08-16-MGggtBIzvtg.md
+  - raw/youtube/2026-08-16-hp4ySL2xzV8.md
+  - raw/youtube/2026-08-16-sEiKDZ6pZo4.md
+  - raw/youtube/2026-08-16-w0z-362DkIU.md
+  - raw/youtube/2026-08-16-M5YyDGfKhE8.md
+  - raw/youtube/2026-08-16-al9ITeP4fUA.md
+  - raw/youtube/2026-08-16-l2ARv6y70bw.md
+  - raw/youtube/2026-08-16-EKpxP2YieZw.md
 confidence: medium
 contested: true
 contradictions: []
@@ -99,3 +107,11 @@ GNSS가 차단된 환경에서 VIO + TRN(Terrain Referenced Navigation) 결합:
 - [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) (Sam Eckholm)
 - [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) (Lockheed Martin)
 - [Swarm Counter Drone System](https://youtu.be/a5kumlJqkQQ) (Divyania Defence)
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) (Spectrum UV)
+- [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) (DEEP WEAPONS)
+- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) (GPO Technologies)
+- [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) (GPO Technologies)
+- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) (Lockheed Martin) - 2026-08-16 update
+- [Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) (Anduril Industries) - 2026-08-16 update
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) (ESPIRIDI) - 2026-08-16 update
+- [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) (NOOB-S@@B) - 2026-08-16 update

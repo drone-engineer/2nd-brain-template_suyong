@@ -35,3 +35,11 @@ contradictions: []
 새로 수집된 자료를 통해 방어 체계가 갱신됨.
 
 - [Force Protection Capabilities Against Ariel Threats - Counter UAS](https://youtu.be/aGINGHexT7k) — 드론 군집 대항 방어 시스템, 킬체인 방어 차원
+
+## 관련 영상 (YouTube 보강 2026-08-18)
+
+새로 수집된 자료를 통해 비전추적 기만/무선 교란/위성항법 기만에 대한 대응 기술이 갱신됨.
+
+- [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) — Sanctum 대드론군 방어 체계 교전 데모, 차세대 C-UAS 실증
+- [MyDefence Drone Swarm Counter UAS Jammer](https://youtu.be/HMKXMaAzByU) — 군집 드론 대항 C-UAS 재머 시연, 통신/센서 교란 방어
+- [Vortex Cannon vs Drone](https://youtu.be/SrGENEXocJU) — 공기 저항/물리적 무기 vs 드론 시청각적 실험

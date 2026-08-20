@@ -1,7 +1,7 @@
 ---
 title: UAV Formation Control
 created: 2026-07-24
-updated: 2026-07-26
+updated: 2026-08-20
 type: concept
 tags:
   - uav
@@ -31,7 +31,7 @@ Bu, Yan, Yang(2024)은 leader–follower, virtual structure, behavior-based, con
 
 Zhao, Chen, Hu(2025)는 산불 진화처럼 이질적 능력·제약이 섞인 환경에서 보완 협업(complementary collaboration) 제어를 제안한다. 행동 특성 추출 → 조합 탐색 → 동적 할당 → 행동 학습으로 정책을 개선하며, 다유형 UAV 협업에서 대형 안정성을 보고한다. ^[raw/papers/2025-02-research-on-swarm-control-based-on-complementary-collaboration-of-unmanned-aeria.md]
 
-학습 기반 제어의 세부 지형은 [[multi-agent-rl-uav-control]], 궤적·클러스터링은 [[uav-swarm-path-planning]]과 연결된다.
+학습 기반 제어의 세부 지형은 [[multi-agent-rl-uav-control]], 궤적·클러스터링은 [[uav-swarm-path-planning]], 명시적 통신 없이 결속을 지키는 CBF 항법은 [[cbf-decentralized-swarm-connectivity]]와 연결된다.
 
 ## 충돌회피: 전통+학습 하이브리드 (2026-07-26 신규)
 

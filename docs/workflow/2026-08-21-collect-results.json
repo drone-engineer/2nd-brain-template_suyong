@@ -1,0 +1,18 @@
+{
+  "px4": {
+    "sha256": "c38b911f1344b76c70fedf7b9db1836b5cfe57e4e4abb11043f0dd4af0e0c5b7",
+    "url": ""
+  },
+  "ardupilot": {
+    "sha256": "546488dfd205527a8d0f1497c5b230922d138679bc4a66ba50160a739b0dd4dd",
+    "url": ""
+  },
+  "px4_docs": {
+    "sha256": "b3c066c7c6c79ff999394382a309057fc6d1abbc902e64047c54131b1adec67a",
+    "url": ""
+  },
+  "ros2_docs": {
+    "sha256": "63703450747fbd8b5d7b33e8dc7b071f8af07d11f6237efdfe15e86b4ba08739",
+    "url": ""
+  }
+}

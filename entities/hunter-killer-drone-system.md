@@ -180,6 +180,15 @@ ESPIRIDI C-UAS Kill Chain 영상은 탐지->추적->식별->타격의 전체 교
 - [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming -12C — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경에서 Killer 단말 실증
 - [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — Edge AI Autohoming for FPV Drones 500m Target Lock to Impact No GPS — GPS/클라우드/신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도
 
+## 관련 영상 (YouTube 보강 2026-08-18)
+
+새로 수집된 자료를 통해 킬체인 운용 개념이 갱신됨.
+
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 개념 개요
+- [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — 미국 해양 자율 정찰 드론 실증
+- [Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 대응 시스템 공개, 킬체인 방어 차원
+- [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락
+
 ## 관련 영상 (YouTube 보강 2026-08-07)
 
 새로 수집된 자료를 통해 HK 체계에 대한 실제 시연/구현 및 방어 체계가 추가됨.

@@ -3,8 +3,8 @@
 > Complete catalog of active canonical pages. Each entry is a wikilink followed by
 > a one-line summary, sorted alphabetically within its section.
 >
-> Total pages: 25
-> Last updated: 2026-08-06
+> Total pages: 26
+> Last updated: 2026-08-20
 
 ## Entities
 
@@ -18,6 +18,7 @@
 
 - [[ai-knowledge-workflow]] — 원본 수집부터 검증된 산출물까지의 단계와 품질 관문.
 - [[ai-personal-knowledge-management]] — 원본·컴파일된 지식·집중 탐색을 분리하는 개인 지식관리 원칙.
+- [[cbf-decentralized-swarm-connectivity]] — CBF로 명시적 통신 없이 충돌회피·결속 유지하는 탈중앙 UAV 항법.
 - [[combat-swarm-drone-operations]] — 공격용 군집드론 완전 자율화 5대 과제(AI·탈중앙 C2·임무재할당·보안·윤리).
 - [[llm-wiki]] — 출처와 관계를 누적하는 지속형 Markdown 지식베이스.
 - [[multi-agent-rl-uav-control]] — UAV 군집 제어에 쓰이는 다개체 강화학습 접근.

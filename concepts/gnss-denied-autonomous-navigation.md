@@ -44,3 +44,11 @@ GPS 교란/위성항법 기만(예: GPS 위치 조작) 시 사용하는 **탈중
 
 - [GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works](https://youtu.be/p8frNNYQNV4) — GPS 없이 자율 비행 가능한 드론 제작법
 - [How Do Military Drones Fly Without GPS? | Ian Laffey, Theseus](https://youtu.be/i1QRqu3Cocw) — 군용 드론의 GPS 무결항법 원리
+
+## 관련 영상 (YouTube 보강 2026-08-18)
+
+새로 수집된 자료를 통해 항법 기술이 갱신됨.
+
+- [How Drones Navigate Without GPS: Explained Simply](https://youtu.be/V5ZMhFyWQa8) — 드론의 GPS 없이 항법하는 간단 설명
+- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경 Killer 단말 실증
+- [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS/클라우드/신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도

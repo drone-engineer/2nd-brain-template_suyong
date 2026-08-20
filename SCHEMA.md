@@ -77,6 +77,9 @@ a valid source record or canonical page.
 - `pkm`: personal knowledge management.
 - `provenance`: source traceability and claim lineage.
 - `research`: research collection, synthesis, and verification.
+- `ros2`: robotics operating system version 2.
+- `detection`: object or feature detection algorithms and techniques.
+- `middleware`: communication layer between software components.
 - `workflow`: ordered operational processes and feedback loops.
 - `uav`: unmanned aerial vehicles and related platforms.
 - `swarm`: multi-agent swarm coordination and collective behavior.

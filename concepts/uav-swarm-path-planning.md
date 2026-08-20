@@ -1,7 +1,7 @@
 ---
 title: UAV Swarm Path Planning
 created: 2026-07-24
-updated: 2026-07-26
+updated: 2026-08-20
 type: concept
 tags:
   - uav
@@ -24,7 +24,7 @@ contradictions: []
 
 # UAV Swarm Path Planning
 
-군집 경로·궤적 계획은 개별 기체 제어를 넘어, 충돌 회피·커버리지·에너지·통신을 동시에 맞추는 문제다. [[uav-swarm-robotics]]의 운영 축 중 하나이며 [[uav-formation-control]]과 자주 결합된다.
+군집 경로·궤적 계획은 개별 기체 제어를 넘어, 충돌 회피·커버리지·에너지·통신을 동시에 맞추는 문제다. [[uav-swarm-robotics]]의 운영 축 중 하나이며 [[uav-formation-control]]과 자주 결합된다. 통신 없는 결속 유지·CBF 안전 항법은 [[cbf-decentralized-swarm-connectivity]]를 참고한다.
 
 ## 문헌 상태 (이번 ingest 기준)
 
