@@ -36,9 +36,11 @@ Ekechi et al.(2025)은 UAV 제어에 적용된 MARL을 체계적으로 분류하
 
 MARL을 군집드론에 굴릴 때 풀어야 할 세 하위 문제가 최신 논문에서 구체화된다.
 
-- **빠른 합의(Faster Consensus, 2023):** 단일 적분자动力学 합의에서 수렴 속도를 최대화하는 최적 제어기를 찾은 결과, 통신 지연이 홉 수에 비례할 때 **최적 제어기는 희소 연결(sparser) 구조**를 갖는다. → "모두와 연결"보다 "전략적 희소 연결"이 빠름. ^[raw/articles/2023-faster-consensus-via-a-sparser-controller.md]
-- **변분 정책 전파(VPP, 2020):** MARL에서 결합 정책을 마르코프 랜덤필드(MRF)로 보고 변분 추론을 미분 가능 레이어로 삽입. 정책 공간을 효과적으로 축소하며 샘플링 효율을 높인다. ^[raw/articles/2020-variational-policy-propagation-for-multi-agent-reinforcement-learning.md]
+- **빠른 합의(Faster Consensus, 2023):** 단일 적분자动力학 합의에서 수렴 속도를 최대화하는 최적 제어기를 찾은 결과, 통신 지연이 홉 수에 비례할 때 **최적 제어기는 희소 연결(sparser) 구조**를 갖는다. → "모두와 연결"보다 "전략적 희소 연결"이 빠름. ^[raw/articles/2023-faster-consensus-via-a-sparser-controller.md]
+- **변분 정책 전파(VPP, 2020):** MARL에서 결합 정책을 마르코프 랜덤필드(MRF)로 보고 변량 추론을 미분 가능 레이어로 삽입. 정책 공간을 효과적으로 축소하며 샘플링 효율을 높인다. ^[raw/articles/2020-variational-policy-propagation-for-multi-agent-reinforcement-learning.md]
 - **양측 팀 형성(Bilateral Team Formation, 2025):** 기존이 고정/편측 팀이었던 것을 동적 집단에서의 **양측 팀 형성 학습**으로 확장. 인구가 변하는 환경에서 알고리즘적 그룹핑 선택 효과를 실증. ^[raw/articles/2025-learning-bilateral-team-formation-in-cooperative-multi-agent-reinforcement-learn.md]
 - **간섭 인지 K-스텝 통신(IARCoM, 2026):** 제한된 대역폭·동적 위상에서 "통신할 가치 있는 파트너"를 K-스텝 도달 가능성 + 간섭으로 판단. 불확실한 환경에서 고가치 협력자를 선별. ^[raw/articles/2026-interference-aware-k-step-reachable-communication-in-multi-agent-reinforcement-l.md]
 
 시사점: MARL 군집드론은 **통신 토폴로지 설계(희소화·간섭 인지)** 와 **정책 표현(MRF·팀 형성)** 두 축이 병목. 합의 속도·학습 효율·통신 비용을 동시에 다루는 통합 프레임워크가 부족하다.
+
+이는 [[swarm-ai]] 개념에서 제공하는 일반적인 AI 프레임워크를 통해 더 깊이 이해할 수 있다.

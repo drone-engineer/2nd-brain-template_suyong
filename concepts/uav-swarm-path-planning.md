@@ -47,3 +47,11 @@ Elsevier 두 편의 초록·본문이 로컬에 없어 이번 페이지는 **제
 - **RIS 다중 UAV(2021):** RIS 반사 + UAV 기동성 결합으로 에너지 효율 최대화. 전력 할당·RIS 위상행렬을 DRL로 연속 최적화. ^[raw/articles/2021-reconfigurable-intelligent-surface-assisted-multi-uav-networks-efficient-resourc.md]
 
 시사점: 경로계획은 **단독 기하학 문제가 아니라 통신·에너지 공동최적화**로 이동. IRS/RIS가 핵심 인에이블러이며, DRL이 비볼록 공동최적화의 사실상 표준 해법. → confidence를 `low`에서 올릴 근거가 됨(5편 모두 초록 확보).
+
+## 관련 영상 (YouTube 보강 2026-08-23)
+
+새로 수집된 자료를 통해 군집 드론 경로계획, 추적 기술 및 운영 사례가 갱신됨.
+
+- [Drone swarm avoids crashing in dense forest using new algorithm](https://youtu.be/Lr7L2t-svJQ) — 밀도 높은 숲 속에서는 기존 알고리즘보다 적은 충돌로 생존 가능성을 높이는 새로운 알고리즘 시연
+- [How Drones Navigate Without GPS: Explained Simply](https://youtu.be/V5ZMhFyWQa8) — GPS 없이 드론이 어떻게 항법하는지 간단히 설명한 영상
+- [GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works](https://youtu.be/p8frNNYQNV4) — GPS 불가 영역에서 동작하는 자율 드론 제작 방식 설명

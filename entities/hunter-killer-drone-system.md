@@ -170,33 +170,39 @@ ESPIRIDI C-UAS Kill Chain 영상은 탐지->추적->식별->타격의 전체 교
 - [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적·오토호밍 FPV, 극한 환경(-12°C)에서 Killer 단말 실증 재확인.
 - [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS·클라우드·신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도 재확인.
 
-## 관련 영상 (YouTube 보강 2026-08-06)
+## 관련 영상 (YouTube 보강 2026-08-23)
 
-2026-08-06 영상 보강을 통해 러시아 게란 드론의 수동 레이더 호밍 탐색두 장착, GPO Technologies의 극한 환경(-12°C) 오토호밍 실증, 그리고 GPS·클라우드·신호 없이 500m 표적 록온→타격하는 엣지 AI 시스템이 확인되어, HK 시스템의 terminal_homing 유도 기술이 실전 환경에서도 작동 가능함을 재확인했다.
-
-- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — Autonomous killer drones — 자율 살상 드론 기본 개요, HK 시스템 정의 확인
-- [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — U.S. testing autonomous Sea Hunter ocean drone — 미국 Sea Hunter 자율 해양 정찰 드론 실증, HK Hunter 플랫폼 사례
-- [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — Silent Hunters: Russian Geran with Passive Radar Homing — 게란 드론 수동 레이더 호밍 탐색두 장착, HK 표적 유도 생존성 강화
-- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming -12C — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경에서 Killer 단말 실증
-- [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — Edge AI Autohoming for FPV Drones 500m Target Lock to Impact No GPS — GPS/클라우드/신호 없이 500m 표적 록온→타격, GNSS 불능 환경 킬러 유도
-
-## 관련 영상 (YouTube 보강 2026-08-18)
-
-새로 수집된 자료를 통해 킬체인 운용 개념이 갱신됨.
+새로 수집된 자료를 통해 킬체인 운용 개념과 실제 시연/구현이 갱신됨.
 
 - [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 개념 개요
 - [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — 미국 해양 자율 정찰 드론 실증
 - [Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 대응 시스템 공개, 킬체인 방어 차원
 - [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락
-
-## 관련 영상 (YouTube 보강 2026-08-07)
-
-새로 수집된 자료를 통해 HK 체계에 대한 실제 시연/구현 및 방어 체계가 추가됨.
-
-- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 기본 개요, HK 시스템 정의
-- [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — 미국 Sea Hunter 자율 해양 정찰 드론 실증, HK Hunter 플랫폼 사례
-- [Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 대응 시스템 공개, 킬체인 방어 차원
 - [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정 상세 분석, 실전 방어 관점의 새로운 시각
+
+## 관련 영상 (YouTube 보강 2026-08-26)
+
+새로 수집된 자료를 통해 킬체인 운용 개념과 실제 시연/구현이 갱신됨.
+
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 개념 개요
+- [U.S. testing autonomous Sea Hunter ocean drone](https://youtu.be/sriVQXreqG8) — 미국 해양 자율 정찰 드론 실증
+- [Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) — Anduril 로드러너/로드러너-M 대응 시스템 공개, 킬체인 방어 차원
+- [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락
+- [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) — C-UAS 킬체인 전체 교전 과정 상세 분석, 실전 방어 관점의 새로운 시각
+- [How China’s new ‘kill chain’ swarm system changes everything](https://youtu.be/5k9F7QK66Ws) — 중국 신형 킬체인 군집 체계가 바꿀 전장 변화
+- [GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works](https://youtu.be/p8frNNYQNV4) — GPS 없이 자율 비행 가능한 드론 제작법
+- [How Do Military Drones Fly Without GPS? | Ian Laffey, Theseus](https://youtu.be/i1QRqu3Cocw) — 군용 드론의 GPS 무결항법 원리
+- [How Drones Navigate Without GPS: Explained Simply](https://youtu.be/V5ZMhFyWQa8) — 드론의 GPS 없이 항법하는 간단 설명
+
+## 관련 영상 (YouTube 보강 2026-08-02)
+
+새로 수집된 자료를 통해 항법 기술이 갱신됨.
+
+- [How Drones Navigate Without GPS: Explained Simply](https://youtu.be/V5ZMhFyWQa8) — 드론의 GPS 없이 항법하는 간단 설명, 항법 기술의 기본 원리 재확인
+- [How Do Military Drones Fly Without GPS? | Ian Laffey, Theseus](https://youtu.be/i1QRqu3Cocw) — 군용 드론의 GPS 무결항법 원리, 실제 시스템 구현 및 기술적 한계 설명
+- [GPS-Denied, Anti-Jam Autonomous DIY Drone: How It Works](https://youtu.be/p8frNNYQNV4) — GPS 없이 자율 비행 가능한 드론 제작법, 실전 적용 가능한 항법 방식 제공
+- [FPV Drone Autonomous Human Tracking Test | Edge AI Autohoming System | -12°C Field Test](https://youtu.be/sEiKDZ6pZo4) — 엣지 AI 자율 인간추적/오토호밍 FPV, 극한 환경 Killer 단말 실증
+- [Edge AI Autohoming for FPV Drones — 500m Target Lock to Impact | No GPS, No Cloud, No Signal](https://youtu.be/w0z-362DkIU) — GPS/클라우드/신호 없이 500m 표적 록-on→타격, GNSS 불능 환경 킬러 유도
 
 ## 관련 영상 (YouTube 보강 2026-08-15)
 

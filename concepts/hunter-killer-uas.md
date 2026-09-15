@@ -100,10 +100,10 @@ GNSS가 차단된 환경에서 VIO + TRN(Terrain Referenced Navigation) 결합:
 
 - [[uav-autopilot-stacks]] — PX4 vs ArduPilot 비교
 - [[uav-swarm-middleware]] — MAVLink/ROS 2/DDS 미들웨어 (드론-지상국 통신)
-
 ## 6. 참고 자료
 
 ### YouTube
+
 - [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) (Sam Eckholm)
 - [Sanctum™ vs. the Swarm: Next-Gen Counter-UAS in Action](https://youtu.be/M5YyDGfKhE8) (Lockheed Martin)
 - [Swarm Counter Drone System](https://youtu.be/a5kumlJqkQQ) (Divyania Defence)
@@ -115,3 +115,11 @@ GNSS가 차단된 환경에서 VIO + TRN(Terrain Referenced Navigation) 결합:
 - [Anduril Unveils Roadrunner & Roadrunner-M](https://youtu.be/al9ITeP4fUA) (Anduril Industries) - 2026-08-16 update
 - [Breaking the Drone Threat: Inside the C-UAS Kill Chain](https://youtu.be/l2ARv6y70bw) (ESPIRIDI) - 2026-08-16 update
 - [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) (NOOB-S@@B) - 2026-08-16 update
+
+## 관련 영상 (YouTube 보강 2026-08-22)
+
+새로 수집된 자료를 통해 킬체인 시스템과 방어 기술이 갱신됨.
+
+- [Autonomous killer drones](https://youtu.be/MGggtBIzvtg) — 자율 살상 드론 개요 및 HK 체계 모델 제시
+- [Silent Hunters: Russian Military Equips Geran Drones with Cutting-Edge Passive Radar Homing](https://youtu.be/hp4ySL2xzV8) — 러시아 군대가 게란 드론에 수동 레이더 호밍 탐색 장치를 장착하여 표적 유도 생존성 강화한 실증
+- [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, HK 교전 맥락 재확인

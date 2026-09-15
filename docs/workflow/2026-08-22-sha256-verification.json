@@ -1,0 +1,37 @@
+[
+  {
+    "file": "2026-08-22-ros2-drone-github-data.md",
+    "sha256": "77024abd58f9b708ae3c1b9949160ec42aa59d45dec45233bcbb37b81dca14e5",
+    "match": true,
+    "ends_nl": false,
+    "body_len": 22078
+  },
+  {
+    "file": "2026-08-22-px4-release-notes.md",
+    "sha256": "efcb30b7e3632656f576eca0b4f23ae18d468ce67cf1d0abb5c806f327b6f568",
+    "match": true,
+    "ends_nl": true,
+    "body_len": 9226
+  },
+  {
+    "file": "2026-08-22-ardupilot-release-notes.md",
+    "sha256": "d34a683bc65c77526fcb0c10ab25b9206e3ec417d29319814c2cd242861e6895",
+    "match": true,
+    "ends_nl": true,
+    "body_len": 2040
+  },
+  {
+    "file": "2026-08-22-px4-docs.md",
+    "sha256": "4854f80ec222d8ec0eddca8ea187053383b825c68a9b7e470b16a946451e2325",
+    "match": true,
+    "ends_nl": true,
+    "body_len": 30617
+  },
+  {
+    "file": "2026-08-22-ros2-docs.md",
+    "sha256": "94841bc2efe50fc4703797b060e25369feada3041749775e2c533532e5ce984f",
+    "match": true,
+    "ends_nl": true,
+    "body_len": 16204
+  }
+]

@@ -45,3 +45,10 @@ contradictions: []
 - [[uav-autopilot-stacks]] — 시뮬이 어떤 펌웨어(SITL)와 붙는지
 - [[uav-swarm-middleware]] — 시뮬 노드와 ROS 2/DDS 연결
 - [[combat-swarm-drone-operations]] — 보안 시나리오 검증에 커스텀 시뮬(TriSweep) 활용
+
+## 관련 영상 (YouTube 보강 2026-08-23)
+
+새로 수집된 자료를 통해 군집 드론 시뮬레이션 기술 및 운영 사례가 갱신됨.
+
+- [The Ultimate Drone War Simulation | DEWs, Missiles & Electronic Warfare Kill Chain](https://youtu.be/EKpxP2YieZw) — DEW/미사일/전자전 킬체인 포함 무인전 시뮬레이션, 군집 드론 전투 운영 사례 분석
+- [Drone Swarms Are Here. This Technology Could Stop Them.](https://youtu.be/unraT22a4zY) — 드론 군집이 이미 존재하고, 이를 방어할 수 있는 기술 소개
